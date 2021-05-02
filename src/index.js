@@ -1,14 +1,26 @@
+// React Lib ->
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+// Styles ->
 import './index.css';
+
+// Root Component ->
 import App from './App';
+
+// Bootstrap ->
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+// Performance ->
 import reportWebVitals from './reportWebVitals';
 
+// Render DOM ->
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+  		<App />
+  	</React.StrictMode>,
+  	document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
