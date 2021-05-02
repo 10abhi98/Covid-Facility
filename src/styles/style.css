@@ -1,0 +1,90 @@
+/* Registration Page */
+
+#logIn {
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-color: white !important;
+    background-color: transparent;
+    padding: 3px 15px 3px 15px;
+}
+
+#loginPlace {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+#register,
+#voluntee {
+    color: white;
+    margin-top: 105px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#register .form-group {
+    margin-bottom: 5px;
+    width: 80%;
+}
+
+#signUp {
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-color: white !important;
+    background-color: transparent;
+    padding: 3px 15px 3px 15px;
+    margin-top: 7px;
+}
+
+#register h2,
+#register h6 {
+    font-weight: 400;
+}
+
+#register ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4D4D4D;
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #4D4D4D;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #4D4D4D;
+}
+
+#gog {
+    border-radius: 20px;
+    padding: 8px 15px 8px 15px;
+    margin-top: 7px;
+    width: 45%;
+}
+
+#gog img {
+    height: 11%;
+    width: 11%;
+    float: left;
+}
+
+#gog span {
+    float: left;
+    padding-left: 8px;
+    line-height: 1.3em;
+    color: #EB8861;
+}
+
+
+/* ----------------------------------- */
+
+
+/* Volunteer Page */
+
+
+/* ----------------------------------- */
