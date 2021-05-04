@@ -1,12 +1,8 @@
 // Libraries ->
 import React, { Component } from "react";
 import "../styles/style.css";
-import google from "../images/Google.png"
 
 class Volunteer extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return (
             <div id='voluntee' className='container-fluid'>

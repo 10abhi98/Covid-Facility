@@ -32,7 +32,7 @@ class Register extends Component {
                         </form>
                         <br /><br />
                         <h6>or you can simply Signup with your Google account</h6>
-                        <button id='gog' type='button' class='btn shadow-sm bg-white'>
+                        <button id='gog' type='button' className='btn shadow-sm bg-white'>
                             <img src={google} alt='Google' />
                             <span>
                                 Sign In with Google

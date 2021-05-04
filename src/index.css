@@ -1,4 +1,4 @@
-html{
+html,body{
     height: 100%;
 }
 body {
@@ -11,4 +11,11 @@ body {
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Media Query */
+@media (max-width: 575.98px){
+    body{
+        background: #EC8D67 !important;
+    }
 }

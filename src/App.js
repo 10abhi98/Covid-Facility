@@ -27,7 +27,7 @@ class App extends Component {
 							<Route path="/" exact component={HomePage} />
 							<Route path="/volunteer/register" component={Register} />
 							<Route path="/login" component={Login} />
-							<Route path="/volunteer" component={Volunteer} {...this.props} />
+							<Route path="/volunteer" component={Volunteer} />
 							<Route path="/volunteer/:id" component={volunteerHome} />
 							<Route component={Error404} />
 						</Switch>

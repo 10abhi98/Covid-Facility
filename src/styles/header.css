@@ -1,3 +1,13 @@
+.navbar-toggler {
+    border: none !important;
+    padding-left: 0 !important;
+    margin-top: 7px;
+}
+
+.navbar-toggler i {
+   color: white;
+}
+
 ul {
     border-bottom: 1px solid white;
     padding-bottom: 7px;
@@ -5,24 +15,39 @@ ul {
     font-size: small;
 }
 
-li .item{
+li .item {
     color: white;
 }
 
-ul li:nth-of-type(2){
+ul li:nth-of-type(2) {
     margin-left: 20px;
 }
 
-.item:hover{
+.item:hover {
     color: white;
     text-decoration: none;
 }
 
-li .active{
+li .active {
     border-bottom: 2px solid white;
     padding-bottom: 6px;
 }
 
-nav div:nth-of-type(2){
+nav div:nth-of-type(2) {
     padding-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width : 575.98px){
+    ul {
+        border-bottom: none;
+    }
+    li:nth-of-type(1){
+        padding-bottom: 12px;
+    }
+    
+    li:nth-of-type(2){
+        margin-left: 0 !important;
+    }
+
 }
