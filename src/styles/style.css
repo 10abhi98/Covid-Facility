@@ -236,7 +236,7 @@
     #register h6:nth-of-type(1){
         margin-bottom: 12px;
     }
-    #signUp{
+    #signUp, #submitBtn {
         margin-top: 10px;
     }
     #register h6:nth-of-type(2){
@@ -263,7 +263,7 @@
     margin:30px 0px 0px 0px;
 }
 
-#hospitalActiveBtn {
+#locationActiveBtn {
     padding: 0px 0px 0px 10px;
     text-align: start;
     width: 65%;
@@ -272,7 +272,7 @@
     font-size: 14px;
 }
 
-#hospitalBtn {
+#locationBtn {
     padding: 0px 0px 0px 10px;
     text-align: start;
     width: 65%;
@@ -283,15 +283,23 @@
 }
 
 #taskList {
-    
     padding: 10px 120px 20px 0px;
-
 }
 
-#hospitalForm {
+#locationForm {
     border: 1px solid #fff;
-   
     margin-top: -100px;
 }
 
+#submitBtn {
+    border-radius: 20px;
+    color: #0F8790 ;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+     border:none;
+    background-color: white;
+    padding: 3px 15px 3px 15px;
+    margin-top: 15px;
+}
 /* -------------------------------------------- */

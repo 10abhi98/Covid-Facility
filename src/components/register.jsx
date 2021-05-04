@@ -1,17 +1,17 @@
 // Libraries ->
-import React, { Component } from "react";
-import "../styles/style.css";
-import google from "../images/Google.png";
-import { auth, signInWithGoogle } from "../models/firebase";
+import React, { Component } from 'react';
+import '../styles/style.css';
+import google from '../images/Google.png';
+import { auth, signInWithGoogle } from '../models/firebase';
 
 class Register extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      email: "",
-      password: "",
-      contact: "",
+      name: '',
+      email: '',
+      password: '',
+      contact: '',
     };
   }
   async signUpWithEmailAndPasswordHandler(e, email, password) {
@@ -19,7 +19,6 @@ class Register extends Component {
     e.preventDefault();
     try {
       await auth.createUserWithEmailAndPassword(email, password);
-      console.log("success");
     } catch (error) {
       console.log(error);
     }
@@ -32,7 +31,13 @@ class Register extends Component {
 
     try {
       signInWithGoogle();
-      console.log("success");
+      console.log('success');
+      this.state({
+        name: '',
+        email: '',
+        password: '',
+        contact: '',
+      });
     } catch (error) {
       console.log(error);
     }
@@ -41,19 +46,19 @@ class Register extends Component {
   onChangeHandler(e) {
     const { name, value } = e.target;
 
-    if (name === "userName") {
+    if (name === 'userName') {
       this.setState({
         name: value,
       });
-    } else if (name === "userEmail") {
+    } else if (name === 'userEmail') {
       this.setState({
         email: value,
       });
-    } else if (name === "userPassword") {
+    } else if (name === 'userPassword') {
       this.setState({
         password: value,
       });
-    } else if (name === "userContact") {
+    } else if (name === 'userContact') {
       this.setState({
         contact: value,
       });
