@@ -17,25 +17,25 @@ import volunteerHome from "./components/dashboard";
 const history = createBrowserHistory();
 
 class App extends Component {
-	render() {
-		return (
-			<>
-				<Router history={history}>
-					<Header />
-					<div>
-						<Switch>
-							<Route path="/" exact component={HomePage} />
-							<Route path="/volunteer/register" component={Register} />
-							<Route path="/login" component={Login} />
-							<Route path="/volunteer" component={Volunteer} />
-							<Route path="/volunteer/:id" component={volunteerHome} />
-							<Route component={Error404} />
-						</Switch>
-					</div>
-				</Router>
-			</>
-		);
-	}
+  render() {
+    return (
+      <>
+        <Router history={history}>
+          <Header />
+          <div>
+            <Switch>
+              <Route path='/' exact component={HomePage} />
+              <Route path='/volunteer/register' component={Register} />
+              <Route path='/login' component={Login} />
+              <Route path='/volunteer' exact component={Volunteer} />
+              <Route path='/volunteer/:id' component={volunteerHome} />
+              <Route component={Error404} />
+            </Switch>
+          </div>
+        </Router>
+      </>
+    );
+  }
 }
 
 export default App;
