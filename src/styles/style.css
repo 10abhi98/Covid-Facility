@@ -165,8 +165,7 @@
     right: 10px;
     top: 15px;
 }
-
-#register,
+#register, #dashboard,
 #voluntee {
     color: white;
     margin-top: 105px;
@@ -255,4 +254,44 @@
     }
 }
 
-/* ----------------------------------------------- */
+/* --------------------------------------------- */
+
+
+/* -------------- Volunteer Page -------------- */
+.volunteerTasks {
+    font-size: 12px;
+    margin:30px 0px 0px 0px;
+}
+
+#hospitalActiveBtn {
+    padding: 0px 0px 0px 10px;
+    text-align: start;
+    width: 65%;
+    color:#EB8861;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+#hospitalBtn {
+    padding: 0px 0px 0px 10px;
+    text-align: start;
+    width: 65%;
+    color:#fff;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+#taskList {
+    
+    padding: 10px 120px 20px 0px;
+
+}
+
+#hospitalForm {
+    border: 1px solid #fff;
+   
+    margin-top: -100px;
+}
+
+/* -------------------------------------------- */
