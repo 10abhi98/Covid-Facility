@@ -148,9 +148,9 @@
 }
 /* ----------------------------------------------- */
 
-
-/* -------------- Registration Page -------------- */
-#logIn {
+/* -------- Registration Page / Login Page -------- */
+#logIn,
+#signUp {
     border-radius: 20px;
     border: 1px solid white;
     color: white;
@@ -160,7 +160,8 @@
     padding: 3px 15px 3px 15px;
 }
 
-#loginPlace {
+#loginPlace,
+#signUpPlace {
     position: absolute;
     right: 10px;
     top: 15px;
@@ -177,34 +178,24 @@
     width: 80%;
 }
 
-#signUp {
-    border-radius: 20px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    border-color: white !important;
-    background-color: transparent;
-    padding: 3px 15px 3px 15px;
-    margin-top: 7px;
-}
-
 #register h2,
 #register h6 {
     font-weight: 400;
 }
 
-#register ::placeholder {
+#register ::placeholder,
+#taskList ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #C0C0C0;
+    color: #808080;
     opacity: 1;
 }
 
- :-ms-input-placeholder {
+:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #C0C0C0;
 }
 
- ::-ms-input-placeholder {
+::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #C0C0C0;
 }
@@ -229,6 +220,26 @@
     color: #EB8861;
 }
 
+#gog-mob{
+    border-radius: 20px;
+    padding: 3px 15px 3px 15px;
+    margin-top: 7px;
+    visibility: hidden;
+}
+
+#gog-mob img{
+    height: 23px;
+    width: 23px;
+    float: left;
+}
+
+#gog-mob span{
+    float: left;
+    padding-left: 8px;
+    line-height: 1.3em;
+    color: #EB8861;
+}
+
 @media (max-width: 575.98px) {
     #register .form-group {
         width: 100%;
@@ -236,26 +247,17 @@
     #register h6:nth-of-type(1){
         margin-bottom: 12px;
     }
-    #signUp, #submitBtn {
+    #submitBtn {
         margin-top: 10px;
     }
-    #register h6:nth-of-type(2){
+    #deskView{
         visibility: hidden;
     }
-    #gog {
-        width: 60%;
-        float: right !important;
-        padding: 7px 15px 7px 15px !important;
-        margin-top: -127px;
-        position: relative;
-    }
-    #gog span {
-        line-height: 1.0em;
+    #gog-mob{
+        visibility: visible;
     }
 }
-
 /* --------------------------------------------- */
-
 
 /* -------------- Volunteer Page -------------- */
 .volunteerTasks {
@@ -263,16 +265,19 @@
     margin:30px 0px 0px 0px;
 }
 
-#locationActiveBtn {
-    padding: 0px 0px 0px 10px;
+.locationActiveBtn {
+    padding: 3px 0px 3px 10px;
     text-align: start;
-    width: 65%;
-    color:#EB8861;
+    width: 50%;
+    color:#EB8861 !important;
+    background: white;
     margin-bottom: 3px;
     font-size: 14px;
+    border: none;
+    border-radius: 4px;
 }
 
-#locationBtn {
+.locationBtn {
     padding: 0px 0px 0px 10px;
     text-align: start;
     width: 65%;
@@ -282,13 +287,52 @@
     font-size: 14px;
 }
 
-#taskList {
-    padding: 10px 120px 20px 0px;
+.locationBtn span{
+    font-size: 14px !important;
 }
 
 #locationForm {
     border: 1px solid #fff;
-    margin-top: -100px;
+    border-radius: 5px;
+    margin-top: -6% !important;
+    right: 1% !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#locationForm span{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#hospDetails p:nth-of-type(1){
+    font-size: 15px;
+    margin-top: -6px;
+}
+
+#hospDetails p:nth-of-type(2){
+    font-size: 14px;
+}
+
+#taskList {
+    padding: 5px 120px 20px 0px;
+}
+
+#taskList p:nth-of-type(1){
+    margin-bottom: 6px;
+}
+
+#taskList .form-group{
+    margin-bottom: 10px;
+}
+
+#taskList .form-group label{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+#taskList .form-group input{
+    font-size: 14px;
+    margin-bottom: 0px;
 }
 
 #submitBtn {
@@ -297,9 +341,11 @@
     font-weight: 600;
     font-size: 15px;
     text-decoration: none;
-     border:none;
+    border:none;
     background-color: white;
-    padding: 3px 15px 3px 15px;
-    margin-top: 15px;
+    padding: 5px 13px 5px 13px;
+    position: fixed;
+    right: 1.5% !important;
+    margin-top: -505px !important;
 }
 /* -------------------------------------------- */

@@ -2,7 +2,7 @@ html,body{
     height: 100%;
 }
 body {
-    background: linear-gradient(#EC8D67, #B4674F) !important;
+    background: linear-gradient(#EC8D67,#B4674F) !important;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
