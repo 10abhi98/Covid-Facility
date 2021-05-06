@@ -1,0 +1,13 @@
+To retrieve all documents from a collection "Users"
+    data = await firebase.firestore().collection("Users").get()  // has all documents of the collection
+    data.docs // to iterate over all the docs
+
+To retrieve logged in user uid
+    const userId = firebase.User.user?.uid;
+
+CRUD operations on a particular document
+    const documentReference = firebase.firestore().collection('Users');
+    documentReference.doc(userId).set({ key: value });
+    documentReference.doc(userId).update({ key: value });
+    documentReference.doc(userId).delete()
+    documentReference.add({ key: value });
