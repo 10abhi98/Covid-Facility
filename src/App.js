@@ -28,7 +28,7 @@ class App extends Component {
 							<Route path='/volunteer/register' component={Register} />
 							<Route path='/volunteer/login' component={Login} />
 							<Route path='/volunteer' exact component={Volunteer} />
-							<Route path='/volunteer/:id' component={volunteerHome} />
+							<Route path='/volunteer/dashboard' component={volunteerHome} />
 							<Route component={Error404} />
 						</Switch>
 					</div>

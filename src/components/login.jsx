@@ -1,9 +1,27 @@
+// Libraries ->
 import React, { Component } from 'react'
 import '../styles/style.css';
 import google from '../images/Google.png';
-// import { auth, signInWithGoogle } from '../models/firebase';
+import { auth, signInWithGoogle } from '../models/firebase';
 
 class Login extends Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			userEmail : '',
+			userPassword : ''
+		}
+		// Bind Functions ->
+		this.onChangeHandler = this.onChangeHandler.bind(this);
+	}
+
+	// On Change Event Handler ->
+	onChangeHandler = (e) => {
+		this.setState({
+			[e.target.name] : e.target.value
+		})
+	}
+
     render() {
         return (
             <>
@@ -25,7 +43,7 @@ class Login extends Component {
 										className='form-control'
 										placeholder='Email ID'
                                         required
-										// onChange={(event) => this.onChangeHandler(event)}
+										onChange={this.onChangeHandler}
 									/>
 								</div>
 								<div className='form-group'>
@@ -35,7 +53,7 @@ class Login extends Component {
 										className='form-control'
 										placeholder='Password'
                                         required
-										// onChange={(event) => this.onChangeHandler(event)}
+										onChange={this.onChangeHandler}
 									/>
 								</div>
 								<div className='row'>

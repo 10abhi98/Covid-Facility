@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
 import google from '../images/Google.png';
-import { auth, signInWithGoogle } from '../models/firebase';
+import {useAuth} from '../models/AuthContext';
 
 class Register extends Component {
 	constructor(props) {
@@ -12,41 +12,60 @@ class Register extends Component {
 			userEmail: '',
 			userPassword: '',
 			userContact: '',
+			error: '',
+			loading: false
 		};
 
 		// Bind Functions ->
-		this.signUpWithEmailAndPasswordHandler = this.signUpWithEmailAndPasswordHandler.bind(this);
-		this.signUpWithGoogleHandler = this.signUpWithGoogleHandler.bind(this);
+		// this.signUpWithEmailAndPasswordHandler = this.signUpWithEmailAndPasswordHandler.bind(this);
+		// this.signUpWithGoogleHandler = this.signUpWithGoogleHandler.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
 		this.onChangeHandler = this.onChangeHandler.bind(this);
 	}
-	async signUpWithEmailAndPasswordHandler(e, email, password) {
-		console.log(e, email, password);
+
+	// Sign Up User ->
+	async handleSubmit (e){
 		e.preventDefault();
 		try {
-			await auth.createUserWithEmailAndPassword(email, password);
-		} catch (error) {
+			this.setState({loading : true})
+		  	await useAuth.value.signUp(this.state.userName, this.state.userEmail, this.state.userPassword, this.state.userContact)
+			this.props.history.push('/volunteer/dashboard');
+		} catch (error){
 			console.log(error);
 		}
-	}
+		this.setState({loading : false});
+	  }
 
-	async signUpWithGoogleHandler(e, email, password) {
-		console.log(e, email, password);
 
-		e.preventDefault();
+	// async signUpWithEmailAndPasswordHandler(e, email, password) {
+	// 	console.log(e, email, password);
+	// 	e.preventDefault();
+	// 	try {
+	// 		await auth.createUserWithEmailAndPassword(email, password);
+	// 		console.log(auth.currentUser.uid)
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 	}
+	// }
 
-		try {
-			signInWithGoogle();
-			console.log('success');
-			this.state({
-				userName: '',
-				userEmail: '',
-				userPassword: '',
-				userContact: '',
-			});
-		} catch (error) {
-			console.log(error);
-		}
-	}
+	// async signUpWithGoogleHandler(e, email, password) {
+	// 	console.log(e, email, password);
+
+	// 	e.preventDefault();
+
+	// 	try {
+	// 		signInWithGoogle();
+	// 		console.log('success');
+	// 		this.state({
+	// 			userName: '',
+	// 			userEmail: '',
+	// 			userPassword: '',
+	// 			userContact: '',
+	// 		});
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 	}
+	// }
 
 	// Change Event Handler ->
 	onChangeHandler = (e) => {
@@ -115,13 +134,7 @@ class Register extends Component {
 											id='signUp'
 											type='submit'
 											className='button'
-											onClick={(event) => {
-												this.signUpWithEmailAndPasswordHandler(
-													event,
-													this.state.userEmail,
-													this.state.userPassword
-												);
-											}}
+											onClick={this.handleSubmit}
 											style = {{marginTop : '7px'}}
 										>
 											Sign Up
