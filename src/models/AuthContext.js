@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { auth } from "./firebase";
-import { addData } from "./userData";
+import { addData } from "./UserData";
 import { provider } from "./firebase";
 
 const AuthContext = React.createContext();
@@ -16,9 +16,8 @@ export class AuthProvider extends Component {
         // Bind Functions ->
         this.authListener = this.authListener.bind(this);
         this.signUpWithEmail = this.signUpWithEmail.bind(this);
-        this.signUpWithGoogle = this.signUpWithGoogle.bind(this);
+        this.signUpWithGoogle = this.signUpWithGoogle.bind(this);   // Same Method for Google LogIn/SignUp
         this.logInWithEmail = this.logInWithEmail.bind(this);
-        this.logInWithGoogle = this.logInWithGoogle.bind(this);
     }
 
     componentDidMount() {
@@ -35,7 +34,7 @@ export class AuthProvider extends Component {
             });
     }
 
-    // User signup/login with Google ->
+    // User Signup/Login with Google ->
     signUpWithGoogle(){
         return auth
             .signInWithPopup(provider)
@@ -48,11 +47,6 @@ export class AuthProvider extends Component {
     // User login with Email & Password ->
     logInWithEmail(email,password){
         return auth.signInWithEmailAndPassword(email, password);
-    }
-
-    // User login with Google ->
-    logInWithGoogle(){
-        return auth.signInWithPopup(provider);
     }
 
     // User logout ->

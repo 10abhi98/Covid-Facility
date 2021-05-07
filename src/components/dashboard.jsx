@@ -158,7 +158,7 @@ class Dashboard extends Component {
                     />
                 </div>
             );
-        });
+        }); 
     };
 
     render() {

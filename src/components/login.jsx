@@ -19,9 +19,10 @@ class Login extends Component {
         this.clearError = this.clearError.bind(this);
         this.clearInputs = this.clearInputs.bind(this);
         this.errorHandler = this.errorHandler.bind(this);
-		this.logInWithEmail = this.logInWithEmail.bind(this);
-		this.logInWithGoogle = this.logInWithGoogle.bind(this);
+		this.logInWithEmailHandler = this.logInWithEmailHandler.bind(this);
+		this.logInWithGoogleHandler = this.logInWithGoogleHandler.bind(this);
         this.onChangeHandler = this.onChangeHandler.bind(this);
+        this._isMounted = false;
     }
 
     // Clear Errors ->
@@ -54,11 +55,13 @@ class Login extends Component {
                 this.setState({
                     passError: err.message,
                 });
+                break;
+            default:
         }
     }
 
-    // User log in with Email ->
-    async logInWithEmail(e) {
+    // User login with Email ->
+    async logInWithEmailHandler(e) {
 		e.preventDefault();
 		const {logInWithEmail} = this.context;
 		try{
@@ -76,20 +79,20 @@ class Login extends Component {
 		this.setState({ loading: false });
 	}
 
-	async logInWithGoogle(e) {
-		e.preventDefault();
-		const {logInWithGoogle} = this.context;
-		try{
-			this.clearError();
-            this.setState({ loading: true });
-			await logInWithGoogle()
-			this.clearInputs();
-			this.props.history.push('/volunteer/dashboard');
-		} catch(err){
-			this.errorHandler(err)
-		}
-		this.setState({ loading: false });
-	}
+	// User login with Google ->
+    async logInWithGoogleHandler(e) {
+    	e.preventDefault();
+        const { signUpWithGoogle } = this.context;
+    	try {
+            this.clearError();
+    		await signUpWithGoogle();
+            this.clearInputs();
+            this.props.history.push("/volunteer/dashboard");
+    	} catch (err) {
+    		this.errorHandler(err);
+    	}
+        this.setState({ loading: false });
+    }
 
     // On Change Event Handler ->
     onChangeHandler = (e) => {
@@ -108,7 +111,7 @@ class Login extends Component {
                         onClick={() =>
                             this.props.history.push("/volunteer/register")
                         }
-                    >
+                    >      
                         Sign Up
                     </button>
                 </div>
@@ -151,9 +154,10 @@ class Login extends Component {
                                             type='submit'
                                             className='button'
 											disabled={this.state.loading}
-                                            onClick={this.logInWithEmail}
+                                            onClick={this.logInWithEmailHandler}
                                             style={{ marginTop: "7px" }}
-                                        >
+                                        >   
+                                            {this.state.loading && (<i className="fad fa-circle-notch fa-spin"></i>)}
                                             Log In
                                         </button>
                                     </div>
@@ -163,7 +167,7 @@ class Login extends Component {
                                             type='button'
                                             className='btn shadow-sm bg-white'
 											disabled={this.state.loading}
-                                            onClick={this.logInWithGoogle}
+                                            onClick={this.logInWithGoogleHandler}
                                         >
                                             <img src={google} alt='Google' />
                                             <span>Log In with Google</span>
@@ -181,7 +185,7 @@ class Login extends Component {
                                     id='gog'
                                     type='button'
                                     className='btn shadow-sm bg-white'
-                                    onClick={this.logInWithGoogle}
+                                    onClick={this.logInWithGoogleHandler}
                                 >
                                     <img src={google} alt='Google' />
                                     <span>Log In with Google</span>

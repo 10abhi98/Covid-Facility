@@ -60,6 +60,8 @@ class Register extends Component {
                 this.setState({
                     passError: err.message,
                 });
+                break;
+            default:
         }
     }
 
@@ -109,11 +111,6 @@ class Register extends Component {
     render() {
         return (
             <>
-                {/* <div id = "loader">
-                    <div className="spinner-border text-secondary" role="status">
-                        <span className="sr-only">Loading...</span>
-                    </div>
-                </div> */}
                 <div id="loginPlace" className="float-right">
                     <button
                         id="logIn"
@@ -181,7 +178,7 @@ class Register extends Component {
                                     />
                                 </div>
                                 <div className="row">
-                                    <div className="col-sm-3 col-4">
+                                    <div className="col-sm-4 col-4">
                                         <button
                                             id="signUp"
                                             type="submit"
@@ -190,6 +187,7 @@ class Register extends Component {
                                             onClick={this.signUpWithEmailHandler}
                                             style={{ marginTop: "7px" }}
                                         >
+                                            {this.state.loading && (<i className="fad fa-circle-notch fa-spin"></i>)}
                                             Sign Up
                                         </button>
                                     </div>

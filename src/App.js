@@ -1,9 +1,10 @@
 // Router
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import PrivateRoute from './models/PrivateRoute'
+import PublicRoute from './models/PublicRoute'
 
 // React
 import React, { Component } from 'react';
-import { createBrowserHistory } from 'history';
 
 // Components ->
 import Login from './components/login';
@@ -15,22 +16,20 @@ import Header from './components/header';
 import volunteerHome from './components/dashboard';
 import { AuthProvider } from './models/AuthContext';
 
-const history = createBrowserHistory();
-
 class App extends Component {
 	render() {
 		return (
 			<>
 			<AuthProvider>
-				<Router history={history}>
+				<Router>
 					<Header />
 					<div>
 						<Switch>
-							<Route path='/' exact component={HomePage} />
-							<Route path='/volunteer/register' component={Register} />
-							<Route path='/volunteer/login' component={Login} />
-							<Route path='/volunteer' exact component={Volunteer} />
-							<Route path='/volunteer/dashboard' component={volunteerHome} />
+							<PublicRoute restricted={false} path='/' exact component={HomePage} />
+							<PublicRoute restricted={true} path='/volunteer/register' component={Register} />
+							<PublicRoute restricted={true} path='/volunteer/login' component={Login} />
+							<PublicRoute restricted={true} path='/volunteer' exact component={Volunteer} />
+							<PrivateRoute path='/volunteer/dashboard' component={volunteerHome} />
 							<Route component={Error404} />
 						</Switch>
 					</div>
