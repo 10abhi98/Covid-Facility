@@ -150,7 +150,8 @@
 
 /* -------- Registration Page / Login Page -------- */
 #logIn,
-#signUp {
+#signUp,
+#logOut {
     border-radius: 20px;
     border: 1px solid white;
     color: white;
@@ -161,7 +162,8 @@
 }
 
 #loginPlace,
-#signUpPlace {
+#signUpPlace,
+#logoutPlace {
     position: absolute;
     right: 10px;
     top: 15px;
@@ -238,6 +240,17 @@
     padding-left: 8px;
     line-height: 1.3em;
     color: #EB8861;
+}
+
+small {
+    color: pink;
+}
+
+#loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
 }
 
 @media (max-width: 575.98px) {

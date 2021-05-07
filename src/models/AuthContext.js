@@ -1,42 +1,93 @@
-import React, {useState, useEffect, useContext} from 'react'
-import {auth} from './firebase.js'
+import React, { Component } from "react";
+import { auth } from "./firebase";
+import { addData } from "./userData";
+import { provider } from "./firebase";
 
 const AuthContext = React.createContext();
 
-export function useAuth() {
-    return useContext(AuthContext)
-}
+export class AuthProvider extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentUser: null,
+            loading: true,
+        };
 
-export const AuthProvider = ({children}) =>{
-    // Intially Set State ->
-    const[loading, setLoading] = useState(true);
-    const[currentUser, setCurrentUser] = useState(null);
+        // Bind Functions ->
+        this.authListener = this.authListener.bind(this);
+        this.signUpWithEmail = this.signUpWithEmail.bind(this);
+        this.signUpWithGoogle = this.signUpWithGoogle.bind(this);
+        this.logInWithEmail = this.logInWithEmail.bind(this);
+        this.logInWithGoogle = this.logInWithGoogle.bind(this);
+    }
 
-    // Signup Function ->
-    function signUp(name, email, password, contact = 0){
-        auth.createUserWithEmailAndPassword(email,password).then((user) =>{
-            console.log(user);
+    componentDidMount() {
+        this.authListener();
+    }
+
+    // User signUp With Email & Password->
+    signUpWithEmail(name, email, password, contact = null) {
+        return auth
+            .createUserWithEmailAndPassword(email, password)
+            .then((res) => {
+                const user = res.user;
+                addData(user.uid, name, email, contact);
+            });
+    }
+
+    // User signup/login with Google ->
+    signUpWithGoogle(){
+        return auth
+            .signInWithPopup(provider)
+            .then((res) => {
+                const user = res.user;
+                addData(user.uid, user.displayName, user.email, user.phoneNumber);
         });
+    };
 
-        
+    // User login with Email & Password ->
+    logInWithEmail(email,password){
+        return auth.signInWithEmailAndPassword(email, password);
     }
-    
-    // Check Active State of User ->
-    useEffect(() =>{
-        auth.onAuthStateChanged((user) =>{
-            setCurrentUser(user);
-            setLoading(false);
-        })
-    }, []);
 
-    const value = {
-        currentUser,
-        signUp,
+    // User login with Google ->
+    logInWithGoogle(){
+        return auth.signInWithPopup(provider);
     }
-    
-    return (
-        <AuthContext.Provider value={{ value }}>
-            {!loading && children}
-        </AuthContext.Provider>
-    );
+
+    // User logout ->
+    logout = () => {
+        return auth.signOut();
+    }
+
+    // Authenticate user (to check if user is logged) ->
+    authListener() {
+        auth.onAuthStateChanged((user) => {
+            this.setState({
+                currentUser: user,
+                loading: false,
+            });
+        });
+    }
+    render() {
+        const { currentUser, loading } = this.state;
+        const { signUpWithEmail, signUpWithGoogle, logInWithEmail, logInWithGoogle, logout } = this;
+        return (
+            <AuthContext.Provider
+                value={{
+                    currentUser,
+                    loading,
+                    signUpWithEmail,
+                    signUpWithGoogle,
+                    logInWithEmail,
+                    logInWithGoogle,
+                    logout
+                }}
+            >
+                {!loading && this.props.children}
+            </AuthContext.Provider>
+        );
+    }
 }
+
+export default AuthContext;

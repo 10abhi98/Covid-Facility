@@ -1,5 +1,17 @@
-// import { firestore } from './firebase';
+import { firestore } from './firebase';
 
-// function addData(name, email, password, contact){
-//     const doument = firestore.collection('Volunteers');
-// }
+// Create New User ->
+function addData(userId, name, email, contact){
+    const userDocument = firestore.collection('volunteers');
+    userDocument.doc(userId).set({
+        volunteer_id : userId,
+        name : name,
+        email : email,
+        contact : contact,
+        tasks_assigned : [],
+        tasks_completed : 0,
+        type : "On-Call Activist"
+    })
+}
+
+export {addData}

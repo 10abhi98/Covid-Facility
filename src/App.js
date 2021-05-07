@@ -13,6 +13,7 @@ import HomePage from './components/homepage';
 import Volunteer from './components/volunteer';
 import Header from './components/header';
 import volunteerHome from './components/dashboard';
+import { AuthProvider } from './models/AuthContext';
 
 const history = createBrowserHistory();
 
@@ -20,6 +21,7 @@ class App extends Component {
 	render() {
 		return (
 			<>
+			<AuthProvider>
 				<Router history={history}>
 					<Header />
 					<div>
@@ -33,6 +35,7 @@ class App extends Component {
 						</Switch>
 					</div>
 				</Router>
+			</AuthProvider>
 			</>
 		);
 	}
