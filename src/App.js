@@ -14,6 +14,7 @@ import HomePage from './components/homepage';
 import Volunteer from './components/volunteer';
 import Header from './components/header';
 import volunteerHome from './components/dashboard';
+import Admin from './components/admin';
 import { AuthProvider } from './models/AuthContext';
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
 							<PublicRoute restricted={true} path='/volunteer/login' component={Login} />
 							<PublicRoute restricted={true} path='/volunteer' exact component={Volunteer} />
 							<PrivateRoute path='/volunteer/dashboard' component={volunteerHome} />
+							<Route path = '/volunteer/admin' component={Admin}/>
 							<Route component={Error404} />
 						</Switch>
 					</div>

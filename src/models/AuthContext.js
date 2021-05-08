@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { auth } from "./firebase";
-import { addData } from "./UserData";
+import { addUserData } from "./FirebaseHandler";
 import { provider } from "./firebase";
 
 const AuthContext = React.createContext();
@@ -30,7 +30,7 @@ export class AuthProvider extends Component {
             .createUserWithEmailAndPassword(email, password)
             .then((res) => {
                 const user = res.user;
-                addData(user.uid, name, email, contact);
+                addUserData(user.uid, name, email, contact);
             });
     }
 
@@ -40,7 +40,7 @@ export class AuthProvider extends Component {
             .signInWithPopup(provider)
             .then((res) => {
                 const user = res.user;
-                addData(user.uid, user.displayName, user.email, user.phoneNumber);
+                addUserData(user.uid, user.displayName, user.email, user.phoneNumber);
         });
     };
 
