@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { auth } from "./firebase";
-import { addUserData } from "./FirebaseHandler";
-import { provider } from "./firebase";
+import React, { Component } from 'react';
+import { auth } from './Firebase';
+import { addUserData } from './FirebaseHandler';
+import { provider } from './Firebase';
 
 const AuthContext = React.createContext();
 
@@ -16,7 +16,7 @@ export class AuthProvider extends Component {
         // Bind Functions ->
         this.authListener = this.authListener.bind(this);
         this.signUpWithEmail = this.signUpWithEmail.bind(this);
-        this.signUpWithGoogle = this.signUpWithGoogle.bind(this);   // Same Method for Google LogIn/SignUp
+        this.signUpWithGoogle = this.signUpWithGoogle.bind(this); // Same Method for Google LogIn/SignUp
         this.logInWithEmail = this.logInWithEmail.bind(this);
     }
 
@@ -35,23 +35,31 @@ export class AuthProvider extends Component {
     }
 
     // User Signup/Login with Google ->
-    signUpWithGoogle(){
-        return auth
-            .signInWithPopup(provider)
-            .then((res) => {
-                const user = res.user;
-                addUserData(user.uid, user.displayName, user.email, user.phoneNumber);
+    signUpWithGoogle() {
+        return auth.signInWithPopup(provider).then((res) => {
+            const user = res.user;
+            addUserData(
+                user.uid,
+                user.displayName,
+                user.email,
+                user.phoneNumber
+            );
         });
-    };
+    }
 
     // User login with Email & Password ->
-    logInWithEmail(email,password){
+    logInWithEmail(email, password) {
         return auth.signInWithEmailAndPassword(email, password);
     }
 
     // User logout ->
     logout = () => {
         return auth.signOut();
+    };
+
+    // User password reset ->
+    resetPassword(email) {
+        return auth.sendPasswordResetEmail(email);
     }
 
     // Authenticate user (to check if user is logged) ->
@@ -65,7 +73,14 @@ export class AuthProvider extends Component {
     }
     render() {
         const { currentUser, loading } = this.state;
-        const { signUpWithEmail, signUpWithGoogle, logInWithEmail, logInWithGoogle, logout } = this;
+        const {
+            signUpWithEmail,
+            signUpWithGoogle,
+            logInWithEmail,
+            logInWithGoogle,
+            logout,
+            resetPassword
+        } = this;
         return (
             <AuthContext.Provider
                 value={{
@@ -75,7 +90,8 @@ export class AuthProvider extends Component {
                     signUpWithGoogle,
                     logInWithEmail,
                     logInWithGoogle,
-                    logout
+                    logout,
+                    resetPassword
                 }}
             >
                 {!loading && this.props.children}

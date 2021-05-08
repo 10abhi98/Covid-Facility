@@ -1,39 +1,40 @@
 // Libraries ->
-import React, { Component } from "react";
-import "../styles/style.css";
-import AuthContext from "../models/AuthContext";
+import React, { Component } from 'react';
+import '../styles/style.css';
+import AuthContext from '../services/AuthContext';
+import { getUserData } from '../services/FirebaseHandler';
 
 // Sample Data ->
-let smallTaskLocations = ["Ganga Ram Hospital", "Medicare Pharmacy"];
-let mediumTaskLocations = ["Shree Hospital", "Dharamvir Pharmacy"];
-let longTaskLocations = ["Sant Soham Hospital"];
+let smallTaskLocations = ['Ganga Ram Hospital', 'Medicare Pharmacy'];
+let mediumTaskLocations = ['Shree Hospital', 'Dharamvir Pharmacy'];
+let longTaskLocations = ['Sant Soham Hospital'];
 let hospitalQuestionarre = {
-    Beds: "How many beds are available?",
-    Oxygen: "How much Oxygen is available?",
-    "New Patients": "How many New Patients were admitted in the last hour?",
-    "Waiting Patients": "How many patients are waiting outside?",
-    Remidisivir: "How much Remidisivir is available?",
+    Beds: 'How many beds are available?',
+    Oxygen: 'How much Oxygen is available?',
+    'New Patients': 'How many New Patients were admitted in the last hour?',
+    'Waiting Patients': 'How many patients are waiting outside?',
+    Remidisivir: 'How much Remidisivir is available?',
 };
 let locationDetails = {
     name: [
-        "Ganga Ram Hospital",
-        "Medicare Pharmacy",
-        "Shree Hospital",
-        "Dharamvir Pharmacy",
-        "Sant Soham Hospital",
+        'Ganga Ram Hospital',
+        'Medicare Pharmacy',
+        'Shree Hospital',
+        'Dharamvir Pharmacy',
+        'Sant Soham Hospital',
     ],
     address: [
-        "Jawahar Lal Nehru Marg,Delhi.110002",
-        "Model Town",
-        "Saket",
-        "Rohini",
-        "Sarita Vihar",
+        'Jawahar Lal Nehru Marg,Delhi.110002',
+        'Model Town',
+        'Saket',
+        'Rohini',
+        'Sarita Vihar',
     ],
     contact: [9865341234, 7653412345, 8765432112, 9734501821, 7340501234],
-    response: ["Quickly", "Late", "Quickly", "Late", "Quickly"],
+    response: ['Quickly', 'Late', 'Quickly', 'Late', 'Quickly'],
 };
 let pharmacyQuestionarre = {
-    Remidisivir: "How much Remidisivir is available?",
+    Remidisivir: 'How much Remidisivir is available?',
 };
 // End of Sample Data ->
 
@@ -43,15 +44,16 @@ class Dashboard extends Component {
         super(props);
         this.state = {
             locationName: smallTaskLocations[0],
-            address: locationDetails["address"][0],
-            contact: locationDetails["contact"][0],
-            response: locationDetails["response"][0],
+            address: locationDetails['address'][0],
+            contact: locationDetails['contact'][0],
+            response: locationDetails['response'][0],
             activeBtn: smallTaskLocations[0],
-            beds: "",
-            oxygen: "",
-            newPatients: "",
-            waitingPatients: "",
-            remidisivir: "",
+            beds: '',
+            oxygen: '',
+            newPatients: '',
+            waitingPatients: '',
+            remidisivir: '',
+            displayName: '',
         };
 
         // Bind Functions ->
@@ -61,6 +63,11 @@ class Dashboard extends Component {
         this.userLogOut = this.userLogOut.bind(this);
         this.tasksAssignment = this.tasksAssignment.bind(this);
         this.displayQuestionarre = this.displayQuestionarre.bind(this);
+        this.userInfo = this.userInfo.bind(this);
+    }
+
+    componentDidMount() {
+        this.userInfo();
     }
 
     // On Change Handler
@@ -74,32 +81,41 @@ class Dashboard extends Component {
     submitInfoHandler(e) {
         e.preventDefault();
         console.log(
-            "Beds             ->" +
+            'Beds             ->' +
                 this.state.beds +
-                "\n" +
-                "Oxygen           ->" +
+                '\n' +
+                'Oxygen           ->' +
                 this.state.oxygen +
-                "\n" +
-                "New Patients     ->" +
+                '\n' +
+                'New Patients     ->' +
                 this.state.newPatients +
-                "\n" +
-                "Waiting Patients ->" +
+                '\n' +
+                'Waiting Patients ->' +
                 this.state.waitingPatients +
-                "\n" +
-                "Remidisivir      ->" +
+                '\n' +
+                'Remidisivir      ->' +
                 this.state.remidisivir +
-                "\n"
+                '\n'
         );
     }
 
-    // Set Loction Function
+    // Set Location Function ->
     selectLocation(e, location, index) {
         this.setState({
             locationName: location,
             activeBtn: location,
-            address: locationDetails["address"][index],
-            contact: locationDetails["contact"][index],
-            response: locationDetails["response"][index],
+            address: locationDetails['address'][index],
+            contact: locationDetails['contact'][index],
+            response: locationDetails['response'][index],
+        });
+    }
+
+    // user Info ->
+    async userInfo() {
+        const { currentUser } = this.context;
+        const name = await getUserData(currentUser.uid);
+        this.setState({
+            displayName: name.split(' ')[0].trim(),
         });
     }
 
@@ -122,8 +138,8 @@ class Dashboard extends Component {
                     key={location + index}
                     className={
                         this.state.activeBtn === location
-                            ? "locationActiveBtn"
-                            : "locationBtn"
+                            ? 'locationActiveBtn'
+                            : 'locationBtn'
                     }
                     type='button'
                     onClick={(e) => this.selectLocation(e, location, index)}
@@ -139,7 +155,7 @@ class Dashboard extends Component {
     // Questionarre Display Function ->
     displayQuestionarre = (type) => {
         return Object.entries(type).map((value, index) => {
-            const val = value[0].split(" ");
+            const val = value[0].split(' ');
             return (
                 <div className='form-group' key={value[0] + index}>
                     <label>
@@ -158,21 +174,25 @@ class Dashboard extends Component {
                     />
                 </div>
             );
-        }); 
+        });
     };
 
     render() {
         return (
             <>
                 <div id='logoutPlace' className='float-right'>
-                    <button id='logOut' className='button' onClick = {this.userLogOut}>
+                    <button
+                        id='logOut'
+                        className='button'
+                        onClick={this.userLogOut}
+                    >
                         Logout
                     </button>
                 </div>
                 <div id='dashboard' className='container-fluid'>
                     <div className='row ml-md-5'>
                         <div className='col-md-5 pl-md-5'>
-                            <h2>Welcome Nirbhay!</h2>
+                            <h2>Welcome {this.state.displayName}!</h2>
                             {this.state.activeBtn && <p>Pick a task.</p>}
 
                             {/* Small Tasks */}
@@ -217,7 +237,7 @@ class Dashboard extends Component {
                                     {/* Questionarre (Hospital/Pharmacy) */}
                                     {this.state.locationName
                                         .toLowerCase()
-                                        .includes("hospital")
+                                        .includes('hospital')
                                         ? this.displayQuestionarre(
                                               hospitalQuestionarre
                                           )

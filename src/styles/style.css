@@ -186,6 +186,7 @@
     width: 80%;
 }
 
+
 #register h2,
 #register h6 {
     font-weight: 400;
@@ -259,6 +260,18 @@ small {
     z-index: 999;
 }
 
+.resetPass {
+    color: #fff;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+}
+
+#resetPasswordModal {
+    color:black !important;
+
+}
+
 @media (max-width: 575.98px) {
     #register .form-group {
         width: 100%;
@@ -276,6 +289,8 @@ small {
         visibility: visible;
     }
 }
+
+
 /* --------------------------------------------- */
 
 /* -------------- Volunteer Page -------------- */
