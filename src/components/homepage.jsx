@@ -1,8 +1,8 @@
 // Libraries ->
 import React, { Component } from "react";
 import "../styles/style.css";
-import { getLocationData } from '../services/FirebaseHandler'
-import { firestore } from '../services/Firebase';
+import { getLocationData } from "../services/FirebaseHandler";
+import { firestore } from "../services/Firebase";
 // Mapbox Lib ->
 import mapboxgl from "mapbox-gl/dist/mapbox-gl-csp";
 // eslint-disable-next-line import/no-webpack-loader-syntax
@@ -53,12 +53,12 @@ class homepage extends Component {
             lat: 28.64,
             zoom: 9,
             activeDiv: null,
-            locationData : [],
-            wait : false
+            locationData: [],
+            wait: false,
         };
         this.mapContainer = React.createRef();
         this.handleClick = this.handleClick.bind(this);
-        this.getLocData = this.getLocData.bind(this);
+        // this.getLocData = this.getLocData.bind(this);
     }
 
     componentDidMount() {
@@ -80,15 +80,16 @@ class homepage extends Component {
         });
 
         // Fetch Data from Firestore Database ->
-        this.getLocData();
-    }
-
-    async getLocData(){
-        const res = await getLocationData();
-        this.setState({
-            locationData : res,
-            wait : true
-        })
+        const locationDocument = firestore.collection("locations");
+        locationDocument.onSnapshot((snapshot) => {
+            let locData = [];
+            snapshot.forEach((doc) => {
+                locData.push(doc.data());
+            });
+            this.setState({
+                locationData: locData,
+            });
+        });
     }
 
     handleClick = (divName) => {
@@ -98,13 +99,21 @@ class homepage extends Component {
     };
 
     renderData = () => {
-        console.log(this.state.locationData)
-        let results = [];
-        for (var i = 0; i < hospitals.length; i++) {
-            const divName = "d" + (i + 1);
-            results.push(
+        return this.state.locationData.map((loc, index) => {
+            const hospitalName = loc['Name'];
+            const address = 
+                    ( (loc['Address']['Street'] ? loc['Address']['Street'] + ',' : '') +
+                      (loc['Address']['City'] ? loc['Address']['City'] + ',' : '') +
+                      (loc['Address']['State'] ? loc['Address']['State'] : 'New Delhi') +
+                      (loc['Address']['Pincode'] ? '-' + loc['Address']['Pincode'] : '')
+                    );
+            const contact = loc['Contact'][0] + (loc['Contact'][1] ? ', ' + loc['Contact'][1] : '');
+            const divName = "d" + (index + 1);
+            const availableBeds = loc['Tasks_Info']['Beds']['Count'] === 0 ? loc['Tasks_Info']['Beds']['Count'] : '-' ;
+            const totalBeds = loc['Total_Beds'];
+            return (
                 <div
-                    key={i}
+                    key={index}
                     onClick={() => this.handleClick(divName)}
                     className={
                         this.state.activeDiv === divName
@@ -114,18 +123,18 @@ class homepage extends Component {
                 >
                     <p>
                         <span>
-                            {hospitals[i]}
+                            {hospitalName}
                             <br />
                         </span>
                         {this.state.activeDiv === divName ? (
                             <>
                                 <div>
                                     <i className='fas fa-map-marker-alt pr-2'></i>
-                                    {address[i]}
+                                    {address}
                                 </div>
                                 <div>
                                     <i className='fas fa-phone-alt pr-1'></i>
-                                    {phone[i]}
+                                    {contact}
                                 </div>
                             </>
                         ) : null}
@@ -133,15 +142,15 @@ class homepage extends Component {
                     <div className='row'>
                         <div className='col-sm-4'>
                             Available Beds
-                            <div>{beds[i]}/150</div>
+                            <div>{availableBeds}/{totalBeds}</div>
                         </div>
                         <div className='col-sm-4'>
                             New Admits
-                            <div>{admits[i]}/hr</div>
+                            <div>-/hr</div>
                         </div>
                         <div className='col-sm-4'>
                             Patients Waiting
-                            <div>{waiting[i]}</div>
+                            <div>-</div>
                         </div>
                     </div>
                     <div
@@ -156,8 +165,66 @@ class homepage extends Component {
                     <hr />
                 </div>
             );
-        }
-        return <>{results}</>;
+        });
+        // let results = [];
+        // for (var i = 0; i < hospitals.length; i++) {
+        //     const divName = "d" + (i + 1);
+        //     results.push(
+        //         <div
+        //             key={i}
+        //             onClick={() => this.handleClick(divName)}
+        //             className={
+        //                 this.state.activeDiv === divName
+        //                     ? "dispBed pb-2"
+        //                     : "pb-2"
+        //             }
+        //         >
+        //             <p>
+        //                 <span>
+        //                     {hospitals[i]}
+        //                     <br />
+        //                 </span>
+        //                 {this.state.activeDiv === divName ? (
+        //                     <>
+        //                         <div>
+        //                             <i className='fas fa-map-marker-alt pr-2'></i>
+        //                             {address[i]}
+        //                         </div>
+        //                         <div>
+        //                             <i className='fas fa-phone-alt pr-1'></i>
+        //                             {phone[i]}
+        //                         </div>
+        //                     </>
+        //                 ) : null}
+        //             </p>
+        //             <div className='row'>
+        //                 <div className='col-sm-4'>
+        //                     Available Beds
+        //                     <div>{beds[i]}/150</div>
+        //                 </div>
+        //                 <div className='col-sm-4'>
+        //                     New Admits
+        //                     <div>{admits[i]}/hr</div>
+        //                 </div>
+        //                 <div className='col-sm-4'>
+        //                     Patients Waiting
+        //                     <div>{waiting[i]}</div>
+        //                 </div>
+        //             </div>
+        //             <div
+        //                 style={{
+        //                     color: "#48B3BC",
+        //                     fontSize: "0.7em",
+        //                     paddingTop: "2px",
+        //                 }}
+        //             >
+        //                 Verified 10 mins ago
+        //             </div>
+        //             <hr />
+        //         </div>
+        //     );
+        // }
+        // return <>{results}</>;
     };
     render() {
         const { lng, lat, zoom } = this.state;
@@ -183,7 +250,7 @@ class homepage extends Component {
                             </p>
                             <div>
                                 <div id='scr' className='scrollbar'>
-                                    {this.state.wait && this.renderData()}
+                                    {this.renderData()}
                                 </div>
                             </div>
                         </div>
