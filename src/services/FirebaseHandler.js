@@ -46,16 +46,5 @@ function addLocationData(locations) {
 }
 
 // Fetch Location Data ->
-function getLocationData(){
-    var res = [];
-    const locationDocument = firestore.collection('locations');
-    locationDocument.onSnapshot((snapshot) => {
-        snapshot.forEach((doc) => {
-            res.push(doc.data());
-        })
-    })
-    return res;
-}
 
-
-export { addUserData , getUserData, addLocationData, getLocationData };
+export { addUserData, getUserData, addLocationData };
