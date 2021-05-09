@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import '../styles/style.css';
 import google from '../images/Google.png';
 import AuthContext from '../services/AuthContext';
+import ResetPassword from './resetpassword';
 
 class Login extends Component {
     static contextType = AuthContext;
@@ -13,8 +14,8 @@ class Login extends Component {
             userPassword: '',
             emailError: '',
             passError: '',
-            resetEmail: '',
             loading: false,
+            modal: 'hide'
         };
         // Bind Functions ->
         this.clearError = this.clearError.bind(this);
@@ -23,7 +24,7 @@ class Login extends Component {
         this.logInWithEmailHandler = this.logInWithEmailHandler.bind(this);
         this.logInWithGoogleHandler = this.logInWithGoogleHandler.bind(this);
         this.onChangeHandler = this.onChangeHandler.bind(this);
-        this.resetPasswordHandler = this.resetPasswordHandler.bind(this);
+        this.resetPasswordModal = this.resetPasswordModal.bind(this);
         // this._isMounted = false;
     }
 
@@ -93,14 +94,11 @@ class Login extends Component {
         this.setState({ loading: false });
     }
 
-    // Reset Password
-    async resetPasswordHandler() {
-        const { resetPassword } = this.context;
-        try {
-            await resetPassword(this.state.resetEmail);
-        } catch (err) {
-            console.log(err.message);
-        }
+    // Reset Password Modal ->
+    resetPasswordModal() {
+        this.setState({
+            modal : 'show'
+        })
     }
 
     // On Change Event Handler ->
@@ -192,73 +190,14 @@ class Login extends Component {
                                 <button
                                     className='resetPass'
                                     to='/volunteer/forget-password'
-                                    data-toggle='modal'
-                                    data-target='#resetPasswordModal'
-                                    onClick={this.resetPasswordHandler}
+                                    onClick={this.resetPasswordModal}
                                 >
                                     Forgot Password?
+                                    <ResetPassword value = {this.state.modal}/>
                                 </button>
                             </div>
-                            <div
-                                class='modal fade'
-                                id='resetPasswordModal'
-                                tabindex='-1'
-                                aria-labelledby='exampleModalLabel'
-                                aria-hidden='true'
-                            >
-                                <div class='modal-dialog modal-dialog-centered'>
-                                    <div class='modal-content'>
-                                        <div class='modal-header'>
-                                            <h5
-                                                class='modal-title'
-                                                id='exampleModalLabel'
-                                            >
-                                                Reset Password
-                                            </h5>
-                                            <button
-                                                type='button'
-                                                class='close'
-                                                data-dismiss='modal'
-                                                aria-label='Close'
-                                            >
-                                                <span aria-hidden='true'>
-                                                    &times;
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <div class='modal-body'>
-                                            <input
-                                                name='resetEmail'
-                                                type='email'
-                                                placeholder='Enter your email'
-                                                onChange={this.onChangeHandler}
-                                            ></input>
-                                        </div>
-                                        <div class='modal-footer'>
-                                            <button
-                                                type='button'
-                                                class='btn btn-secondary'
-                                                data-dismiss='modal'
-                                            >
-                                                Close
-                                            </button>
-                                            <button
-                                                type='button'
-                                                class='btn btn-primary'
-                                                onClick={
-                                                    this.resetPasswordHandler
-                                                }
-                                            >
-                                                Enter
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <br />
-
                             <br />
-
                             <div id='deskView'>
                                 <h6>
                                     Or you can Log In with your Google account

@@ -15,6 +15,15 @@ function addUserData(userId, name, email, contact) {
     });
 }
 
+// Fetch User Name ->
+function getUserData(userId) {
+    const userDocument = firestore.collection('volunteers');
+    return userDocument
+        .doc(userId)
+        .get()
+        .then((snapshot) => snapshot.data().name);
+}
+
 // Add Locations Data ->
 function addLocationData(locations) {
     const locationDocument = firestore.collection('locations');
@@ -36,13 +45,17 @@ function addLocationData(locations) {
     console.log('Insertion Sucesssfull');
 }
 
-// getUserData ->
-function getUserData(userId) {
-    const userDocument = firestore.collection('volunteers');
-    return userDocument
-        .doc(userId)
-        .get()
-        .then((snapshot) => snapshot.data().name);
+// Fetch Location Data ->
+function getLocationData(){
+    var res = [];
+    const locationDocument = firestore.collection('locations');
+    locationDocument.onSnapshot((snapshot) => {
+        snapshot.forEach((doc) => {
+            res.push(doc.data());
+        })
+    })
+    return res;
 }
 
-export { addUserData, addLocationData, getUserData };
+
+export { addUserData , getUserData, addLocationData, getLocationData };
