@@ -3,12 +3,13 @@
         "Name": "Lok Nayak Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 1500,
         "Contact": [
             "8046820570"
         ],
         "Address": {
             "Street": "Jawahar Lal Nehru Marg",
-            "City": "",
+            "City": "New Delhi ",
             "State": "Delhi",
             "Pincode": 110002
         },
@@ -44,6 +45,7 @@
         "Name": "GTB Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 750,
         "Contact": [
             "8595948014",
             "8595948019",
@@ -53,7 +55,7 @@
         ],
         "Address": {
             "Street": "Shahdara",
-            "City": "",
+            "City": "New Delhi ",
             "State": "Delhi",
             "Pincode": 110095
         },
@@ -89,6 +91,7 @@
         "Name": "AIIMS Jhajjar",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 593,
         "Contact": [
             "8929900156"
         ],
@@ -130,12 +133,13 @@
         "Name": "Sardar Patel Covid Army hospital",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 500,
         "Contact": [
             "7303885606"
         ],
         "Address": {
             "Street": "",
-            "City": "",
+            "City": "New Delhi ",
             "State": "Delhi",
             "Pincode": null
         },
@@ -171,12 +175,13 @@
         "Name": "Base Hospital ",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 493,
         "Contact": [
-            "1125683581"
+            "011-25683581"
         ],
         "Address": {
             "Street": "Delhi Cantt",
-            "City": "",
+            "City": "New Delhi ",
             "State": "Delhi",
             "Pincode": null
         },
@@ -204,23 +209,24 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.6076254,
+            "Long": 77.1363782
         }
     },
     {
         "Name": "Burari Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 370,
         "Contact": [
-            "1127611215",
-            "1127611201"
+            "011-27611215",
+            "011-27611201"
         ],
         "Address": {
-            "Street": "",
-            "City": "",
+            "Street": "Kaushik Enclave, Shankarpura, Burari",
+            "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110084
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -246,22 +252,23 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.7610742,
+            "Long": 77.187685
         }
     },
     {
         "Name": "Dr Baba Saheb Ambedkar Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 365,
         "Contact": [
-            "1127049963"
+            "011-27049963"
         ],
         "Address": {
-            "Street": "",
-            "City": "",
+            "Street": "Sector 6, Rohini",
+            "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110085
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -287,18 +294,19 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.7146116,
+            "Long": 77.1112703
         }
     },
     {
         "Name": "Rajeev Gandhi Super Speciality Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 350,
         "Contact": [
-            "1122890773",
-            "1122890789",
-            "1122890611",
+            "011-22890773",
+            "011-22890789",
+            "011-22890611",
             "8595524745"
         ],
         "Address": {
@@ -339,8 +347,9 @@
         "Name": "Deen Dayal Upadhyay hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 310,
         "Contact": [
-            "1125401075"
+            "011-25401075"
         ],
         "Address": {
             "Street": "Shaheed Mangal Pandey Marg, Nanak Pura, Hari Nagar",
@@ -380,8 +389,9 @@
         "Name": "Ambedkar Nagar hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 300,
         "Contact": [
-            "1126052016",
+            "011-26052016",
             "9310586617"
         ],
         "Address": {
@@ -422,8 +432,9 @@
         "Name": "AIIMS",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 294,
         "Contact": [
-            "1126731109"
+            "011-26731109"
         ],
         "Address": {
             "Street": "",
@@ -463,8 +474,9 @@
         "Name": "Safdarjung Hospital",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 275,
         "Contact": [
-            "1126730000"
+            "011-26730000"
         ],
         "Address": {
             "Street": "Ansari Nagar East",
@@ -504,8 +516,9 @@
         "Name": "LHMC",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 271,
         "Contact": [
-            "1123498269"
+            "011-23498269"
         ],
         "Address": {
             "Street": "Near, Panchkuian Marg,Shivaji Stadium",
@@ -545,8 +558,9 @@
         "Name": "Ram Manohar Lohia Hospital",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 263,
         "Contact": [
-            "1123365525"
+            "011-23365525"
         ],
         "Address": {
             "Street": "Baba Kharak Singh Rd, near Gurudwara Bangla Sahib",
@@ -586,15 +600,16 @@
         "Name": "Bara Hindurao Hospital",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 250,
         "Contact": [
-            "1123905839",
-            "1123905703"
+            "011-23905839",
+            "011-23905703"
         ],
         "Address": {
-            "Street": "",
+            "Street": "Gandhi Square, Malka Ganj",
             "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110007
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -620,16 +635,17 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.6755039,
+            "Long": 77.2020333
         }
     },
     {
         "Name": "Deep Chand Bandhu",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 230,
         "Contact": [
-            "1127305952",
+            "011-27305952",
             "8929121749",
             "7290025141"
         ],
@@ -671,8 +687,9 @@
         "Name": "ESIC hospital Okhla",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 230,
         "Contact": [
-            "1126814161"
+            "011-26814161"
         ],
         "Address": {
             "Street": "Shree Maa Anandmayee Marg, Okhla Industrial Area, Phase-1",
@@ -712,14 +729,15 @@
         "Name": "Northern Railway",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 200,
         "Contact": [
-            "1123747984"
+            "011-23747984"
         ],
         "Address": {
-            "Street": "",
+            "Street": "Basant Lane, Aram Bagh, Connaught Place, Paharganj",
             "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110055
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -745,17 +763,18 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.6365229,
+            "Long": 77.2152709
         }
     },
     {
         "Name": "Guru Nanak Eye Centre ( Annexed To Lok Nayak Hospital)",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 198,
         "Contact": [
-            "1123234622",
-            "1123235145"
+            "011-23234622",
+            "011-23235145"
         ],
         "Address": {
             "Street": "Maharaja Ranjit Singh Marg",
@@ -795,12 +814,13 @@
         "Name": "Satyawati Harishchand Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 135,
         "Contact": [
-            "1127787008",
-            "1127781044",
-            "1127781045",
-            "1127781046",
-            "1127781047"
+            "011-27787008",
+            "011-27781044",
+            "011-27781045",
+            "011-27781046",
+            "011-27781047"
         ],
         "Address": {
             "Street": "Narela",
@@ -840,8 +860,9 @@
         "Name": "Sanjay Gandhi Memorial Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 118,
         "Contact": [
-            "1127913220"
+            "011-27913220"
         ],
         "Address": {
             "Street": "Block U, Mangolpuri S Block",
@@ -881,8 +902,9 @@
         "Name": "Acharyashree Bhikshu Govt. Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 102,
         "Contact": [
-            "1125423514",
+            "011-25423514",
             "9667136071"
         ],
         "Address": {
@@ -923,8 +945,9 @@
         "Name": "AIIMS Main Delhi",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 100,
         "Contact": [
-            "1126588500"
+            "011-26588500"
         ],
         "Address": {
             "Street": "Sri Aurobindo Marg,Ansari Nagar East",
@@ -964,8 +987,9 @@
         "Name": "Swami Dayanand",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 70,
         "Contact": [
-            "1122110065",
+            "011-22110065",
             "011-22581031",
             "011-22581036"
         ],
@@ -1007,8 +1031,9 @@
         "Name": "ESIC Hospital Jhilmil",
         "Management": "Central Govt ",
         "Type": "Hospital",
+        "Total_Beds": 60,
         "Contact": [
-            "1122152197"
+            "011-22152197"
         ],
         "Address": {
             "Street": "ESIC Hospital, Jhilmil, Shahdara",
@@ -1048,6 +1073,7 @@
         "Name": "Rajan Babu Institute of Pulmonary Medicine and tuberculosis",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 60,
         "Contact": [
             "7291984162"
         ],
@@ -1089,9 +1115,10 @@
         "Name": "Janakpuri Super Speciality Hospital Society",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
+        "Total_Beds": 15,
         "Contact": [
-            "1125552023",
-            "1128504182"
+            "011-25552023",
+            "011-28504182"
         ],
         "Address": {
             "Street": "C-2/B, Janakpuri",
@@ -1131,10 +1158,11 @@
         "Name": "Sir Ganga Ram Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 565,
         "Contact": [
-            "1142253001",
-            "1142253002",
-            "1142253003",
+            "011-42253001",
+            "011-42253002",
+            "011-42253003",
             "9311407393",
             "9311407391"
         ],
@@ -1176,8 +1204,9 @@
         "Name": "Indraprastha Apollo Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 460,
         "Contact": [
-            "1126925801",
+            "011-26925801",
             "8929700875"
         ],
         "Address": {
@@ -1218,6 +1247,7 @@
         "Name": "Holy Family Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 385,
         "Contact": [
             "9716832400"
         ],
@@ -1259,10 +1289,11 @@
         "Name": "HAHC Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 376,
         "Contact": [
             "8588890999",
             "7291970608",
-            "1129901111"
+            "011-29901111"
         ],
         "Address": {
             "Street": "Guru Ravidas Marg, Block D, Hamdard Nagar",
@@ -1302,8 +1333,9 @@
         "Name": "St. Stephens Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 336,
         "Contact": [
-            "1123966021"
+            "011-23966021"
         ],
         "Address": {
             "Street": "St. Stephen's Hospital Marg, Tis Hazari",
@@ -1343,12 +1375,13 @@
         "Name": "BLK Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 322,
         "Contact": [
             "8448386700",
             "9311365796",
-            "1130653299",
+            "011-30653299",
             "8130697446",
-            "1130653040"
+            "011-30653040"
         ],
         "Address": {
             "Street": "Pusa Road, BLK Super Specialty Hospital, Radha Soami Satsang, Rajendra Place",
@@ -1388,11 +1421,12 @@
         "Name": "Batra Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 285,
         "Contact": [
-            "1129958747",
-            "1129903001",
-            "1129902001",
-            "1129051280"
+            "011-29958747",
+            "011-29903001",
+            "011-29902001",
+            "011-29051280"
         ],
         "Address": {
             "Street": "1, Mehrauli - Badarpur Rd, Tughlakabad Institutional Area, Vayusenabad",
@@ -1432,8 +1466,9 @@
         "Name": "Max East/West Block",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 255,
         "Contact": [
-            "1126515050"
+            "011-26515050"
         ],
         "Address": {
             "Street": "1, 2, Press Enclave Marg, Saket Institutional Area, Saket",
@@ -1473,9 +1508,10 @@
         "Name": "Sri Balaji Action Medical Inst.",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 254,
         "Contact": [
             "9999174129",
-            "1142888888"
+            "011-42888888"
         ],
         "Address": {
             "Street": "A 4 Block, A 6 Block, Paschim Vihar",
@@ -1515,9 +1551,10 @@
         "Name": "Maharaja Agrasen Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 250,
         "Contact": [
             "9910489495",
-            "1140777666",
+            "011-40777666",
             "8130402916"
         ],
         "Address": {
@@ -1558,8 +1595,9 @@
         "Name": "Max Smart Gujarmal Modi hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 250,
         "Contact": [
-            "1171212121"
+            "011-71212121"
         ],
         "Address": {
             "Street": "Press Enclave Marg, Saket District Centre, Saket",
@@ -1599,6 +1637,7 @@
         "Name": "Max SS Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 250,
         "Contact": [
             "8800333777"
         ],
@@ -1640,6 +1679,7 @@
         "Name": "Manipal Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 245,
         "Contact": [
             "7978031920",
             "8448288367"
@@ -1682,6 +1722,7 @@
         "Name": "Venkateshwar Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 245,
         "Contact": [
             "7290072997"
         ],
@@ -1723,9 +1764,10 @@
         "Name": "Akash Healthcare",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 237,
         "Contact": [
             "8800015991",
-            "1128088888"
+            "011-28088888"
         ],
         "Address": {
             "Street": "Hospital Plot, Rd Number 201, Dwarka Sector-3",
@@ -1765,6 +1807,7 @@
         "Name": "Fortis Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 230,
         "Contact": [
             "9821051424",
             "7303431467"
@@ -1807,9 +1850,10 @@
         "Name": "Rajiv Gandhi Cancer Institute & RC",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 230,
         "Contact": [
             "9717888473",
-            "114722666"
+            "011-4722666"
         ],
         "Address": {
             "Street": "Sir Chotu Ram Marg, Rohini Institutional Area, Sector 5, Rohini",
@@ -1849,10 +1893,11 @@
         "Name": "Shree Agarsain International Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 225,
         "Contact": [
             "9625941440",
-            "1166636600",
-            "1145911911"
+            "011-66636600",
+            "011-45911911"
         ],
         "Address": {
             "Street": "Aman Vihar, Police Station, PSP, CH Bhim Singh Nambardar Marg, Sector 22, Rohini",
@@ -1892,9 +1937,10 @@
         "Name": "Jaipur Golden Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 220,
         "Contact": [
             "8929730572",
-            "1127907000"
+            "011-27907000"
         ],
         "Address": {
             "Street": "2, Naharpur Village Rd, Institutional Area, Sector 3, Rohini",
@@ -1934,10 +1980,11 @@
         "Name": "Mata Chanan Devi Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 200,
         "Contact": [
             "8920601050",
-            "1145682018",
-            "1145582019"
+            "011-45682018",
+            "011-45582019"
         ],
         "Address": {
             "Street": "c1, Lal Sai Mandir Marg, Block C1, Janakpuri",
@@ -1977,10 +2024,11 @@
         "Name": "Max SS Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 200,
         "Contact": [
             "7042500536",
             "9818533117",
-            "1166422112"
+            "011-66422112"
         ],
         "Address": {
             "Street": "FC 50, C and D Block, Shalimar Place Site, Shalimar Bagh",
@@ -2020,14 +2068,15 @@
         "Name": "Pushpawati Singhania Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 168,
         "Contact": [
             "9717159780"
         ],
         "Address": {
-            "Street": "Saket",
+            "Street": "Press Enclave Marg, J Pocket, Phase II, Sheikh Sarai",
             "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110017
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -2053,16 +2102,17 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.5331357,
+            "Long": 77.2232518
         }
     },
     {
         "Name": "Indian spinal injury centre",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 160,
         "Contact": [
-            "1142255384"
+            "011-42255384"
         ],
         "Address": {
             "Street": "Vasant Kunj Marg, Opp Vasant Valley School, IAA Colony, Sector C, Vasant Kunj",
@@ -2102,9 +2152,10 @@
         "Name": "Mool Chand Khairati Ram Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 157,
         "Contact": [
             "9818813891",
-            "1142000000"
+            "011-42000000"
         ],
         "Address": {
             "Street": "Lala Lajpat Rai Marg, Near Moolchand Metro Station, Block M, Lajpat Nagar III, Lajpat Nagar",
@@ -2144,9 +2195,10 @@
         "Name": "Kukreja Hospital and Heart Centre",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 146,
         "Contact": [
             "7982046610",
-            "1145675000"
+            "011-45675000"
         ],
         "Address": {
             "Street": "C-1, Block A, Vishal Enclave, Rajouri Garden",
@@ -2186,9 +2238,10 @@
         "Name": "Saroj Super Speciality Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 140,
         "Contact": [
-            "1127903333",
-            "1147903333"
+            "011-27903333",
+            "011-47903333"
         ],
         "Address": {
             "Street": "Bhagawan Mahavir Marg, Near Madhuban Chowk, Block A, Sector 14, Rohini",
@@ -2228,9 +2281,10 @@
         "Name": "Tirath Ram Shah Charitable Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 136,
         "Contact": [
             "8375975629",
-            "1123948484"
+            "011-23948484"
         ],
         "Address": {
             "Street": "Civil Lines, 2A Isher Das Sawhney Marg Near Tis Hazari Metro Station R.B.L",
@@ -2270,10 +2324,11 @@
         "Name": "Shanti Mukand Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 131,
         "Contact": [
-            "1147276600",
-            "1147276632",
-            "1147276627"
+            "011-47276600",
+            "011-47276632",
+            "011-47276627"
         ],
         "Address": {
             "Street": "2, Institutional Area, Bhartendu Harish Chandra Marg, Vikas Marg Extension, Karkardooma",
@@ -2313,6 +2368,7 @@
         "Name": "Maha Durga Charitable Trust Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 130,
         "Contact": [
             "9811755635",
             "8076344435",
@@ -2357,11 +2413,12 @@
         "Name": "Ayushman Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 118,
         "Contact": [
-            "1147031100",
-            "1149495555",
-            "1149495566",
-            "1149495500",
+            "011-47031100",
+            "011-49495555",
+            "011-49495566",
+            "011-49495500",
             "9810564233"
         ],
         "Address": {
@@ -2402,8 +2459,9 @@
         "Name": "Fortis Escorts Heart Institute",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 112,
         "Contact": [
-            "1147135000"
+            "011-47135000"
         ],
         "Address": {
             "Street": "Okhla road, Sukhdev Vihar Metro Station",
@@ -2443,6 +2501,7 @@
         "Name": "Primus Super Specialty Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 111,
         "Contact": [
             "9910071222"
         ],
@@ -2484,6 +2543,7 @@
         "Name": "Dharamshila Narayana Hosp.",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 110,
         "Contact": [
             "8067506880",
             "7370073700",
@@ -2527,8 +2587,9 @@
         "Name": "Metro Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 110,
         "Contact": [
-            "1149286666"
+            "011-49286666"
         ],
         "Address": {
             "Street": "Community Center, 21, Acharya Nagraj Marg, C Block, Preet Vihar",
@@ -2568,8 +2629,9 @@
         "Name": "Park Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 110,
         "Contact": [
-            "1145323232",
+            "011-45323232",
             "6262929271",
             "7533033025"
         ],
@@ -2611,8 +2673,9 @@
         "Name": "Fortis SS Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 106,
         "Contact": [
-            "1142776222"
+            "011-42776222"
         ],
         "Address": {
             "Street": "Fortis Flt. Lt. Rajan Dhall Hospital, Aruna Asaf Ali Marg, Pocket 1, Sector B, Vasant Kunj",
@@ -2652,9 +2715,10 @@
         "Name": "Santom Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 105,
         "Contact": [
-            "1127562255",
-            "1127561024"
+            "011-27562255",
+            "011-27561024"
         ],
         "Address": {
             "Street": "D-5-6, Outer Ring Rd, Prashant Vihar, Sector 14, Rohini",
@@ -2694,9 +2758,10 @@
         "Name": "Sehgal Neo Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 105,
         "Contact": [
             "8527597171",
-            "1145565656"
+            "011-45565656"
         ],
         "Address": {
             "Street": "B-362, 363, 364, Outer Ring Rd, Near to ICICI Bank, Block B, Meera Bagh, Paschim Vihar",
@@ -2736,8 +2801,9 @@
         "Name": "National Heart Institute",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 102,
         "Contact": [
-            "1146600700",
+            "011-46600700",
             "18005726600"
         ],
         "Address": {
@@ -2778,12 +2844,13 @@
         "Name": "Bhagwati Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 100,
         "Contact": [
-            "1143126000",
-            "1143126100",
-            "1127554179",
-            "1127554182",
-            "1127554135",
+            "011-43126000",
+            "011-43126100",
+            "011-27554179",
+            "011-27554182",
+            "011-27554135",
             "9953711474"
         ],
         "Address": {
@@ -2824,8 +2891,9 @@
         "Name": "Vimhans",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 100,
         "Contact": [
-            "1166176617",
+            "011-66176617",
             "9873422574",
             "9643306023"
         ],
@@ -2867,8 +2935,9 @@
         "Name": "Sir Ganga Ram City Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 96,
         "Contact": [
-            "1142255555"
+            "011-42255555"
         ],
         "Address": {
             "Street": "B-2, Pusa Rd, North Extension Area, Rajinder Nagar",
@@ -2908,9 +2977,10 @@
         "Name": "Gandhi Nursing Home",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 95,
         "Contact": [
-            "1125335099",
-            "1125333179",
+            "011-25335099",
+            "011-25333179",
             "9582134315"
         ],
         "Address": {
@@ -2951,10 +3021,11 @@
         "Name": "Kalra Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 93,
         "Contact": [
-            "1125100000",
-            "1145005600",
-            "1145005700"
+            "011-25100000",
+            "011-45005600",
+            "011-45005700"
         ],
         "Address": {
             "Street": "Tulsi Dass Kalra Marg, Kirti Nagar",
@@ -2994,6 +3065,7 @@
         "Name": "Divya Prastha Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 90,
         "Contact": [
             "8751002222"
         ],
@@ -3035,8 +3107,9 @@
         "Name": "MGS Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 82,
         "Contact": [
-            "1145111444"
+            "011-45111444"
         ],
         "Address": {
             "Street": "Rohtak Road, Punjabi Bagh West, Punjabi Bagh West",
@@ -3076,11 +3149,12 @@
         "Name": "Bhagat Chandra Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 81,
         "Contact": [
             "9354697563",
             "8395994074",
             "7827473433",
-            "1145254550"
+            "011-45254550"
         ],
         "Address": {
             "Street": "RZ-F-1/1 Mahavir Enclave Palam Dabri Marg Under Dwarka, Airport Flyover, Mahavir Enclave Part 2, Palam",
@@ -3120,6 +3194,7 @@
         "Name": "Brahm Shakti Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 80,
         "Contact": [
             "7840089703",
             "8882029306"
@@ -3162,8 +3237,9 @@
         "Name": "Mata Roop Rani Maggo Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 80,
         "Contact": [
-            "1161290000",
+            "011-61290000",
             "9555059059"
         ],
         "Address": {
@@ -3204,10 +3280,11 @@
         "Name": "Navjeevan Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 80,
         "Contact": [
             "8802693809",
             "9999106295",
-            "1146600700"
+            "011-46600700"
         ],
         "Address": {
             "Street": "Pitampura, 655, Onkar Nagar B, Onkar Nagar, Tri Nagar",
@@ -3247,6 +3324,7 @@
         "Name": "Rathi Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 80,
         "Contact": [
             "9871173355",
             "9711991234",
@@ -3290,10 +3368,11 @@
         "Name": "Sant Parmanand Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 78,
         "Contact": [
-            "1123994401",
-            "1123994402",
-            "1123926465"
+            "011-23994401",
+            "011-23994402",
+            "011-23926465"
         ],
         "Address": {
             "Street": "18, Sham Nath Marg, Civil Lines",
@@ -3333,9 +3412,10 @@
         "Name": "Delhi Heart & Lung Institute",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 73,
         "Contact": [
-            "1142999999",
-            "1142999901"
+            "011-42999999",
+            "011-42999901"
         ],
         "Address": {
             "Street": "3, Panchkuian Marg, Type 4, Block B, Aram Bagh, Rolex",
@@ -3375,6 +3455,7 @@
         "Name": "Tarak Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 72,
         "Contact": [
             "8285882288",
             "9643681681"
@@ -3417,6 +3498,7 @@
         "Name": "Madhukar Rainbow Children Hosp.",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 71,
         "Contact": [
             "9100065913",
             "8448284610"
@@ -3459,8 +3541,9 @@
         "Name": "B.M. Gupta Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 70,
         "Contact": [
-            "1147157777",
+            "011-47157777",
             "8287229094",
             "9968911910",
             "8130397046"
@@ -3503,10 +3586,11 @@
         "Name": "Goyal Hospital & Urology Centre",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 70,
         "Contact": [
             "9015142888",
             "7011221183",
-            "1122091851"
+            "011-22091851"
         ],
         "Address": {
             "Street": "E-4/8, Krishna Nagar, near Lajpat Rai, Chandni Chowk",
@@ -3546,8 +3630,9 @@
         "Name": "RLKC Metro Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 70,
         "Contact": [
-            "1161316666",
+            "011-61316666",
             "9910488472"
         ],
         "Address": {
@@ -3588,6 +3673,7 @@
         "Name": "Cygnus Sonia Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 68,
         "Contact": [
             "8750060177",
             "8750060162"
@@ -3630,9 +3716,10 @@
         "Name": "Jeevan Anmol Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 60,
         "Contact": [
-            "1122795237",
-            "1122750380",
+            "011-22795237",
+            "011-22750380",
             "8527677688"
         ],
         "Address": {
@@ -3673,9 +3760,10 @@
         "Name": "Jeewan Mala Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 60,
         "Contact": [
-            "1147774151",
-            "1147774132",
+            "011-47774151",
+            "011-47774132",
             "9212167895"
         ],
         "Address": {
@@ -3716,8 +3804,9 @@
         "Name": "Medeor Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 55,
         "Contact": [
-            "1141222222",
+            "011-41222222",
             "8130390341"
         ],
         "Address": {
@@ -3758,6 +3847,7 @@
         "Name": "Shri Ram Singh Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 52,
         "Contact": [
             "9811100764"
         ],
@@ -3799,6 +3889,7 @@
         "Name": "Bh Salvas Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 50,
         "Contact": [
             "9990780442"
         ],
@@ -3840,8 +3931,9 @@
         "Name": "Gupta Multispecialty Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 50,
         "Contact": [
-            "1145652410",
+            "011-45652410",
             "7011223809"
         ],
         "Address": {
@@ -3882,6 +3974,7 @@
         "Name": "Sushila Hospial",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 50,
         "Contact": [
             "9999390291",
             "9811494085"
@@ -3924,9 +4017,10 @@
         "Name": "Malik Radix Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 47,
         "Contact": [
-            "1122011192",
-            "1122011196",
+            "011-22011192",
+            "011-22011196",
             "8800786277"
         ],
         "Address": {
@@ -3967,16 +4061,17 @@
         "Name": "Bhagwan Mahavir Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 46,
         "Contact": [
             "9582585676",
-            "1127550441",
-            "1127550442"
+            "011-27550441",
+            "011-27550442"
         ],
         "Address": {
-            "Street": "",
+            "Street": "H-4,5, Pitampura, Delhi",
             "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110034
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -4002,17 +4097,18 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.5332732,
+            "Long": 77.1554012
         }
     },
     {
         "Name": "World Brain Center Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 45,
         "Contact": [
-            "1125391266",
-            "1125393347",
+            "011-25391266",
+            "011-25393347",
             "9968788865"
         ],
         "Address": {
@@ -4053,10 +4149,11 @@
         "Name": "Makkar Multispeciality Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 44,
         "Contact": [
-            "1122462221",
-            "11224666992",
-            "1143107929"
+            "011-22462221",
+            "011-224666992",
+            "011-43107929"
         ],
         "Address": {
             "Street": "A-1,2, Priyadarshani Vihar",
@@ -4088,14 +4185,15 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.6410931,
+            "Long": 77.2804048
         }
     },
     {
         "Name": "PGH Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 44,
         "Contact": [
             "9599198053",
             "9599198054"
@@ -4138,11 +4236,12 @@
         "Name": "Satyabhama Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 44,
         "Contact": [
             "9311116607",
             "8506008075",
-            "1124943107",
-            "1125942303"
+            "011-24943107",
+            "011-25942303"
         ],
         "Address": {
             "Street": "RZ-10, Naresh Park, Najafgarh Road, Nangloi, Near Water Tank",
@@ -4182,6 +4281,7 @@
         "Name": "Bansal Global Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 43,
         "Contact": [
             "9811062832",
             "9560932519",
@@ -4225,6 +4325,7 @@
         "Name": "Konark Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 43,
         "Contact": [
             "9625695449"
         ],
@@ -4266,10 +4367,11 @@
         "Name": "Bhatia Global Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 42,
         "Contact": [
-            "1149775977",
-            "1145518230",
-            "1145518231"
+            "011-49775977",
+            "011-45518230",
+            "011-45518231"
         ],
         "Address": {
             "Street": "307-308 Opposite Central School, Ambica Vihar, Paschim Vihar",
@@ -4309,9 +4411,10 @@
         "Name": "East Delhi Medical Centre Mansarover Park",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 42,
         "Contact": [
-            "1122583204",
-            "1122596736",
+            "011-22583204",
+            "011-22596736",
             "8800526644"
         ],
         "Address": {
@@ -4352,6 +4455,7 @@
         "Name": "Jain Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 42,
         "Contact": [
             "9015111222",
             "8010907907"
@@ -4394,6 +4498,7 @@
         "Name": "Mansaram Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 42,
         "Contact": [
             "8285853737"
         ],
@@ -4435,6 +4540,7 @@
         "Name": "Ardent Ganpati",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 41,
         "Contact": [
             "9990902287"
         ],
@@ -4476,6 +4582,7 @@
         "Name": "Aastha Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "9250913363"
         ],
@@ -4517,6 +4624,7 @@
         "Name": "Alshifa Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "9599687441"
         ],
@@ -4558,6 +4666,7 @@
         "Name": "Ansari Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "8373904800"
         ],
@@ -4599,9 +4708,10 @@
         "Name": "Bansal Hospital & Research Centre",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "9650846789",
-            "1146583333",
+            "011-46583333",
             "9650795533"
         ],
         "Address": {
@@ -4642,9 +4752,10 @@
         "Name": "Bensups Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "9560816745",
-            "1145550000"
+            "011-45550000"
         ],
         "Address": {
             "Street": "Dwarka Sub-City, Sector 12 Dwarka, BENSUPS Avenue",
@@ -4684,6 +4795,7 @@
         "Name": "CD Global Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "9310171264",
             "9354629558",
@@ -4727,6 +4839,7 @@
         "Name": "K K Surgical & Maternity Centre",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "9999577020",
             "9810115673"
@@ -4769,6 +4882,7 @@
         "Name": "Lalita Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "8595075850",
             "8076868086",
@@ -4812,6 +4926,7 @@
         "Name": "Rescue Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "9711960667"
         ],
@@ -4853,6 +4968,7 @@
         "Name": "Surya Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "9810198845",
             "7217607103"
@@ -4895,8 +5011,9 @@
         "Name": "SURYA KIRAN HOSPITAL",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
-            "1125322335"
+            "011-25322335"
         ],
         "Address": {
             "Street": "31, ROSHAN MANDI, NAJAFGARH",
@@ -4936,6 +5053,7 @@
         "Name": "Tulsi Multispeciality Hospital & Critical Care Unit",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "8410445275",
             "8368769040",
@@ -4979,6 +5097,7 @@
         "Name": "Universal Centre of Health services",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "8800800500",
             "8800128128",
@@ -5023,15 +5142,16 @@
         "Name": "Vikas Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 40,
         "Contact": [
             "8744077882",
             "9810674306"
         ],
         "Address": {
-            "Street": "",
+            "Street": "1629\u00e2\u20ac\u201cH, Thana Road, Najafgarh",
             "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110043
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -5057,16 +5177,17 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.6107042,
+            "Long": 76.9787553
         }
     },
     {
         "Name": "IBS Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 39,
         "Contact": [
-            "1143210000"
+            "011-43210000"
         ],
         "Address": {
             "Street": "Block L, Lajpat Nagar III, Lajpat Nagar 4",
@@ -5106,9 +5227,10 @@
         "Name": "NKS Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 39,
         "Contact": [
             "8130894500",
-            "1123666666"
+            "011-23666666"
         ],
         "Address": {
             "Street": "219, 220, Sanjay Nagar, Gulabi Bagh",
@@ -5148,9 +5270,10 @@
         "Name": "Jeewan Nursing Home",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 37,
         "Contact": [
-            "1142430246",
-            "1142474849"
+            "011-42430246",
+            "011-42474849"
         ],
         "Address": {
             "Street": "2-B, Pusa Road, Next to Karol Bagh Metro Station, Opp. Pillar No.-107, 108, Sadhu Vasvani Marg, Rajender Nagar",
@@ -5190,9 +5313,10 @@
         "Name": "Garg Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 36,
         "Contact": [
-            "1143274444",
-            "1145152556"
+            "011-43274444",
+            "011-45152556"
         ],
         "Address": {
             "Street": "No. 8& 9, AGCR Enclave, Opposite Karkardooma Court",
@@ -5232,8 +5356,9 @@
         "Name": "SMS Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 36,
         "Contact": [
-            "1122505116",
+            "011-22505116",
             "8076956969"
         ],
         "Address": {
@@ -5274,6 +5399,7 @@
         "Name": "Maharaja Agrasen Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 35,
         "Contact": [
             "8826824672",
             "8447720118",
@@ -5317,6 +5443,7 @@
         "Name": "Pushpanjali Medical Centre",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 35,
         "Contact": [
             "8851743778"
         ],
@@ -5358,9 +5485,10 @@
         "Name": "Irene Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 34,
         "Contact": [
             "9540948480",
-            "1149922222"
+            "011-49922222"
         ],
         "Address": {
             "Street": "Block DD, DD-23, Kalkaji",
@@ -5400,8 +5528,9 @@
         "Name": "Metro Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 33,
         "Contact": [
-            "1142424343"
+            "011-42424343"
         ],
         "Address": {
             "Street": "14, Ring Road Near Amar Kaloni Market, Lajpat Nagar IV",
@@ -5441,6 +5570,7 @@
         "Name": "Cygnus MLS",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 32,
         "Contact": [
             "9999655155",
             "9999655255"
@@ -5483,8 +5613,9 @@
         "Name": "Medstar Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 32,
         "Contact": [
-            "1149242424",
+            "011-49242424",
             "9810006697"
         ],
         "Address": {
@@ -5525,12 +5656,13 @@
         "Name": "Panchsheel Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 32,
         "Contact": [
             "9717611842",
             "9999434453",
-            "1143541234",
-            "1122914817",
-            "1143540604"
+            "011-43541234",
+            "011-22914817",
+            "011-43540604"
         ],
         "Address": {
             "Street": "police station, C-3/63A, 64A, Yamuna Vihar, Opp, Gokalpuri",
@@ -5570,6 +5702,7 @@
         "Name": "Dr. Chaudhary Moral Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
             "9810110566",
             "9810110366"
@@ -5612,8 +5745,9 @@
         "Name": "Jeewan Moti Khera Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
-            "1125945771"
+            "011-25945771"
         ],
         "Address": {
             "Street": "Krishna Mandir, New Khera Hospital,Nangloi - Najafgarh Rd, Nangloi",
@@ -5653,9 +5787,10 @@
         "Name": "Kalra Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
-            "1125355545",
-            "1125355546",
+            "011-25355545",
+            "011-25355546",
             "9315677206"
         ],
         "Address": {
@@ -5696,6 +5831,7 @@
         "Name": "Kapil Multispecialty Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
             "9990781810",
             "8448375462"
@@ -5738,10 +5874,11 @@
         "Name": "Khandelwal Hospital And Urology Center",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
             "9212745664",
-            "1142408561",
-            "1142408591"
+            "011-42408561",
+            "011-42408591"
         ],
         "Address": {
             "Street": "B-16, Main Road, East Krishna Nagar, East Krishna Nagar",
@@ -5781,6 +5918,7 @@
         "Name": "Maharaja Agarsain Multispecialty Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
             "9891654929",
             "9667097114",
@@ -5824,6 +5962,7 @@
         "Name": "Samar Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
             "9818096199",
             "9213210218"
@@ -5866,9 +6005,10 @@
         "Name": "Sanjeevan Medical Res.",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
             "9810203358",
-            "1145770000"
+            "011-45770000"
         ],
         "Address": {
             "Street": "24, Ansari Rd, Daryaganj",
@@ -5908,6 +6048,7 @@
         "Name": "Shakuntala Nursing Home",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 30,
         "Contact": [
             "9211783762",
             "9211783761"
@@ -5950,6 +6091,7 @@
         "Name": "Apex City Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 28,
         "Contact": [
             "8826395149",
             "8826395145",
@@ -5993,6 +6135,7 @@
         "Name": "Revive Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 28,
         "Contact": [
             "9891534100",
             "9718932941"
@@ -6035,8 +6178,9 @@
         "Name": "Bimla Devi Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 27,
         "Contact": [
-            "1141887777"
+            "011-41887777"
         ],
         "Address": {
             "Street": "Plot No. 5, Pocket B, Mayur Vihar Phase II, Patparganj",
@@ -6076,8 +6220,9 @@
         "Name": "SAMA HOSPITAL",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 27,
         "Contact": [
-            "1143111888"
+            "011-43111888"
         ],
         "Address": {
             "Street": "8, Siri Fort Road",
@@ -6117,8 +6262,9 @@
         "Name": "Sitaram Bhartia Institute of Science & Res.",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 27,
         "Contact": [
-            "1142111111",
+            "011-42111111",
             "9717894727",
             "9717490249"
         ],
@@ -6160,9 +6306,10 @@
         "Name": "Kosmos Super Specialty Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 26,
         "Contact": [
             "8447696223",
-            "1122160003"
+            "011-22160003"
         ],
         "Address": {
             "Street": "Sikka, C-60, Vikas Marg, DDA Flats, Anand Vihar",
@@ -6202,6 +6349,7 @@
         "Name": "Kukreja Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 26,
         "Contact": [
             "9711499163",
             "9560275021"
@@ -6244,6 +6392,7 @@
         "Name": "CBR Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 25,
         "Contact": [
             "8686860169"
         ],
@@ -6277,14 +6426,15 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.4745712,
+            "Long": 77.1279138
         }
     },
     {
         "Name": "ROSEWOOD HOSPITAL",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 25,
         "Contact": [
             "9990045967",
             "9990046258"
@@ -6327,6 +6477,7 @@
         "Name": "Sai Charitable Dispensary",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 25,
         "Contact": [
             "8287366488",
             "8375915505"
@@ -6369,6 +6520,7 @@
         "Name": "Savitri Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 25,
         "Contact": [
             "9810777351",
             "9818709813",
@@ -6413,6 +6565,7 @@
         "Name": "SINGHAL HOSPITAL",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 25,
         "Contact": [
             "7834979991",
             "7834979994"
@@ -6455,8 +6608,9 @@
         "Name": "Goyal Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 21,
         "Contact": [
-            "1141901414",
+            "011-41901414",
             "8700001648",
             "8709637942"
         ],
@@ -6498,9 +6652,10 @@
         "Name": "Jeewan Nursing Home",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 20,
         "Contact": [
-            "1126349821",
-            "1126341903"
+            "011-26349821",
+            "011-26341903"
         ],
         "Address": {
             "Street": "Jeewan Nagar, Near Ashram",
@@ -6540,14 +6695,15 @@
         "Name": "Nestiva Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 20,
         "Contact": [
-            "1142422000"
+            "011-42422000"
         ],
         "Address": {
             "Street": "384, J S Complex Bank Street Main Market, Munirka",
             "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110067
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -6573,14 +6729,15 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.553187,
+            "Long": 77.1723612
         }
     },
     {
         "Name": "Nidaan Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 20,
         "Contact": [
             "7303980711"
         ],
@@ -6622,6 +6779,7 @@
         "Name": "Shree Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 20,
         "Contact": [
             "9953882204"
         ],
@@ -6663,6 +6821,7 @@
         "Name": "Nirmala Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 19,
         "Contact": [
             "9315514021",
             "9953992177",
@@ -6706,6 +6865,7 @@
         "Name": "Dharamvir Solanki Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 16,
         "Contact": [
             "9311483147",
             "9811188128"
@@ -6748,10 +6908,11 @@
         "Name": "Ishan Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 16,
         "Contact": [
             "9212517399",
             "9811417399",
-            "1127892799"
+            "011-27892799"
         ],
         "Address": {
             "Street": "Plot No.1, Pocket-8B, Dr MC Davar Marg, Sector 19, Rohini",
@@ -6791,6 +6952,7 @@
         "Name": "Satya Multispeciality Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 16,
         "Contact": [
             "8585938406"
         ],
@@ -6832,6 +6994,7 @@
         "Name": "Dr Rakesh Multispeciality Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 15,
         "Contact": [
             "8053426307"
         ],
@@ -6873,6 +7036,7 @@
         "Name": "Pt.RRM Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 15,
         "Contact": [
             "9891761679",
             "8287595266"
@@ -6915,8 +7079,9 @@
         "Name": "Sant Soham Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 15,
         "Contact": [
-            "1141718460",
+            "011-41718460",
             "9667248485"
         ],
         "Address": {
@@ -6957,6 +7122,7 @@
         "Name": "Delhi global hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 14,
         "Contact": [
             "9810483346"
         ],
@@ -6964,7 +7130,7 @@
             "Street": "A-10 teacher colony samaypur near badli metro station",
             "City": "New Delhi ",
             "State": "Delhi",
-            "Pincode": null
+            "Pincode": 110042
         },
         "Response_Rate": "none",
         "Tasks_Info": {
@@ -6990,14 +7156,15 @@
             }
         },
         "Coordinates": {
-            "Lat": null,
-            "Long": null
+            "Lat": 28.7448625,
+            "Long": 77.1409349
         }
     },
     {
         "Name": "SCI International Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 12,
         "Contact": [
             "9999446622"
         ],
@@ -7039,6 +7206,7 @@
         "Name": "Delhi multi speciality hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 11,
         "Contact": [
             "8447444321"
         ],
@@ -7080,6 +7248,7 @@
         "Name": "C M PATEL HOSPITAL",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 10,
         "Contact": [
             "9311836031"
         ],
@@ -7121,9 +7290,10 @@
         "Name": "Cronus Multi speciality Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 10,
         "Contact": [
-            "1171366388",
-            "1171366389"
+            "011-71366388",
+            "011-71366389"
         ],
         "Address": {
             "Street": "100 Feet Rd, Phase 1, Phase 2, Chattarpur Enclave, Chhatarpur",
@@ -7163,6 +7333,7 @@
         "Name": "Hardik Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 10,
         "Contact": [
             "9266728292",
             "9250728292"
@@ -7205,6 +7376,7 @@
         "Name": "Ekansh Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 8,
         "Contact": [
             "9999617080"
         ],
@@ -7246,8 +7418,9 @@
         "Name": "Sunrise Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
+        "Total_Beds": 8,
         "Contact": [
-            "1127894781",
+            "011-27894781",
             "7982264816"
         ],
         "Address": {

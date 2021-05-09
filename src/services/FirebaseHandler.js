@@ -23,8 +23,12 @@ function addLocationData(locations) {
         locationDocument.add(loc).then((res) => {
             locationDocument.doc(res.id).update({
                 Coordinates: new firebase.firestore.GeoPoint(
-                    loc['Coordinates']['Lat'] ? loc['Coordinates']['Lat'] : 0,
-                    loc['Coordinates']['Long'] ? loc['Coordinates']['Long'] : 0
+                    loc['Coordinates']['Lat']
+                        ? loc['Coordinates']['Lat']
+                        : 28.5883,
+                    loc['Coordinates']['Long']
+                        ? loc['Coordinates']['Long']
+                        : 77.1525
                 ),
             });
         });
