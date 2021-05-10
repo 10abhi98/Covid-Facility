@@ -383,3 +383,36 @@ small {
     margin-top: -505px !important;
 }
 /* -------------------------------------------- */
+
+/* ----------- Reset Password Modal ----------- */
+
+#resetPasswordModal .modal-dialog{
+    max-width: 35%;
+}
+
+#resetPasswordModal .modal-header{
+    border-bottom: none;
+    padding: 3px 5px 0px 0px;
+}
+
+#resetPasswordModal .modal-body{
+    padding-top: 0.5rem;
+}
+
+#resetPasswordModal .modal-body hr{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#resetPasswordModal .modal-body h3,
+#resetPasswordModal .modal-body label{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#resetPasswordModal .modal-body .form-group{
+    margin: 7px auto;
+}
+
+
+/* -------------------------------------------- */

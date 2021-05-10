@@ -15,7 +15,7 @@ class Login extends Component {
             emailError: '',
             passError: '',
             loading: false,
-            modal: 'hide'
+            modal: false
         };
         // Bind Functions ->
         this.clearError = this.clearError.bind(this);
@@ -25,6 +25,7 @@ class Login extends Component {
         this.logInWithGoogleHandler = this.logInWithGoogleHandler.bind(this);
         this.onChangeHandler = this.onChangeHandler.bind(this);
         this.resetPasswordModal = this.resetPasswordModal.bind(this);
+        this.onModalClose = this.onModalClose.bind(this);
         // this._isMounted = false;
     }
 
@@ -97,7 +98,14 @@ class Login extends Component {
     // Reset Password Modal ->
     resetPasswordModal() {
         this.setState({
-            modal : 'show'
+            modal : true
+        })
+    }
+
+    // Close Modal Callback function ->
+    onModalClose = (stateVal) => {
+        this.setState({
+            modal : stateVal
         })
     }
 
@@ -189,12 +197,11 @@ class Login extends Component {
                             <div>
                                 <button
                                     className='resetPass'
-                                    to='/volunteer/forget-password'
                                     onClick={this.resetPasswordModal}
                                 >
                                     Forgot Password?
-                                    <ResetPassword value = {this.state.modal}/>
                                 </button>
+                                {this.state.modal && <ResetPassword modalState = {this.onModalClose}/>}
                             </div>
                             <br />
                             <br />

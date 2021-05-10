@@ -8,87 +8,120 @@ export class Modal extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            resetEmail : ''
+            resetEmail : '',
+            emailError : '',
+            loading : false
         }
     
         this.resetPasswordHandler = this.resetPasswordHandler.bind(this);
         this.onChangeHandler = this.onChangeHandler.bind(this);
+        this.onCloseHandler = this.onCloseHandler.bind(this);
+        this.clearError = this.clearError.bind(this);
+        this.clearInputs = this.clearInputs.bind(this);
     }
 
-    componentDidUpdate(){
-        $('#resetPasswordModal').modal(this.props.value)
-    }
-
-    componentWillUnmount(){
-        
+    componentDidMount(){
+        $('#resetPasswordModal').modal({
+            backdrop : 'static',
+            keyboard : false
+        });
+        $('#resetPasswordModal').modal('show');
     }
 
     // Reset Password Handler ->
-    async resetPasswordHandler() {
+    async resetPasswordHandler(e) {
+        e.preventDefault();
         const { resetPassword } = this.context;
         try {
+            this.clearError();
+            this.setState({loading : true})
             await resetPassword(this.state.resetEmail);
+            this.clearInputs();
+            $('#resetPasswordModal').modal('hide');
+            this.props.modalState(false);
         } catch (err) {
-            console.log(err.message);
+            this.setState({emailError : err.message})
         }
+        this.setState({ loading: false });
     }
-
+    
     // On Change Event Handler ->
     onChangeHandler = (e) => {
         this.setState({
             [e.target.name]: e.target.value,
         });
     };
+    
+    // On Close Handler ->
+    onCloseHandler (){
+        this.props.modalState(false);
+    }
+
+    // Clear Errors ->
+    clearError() {
+        this.setState({
+            emailError: '',
+        });
+    }
+
+    // Clear Inputs ->
+    clearInputs() {
+        this.setState({
+            resetEmail: '',
+        });
+    }
 
     render() {
         return (
             <>
                 <div
-                    class='modal fade'
+                    className='modal fade'
                     id='resetPasswordModal'
                     aria-labelledby='exampleModalLabel'
                     aria-hidden='true'
                 >
-                    <div class='modal-dialog modal-dialog-centered'>
-                        <div class='modal-content'>
-                            <div class='modal-header'>
-                                <h5 class='modal-title' id='exampleModalLabel'>
-                                    Reset Password
-                                </h5>
+                    <div className='modal-dialog modal-dialog-centered'>
+                        <div className='modal-content'>
+                            <div className='modal-header'>
                                 <button
                                     type='button'
-                                    class='close'
+                                    className='close'
                                     data-dismiss='modal'
                                     aria-label='Close'
+                                    onClick = {this.onCloseHandler}
                                 >
                                     <span aria-hidden='true'>&times;</span>
                                 </button>
                             </div>
-                            <form>
-                            <div class='modal-body'>
-                                <input
-                                    name='resetEmail'
-                                    type='email'
-                                    placeholder='Enter your email'
-                                    onChange={this.onChangeHandler}
-                                ></input>
-                            </div>
-                            </form>
-                            <div class='modal-footer'>
-                                <button
-                                    type='button'
-                                    class='btn btn-secondary'
-                                    data-dismiss='modal'
-                                >
-                                    Close
-                                </button>
-                                <button
-                                    type='button'
-                                    class='btn btn-primary'
-                                    onClick={this.resetPasswordHandler}
-                                >
-                                    Enter
-                                </button>
+                            <div className='modal-body'>
+                                <h3>RESET PASSWORD</h3><hr/><br/>
+                                <form onSubmit={this.resetPasswordHandler}>
+                                    <label>
+                                        Enter your email address and we will send you a link to reset your password.
+                                    </label>
+                                    <div className='form-group'>
+                                        <input
+                                            name='resetEmail'
+                                            type='email'
+                                            className='form-control'
+                                            placeholder='Enter your email'
+                                            required
+                                            onChange={this.onChangeHandler}
+                                        />
+                                    <small className='form-text' style = {{color : 'red'}}>
+                                        {this.state.emailError}
+                                    </small>
+                                    </div>
+                                    <div className = 'd-flex justify-content-center mt-3'>
+                                        <button
+                                            type='submit'
+                                            className='btn btn-outline-primary btn-sm'
+                                            disabled={this.state.loading}
+                                        >
+                                            Send Password Reset Email
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
