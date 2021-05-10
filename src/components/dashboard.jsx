@@ -1,43 +1,45 @@
 // Libraries ->
-import React, { Component } from 'react';
-import '../styles/style.css';
-import AuthContext from '../services/AuthContext';
-import { getUserData } from '../services/FirebaseHandler';
-import { firestore } from '../services/Firebase';
-import firebase from 'firebase/app';
+import React, { Component } from "react";
+import "../styles/style.css";
+import AuthContext from "../services/AuthContext";
+import { getUserData } from "../services/FirebaseHandler";
+import { firestore } from "../services/Firebase";
+import firebase from "firebase/app";
 // Sample Data ->
-let smallTaskLocations = ['Ganga Ram Hospital', 'Medicare Pharmacy'];
-let mediumTaskLocations = ['Shree Hospital', 'Dharamvir Pharmacy'];
-let longTaskLocations = ['Sant Soham Hospital'];
+let smallTaskLocations = ["Ganga Ram Hospital", "Medicare Pharmacy"];
+let mediumTaskLocations = ["Shree Hospital", "Dharamvir Pharmacy"];
+let longTaskLocations = ["Sant Soham Hospital"];
 let hospitalQuestionarre = {
-    Beds: 'How many beds are available?',
-    Oxygen: 'How much Oxygen is available?',
-    'New Patients': 'How many New Patients were admitted in the last hour?',
-    'Waiting Patients': 'How many patients are waiting outside?',
-    Remidisivir: 'How much Remidisivir is available?',
+    Beds: "How many beds are available?",
+    Oxygen: "How much Oxygen is available?",
+    "New Patients": "How many New Patients were admitted in the last hour?",
+    "Waiting Patients": "How many patients are waiting outside?",
+    Remidisivir: "How much Remidisivir is available?",
 };
 let locationDetails = {
     name: [
-        'Ganga Ram Hospital',
-        'Medicare Pharmacy',
-        'Shree Hospital',
-        'Dharamvir Pharmacy',
-        'Sant Soham Hospital',
+        "Ganga Ram Hospital",
+        "Medicare Pharmacy",
+        "Shree Hospital",
+        "Dharamvir Pharmacy",
+        "Sant Soham Hospital",
     ],
     address: [
-        'Jawahar Lal Nehru Marg,Delhi.110002',
-        'Model Town',
-        'Saket',
-        'Rohini',
-        'Sarita Vihar',
+        "Jawahar Lal Nehru Marg,Delhi.110002",
+        "Model Town",
+        "Saket",
+        "Rohini",
+        "Sarita Vihar",
     ],
     contact: [9865341234, 7653412345, 8765432112, 9734501821, 7340501234],
-    response: ['Quickly', 'Late', 'Quickly', 'Late', 'Quickly'],
+    response: ["Quickly", "Late", "Quickly", "Late", "Quickly"],
 };
 let pharmacyQuestionarre = {
-    Remidisivir: 'How much Remidisivir is available?',
+    Remidisivir: "How much Remidisivir is available?",
 };
 // End of Sample Data ->
+
+var removeTaskAry = [];
 
 class Dashboard extends Component {
     static contextType = AuthContext;
@@ -45,17 +47,16 @@ class Dashboard extends Component {
         super(props);
         this.state = {
             locationName: smallTaskLocations[0],
-            address: locationDetails['address'][0],
-            contact: locationDetails['contact'][0],
-            response: locationDetails['response'][0],
+            address: locationDetails["address"][0],
+            contact: locationDetails["contact"][0],
+            response: locationDetails["response"][0],
             activeBtn: smallTaskLocations[0],
-            beds: '',
-            oxygen: '',
-            newPatients: '',
-            waitingPatients: '',
-            remidisivir: '',
-
-            displayName: '',
+            beds: "",
+            oxygen: "",
+            newPatients: "",
+            waitingPatients: "",
+            remidisivir: "",
+            displayName: "",
             tasks: [],
         };
 
@@ -66,65 +67,65 @@ class Dashboard extends Component {
         this.userLogOut = this.userLogOut.bind(this);
         this.tasksAssignment = this.tasksAssignment.bind(this);
         this.displayQuestionarre = this.displayQuestionarre.bind(this);
-        this.userInfo = this.userInfo.bind(this);
+        this.fetchTasks = this.fetchTasks.bind(this);
     }
 
     componentDidMount() {
         const { currentUser } = this.context;
-        // const data = await getUserData(currentUser.uid);
-        // console.log(data);
-        const userDocument = firestore.collection('volunteers');
-        userDocument
-            .doc(currentUser.uid)
-            .get()
-            .then((snapshot) =>
-                // this.setState({
-                //     displayName: snapshot.data().name.split(' ')[0].trim(),
-                //     tasks: snapshot.data().tasks_assigned,
-                // })
-                console.log(snapshot.data().tasks_assigned)
-            );
+        // Fetch User Info ->
+        const userDocument = firestore.collection("volunteers");
+        userDocument.doc(currentUser.uid).onSnapshot((doc) => {
+            this.setState({
+                displayName: doc.data().name.split(" ")[0].trim(),
+                tasks: doc.data().tasks_assigned,
+            });
+            // Fetch Task -
+            this.fetchTasks();
+        });
     }
 
-    componentDidUpdate() {
+    fetchTasks() {
         const { currentUser } = this.context;
         if (this.state.tasks.length === 0) {
             firestore
-                .collection('unassigned_tasks')
-                .orderBy('last_updated_at')
-                .limit(5)
+                .collection("unassigned_tasks")
+                .orderBy("last_updated_at")
+                .limit(1)
                 .get()
                 .then((tasks) => {
+                    // Add Task to Volunteer Task Assigned Array ->
                     tasks.docs.forEach((task) => {
                         firestore
-                            .collection('volunteers')
+                            .collection("volunteers")
                             .doc(currentUser.uid)
                             .update({
                                 tasks_assigned: firebase.firestore.FieldValue.arrayUnion(
                                     task.id
                                 ),
                             });
+                            // this.setState({
+                            //     tasks :  [...this.state.tasks, task.id]
+                            // })
+                            removeTaskAry.push(task.id);
+                        
+                        // Add Taks to Assigned Task Collection
+                        firestore.collection('assigned_tasks').doc(task.id).set({
+                            task_id: task.id,
+                            task_name: task.data().task_name,
+                            reassign_time: new Date(Date.now() + (3*60*60*1000)),
+                            last_updated_at: task.data().last_updated_at,
+                        })  
+                        
                     });
                 });
+            // Remove Tasks from Unassigned Task Collections ->
+            console.log(removeTaskAry);
+            removeTaskAry.forEach((taskId) => {
+                console.log(taskId);
+                firestore.collection('unassigned_tasks').doc(taskId).delete();
+            })
+            
         }
-    }
-
-    // user Info ->
-    async userInfo() {
-        const { currentUser } = this.context;
-        // const data = await getUserData(currentUser.uid);
-        // console.log(data);
-        const userDocument = firestore.collection('volunteers');
-        await userDocument
-            .doc(currentUser.uid)
-            .get()
-            .then((snapshot) =>
-                // this.setState({
-                //     displayName: snapshot.data().name.split(' ')[0].trim(),
-                //     tasks: snapshot.data().tasks_assigned,
-                // })
-                console.log(snapshot.data().tasks_assigned)
-            );
     }
 
     // On Change Handler
@@ -138,21 +139,21 @@ class Dashboard extends Component {
     submitInfoHandler(e) {
         e.preventDefault();
         console.log(
-            'Beds             ->' +
+            "Beds             ->" +
                 this.state.beds +
-                '\n' +
-                'Oxygen           ->' +
+                "\n" +
+                "Oxygen           ->" +
                 this.state.oxygen +
-                '\n' +
-                'New Patients     ->' +
+                "\n" +
+                "New Patients     ->" +
                 this.state.newPatients +
-                '\n' +
-                'Waiting Patients ->' +
+                "\n" +
+                "Waiting Patients ->" +
                 this.state.waitingPatients +
-                '\n' +
-                'Remidisivir      ->' +
+                "\n" +
+                "Remidisivir      ->" +
                 this.state.remidisivir +
-                '\n'
+                "\n"
         );
     }
 
@@ -161,9 +162,9 @@ class Dashboard extends Component {
         this.setState({
             locationName: location,
             activeBtn: location,
-            address: locationDetails['address'][index],
-            contact: locationDetails['contact'][index],
-            response: locationDetails['response'][index],
+            address: locationDetails["address"][index],
+            contact: locationDetails["contact"][index],
+            response: locationDetails["response"][index],
         });
     }
 
@@ -172,7 +173,7 @@ class Dashboard extends Component {
         const { logout } = this.context;
         try {
             await logout();
-            this.props.history.push('/volunteer');
+            this.props.history.push("/volunteer");
         } catch (err) {
             console.log(err.message);
         }
@@ -186,8 +187,8 @@ class Dashboard extends Component {
                     key={location + index}
                     className={
                         this.state.activeBtn === location
-                            ? 'locationActiveBtn'
-                            : 'locationBtn'
+                            ? "locationActiveBtn"
+                            : "locationBtn"
                     }
                     type='button'
                     onClick={(e) => this.selectLocation(e, location, index)}
@@ -203,7 +204,7 @@ class Dashboard extends Component {
     // Questionarre Display Function ->
     displayQuestionarre = (type) => {
         return Object.entries(type).map((value, index) => {
-            const val = value[0].split(' ');
+            const val = value[0].split(" ");
             return (
                 <div className='form-group' key={value[0] + index}>
                     <label>
@@ -285,7 +286,7 @@ class Dashboard extends Component {
                                     {/* Questionarre (Hospital/Pharmacy) */}
                                     {this.state.locationName
                                         .toLowerCase()
-                                        .includes('hospital')
+                                        .includes("hospital")
                                         ? this.displayQuestionarre(
                                               hospitalQuestionarre
                                           )

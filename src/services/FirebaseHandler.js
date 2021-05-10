@@ -59,8 +59,8 @@ function addNewTasks() {
                 .set({
                     task_id: task.id,
                     task_name: 'Call ' + task.data().Name,
-                    reassign_time: firebase.firestore.FieldValue.serverTimestamp(),
-                    last_updated_at: firebase.firestore.FieldValue.serverTimestamp(),
+                    reassign_time: new Date(),
+                    last_updated_at: new Date(),
                 });
         });
     });
