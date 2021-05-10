@@ -2,13 +2,17 @@ import React, { Component } from 'react';
 import '../../styles/style.css';
 import AuthContext from '../../services/AuthContext';
 import delhiHospitals from '../../utilities/delhiHospitals.json';
-import { addLocationData } from '../../services/FirebaseHandler';
+import { addLocationData, addNewTasks } from '../../services/FirebaseHandler';
 
 export class Admin extends Component {
     static contextType = AuthContext;
 
     addHospitals() {
         addLocationData(delhiHospitals);
+    }
+
+    addTasks() {
+        addNewTasks();
     }
 
     render() {
@@ -31,6 +35,16 @@ export class Admin extends Component {
                             type='button'
                             class='btn btn-primary btn-sm'
                             onClick={this.addHospitals}
+                        >
+                            Add
+                        </button>
+                    </div>
+                    <div style={{ color: 'white' }}>
+                        Add All Tasks -{' '}
+                        <button
+                            type='button'
+                            class='btn btn-primary btn-sm'
+                            onClick={this.addTasks}
                         >
                             Add
                         </button>

@@ -21,7 +21,10 @@ function getUserData(userId) {
     return userDocument
         .doc(userId)
         .get()
-        .then((snapshot) => snapshot.data().name);
+        .then((snapshot) => [
+            snapshot.data().name,
+            snapshot.data().tasks_assigned,
+        ]);
 }
 
 // Add Locations Data ->
@@ -45,6 +48,22 @@ function addLocationData(locations) {
     console.log('Insertion Sucesssfull');
 }
 
-// Fetch Location Data ->
+// Add New Tasks ->
+function addNewTasks() {
+    const locationDocument = firestore.collection('locations');
+    locationDocument.get().then((res) => {
+        res.docs.forEach((task) => {
+            firestore
+                .collection('unassigned_tasks')
+                .doc(task.id)
+                .set({
+                    task_id: task.id,
+                    task_name: 'Call ' + task.data().Name,
+                    reassign_time: firebase.firestore.FieldValue.serverTimestamp(),
+                    last_updated_at: firebase.firestore.FieldValue.serverTimestamp(),
+                });
+        });
+    });
+}
 
-export { addUserData, getUserData, addLocationData };
+export { addUserData, getUserData, addLocationData, addNewTasks };

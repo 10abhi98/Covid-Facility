@@ -11,9 +11,6 @@ import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 mapboxgl.workerClass = MapboxWorker;
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_KEY;
 var marker = new mapboxgl.Marker();
-// Sample Data ->
-
-// End sample data
 class homepage extends Component {
     constructor(props) {
         super(props);

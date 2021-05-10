@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import '../styles/style.css';
 import AuthContext from '../services/AuthContext';
 import { getUserData } from '../services/FirebaseHandler';
-
+import { firestore } from '../services/Firebase';
+import firebase from 'firebase/app';
 // Sample Data ->
 let smallTaskLocations = ['Ganga Ram Hospital', 'Medicare Pharmacy'];
 let mediumTaskLocations = ['Shree Hospital', 'Dharamvir Pharmacy'];
@@ -53,7 +54,9 @@ class Dashboard extends Component {
             newPatients: '',
             waitingPatients: '',
             remidisivir: '',
+
             displayName: '',
+            tasks: [],
         };
 
         // Bind Functions ->
@@ -67,7 +70,61 @@ class Dashboard extends Component {
     }
 
     componentDidMount() {
-        this.userInfo();
+        const { currentUser } = this.context;
+        // const data = await getUserData(currentUser.uid);
+        // console.log(data);
+        const userDocument = firestore.collection('volunteers');
+        userDocument
+            .doc(currentUser.uid)
+            .get()
+            .then((snapshot) =>
+                // this.setState({
+                //     displayName: snapshot.data().name.split(' ')[0].trim(),
+                //     tasks: snapshot.data().tasks_assigned,
+                // })
+                console.log(snapshot.data().tasks_assigned)
+            );
+    }
+
+    componentDidUpdate() {
+        const { currentUser } = this.context;
+        if (this.state.tasks.length === 0) {
+            firestore
+                .collection('unassigned_tasks')
+                .orderBy('last_updated_at')
+                .limit(5)
+                .get()
+                .then((tasks) => {
+                    tasks.docs.forEach((task) => {
+                        firestore
+                            .collection('volunteers')
+                            .doc(currentUser.uid)
+                            .update({
+                                tasks_assigned: firebase.firestore.FieldValue.arrayUnion(
+                                    task.id
+                                ),
+                            });
+                    });
+                });
+        }
+    }
+
+    // user Info ->
+    async userInfo() {
+        const { currentUser } = this.context;
+        // const data = await getUserData(currentUser.uid);
+        // console.log(data);
+        const userDocument = firestore.collection('volunteers');
+        await userDocument
+            .doc(currentUser.uid)
+            .get()
+            .then((snapshot) =>
+                // this.setState({
+                //     displayName: snapshot.data().name.split(' ')[0].trim(),
+                //     tasks: snapshot.data().tasks_assigned,
+                // })
+                console.log(snapshot.data().tasks_assigned)
+            );
     }
 
     // On Change Handler
@@ -107,15 +164,6 @@ class Dashboard extends Component {
             address: locationDetails['address'][index],
             contact: locationDetails['contact'][index],
             response: locationDetails['response'][index],
-        });
-    }
-
-    // user Info ->
-    async userInfo() {
-        const { currentUser } = this.context;
-        const name = await getUserData(currentUser.uid);
-        this.setState({
-            displayName: name.split(' ')[0].trim(),
         });
     }
 
