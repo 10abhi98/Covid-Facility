@@ -15,7 +15,7 @@ class Login extends Component {
             emailError: '',
             passError: '',
             loading: false,
-            modal: false
+            modal: false,
         };
         // Bind Functions ->
         this.clearError = this.clearError.bind(this);
@@ -89,25 +89,26 @@ class Login extends Component {
             await signUpWithGoogle();
             this.clearInputs();
             this.props.history.push('/volunteer/dashboard');
+            this.setState({ loading: false });
         } catch (err) {
             this.errorHandler(err);
+            this.setState({ loading: false });
         }
-        this.setState({ loading: false });
     }
 
     // Reset Password Modal ->
     resetPasswordModal() {
         this.setState({
-            modal : true
-        })
+            modal: true,
+        });
     }
 
     // Close Modal Callback function ->
     onModalClose = (stateVal) => {
         this.setState({
-            modal : stateVal
-        })
-    }
+            modal: stateVal,
+        });
+    };
 
     // On Change Event Handler ->
     onChangeHandler = (e) => {
@@ -201,7 +202,11 @@ class Login extends Component {
                                 >
                                     Forgot Password?
                                 </button>
-                                {this.state.modal && <ResetPassword modalState = {this.onModalClose}/>}
+                                {this.state.modal && (
+                                    <ResetPassword
+                                        modalState={this.onModalClose}
+                                    />
+                                )}
                             </div>
                             <br />
                             <br />

@@ -38,12 +38,14 @@ export class AuthProvider extends Component {
     signUpWithGoogle() {
         return auth.signInWithPopup(provider).then((res) => {
             const user = res.user;
-            addUserData(
-                user.uid,
-                user.displayName,
-                user.email,
-                user.phoneNumber
-            );
+            if (res.additionalUserInfo.isNewUser) {
+                addUserData(
+                    user.uid,
+                    user.displayName,
+                    user.email,
+                    user.phoneNumber
+                );
+            }
         });
     }
 
@@ -79,7 +81,7 @@ export class AuthProvider extends Component {
             logInWithEmail,
             logInWithGoogle,
             logout,
-            resetPassword
+            resetPassword,
         } = this;
         return (
             <AuthContext.Provider
@@ -91,7 +93,7 @@ export class AuthProvider extends Component {
                     logInWithEmail,
                     logInWithGoogle,
                     logout,
-                    resetPassword
+                    resetPassword,
                 }}
             >
                 {!loading && this.props.children}

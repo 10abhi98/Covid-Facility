@@ -66,4 +66,46 @@ function addNewTasks() {
     });
 }
 
-export { addUserData, getUserData, addLocationData, addNewTasks };
+// Update Task Information ->
+function updateTaskInfo(
+    taskId,
+    beds,
+    oxygen,
+    remidisivir,
+    newPatients,
+    waitingPatients
+) {
+    const taskDocument = firestore.collection('locations');
+    taskDocument.doc(taskId).update({
+        Tasks_Info: {
+            Beds: {
+                Count: beds,
+                Verified_At: new Date(),
+            },
+            Oxygen: {
+                Count: oxygen,
+                Verified_At: new Date(),
+            },
+            Remidisivir: {
+                Count: remidisivir,
+                Verified_At: new Date(),
+            },
+            New_Patients: {
+                Count: newPatients,
+                Verified_At: new Date(),
+            },
+            Waiting_Patients: {
+                Count: waitingPatients,
+                Verified_At: new Date(),
+            },
+        },
+    });
+}
+
+export {
+    addUserData,
+    getUserData,
+    addLocationData,
+    addNewTasks,
+    updateTaskInfo,
+};
