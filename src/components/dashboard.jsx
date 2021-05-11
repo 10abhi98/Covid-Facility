@@ -130,11 +130,17 @@ class Dashboard extends Component {
 
     // Fetch Location Data ->
     async fetchLocationData() {
-        await this.state.tasks.forEach((taskId) => {
+        this.state.tasks.forEach((taskId) => {
             firestore
                 .collection('locations')
                 .doc(taskId)
                 .onSnapshot((res) => {
+                    const add = this.stringifyAddress(
+                        res.data().Address.Street,
+                        res.data().Address.City,
+                        res.data().Address.State,
+                        res.data().Address.Pincode
+                    );
                     this.setState((prevState) => ({
                         taskLocations: {
                             ...prevState.taskLocations,
@@ -145,14 +151,14 @@ class Dashboard extends Component {
                                 Type: res.data().Type,
                             },
                         },
+                        locationName: res.data().Name,
+                        locationAddress: add,
+                        locationContact: res.data().Contact,
+                        activeBtn: taskId,
                     }));
                 });
         });
         // Make First Task Active ->
-        this.setState({
-            locationName:'abc' ,
-            activeBtn: this.state.tasks[0],
-        });
     }
 
     // On Change Handler
@@ -162,6 +168,14 @@ class Dashboard extends Component {
         });
     };
 
+    stringifyAddress(street, city, state, pincode) {
+        const address =
+            (street ? street + ', ' : '') +
+            (city ? city + ', ' : '') +
+            (state ? state : 'New Delhi') +
+            (pincode ? '-' + pincode : '');
+        return address;
+    }
     // Submit Event Handler
     submitInfoHandler(e) {
         e.preventDefault();
@@ -186,19 +200,13 @@ class Dashboard extends Component {
 
     // Set Location Function ->
     selectLocation(e, taskInfo) {
-        const address =
-            (taskInfo[1]['Address']['Street']
-                ? taskInfo[1]['Address']['Street'] + ','
-                : '') +
-            (taskInfo[1]['Address']['City']
-                ? taskInfo[1]['Address']['City'] + ','
-                : '') +
-            (taskInfo[1]['Address']['State']
-                ? taskInfo[1]['Address']['State']
-                : 'New Delhi') +
-            (taskInfo[1]['Address']['Pincode']
-                ? '-' + taskInfo[1]['Address']['Pincode']
-                : '');
+        const address = this.stringifyAddress(
+            taskInfo[1]['Address']['Street'],
+            taskInfo[1]['Address']['City'],
+            taskInfo[1]['Address']['State'],
+            taskInfo[1]['Address']['Pincode']
+        );
+
         const contact =
             taskInfo[1]['Contact'][0] +
             (taskInfo[1]['Contact'][1] ? ', ' + taskInfo[1]['Contact'][1] : '');
@@ -225,7 +233,7 @@ class Dashboard extends Component {
                     onClick={(e) => this.selectLocation(e, taskId)}
                 >
                     <span>
-                        {index + 1}. Call {taskId.Name}
+                        {index + 1}. Call {taskId[1].Name}
                     </span>
                 </button>
             );
