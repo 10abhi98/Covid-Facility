@@ -39,25 +39,25 @@ let pharmacyQuestionarre = {
 };
 // End of Sample Data ->
 
-var removeTaskAry = [];
 
 class Dashboard extends Component {
     static contextType = AuthContext;
     constructor(props) {
         super(props);
         this.state = {
-            locationName: smallTaskLocations[0],
-            address: locationDetails["address"][0],
-            contact: locationDetails["contact"][0],
-            response: locationDetails["response"][0],
-            activeBtn: smallTaskLocations[0],
+            locationName: '',
+            locationAddress: '',
+            locationContact: '',
+            userName: '',
+            tasks: [],
+            taskLocations : {},
+            activeBtn: '',
             beds: "",
             oxygen: "",
             newPatients: "",
             waitingPatients: "",
             remidisivir: "",
-            displayName: "",
-            tasks: [],
+
         };
 
         // Bind Functions ->
@@ -68,6 +68,7 @@ class Dashboard extends Component {
         this.tasksAssignment = this.tasksAssignment.bind(this);
         this.displayQuestionarre = this.displayQuestionarre.bind(this);
         this.fetchTasks = this.fetchTasks.bind(this);
+        this.fetchLocationData = this.fetchLocationData.bind(this);
     }
 
     componentDidMount() {
@@ -76,25 +77,32 @@ class Dashboard extends Component {
         const userDocument = firestore.collection("volunteers");
         userDocument.doc(currentUser.uid).onSnapshot((doc) => {
             this.setState({
-                displayName: doc.data().name.split(" ")[0].trim(),
+                userName: doc.data().name.split(" ")[0].trim(),
                 tasks: doc.data().tasks_assigned,
             });
-            // Fetch Task -
+            // Fetch Task ->
             this.fetchTasks();
+            // Fetch Hospital Data ->
+            this.fetchLocationData()
         });
     }
 
+    componentDidUpdate(){
+        
+    }
+
+    // Task Assignment ->
     fetchTasks() {
         const { currentUser } = this.context;
         if (this.state.tasks.length === 0) {
             firestore
                 .collection("unassigned_tasks")
                 .orderBy("last_updated_at")
-                .limit(1)
+                .limit(5)
                 .get()
                 .then((tasks) => {
-                    // Add Task to Volunteer Task Assigned Array ->
                     tasks.docs.forEach((task) => {
+                        // Add Task to Volunteer Task Assigned Array ->
                         firestore
                             .collection("volunteers")
                             .doc(currentUser.uid)
@@ -103,10 +111,6 @@ class Dashboard extends Component {
                                     task.id
                                 ),
                             });
-                            // this.setState({
-                            //     tasks :  [...this.state.tasks, task.id]
-                            // })
-                            removeTaskAry.push(task.id);
                         
                         // Add Taks to Assigned Task Collection
                         firestore.collection('assigned_tasks').doc(task.id).set({
@@ -114,18 +118,33 @@ class Dashboard extends Component {
                             task_name: task.data().task_name,
                             reassign_time: new Date(Date.now() + (3*60*60*1000)),
                             last_updated_at: task.data().last_updated_at,
-                        })  
+                        })
+
+                        // Remove Tasks from Unassigned Task Collections ->
+                        firestore.collection('unassigned_tasks').doc(task.id).delete();
                         
                     });
                 });
-            // Remove Tasks from Unassigned Task Collections ->
-            console.log(removeTaskAry);
-            removeTaskAry.forEach((taskId) => {
-                console.log(taskId);
-                firestore.collection('unassigned_tasks').doc(taskId).delete();
-            })
-            
         }
+    }
+
+    // Fetch Location Data ->
+    fetchLocationData(){
+        this.state.tasks.forEach((taskId) => {
+            firestore.collection('locations').doc(taskId).get().then((res) =>{
+                this.state.taskLocations[taskId] = {
+                    'Name' : res.data().Name,
+                    'Address' : res.data().Address,
+                    'Contact' : res.data().Contact,
+                    'Type' : res.data().Type
+                };
+            })
+        })
+        // Make First Task Active ->
+        this.setState({
+            locationName : Object.values(this.state.taskLocations)[0],
+            activeBtn : this.state.tasks[0]
+        })
     }
 
     // On Change Handler
@@ -158,47 +177,49 @@ class Dashboard extends Component {
     }
 
     // Set Location Function ->
-    selectLocation(e, location, index) {
+    selectLocation(e, taskId) {
+        const address =
+            (taskId['Address']['Street']
+                ? taskId['Address']['Street'] + ','
+                : '') +
+            (taskId['Address']['City'] ? taskId['Address']['City'] + ',' : '') +
+            (taskId['Address']['State']
+                ? taskId['Address']['State']
+                : 'New Delhi') +
+            (taskId['Address']['Pincode']
+                ? '-' + taskId['Address']['Pincode']
+                : '');
+        const contact =
+            taskId['Contact'][0] +
+            (taskId['Contact'][1] ? ', ' + taskId['Contact'][1] : '');
         this.setState({
-            locationName: location,
-            activeBtn: location,
-            address: locationDetails["address"][index],
-            contact: locationDetails["contact"][index],
-            response: locationDetails["response"][index],
+            locationName: taskId.Name,
+            locationAddress: address,
+            locationContact: contact,
+            activeBtn: taskId
         });
-    }
-
-    // User Log Out Handler ->
-    async userLogOut() {
-        const { logout } = this.context;
-        try {
-            await logout();
-            this.props.history.push("/volunteer");
-        } catch (err) {
-            console.log(err.message);
-        }
     }
 
     // Task Assignment Function ->
     tasksAssignment = (Locations) => {
-        return Locations.map((location, index) => {
+        return Object.entries(Locations).map((taskId, index) =>{
             return (
                 <button
-                    key={location + index}
+                    key={taskId + index}
                     className={
-                        this.state.activeBtn === location
+                        this.state.activeBtn === taskId
                             ? "locationActiveBtn"
                             : "locationBtn"
                     }
                     type='button'
-                    onClick={(e) => this.selectLocation(e, location, index)}
+                    onClick={(e) => this.selectLocation(e, taskId)}
                 >
                     <span>
-                        {index + 1}. Call {location}
+                        {index + 1}. Call {taskId.Name}
                     </span>
                 </button>
             );
-        });
+        })
     };
 
     // Questionarre Display Function ->
@@ -226,6 +247,17 @@ class Dashboard extends Component {
         });
     };
 
+    // User Log Out Handler ->
+    async userLogOut() {
+        const { logout } = this.context;
+        try {
+            await logout();
+            this.props.history.push("/volunteer");
+        } catch (err) {
+            console.log(err.message);
+        }
+    }
+
     render() {
         return (
             <>
@@ -241,26 +273,26 @@ class Dashboard extends Component {
                 <div id='dashboard' className='container-fluid'>
                     <div className='row ml-md-5'>
                         <div className='col-md-5 pl-md-5'>
-                            <h2>Welcome {this.state.displayName}!</h2>
+                            <h2>Welcome {this.state.userName}!</h2>
                             {this.state.activeBtn && <p>Pick a task.</p>}
 
                             {/* Small Tasks */}
                             <p className='volunteerTasks'>
                                 Quick tasks (2-3 mins each)
                             </p>
-                            {this.tasksAssignment(smallTaskLocations)}
+                            {this.tasksAssignment(this.state.taskLocations)}
 
                             {/* Medium Tasks */}
-                            <p className='volunteerTasks'>
+                            {/* <p className='volunteerTasks'>
                                 Slightly Longer tasks (10-15 mins each)
                             </p>
-                            {this.tasksAssignment(mediumTaskLocations)}
+                            {this.tasksAssignment(mediumTaskLocations)} */}
 
                             {/* Long Tasks */}
-                            <p className='volunteerTasks'>
+                            {/* <p className='volunteerTasks'>
                                 'I have some time' tasks (45-60 mins each)
                             </p>
-                            {this.tasksAssignment(longTaskLocations)}
+                            {this.tasksAssignment(longTaskLocations)} */}
                         </div>
 
                         <div id='locationForm' className='col-md-7'>
@@ -270,7 +302,7 @@ class Dashboard extends Component {
                                     <span>{this.state.locationName}!</span>
                                     <p>
                                         <em>
-                                            Responding {this.state.response}.
+                                            {/* Responding {this.state.response}. */}
                                         </em>
                                     </p>
                                     <p>
@@ -284,7 +316,7 @@ class Dashboard extends Component {
                                 <form id='taskList'>
                                     <p>Questions to ask</p>
                                     {/* Questionarre (Hospital/Pharmacy) */}
-                                    {this.state.locationName
+                                    {/* {this.state.locationName
                                         .toLowerCase()
                                         .includes("hospital")
                                         ? this.displayQuestionarre(
@@ -292,7 +324,7 @@ class Dashboard extends Component {
                                           )
                                         : this.displayQuestionarre(
                                               pharmacyQuestionarre
-                                          )}
+                                          )} */}
                                     {/* Submit Button */}
                                     <button
                                         id='submitBtn'
