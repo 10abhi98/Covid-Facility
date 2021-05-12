@@ -302,7 +302,7 @@ small {
 .locationActiveBtn {
     padding: 3px 0px 3px 10px;
     text-align: start;
-    width: 50%;
+    width: 60%;
     color:#EB8861 !important;
     background: white;
     margin-bottom: 3px;
@@ -357,6 +357,7 @@ small {
 
 #taskList .form-group{
     margin-bottom: 10px;
+    width: 61%;
 }
 
 #taskList .form-group label{
@@ -379,8 +380,8 @@ small {
     background-color: white;
     padding: 5px 13px 5px 13px;
     position: fixed;
-    right: 1.5% !important;
-    margin-top: -505px !important;
+    right: 1.7% !important;
+    margin-top: -470px !important;
 }
 /* -------------------------------------------- */
 

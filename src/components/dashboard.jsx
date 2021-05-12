@@ -290,22 +290,10 @@ class Dashboard extends Component {
                             {this.state.activeBtn && <p>Pick a task.</p>}
 
                             {/* Small Tasks */}
-                            <p className='volunteerTasks'>
-                                Quick tasks (2-3 mins each)
+                            <p className='volunteerTasks pb-2'>
+                                Assigned Tasks
                             </p>
                             {this.tasksAssignment(this.state.taskLocations)}
-
-                            {/* Medium Tasks */}
-                            {/* <p className='volunteerTasks'>
-                                Slightly Longer tasks (10-15 mins each)
-                            </p>
-                            {this.tasksAssignment(mediumTaskLocations)} */}
-
-                            {/* Long Tasks */}
-                            {/* <p className='volunteerTasks'>
-                                'I have some time' tasks (45-60 mins each)
-                            </p>
-                            {this.tasksAssignment(longTaskLocations)} */}
                         </div>
 
                         <div id='locationForm' className='col-md-7'>
@@ -314,21 +302,15 @@ class Dashboard extends Component {
                                 <div id='hospDetails'>
                                     <span>{this.state.locationName}!</span>
                                     <p>
-                                        <em>
-                                            {/* Responding {this.state.response}. */}
-                                        </em>
-                                    </p>
-                                    <p>
                                         <i className='fas fa-map-marker-alt pr-2'></i>
                                         {this.state.locationAddress}
                                         <br />
                                         <i className='fas fa-phone-alt pr-1'></i>
-                                        {this.state.locationContact}
+                                        {this.state.locationContact[0]}, {this.state.locationContact[1]}
                                     </p>
                                 </div>
                                 <form id='taskList'>
                                     <p>Questions to ask</p>
-                                    {this.state.locationName}
                                     {/* Questionarre (Hospital/Pharmacy) */}
                                     {this.state.locationType.toLowerCase() ===
                                     'hospital'
