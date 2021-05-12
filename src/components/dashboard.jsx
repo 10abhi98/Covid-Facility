@@ -44,6 +44,7 @@ class Dashboard extends Component {
         this.clearInputs = this.clearInputs.bind(this);
         this.onChangeHandler = this.onChangeHandler.bind(this);
         this.stringifyAddress = this.stringifyAddress.bind(this);
+        this.stringifyContacts = this.stringifyContacts.bind(this);
         this.submitInfoHandler = this.submitInfoHandler.bind(this);
         this.selectLocation = this.selectLocation.bind(this);
         this.userLogOut = this.userLogOut.bind(this);
@@ -136,6 +137,7 @@ class Dashboard extends Component {
                         res.data().Address.State,
                         res.data().Address.Pincode
                     );
+                    const contact = this.stringifyContacts(res.data().Contact);
                     this.setState((prevState) => ({
                         taskLocations: {
                             ...prevState.taskLocations,
@@ -148,7 +150,7 @@ class Dashboard extends Component {
                         },
                         locationName: res.data().Name,
                         locationAddress: add,
-                        locationContact: res.data().Contact,
+                        locationContact: contact,
                         locationType: res.data().Type,
                         activeBtn: taskId,
                     }));
@@ -174,9 +176,18 @@ class Dashboard extends Component {
         return address;
     }
 
+    stringifyContacts(Contact) {
+        const contactNumber =
+            Contact[0] + (Contact[1] ? ', ' + Contact[1] : '');
+        return contactNumber;
+    }
+
     // Submit Event Handler
     async submitInfoHandler(e, taskId) {
+        const { currentUser } = this.context;
         e.preventDefault();
+
+        // Update task info in "locations" collection ->
         await updateTaskInfo(
             taskId,
             this.state.beds,
@@ -186,6 +197,34 @@ class Dashboard extends Component {
             this.state.waitingPatients
         );
         this.clearInputs();
+
+        // Remove taskid from "volunteers" collection and tasks state array ->
+
+        this.setState({
+            tasks: [...this.state.tasks].filter((id) => id !== taskId),
+        });
+
+        firestore
+            .collection('volunteers')
+            .doc(currentUser.uid)
+            .update({
+                tasks_assigned: firebase.firestore.FieldValue.arrayRemove(
+                    taskId
+                ),
+            });
+
+        // Update reassign_time inside "assigned" collections ->
+        firestore
+            .collection('assigned_tasks')
+            .doc(taskId)
+            .update({
+                last_updated_at: new Date(),
+                reassign_time: new Date(Date.now() + 60 * 60 * 1000),
+            });
+        //this.props.history.push('/volunteer');
+        if (this.state.tasks.length === 0) {
+            console.log('Congratulations!');
+        }
     }
 
     // Set Location Function ->
@@ -198,9 +237,7 @@ class Dashboard extends Component {
             taskInfo[1]['Address']['Pincode']
         );
 
-        const contact =
-            taskInfo[1]['Contact'][0] +
-            (taskInfo[1]['Contact'][1] ? ', ' + taskInfo[1]['Contact'][1] : '');
+        const contact = this.stringifyContacts(taskInfo[1]['Contact']);
         this.setState({
             locationName: taskInfo[1]['Name'],
             locationAddress: address,
@@ -306,7 +343,7 @@ class Dashboard extends Component {
                                         {this.state.locationAddress}
                                         <br />
                                         <i className='fas fa-phone-alt pr-1'></i>
-                                        {this.state.locationContact[0]}, {this.state.locationContact[1]}
+                                        {this.state.locationContact}
                                     </p>
                                 </div>
                                 <form id='taskList'>
