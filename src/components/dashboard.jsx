@@ -82,6 +82,10 @@ class Dashboard extends Component {
         });
     }
 
+    componentWillUnmount(){
+        this.setState({});
+    }
+
     // Task Assignment ->
     fetchTasks() {
         const { currentUser } = this.context;
@@ -239,6 +243,7 @@ class Dashboard extends Component {
 
         // On Completion Show Congratulations ->
         if (this.state.tasks.length === 0) {
+            this.setState({})
             console.log('Congratulations!');
         }
 

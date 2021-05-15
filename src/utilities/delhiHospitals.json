@@ -130,7 +130,7 @@
         }
     },
     {
-        "Name": "Sardar Patel Covid Army hospital",
+        "Name": "Sardar Patel Covid Army Hospital",
         "Management": "Central Govt ",
         "Type": "Hospital",
         "Total_Beds": 500,
@@ -344,7 +344,7 @@
         }
     },
     {
-        "Name": "Deen Dayal Upadhyay hospital",
+        "Name": "Deen Dayal Upadhyay Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
         "Total_Beds": 310,
@@ -386,7 +386,7 @@
         }
     },
     {
-        "Name": "Ambedkar Nagar hospital",
+        "Name": "Ambedkar Nagar Hospital",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
         "Total_Beds": 300,
@@ -1070,7 +1070,7 @@
         }
     },
     {
-        "Name": "Rajan Babu Institute of Pulmonary Medicine and tuberculosis",
+        "Name": "Rajan Babu Institute of Pulmonary Medicine & Tuberculosis",
         "Management": "Delhi Govt ",
         "Type": "Hospital",
         "Total_Beds": 60,
@@ -1592,7 +1592,7 @@
         }
     },
     {
-        "Name": "Max Smart Gujarmal Modi hospital",
+        "Name": "Max Smart Gujarmal Modi Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 250,
@@ -2107,7 +2107,7 @@
         }
     },
     {
-        "Name": "Indian spinal injury centre",
+        "Name": "Indian spinal injury Centre",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 160,
@@ -2540,7 +2540,7 @@
         }
     },
     {
-        "Name": "Dharamshila Narayana Hosp.",
+        "Name": "Dharamshila Narayana Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 110,
@@ -3495,7 +3495,7 @@
         }
     },
     {
-        "Name": "Madhukar Rainbow Children Hosp.",
+        "Name": "Madhukar Rainbow Children Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 71,
@@ -3971,7 +3971,7 @@
         }
     },
     {
-        "Name": "Sushila Hospial",
+        "Name": "Sushila Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 50,
@@ -5008,7 +5008,7 @@
         }
     },
     {
-        "Name": "SURYA KIRAN HOSPITAL",
+        "Name": "Surya Kiran Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 40,
@@ -5148,7 +5148,7 @@
             "9810674306"
         ],
         "Address": {
-            "Street": "1629\u00e2\u20ac\u201cH, Thana Road, Najafgarh",
+            "Street": "1629\u00ef\u00bf\u00bdH, Thana Road, Najafgarh",
             "City": "New Delhi ",
             "State": "Delhi",
             "Pincode": 110043
@@ -6217,7 +6217,7 @@
         }
     },
     {
-        "Name": "SAMA HOSPITAL",
+        "Name": "Sama Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 27,
@@ -6431,7 +6431,7 @@
         }
     },
     {
-        "Name": "ROSEWOOD HOSPITAL",
+        "Name": "Rosewood Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 25,
@@ -6562,7 +6562,7 @@
         }
     },
     {
-        "Name": "SINGHAL HOSPITAL",
+        "Name": "Singhal Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 25,
@@ -7119,7 +7119,7 @@
         }
     },
     {
-        "Name": "Delhi global hospital",
+        "Name": "Delhi Global Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 14,
@@ -7203,7 +7203,7 @@
         }
     },
     {
-        "Name": "Delhi multi speciality hospital",
+        "Name": "Delhi Multi Speciality Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 11,
@@ -7245,7 +7245,7 @@
         }
     },
     {
-        "Name": "C M PATEL HOSPITAL",
+        "Name": "C M Patel Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 10,
@@ -7287,7 +7287,7 @@
         }
     },
     {
-        "Name": "Cronus Multi speciality Hospital",
+        "Name": "Cronus Multi Speciality Hospital",
         "Management": "Pvt",
         "Type": "Hospital",
         "Total_Beds": 10,
