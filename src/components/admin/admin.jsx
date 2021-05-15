@@ -16,8 +16,11 @@ export class Admin extends Component {
 
         this.addHospitals = this.addHospitals.bind(this)
         this.addTasks = this.addTasks.bind(this)
+        this.userLogOut = this.userLogOut.bind(this)
+        this.clearResponse = this.clearResponse(this)
     }
 
+    // Clear All Responses ->
     clearResponse(){
         this.setState({
             response1 : '',
@@ -26,6 +29,7 @@ export class Admin extends Component {
         })
     }
 
+    // Add Location Data
     async addHospitals() {
         this.clearResponse()
         try{
@@ -40,6 +44,7 @@ export class Admin extends Component {
         }
     }
 
+    // Add Tasks Data ->
     async addTasks() {
         this.clearResponse()
         try{
@@ -51,6 +56,17 @@ export class Admin extends Component {
             this.setState({
                 response2 : err.message
             })
+        }
+    }
+
+    // User Log Out Handler ->
+    async userLogOut() {
+        const { logout } = this.context;
+        try {
+            await logout();
+            this.props.history.push('/volunteer');
+        } catch (err) {
+            console.log(err.message);
         }
     }
 
