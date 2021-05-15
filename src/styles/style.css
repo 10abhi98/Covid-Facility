@@ -140,12 +140,22 @@
 .p1{
     margin-top: 10px;
 }
+
 .p1 span{
     font-size: 0.8em;
     margin-right: 1.2em;
     line-height: 1.8em;
     color: #64869E;
 }
+
+.popup{
+    color: red;
+}
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl{
+    margin: 50px 12px 0 0 !important;
+}
+
 /* ----------------------------------------------- */
 
 /* -------- Registration Page / Login Page -------- */
@@ -379,9 +389,9 @@ small {
     border:none;
     background-color: white;
     padding: 5px 13px 5px 13px;
-    position: fixed;
-    right: 1.7% !important;
-    margin-top: -470px !important;
+    /* position: fixed; */
+    /* right: 1.7% !important; */
+    /* margin-top: -470px !important; */
 }
 /* -------------------------------------------- */
 

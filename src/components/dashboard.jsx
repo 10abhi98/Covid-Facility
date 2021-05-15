@@ -6,20 +6,6 @@ import { firestore } from '../services/Firebase';
 import firebase from 'firebase/app';
 import { updateTaskInfo } from '../services/FirebaseHandler';
 
-// Questionarre ->
-let hospitalQuestionarre = {
-    Beds: 'How many beds are available?',
-    Oxygen: 'How much Oxygen is available?',
-    'New Patients': 'How many New Patients were admitted in the last hour?',
-    'Waiting Patients': 'How many patients are waiting outside?',
-    Remidisivir: 'How much Remidisivir is available?',
-};
-
-let pharmacyQuestionarre = {
-    Remidisivir: 'How much Remidisivir is available?',
-};
-// End of Questionarre ->
-
 class Dashboard extends Component {
     static contextType = AuthContext;
     constructor(props) {
@@ -31,14 +17,29 @@ class Dashboard extends Component {
             locationType: '',
             userName: '',
             tasks: [],
-            taskLocations: {},
+            taskLocations: [],
             activeBtn: '',
             beds: '',
             oxygen: '',
             newPatients: '',
             waitingPatients: '',
             remidisivir: '',
+            loading : true
         };
+
+        // Questionarre ->
+        this.hospitalQuestionarre = {
+            'Beds': 'How many beds are available?',
+            'Oxygen': 'How much Oxygen is available?',
+            'New Patients': 'How many New Patients were admitted in the last hour?',
+            'Waiting Patients': 'How many patients are waiting outside?',
+            'Remidisivir': 'How much Remidisivir is available?',
+        }
+
+        this.pharmacyQuestionarre = {
+            Remidisivir: 'How much Remidisivir is available?',
+        }
+        // End of Questionarre ->
 
         // Bind Functions ->
         this.clearInputs = this.clearInputs.bind(this);
@@ -66,17 +67,18 @@ class Dashboard extends Component {
 
     componentDidMount() {
         const { currentUser } = this.context;
-        // Fetch User Info ->
+        // Fetch User Info ->                
         const userDocument = firestore.collection('volunteers');
-        userDocument.doc(currentUser.uid).onSnapshot((doc) => {
+        userDocument.doc(currentUser.uid).get().then((doc) => {
             this.setState({
                 userName: doc.data().name.split(' ')[0].trim(),
                 tasks: doc.data().tasks_assigned,
             });
-            // Fetch Task ->
-            this.fetchTasks();
-            // Fetch Hospital Data ->
-            this.fetchLocationData();
+            Promise.all([
+                this.fetchTasks(),this.fetchLocationData()
+            ]).then((res) => {
+                this.setState({loading : false})
+            })
         });
     }
 
@@ -130,7 +132,8 @@ class Dashboard extends Component {
             firestore
                 .collection('locations')
                 .doc(taskId)
-                .onSnapshot((res) => {
+                .get()
+                .then((res) => {
                     const add = this.stringifyAddress(
                         res.data().Address.Street,
                         res.data().Address.City,
@@ -138,16 +141,18 @@ class Dashboard extends Component {
                         res.data().Address.Pincode
                     );
                     const contact = this.stringifyContacts(res.data().Contact);
-                    this.setState((prevState) => ({
-                        taskLocations: {
-                            ...prevState.taskLocations,
-                            [taskId]: {
+                    this.setState(({
+                        taskLocations: [
+                            ...this.state.taskLocations,
+                            {
+                                Task_Id : taskId,
                                 Name: res.data().Name,
                                 Address: res.data().Address,
                                 Contact: res.data().Contact,
                                 Type: res.data().Type,
                             },
-                        },
+                        ],
+                        // Make Last Task Active ->
                         locationName: res.data().Name,
                         locationAddress: add,
                         locationContact: contact,
@@ -156,7 +161,6 @@ class Dashboard extends Component {
                     }));
                 });
         });
-        // Make First Task Active ->
     }
 
     // On Change Handler
@@ -168,107 +172,121 @@ class Dashboard extends Component {
 
     // Combine address from street, city,
     stringifyAddress(street, city, state, pincode) {
-        const address =
-            (street ? street + ', ' : '') +
-            (city ? city + ', ' : '') +
-            (state ? state : 'New Delhi') +
-            (pincode ? '-' + pincode : '');
-        return address;
+        return ((street ? street + ', ' : '') + (city ? city + ', ' : '') + (state ? state : 'New Delhi') + (pincode ? '-' + pincode : ''));
     }
 
     stringifyContacts(Contact) {
-        const contactNumber =
-            Contact[0] + (Contact[1] ? ', ' + Contact[1] : '');
-        return contactNumber;
-    }
+        return (Contact[0] + (Contact[1] ? ', ' + Contact[1] : ''));
+    }s
 
     // Submit Event Handler
     async submitInfoHandler(e, taskId) {
-        const { currentUser } = this.context;
         e.preventDefault();
+        const { currentUser } = this.context;
+        try {
+            this.setState({
+                loading : true
+            })
+            
+            // Update task info in "locations" collection ->
+            await updateTaskInfo(
+                taskId,
+                this.state.beds,
+                this.state.oxygen,
+                this.state.remidisivir,
+                this.state.newPatients,
+                this.state.waitingPatients
+            );
 
-        // Update task info in "locations" collection ->
-        await updateTaskInfo(
-            taskId,
-            this.state.beds,
-            this.state.oxygen,
-            this.state.remidisivir,
-            this.state.newPatients,
-            this.state.waitingPatients
-        );
-        this.clearInputs();
+            // Clear all Inputs ->
+            this.clearInputs();
 
-        // Remove taskid from "volunteers" collection and tasks state array ->
-
-        this.setState({
-            tasks: [...this.state.tasks].filter((id) => id !== taskId),
-        });
-
-        firestore
-            .collection('volunteers')
-            .doc(currentUser.uid)
-            .update({
-                tasks_assigned: firebase.firestore.FieldValue.arrayRemove(
-                    taskId
-                ),
+            // Remove Task Id from tasks & taskLocations array in state object ->
+            this.setState({
+                tasks: [...this.state.tasks].filter((id) => id !== taskId),
+                taskLocations : [...this.state.taskLocations].filter((val) =>  val.Task_Id !== taskId),
             });
 
-        // Update reassign_time inside "assigned" collections ->
-        firestore
-            .collection('assigned_tasks')
-            .doc(taskId)
-            .update({
-                last_updated_at: new Date(),
-                reassign_time: new Date(Date.now() + 60 * 60 * 1000),
-            });
-        //this.props.history.push('/volunteer');
+            // Update task_assigned array in "volunteer" collections ->
+            await firestore
+                .collection('volunteers')
+                .doc(currentUser.uid)
+                .update({
+                    tasks_assigned: firebase.firestore.FieldValue.arrayRemove(
+                        taskId
+                    ),
+                });
+
+            // Update reassign_time inside "assigned" collections ->
+            await firestore
+                .collection('assigned_tasks')
+                .doc(taskId)
+                .update({
+                    last_updated_at: new Date(),
+                    reassign_time: new Date(Date.now() + 60 * 60 * 1000),
+                });
+            
+            // Change Active State Button -> 
+            this.setState({
+                activeBtn : this.state.tasks[this.state.tasks.length-1],
+            })
+
+            // Change Location on Form Based on Active State Button ->
+            this.selectLocation(e, this.state.taskLocations.find(id => id.Task_Id === this.state.activeBtn));
+        } catch (err){
+            console.log(err);
+        }
+
+        // On Completion Show Congratulations ->
         if (this.state.tasks.length === 0) {
             console.log('Congratulations!');
         }
+
+        this.setState({
+            loading : false
+        })
     }
 
     // Set Location Function ->
     selectLocation(e, taskInfo) {
         this.clearInputs();
         const address = this.stringifyAddress(
-            taskInfo[1]['Address']['Street'],
-            taskInfo[1]['Address']['City'],
-            taskInfo[1]['Address']['State'],
-            taskInfo[1]['Address']['Pincode']
+            taskInfo['Address']['Street'],
+            taskInfo['Address']['City'],
+            taskInfo['Address']['State'],
+            taskInfo['Address']['Pincode']
         );
 
-        const contact = this.stringifyContacts(taskInfo[1]['Contact']);
+        const contact = this.stringifyContacts(taskInfo['Contact']);
         this.setState({
-            locationName: taskInfo[1]['Name'],
+            locationName: taskInfo['Name'],
             locationAddress: address,
             locationContact: contact,
-            locationType: taskInfo[1]['Type'],
-            activeBtn: taskInfo[0],
+            locationType: taskInfo['Type'],
+            activeBtn: taskInfo.Task_Id,
         });
     }
 
     // Task Assignment Function ->
     tasksAssignment = (Locations) => {
-        return Object.entries(Locations)
-            .reverse()
-            .map((taskId, index) => {
+        return Locations.reverse().map((tasks, index) => {
                 return (
                     <button
-                        key={taskId + index}
+                        key={tasks.Task_Id + index}
                         className={
-                            this.state.activeBtn === taskId[0]
+                            this.state.activeBtn === tasks.Task_Id
                                 ? 'locationActiveBtn'
                                 : 'locationBtn'
                         }
                         type='button'
-                        onClick={(e) => this.selectLocation(e, taskId)}
+                        onClick={(e) => this.selectLocation(e, tasks)}
                     >
                         <span>
-                            {index + 1}. Call {taskId[1].Name}
+                            {index + 1}. Call {tasks.Name}
                         </span>
                     </button>
                 );
-            });
+        });
     };
 
     // Questionarre Display Function ->
@@ -311,7 +329,18 @@ class Dashboard extends Component {
     render() {
         return (
             <>
-                <div id='logoutPlace' className='float-right'>
+            {/* Ternary Operator to dispaly Spinner while DOM is Rendering -> */}
+            {this.state.loading 
+            ? 
+            <div style = {{position : 'absolute', top : '50%', left : '50%', color : 'white'}}>
+                <div className="spinner-border" role="status">
+                    <span className="sr-only">Loading...</span>
+                </div>
+            </div>
+            :
+            (<>
+            {/* Logout Button */}
+            <div id='logoutPlace' className='float-right'>
                     <button
                         id='logOut'
                         className='button'
@@ -320,6 +349,8 @@ class Dashboard extends Component {
                         Logout
                     </button>
                 </div>
+                {/* Only Show Content on Page when there is a task Location Array -> */}
+                {this.state.taskLocations.length > 0 &&
                 <div id='dashboard' className='container-fluid'>
                     <div className='row ml-md-5'>
                         <div className='col-md-5 pl-md-5'>
@@ -335,47 +366,59 @@ class Dashboard extends Component {
 
                         <div id='locationForm' className='col-md-7'>
                             <div className='p-1'>
-                                {/* Hospital Details */}
-                                <div id='hospDetails'>
-                                    <span>{this.state.locationName}!</span>
-                                    <p>
-                                        <i className='fas fa-map-marker-alt pr-2'></i>
-                                        {this.state.locationAddress}
-                                        <br />
-                                        <i className='fas fa-phone-alt pr-1'></i>
-                                        {this.state.locationContact}
-                                    </p>
+                                <div className = 'row'>
+
+                                    <div className = 'col-md-9'>
+                                        {/* Hospital Details */}
+                                        <div id='hospDetails'>
+                                            <span>{this.state.locationName}!</span>
+                                            <p>
+                                                <i className='fas fa-map-marker-alt pr-2'></i>
+                                                    {this.state.locationAddress}
+                                                <br />
+                                                <i className='fas fa-phone-alt pr-1'></i>
+                                                {this.state.locationContact}
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className = 'col-md-3 pt-2' style = {{paddingRight : '5px'}}>
+                                        {/* Submit Button */}
+                                        <button
+                                            id='submitBtn'
+                                            type='submit'
+                                            className='button float-right'
+                                            onClick={(event) => {
+                                                this.submitInfoHandler(
+                                                    event,
+                                                    this.state.activeBtn
+                                                );
+                                            }}
+                                        >
+                                            Submit Info
+                                        </button>
+                                    </div>
                                 </div>
+
                                 <form id='taskList'>
                                     <p>Questions to ask</p>
                                     {/* Questionarre (Hospital/Pharmacy) */}
                                     {this.state.locationType.toLowerCase() ===
                                     'hospital'
                                         ? this.displayQuestionarre(
-                                              hospitalQuestionarre
+                                            this.hospitalQuestionarre
                                           )
                                         : this.displayQuestionarre(
-                                              pharmacyQuestionarre
+                                            this.pharmacyQuestionarre
                                           )}
-                                    {/* Submit Button */}
-                                    <button
-                                        id='submitBtn'
-                                        type='submit'
-                                        className='button float-right'
-                                        onClick={(event) => {
-                                            this.submitInfoHandler(
-                                                event,
-                                                this.state.activeBtn
-                                            );
-                                        }}
-                                    >
-                                        Submit Info
-                                    </button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
+                }
+            </>)
+            }
             </>
         );
     }

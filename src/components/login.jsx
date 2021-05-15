@@ -26,7 +26,6 @@ class Login extends Component {
         this.onChangeHandler = this.onChangeHandler.bind(this);
         this.resetPasswordModal = this.resetPasswordModal.bind(this);
         this.onModalClose = this.onModalClose.bind(this);
-        // this._isMounted = false;
     }
 
     // Clear Errors ->
@@ -62,6 +61,13 @@ class Login extends Component {
                 break;
             default:
         }
+    }
+
+    // Prevent Memeory Leak ->
+    componentWillUnmount(){
+        this.setState = (state,callback)=>{
+            return;
+        };
     }
 
     // User login with Email ->

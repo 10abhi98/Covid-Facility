@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import '../styles/style.css';
 import { firestore } from '../services/Firebase';
+import moment from 'moment';
+
 // Mapbox Lib ->
 import mapboxgl from 'mapbox-gl/dist/mapbox-gl-csp';
 // eslint-disable-next-line import/no-webpack-loader-syntax
@@ -12,6 +14,7 @@ mapboxgl.workerClass = MapboxWorker;
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_KEY;
 var marker = new mapboxgl.Marker();
 class homepage extends Component {
+    _isMounted = false;
     constructor(props) {
         super(props);
         // Set Initial Coordinates
@@ -26,10 +29,10 @@ class homepage extends Component {
         };
         this.mapContainer = React.createRef();
         this.handleClick = this.handleClick.bind(this);
-        // this.getLocData = this.getLocData.bind(this);
     }
 
     componentDidMount() {
+        this._isMounted = true;
         const { lng, lat, zoom } = this.state;
         const map = new mapboxgl.Map({
             container: this.mapContainer.current,
@@ -38,17 +41,22 @@ class homepage extends Component {
             zoom: zoom,
         });
 
+        // Add zoom and rotation controls to the map.
+        map.addControl(new mapboxgl.NavigationControl());
+
         this.setState({
             map: map,
         });
 
         // Store New Coordinates
         map.on('move', () => {
-            this.setState({
-                lng: map.getCenter().lng.toFixed(4),
-                lat: map.getCenter().lat.toFixed(4),
-                zoom: map.getZoom().toFixed(2),
-            });
+            if(this._isMounted){
+                this.setState({
+                    lng: map.getCenter().lng.toFixed(4),
+                    lat: map.getCenter().lat.toFixed(4),
+                    zoom: map.getZoom().toFixed(2),
+                });
+            }
         });
 
         // Fetch Data from Firestore Database ->
@@ -60,29 +68,38 @@ class homepage extends Component {
             snapshot.forEach((doc) => {
                 locData.push(doc.data());
             });
-            this.setState({
-                locationData: locData,
-            });
+            if(this._isMounted){
+                this.setState({
+                    locationData: locData,
+                });
+            }
         });
+        setInterval(() => {
+            this.setState({
+              curTime : new Date().toLocaleString()
+            })
+        }, 1000)
     }
 
-    handleClick = (divName, longitude, latitude) => {
+    // Prevent Memeory Leak ->
+    componentWillUnmount(){
+        this._isMounted = false;
+    }
+
+    handleClick = (divName, locationName, longitude, latitude) => {
         marker.remove();
         this.setState({
             activeDiv: divName,
         });
+        marker.setPopup(new mapboxgl.Popup({
+            closeButton : false,
+            className : 'popup'
+        })
+        .setText(locationName.toUpperCase())
+        .setMaxWidth('500px')
+        .trackPointer()
+        );
         marker.setLngLat([longitude, latitude]).addTo(this.state.map);
-        // var popup = new mapboxgl.Popup({ closeButton: false }).setText(
-        //     locationName
-        // );
-        // const element = marker.getElement();
-        // element.id = 'marker';
-        // element.addEventListener('mouseenter', () =>
-        //     popup.addTo(this.state.map)
-        // );
-        // element.addEventListener('mouseleave', () => popup.remove());
-        // marker.setPopup(popup);
-        // marker.addTo(this.state.map);
     };
 
     renderData = () => {
@@ -123,6 +140,7 @@ class homepage extends Component {
                     onClick={() =>
                         this.handleClick(
                             divName,
+                            hospitalName,
                             loc['Coordinates']['_long'],
                             loc['Coordinates']['_lat']
                         )
@@ -174,71 +192,12 @@ class homepage extends Component {
                             paddingTop: '2px',
                         }}
                     >
-                        Verified 10 mins ago
+                        Verified {moment(new Date(loc['Tasks_Info']['Beds']['Verified_At'].seconds * 1000)).fromNow()}
                     </div>
                     <hr />
                 </div>
             );
         });
-        // let results = [];
-        // for (var i = 0; i < hospitals.length; i++) {
-        //     const divName = "d" + (i + 1);
-        //     results.push(
-        //         <div
-        //             key={i}
-        //             onClick={() => this.handleClick(divName)}
-        //             className={
-        //                 this.state.activeDiv === divName
-        //                     ? "dispBed pb-2"
-        //                     : "pb-2"
-        //             }
-        //         >
-        //             <p>
-        //                 <span>
-        //                     {hospitals[i]}
-        //                     <br />
-        //                 </span>
-        //                 {this.state.activeDiv === divName ? (
-        //                     <>
-        //                         <div>
-        //                             <i className='fas fa-map-marker-alt pr-2'></i>
-        //                             {address[i]}
-        //                         </div>
-        //                         <div>
-        //                             <i className='fas fa-phone-alt pr-1'></i>
-        //                             {phone[i]}
-        //                         </div>
-        //                     </>
-        //                 ) : null}
-        //             </p>
-        //             <div className='row'>
-        //                 <div className='col-sm-4'>
-        //                     Available Beds
-        //                     <div>{beds[i]}/150</div>
-        //                 </div>
-        //                 <div className='col-sm-4'>
-        //                     New Admits
-        //                     <div>{admits[i]}/hr</div>
-        //                 </div>
-        //                 <div className='col-sm-4'>
-        //                     Patients Waiting
-        //                     <div>{waiting[i]}</div>
-        //                 </div>
-        //             </div>
-        //             <div
-        //                 style={{
-        //                     color: "#48B3BC",
-        //                     fontSize: "0.7em",
-        //                     paddingTop: "2px",
-        //                 }}
-        //             >
-        //                 Verified 10 mins ago
-        //             </div>
-        //             <hr />
-        //         </div>
-        //     );
-        // }
-        // return <>{results}</>;
     };
     render() {
         const { lng, lat, zoom } = this.state;
