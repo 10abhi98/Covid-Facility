@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { auth } from './Firebase';
-import { addUserData } from './FirebaseHandler';
+import { addUserData, getUserRole } from './FirebaseHandler';
 import { provider } from './Firebase';
 
 const AuthContext = React.createContext();
@@ -11,6 +11,7 @@ export class AuthProvider extends Component {
         this.state = {
             currentUser: null,
             loading: true,
+            userRole: '',
         };
 
         // Bind Functions ->
@@ -54,6 +55,14 @@ export class AuthProvider extends Component {
         return auth.signInWithEmailAndPassword(email, password);
     }
 
+    // Get user Role ->
+    async getRole(userId) {
+        const role = await getUserRole(userId);
+        this.setState({
+            userRole: role,
+        });
+    }
+
     // User logout ->
     logout = () => {
         return auth.signOut();
@@ -67,6 +76,7 @@ export class AuthProvider extends Component {
     // Authenticate user (to check if user is logged) ->
     authListener() {
         auth.onAuthStateChanged((user) => {
+            if (user) this.getRole(user.uid);
             this.setState({
                 currentUser: user,
                 loading: false,
@@ -74,7 +84,7 @@ export class AuthProvider extends Component {
         });
     }
     render() {
-        const { currentUser, loading } = this.state;
+        const { currentUser, loading, userRole } = this.state;
         const {
             signUpWithEmail,
             signUpWithGoogle,
@@ -88,6 +98,7 @@ export class AuthProvider extends Component {
                 value={{
                     currentUser,
                     loading,
+                    userRole,
                     signUpWithEmail,
                     signUpWithGoogle,
                     logInWithEmail,

@@ -12,19 +12,17 @@ function addUserData(userId, name, email, contact) {
         tasks_assigned: [],
         tasks_completed: 0,
         type: 'On-Call Activist',
+        role: 'ROLE_VOLUNTEER',
     });
 }
 
-// Fetch User Name ->
-function getUserData(userId) {
+// Fetch user Role ->
+function getUserRole(userId) {
     const userDocument = firestore.collection('volunteers');
     return userDocument
         .doc(userId)
         .get()
-        .then((snapshot) => [
-            snapshot.data().name,
-            snapshot.data().tasks_assigned,
-        ]);
+        .then((snapshot) => snapshot.data().role);
 }
 
 // Add Locations Data ->
@@ -104,8 +102,8 @@ function updateTaskInfo(
 
 export {
     addUserData,
-    getUserData,
     addLocationData,
     addNewTasks,
     updateTaskInfo,
+    getUserRole,
 };
