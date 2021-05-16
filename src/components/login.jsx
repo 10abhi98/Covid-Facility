@@ -4,6 +4,7 @@ import '../styles/style.css';
 import google from '../images/Google.png';
 import AuthContext from '../services/AuthContext';
 import ResetPassword from './resetpassword';
+import { getUserRole } from '../services/FirebaseHandler';
 
 class Login extends Component {
     static contextType = AuthContext;
@@ -64,8 +65,8 @@ class Login extends Component {
     }
 
     // Prevent Memeory Leak ->
-    componentWillUnmount(){
-        this.setState = (state,callback)=>{
+    componentWillUnmount() {
+        this.setState = (state, callback) => {
             return;
         };
     }
@@ -77,9 +78,14 @@ class Login extends Component {
         try {
             this.clearError();
             this.setState({ loading: true });
-            await logInWithEmail(this.state.userEmail, this.state.userPassword);
+            const res = await logInWithEmail(
+                this.state.userEmail,
+                this.state.userPassword
+            );
+            const role = await getUserRole(res.user.uid);
             this.clearInputs();
-            this.props.history.push('/volunteer/dashboard');
+            const path = role.includes('ADMIN') ? 'admin' : 'dashboard';
+            this.props.history.push('/volunteer/' + path);
         } catch (err) {
             this.errorHandler(err);
         }

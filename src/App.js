@@ -51,12 +51,12 @@ class App extends Component {
                                 <PrivateRoute
                                     path='/volunteer/dashboard'
                                     component={volunteerHome}
-                                    role={['ROLE_VOLUNTEER']}
+                                    role={'ROLE_VOLUNTEER'}
                                 />
                                 <PrivateRoute
                                     path='/volunteer/admin'
                                     component={Admin}
-                                    role={['ROLE_ADMIN']}
+                                    role={'ROLE_ADMIN'}
                                 />
                                 <Route component={Error404} />
                             </Switch>

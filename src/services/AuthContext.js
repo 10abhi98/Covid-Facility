@@ -19,6 +19,7 @@ export class AuthProvider extends Component {
         this.signUpWithEmail = this.signUpWithEmail.bind(this);
         this.signUpWithGoogle = this.signUpWithGoogle.bind(this); // Same Method for Google LogIn/SignUp
         this.logInWithEmail = this.logInWithEmail.bind(this);
+        // this.getRole = this.getRole.bind(this);
     }
 
     componentDidMount() {
@@ -56,12 +57,13 @@ export class AuthProvider extends Component {
     }
 
     // Get user Role ->
-    async getRole(userId) {
-        const role = await getUserRole(userId);
-        this.setState({
-            userRole: role,
-        });
-    }
+    // async getRole(userId) {
+    //     const role = await getUserRole(userId);
+    //     this.setState({
+    //         userRole: role,
+    //     });
+    //     console.log(this.state.userRole);
+    // }
 
     // User logout ->
     logout = () => {
@@ -76,15 +78,26 @@ export class AuthProvider extends Component {
     // Authenticate user (to check if user is logged) ->
     authListener() {
         auth.onAuthStateChanged((user) => {
-            if (user) this.getRole(user.uid);
-            this.setState({
-                currentUser: user,
-                loading: false,
-            });
+            if (user) {
+                getUserRole(user.uid).then((role) => {
+                    this.setState({
+                        currentUser: user,
+                        loading: false,
+                        userRole: role,
+                    });
+                });
+            } else {
+                this.setState({
+                    currentUser: user,
+                    loading: false,
+                    userRole: '',
+                });
+            }
         });
     }
     render() {
         const { currentUser, loading, userRole } = this.state;
+        // console.log('2', userRole, currentUser);
         const {
             signUpWithEmail,
             signUpWithGoogle,
@@ -92,6 +105,7 @@ export class AuthProvider extends Component {
             logInWithGoogle,
             logout,
             resetPassword,
+            // getRole,
         } = this;
         return (
             <AuthContext.Provider
@@ -105,6 +119,7 @@ export class AuthProvider extends Component {
                     logInWithGoogle,
                     logout,
                     resetPassword,
+                    // getRole,
                 }}
             >
                 {!loading && this.props.children}
