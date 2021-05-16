@@ -1,3 +1,4 @@
+// Libraries ->
 import React, { Component } from 'react';
 import { auth } from './Firebase';
 import { addUserData, getUserRole } from './FirebaseHandler';
@@ -19,7 +20,6 @@ export class AuthProvider extends Component {
         this.signUpWithEmail = this.signUpWithEmail.bind(this);
         this.signUpWithGoogle = this.signUpWithGoogle.bind(this); // Same Method for Google LogIn/SignUp
         this.logInWithEmail = this.logInWithEmail.bind(this);
-        // this.getRole = this.getRole.bind(this);
     }
 
     componentDidMount() {
@@ -56,15 +56,6 @@ export class AuthProvider extends Component {
         return auth.signInWithEmailAndPassword(email, password);
     }
 
-    // Get user Role ->
-    // async getRole(userId) {
-    //     const role = await getUserRole(userId);
-    //     this.setState({
-    //         userRole: role,
-    //     });
-    //     console.log(this.state.userRole);
-    // }
-
     // User logout ->
     logout = () => {
         return auth.signOut();
@@ -79,6 +70,7 @@ export class AuthProvider extends Component {
     authListener() {
         auth.onAuthStateChanged((user) => {
             if (user) {
+                // Get User Role on Login/Signup
                 getUserRole(user.uid).then((role) => {
                     this.setState({
                         currentUser: user,
@@ -97,7 +89,6 @@ export class AuthProvider extends Component {
     }
     render() {
         const { currentUser, loading, userRole } = this.state;
-        // console.log('2', userRole, currentUser);
         const {
             signUpWithEmail,
             signUpWithGoogle,
@@ -105,7 +96,6 @@ export class AuthProvider extends Component {
             logInWithGoogle,
             logout,
             resetPassword,
-            // getRole,
         } = this;
         return (
             <AuthContext.Provider
@@ -119,7 +109,6 @@ export class AuthProvider extends Component {
                     logInWithGoogle,
                     logout,
                     resetPassword,
-                    // getRole,
                 }}
             >
                 {!loading && this.props.children}

@@ -7,15 +7,7 @@ class PrivateRoute extends Component {
 
     render() {
         const { currentUser, userRole } = this.context;
-        console.log(userRole);
         const { component: Component, role, ...rest } = this.props;
-        // console.log(props);
-        // const userRole = getRole(currentUser.uid);
-        // userRole.then((res) => {
-        //     console.log(res);
-        // });
-        // console.log(userRole, currentUser);
-        // this.grantPermission(role, userRole);
         const path = userRole.includes('ADMIN') ? 'admin' : 'dashboard';
         return (
             <Route
@@ -23,8 +15,10 @@ class PrivateRoute extends Component {
                 render={(props) =>
                     currentUser ? (
                         userRole && userRole === role ? (
+                            // Allow User to Access Individual Routes ->
                             <Component {...props} />
                         ) : (
+                            // Prevent Admin to access Dashboard Page & Volunteer to access Admin Page ->
                             <Redirect
                                 to={{
                                     pathname: '/volunteer/' + path,
@@ -33,6 +27,7 @@ class PrivateRoute extends Component {
                             />
                         )
                     ) : (
+                        // If not looged in, redirect to Volunteer Page ->
                         <Redirect
                             to={{
                                 pathname: '/volunteer',

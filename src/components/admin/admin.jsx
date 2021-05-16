@@ -1,3 +1,4 @@
+// Libraries ->
 import React, { Component } from 'react';
 import '../../styles/style.css';
 import AuthContext from '../../services/AuthContext';
@@ -14,6 +15,7 @@ export class Admin extends Component {
             response3 : '',
         }
 
+        // Bind Functions ->
         this.addHospitals = this.addHospitals.bind(this)
         this.addTasks = this.addTasks.bind(this)
         this.userLogOut = this.userLogOut.bind(this)
@@ -29,7 +31,7 @@ export class Admin extends Component {
         })
     }
 
-    // Add Location Data
+    // Add Location Data Handler ->
     async addHospitals() {
         this.clearResponse()
         try{
@@ -44,7 +46,7 @@ export class Admin extends Component {
         }
     }
 
-    // Add Tasks Data ->
+    // Add Tasks Data Handler ->
     async addTasks() {
         this.clearResponse()
         try{
@@ -82,69 +84,73 @@ export class Admin extends Component {
                         Logout
                     </button>
                 </div>
-                {/* Add Hospital Data to Backend -> */}
                 <div className='container'>
                     <div className = 'row d-flex justify-content-center mt-5'>
                         <div className = 'col-md-10'>
-                        <table className="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">OPERATION</th>
-                                    <th scope="col">ACTION</th>
-                                    <th scope="col">RESPONSE</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>
-                                        Add Location Data
-                                    </td>
-                                    <td>
-                                        <button
-                                            type='button'
-                                            className='btn btn-outline-light btn-sm'
-                                            onClick={this.addHospitals}
-                                        >
-                                            Add
-                                        </button>
-                                    </td>
-                                    <td>{this.state.response1}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>
-                                        Add List of Unassign Tasks
-                                    </td>
-                                    <td>
-                                        <button
-                                            type='button'
-                                            className='btn btn-outline-light btn-sm'
-                                            onClick={this.addTasks}
-                                        >
-                                            Add
-                                        </button>
-                                    </td>
-                                    <td>{this.state.response2}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td >
-                                        Run Cron Job
-                                    </td>
-                                    <td>
-                                        <button
-                                            type='button'
-                                            className='btn btn-outline-light btn-sm'
-                                            onClick= ''
-                                        >
-                                            Run
-                                        </button>
-                                    </td>
-                                    <td>{this.state.response3}</td>
-                                </tr>
-                            </tbody>
+                            <table className="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">OPERATION</th>
+                                        <th scope="col">ACTION</th>
+                                        <th scope="col">RESPONSE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {/* Add Hospital Data to Firebase */}
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>
+                                            Add Location Data
+                                        </td>
+                                        <td>
+                                            <button
+                                                type='button'
+                                                className='btn btn-outline-light btn-sm'
+                                                onClick={this.addHospitals}
+                                            >
+                                                Add
+                                            </button>
+                                        </td>
+                                        <td>{this.state.response1}</td>
+                                    </tr>
+
+                                    {/* Add Tasks Data to Firebase */}
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>
+                                            Add List of Unassign Tasks
+                                        </td>
+                                        <td>
+                                            <button
+                                                type='button'
+                                                className='btn btn-outline-light btn-sm'
+                                                onClick={this.addTasks}
+                                            >
+                                                Add
+                                            </button>
+                                        </td>
+                                        <td>{this.state.response2}</td>
+                                    </tr>
+
+                                    {/* Run Cron Job Manually */}
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td >
+                                            Run Cron Job
+                                        </td>
+                                        <td>
+                                            <button
+                                                type='button'
+                                                className='btn btn-outline-light btn-sm'
+                                                onClick= ''
+                                            >
+                                                Run
+                                            </button>
+                                        </td>
+                                        <td>{this.state.response3}</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
                     </div>

@@ -149,6 +149,7 @@ class Login extends Component {
                             <h2>Welcome Back</h2>
                             <h6>Just a moment</h6>
                             <form>
+                                {/* Email ID */}
                                 <div className='form-group'>
                                     <input
                                         type='email'
@@ -162,6 +163,7 @@ class Login extends Component {
                                 <small className='form-text'>
                                     {this.state.emailError}
                                 </small>
+                                {/* Passowrd */}
                                 <div className='form-group'>
                                     <input
                                         type='password'
@@ -175,6 +177,7 @@ class Login extends Component {
                                 <small className='form-text'>
                                     {this.state.passError}
                                 </small>
+                                {/* Regular Login Button */}
                                 <div className='row'>
                                     <div className='col-sm-3 col-4'>
                                         <button
@@ -191,6 +194,7 @@ class Login extends Component {
                                             Log In
                                         </button>
                                     </div>
+                                    {/* Google Login Button In Mobile View */}
                                     <div className='col-8'>
                                         <button
                                             id='gog-mob'
@@ -208,6 +212,7 @@ class Login extends Component {
                                 </div>
                             </form>
                             <div>
+                                {/* Reset Password Button */}
                                 <button
                                     className='resetPass'
                                     onClick={this.resetPasswordModal}
@@ -226,6 +231,7 @@ class Login extends Component {
                                 <h6>
                                     Or you can Log In with your Google account
                                 </h6>
+                                {/* Google Login Button (Desktop View) */}
                                 <button
                                     id='gog'
                                     type='button'

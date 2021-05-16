@@ -1,3 +1,4 @@
+// Libraries ->
 import React, { Component } from "react";
 import '../styles/style.css';
 import AuthContext from '../services/AuthContext';
@@ -13,6 +14,7 @@ export class Modal extends Component {
             loading : false
         }
     
+        // Bind Functions ->
         this.resetPasswordHandler = this.resetPasswordHandler.bind(this);
         this.onChangeHandler = this.onChangeHandler.bind(this);
         this.onCloseHandler = this.onCloseHandler.bind(this);
@@ -80,6 +82,7 @@ export class Modal extends Component {
                     aria-labelledby='exampleModalLabel'
                     aria-hidden='true'
                 >
+                    {/* Reset Password Modal */}
                     <div className='modal-dialog modal-dialog-centered'>
                         <div className='modal-content'>
                             <div className='modal-header'>

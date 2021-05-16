@@ -13,6 +13,7 @@ import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 mapboxgl.workerClass = MapboxWorker;
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_KEY;
 var marker = new mapboxgl.Marker();
+
 class homepage extends Component {
     _isMounted = false;
     constructor(props) {
@@ -27,8 +28,13 @@ class homepage extends Component {
             wait: false,
             map: '',
         };
+
+        // Create Reference ->
         this.mapContainer = React.createRef();
+        
+        // Bind Functions ->
         this.handleClick = this.handleClick.bind(this);
+        this.renderData = this.renderData.bind(this);
     }
 
     componentDidMount() {
@@ -74,11 +80,6 @@ class homepage extends Component {
                 });
             }
         });
-        setInterval(() => {
-            this.setState({
-              curTime : new Date().toLocaleString()
-            })
-        }, 1000)
     }
 
     // Prevent Memeory Leak ->
@@ -86,6 +87,7 @@ class homepage extends Component {
         this._isMounted = false;
     }
 
+    // Submit Button Handler ->
     handleClick = (divName, locationName, longitude, latitude) => {
         marker.remove();
         this.setState({
@@ -95,13 +97,14 @@ class homepage extends Component {
             closeButton : false,
             className : 'popup'
         })
-        .setText(locationName.toUpperCase())
+        .setText(locationName)
         .setMaxWidth('500px')
         .trackPointer()
         );
         marker.setLngLat([longitude, latitude]).addTo(this.state.map);
     };
 
+    // Display Hospital Data Handler ->
     renderData = () => {
         return this.state.locationData.map((loc, index) => {
             const hospitalName = loc['Name'];
@@ -151,7 +154,7 @@ class homepage extends Component {
                             : 'pb-2'
                     }
                 >
-                    <p>
+                    <div className = 'basicInfo'>
                         <span>
                             {hospitalName}
                             <br />
@@ -168,7 +171,7 @@ class homepage extends Component {
                                 </div>
                             </>
                         ) : null}
-                    </p>
+                    </div>
                     <div className='row'>
                         <div className='col-sm-4'>
                             Available Beds
@@ -199,6 +202,7 @@ class homepage extends Component {
             );
         });
     };
+
     render() {
         const { lng, lat, zoom } = this.state;
         return (

@@ -29,17 +29,17 @@
     /* overflow-x: hidden; */
 }
 
-#scr p{
+#scr .basicInfo{
     color : #64869E;
     font-size: 0.98em;
     margin-bottom: 12px !important;
 }
 
-#scr p div {
+#scr .basicInfo div {
     font-size: 0.72em;
 }
 
-#scr p div i{
+#scr .basicInfo div i{
     font-size: 0.9em
 }
 
@@ -149,7 +149,8 @@
 }
 
 .popup{
-    color: red;
+    color: Brown;
+    font-weight: 600;
 }
 
 .mapboxgl-ctrl-top-right .mapboxgl-ctrl{
@@ -300,7 +301,6 @@ small {
     }
 }
 
-
 /* --------------------------------------------- */
 
 /* -------------- Volunteer Page -------------- */
@@ -389,10 +389,8 @@ small {
     border:none;
     background-color: white;
     padding: 5px 13px 5px 13px;
-    /* position: fixed; */
-    /* right: 1.7% !important; */
-    /* margin-top: -470px !important; */
 }
+
 /* -------------------------------------------- */
 
 /* ----------- Reset Password Modal ----------- */
@@ -424,7 +422,6 @@ small {
 #resetPasswordModal .modal-body .form-group{
     margin: 7px auto;
 }
-
 
 /* -------------------------------------------- */
 

@@ -102,8 +102,8 @@ function updateTaskInfo(
 
 export {
     addUserData,
+    getUserRole,
     addLocationData,
     addNewTasks,
     updateTaskInfo,
-    getUserRole,
 };
