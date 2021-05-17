@@ -1,20 +1,22 @@
 // Libraries ->
-import React, { Component } from 'react';
-import '../styles/style.css';
-import google from '../images/Google.png';
-import AuthContext from '../services/AuthContext';
-import ResetPassword from './resetpassword';
-import { getUserRole } from '../services/FirebaseHandler';
+import React, { Component } from "react";
+import "../styles/style.css";
+import AuthContext from "../services/AuthContext";
+import ResetPassword from "./resetpassword";
+import { getUserRole } from "../services/FirebaseHandler";
+import {toast} from '../scripts/script';
+import google from "../images/Google.png";
 
 class Login extends Component {
     static contextType = AuthContext;
     constructor(props) {
         super(props);
         this.state = {
-            userEmail: '',
-            userPassword: '',
-            emailError: '',
-            passError: '',
+            userEmail: "",
+            userPassword: "",
+            emailError: "",
+            passError: "",
+            resetMsg: "",
             loading: false,
             modal: false,
         };
@@ -24,38 +26,39 @@ class Login extends Component {
         this.errorHandler = this.errorHandler.bind(this);
         this.logInWithEmailHandler = this.logInWithEmailHandler.bind(this);
         this.logInWithGoogleHandler = this.logInWithGoogleHandler.bind(this);
-        this.onChangeHandler = this.onChangeHandler.bind(this);
         this.resetPasswordModal = this.resetPasswordModal.bind(this);
         this.onModalClose = this.onModalClose.bind(this);
+        this.snackbar = this.snackbar.bind(this);
+        this.onChangeHandler = this.onChangeHandler.bind(this);
     }
 
     // Clear Errors ->
     clearError() {
         this.setState({
-            passError: '',
-            emailError: '',
+            passError: "",
+            emailError: "",
         });
     }
 
     // Clear Inputs ->
     clearInputs() {
         this.setState({
-            userEmail: '',
-            userPassword: '',
+            userEmail: "",
+            userPassword: "",
         });
     }
 
     // Error Handler ->
     errorHandler(err) {
         switch (err.code) {
-            case 'auth/invalid-email':
-            case 'auth/user-disabled':
-            case 'auth/user-not-found':
+            case "auth/invalid-email":
+            case "auth/user-disabled":
+            case "auth/user-not-found":
                 this.setState({
                     emailError: err.message,
                 });
                 break;
-            case 'auth/wrong-password':
+            case "auth/wrong-password":
                 this.setState({
                     passError: err.message,
                 });
@@ -84,8 +87,8 @@ class Login extends Component {
             );
             const role = await getUserRole(res.user.uid);
             this.clearInputs();
-            const path = role.includes('ADMIN') ? 'admin' : 'dashboard';
-            this.props.history.push('/volunteer/' + path);
+            const path = role.includes("ADMIN") ? "admin" : "dashboard";
+            this.props.history.push("/volunteer/" + path);
         } catch (err) {
             this.errorHandler(err);
         }
@@ -100,7 +103,7 @@ class Login extends Component {
             this.clearError();
             await signUpWithGoogle();
             this.clearInputs();
-            this.props.history.push('/volunteer/dashboard');
+            this.props.history.push("/volunteer/dashboard");
             this.setState({ loading: false });
         } catch (err) {
             this.errorHandler(err);
@@ -116,11 +119,19 @@ class Login extends Component {
     }
 
     // Close Modal Callback function ->
-    onModalClose = (stateVal) => {
+    onModalClose = (stateVal, msg) => {
         this.setState({
             modal: stateVal,
+            resetMsg: msg,
         });
+        if(msg)
+            this.snackbar();
     };
+
+    // Snackbar Function ->
+    snackbar() {
+        toast();
+    }
 
     // On Change Event Handler ->
     onChangeHandler = (e) => {
@@ -137,12 +148,14 @@ class Login extends Component {
                         id='signUp'
                         className='button'
                         onClick={() =>
-                            this.props.history.push('/volunteer/register')
+                            this.props.history.push("/volunteer/register")
                         }
                     >
                         Sign Up
                     </button>
                 </div>
+                {/* Snackbar */}
+                <div id='snackBar' style = {{right : '10px', marginLeft: '-125px'}}>{this.state.resetMsg}</div>
                 <div id='register' className='container-fluid'>
                     <div className='row ml-md-5'>
                         <div className='col-md-5 pl-md-5'>
@@ -186,7 +199,7 @@ class Login extends Component {
                                             className='button'
                                             disabled={this.state.loading}
                                             onClick={this.logInWithEmailHandler}
-                                            style={{ marginTop: '7px' }}
+                                            style={{ marginTop: "7px" }}
                                         >
                                             {this.state.loading && (
                                                 <i className='fad fa-circle-notch fa-spin'></i>

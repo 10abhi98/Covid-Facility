@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import '../styles/style.css';
 import AuthContext from '../services/AuthContext';
-import $ from 'jquery';
+import {showResetPasswordModal, hideResetPasswordModal} from '../scripts/script'
 
 export class Modal extends Component {
     static contextType = AuthContext;
@@ -10,7 +10,7 @@ export class Modal extends Component {
         super(props);
         this.state = {
             resetEmail : '',
-            emailError : '',
+            emailMsg : '',
             loading : false
         }
     
@@ -23,11 +23,14 @@ export class Modal extends Component {
     }
 
     componentDidMount(){
-        $('#resetPasswordModal').modal({
-            backdrop : 'static',
-            keyboard : false
-        });
-        $('#resetPasswordModal').modal('show');
+        showResetPasswordModal()
+    }
+
+    // Prevent Memeory Leak ->
+    componentWillUnmount() {
+        this.setState = (state, callback) => {
+            return;
+        };
     }
 
     // Reset Password Handler ->
@@ -39,10 +42,10 @@ export class Modal extends Component {
             this.setState({loading : true})
             await resetPassword(this.state.resetEmail);
             this.clearInputs();
-            $('#resetPasswordModal').modal('hide');
-            this.props.modalState(false);
+            hideResetPasswordModal()
+            this.props.modalState(false, 'Email Sent Successfully ..');
         } catch (err) {
-            this.setState({emailError : err.message})
+            this.setState({emailMsg : err.message})
         }
         this.setState({ loading: false });
     }
@@ -56,13 +59,14 @@ export class Modal extends Component {
     
     // On Close Handler ->
     onCloseHandler (){
+        this.clearError();
         this.props.modalState(false);
     }
 
     // Clear Errors ->
     clearError() {
         this.setState({
-            emailError: '',
+            emailMsg: '',
         });
     }
 
@@ -112,7 +116,7 @@ export class Modal extends Component {
                                             onChange={this.onChangeHandler}
                                         />
                                     <small className='form-text' style = {{color : 'red'}}>
-                                        {this.state.emailError}
+                                        {this.state.emailMsg}
                                     </small>
                                     </div>
                                     <div className = 'd-flex justify-content-center mt-3'>

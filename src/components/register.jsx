@@ -137,13 +137,15 @@ class Register extends Component {
                                 Signing up...We just need a bit of information
                                 about you
                             </h6>
-                            <form>
+                            <form onSubmit = {this.signUpWithEmailHandler}>
                                 {/* Name */}
                                 <div className='form-group'>
                                     <input
                                         type='text'
                                         name='userName'
                                         className='form-control'
+                                        pattern='[a-zA-Z]+'
+                                        title='Invalid Name'
                                         placeholder='Name'
                                         required
                                         onChange={this.onChangeHandler}
@@ -180,11 +182,12 @@ class Register extends Component {
                                 {/* Contact Info(Optional) */}
                                 <div className='form-group'>
                                     <input
-                                        type='number'
+                                        type='tel'
                                         name='userContact'
                                         className='form-control'
+                                        pattern='[0-9]{10}'
+                                        title='Invalid Contact Number'
                                         placeholder='Contact (optional)'
-                                        required
                                         onChange={this.onChangeHandler}
                                     />
                                 </div>
@@ -196,9 +199,6 @@ class Register extends Component {
                                             type='submit'
                                             className='button'
                                             disabled={this.state.loading}
-                                            onClick={
-                                                this.signUpWithEmailHandler
-                                            }
                                             style={{ marginTop: "7px" }}
                                         >
                                             {this.state.loading && (

@@ -5,6 +5,8 @@ import AuthContext from '../services/AuthContext';
 import { firestore } from '../services/Firebase';
 import firebase from 'firebase/app';
 import { updateTaskInfo } from '../services/FirebaseHandler';
+import {toast} from '../scripts/script';
+import moment from 'moment';
 
 class Dashboard extends Component {
     static contextType = AuthContext;
@@ -24,6 +26,9 @@ class Dashboard extends Component {
             newPatients: '',
             waitingPatients: '',
             remidisivir: '',
+            taskTimerDisplay: '', 
+            expired: '',
+            completeMsg: '',
             loading : true
         };
 
@@ -43,16 +48,18 @@ class Dashboard extends Component {
 
         // Bind Functions ->
         this.clearInputs = this.clearInputs.bind(this);
-        this.onChangeHandler = this.onChangeHandler.bind(this);
+        this.fetchTasks = this.fetchTasks.bind(this);
+        this.fetchLocationData = this.fetchLocationData.bind(this);
+        this.taskTimer = this.taskTimer.bind(this);
         this.stringifyAddress = this.stringifyAddress.bind(this);
         this.stringifyContacts = this.stringifyContacts.bind(this);
         this.submitInfoHandler = this.submitInfoHandler.bind(this);
         this.selectLocation = this.selectLocation.bind(this);
-        this.userLogOut = this.userLogOut.bind(this);
         this.tasksAssignment = this.tasksAssignment.bind(this);
         this.displayQuestionarre = this.displayQuestionarre.bind(this);
-        this.fetchTasks = this.fetchTasks.bind(this);
-        this.fetchLocationData = this.fetchLocationData.bind(this);
+        this.snackbar = this.snackbar.bind(this);
+        this.onChangeHandler = this.onChangeHandler.bind(this);
+        this.userLogOut = this.userLogOut.bind(this);
     }
 
     clearInputs() {
@@ -77,6 +84,7 @@ class Dashboard extends Component {
             Promise.all([
                 this.fetchTasks(),this.fetchLocationData()
             ]).then((res) => {
+                this.taskTimer()
                 this.setState({loading : false})
             })
         });
@@ -167,22 +175,46 @@ class Dashboard extends Component {
         });
     }
 
-    // On Change Handler
-    onChangeHandler = (e) => {
-        this.setState({
-            [e.target.name]: e.target.value,
-        });
-    };
-
+    // Reverse Timer ->
+    taskTimer(){
+        if(this.state.tasks.length){
+            firestore
+            .collection('assigned_tasks')
+            .doc(this.state.tasks[0])
+            .get().then((res) => {
+                const assignTime = res.data().reassign_time.seconds
+                var duration = moment.duration(assignTime * 1000 - Date.now())
+                var interval = 60000;
+                setInterval(function(){
+                    duration = moment.duration(duration - interval);
+                    if(duration.minutes() <= 0){
+                        this.setState({
+                            taskTimerDisplay : 'Expired'
+                        })
+                    }
+                    else if(duration.hours() < 1){
+                        this.setState({
+                            taskTimerDisplay : 'Expires in ' + duration.minutes() + ' minutes'
+                        })
+                    } else {
+                        this.setState({
+                            taskTimerDisplay : 'Expires in ' + duration.hours() + ' hours ' + duration.minutes() + ' minutes'
+                        })
+                    }
+                },interval)
+            });
+        }
+    }
+    
     // Combine address from street, city,
     stringifyAddress(street, city, state, pincode) {
         return ((street ? street + ', ' : '') + (city ? city + ', ' : '') + (state ? state : 'New Delhi') + (pincode ? '-' + pincode : ''));
     }
-
+    
     stringifyContacts(Contact) {
         return (Contact[0] + (Contact[1] ? ', ' + Contact[1] : ''));
     }s
-
+    
     // Submit Event Handler
     async submitInfoHandler(e, taskId) {
         e.preventDefault();
@@ -200,58 +232,61 @@ class Dashboard extends Component {
                 this.state.remidisivir,
                 this.state.newPatients,
                 this.state.waitingPatients
-            );
-
-            // Clear all Inputs ->
-            this.clearInputs();
-
-            // Remove Task Id from tasks & taskLocations array in state object ->
-            this.setState({
-                tasks: [...this.state.tasks].filter((id) => id !== taskId),
-                taskLocations : [...this.state.taskLocations].filter((val) =>  val.Task_Id !== taskId),
-            });
-
-            // Update task_assigned array in "volunteer" collections ->
-            await firestore
+                );
+                
+                // Clear all Inputs ->
+                this.clearInputs();
+                
+                // Remove Task Id from tasks & taskLocations array in state object ->
+                this.setState({
+                    tasks: [...this.state.tasks].filter((id) => id !== taskId),
+                    taskLocations : [...this.state.taskLocations].filter((val) =>  val.Task_Id !== taskId),
+                });
+                
+                // Update task_assigned array in "volunteer" collections ->
+                await firestore
                 .collection('volunteers')
                 .doc(currentUser.uid)
                 .update({
                     tasks_assigned: firebase.firestore.FieldValue.arrayRemove(
                         taskId
-                    ),
-                });
-
-            // Update reassign_time inside "assigned" collections ->
-            await firestore
-                .collection('assigned_tasks')
+                        ),
+                    });
+                    
+                    // Update reassign_time inside "assigned" collections ->
+                    await firestore
+                    .collection('assigned_tasks')
                 .doc(taskId)
                 .update({
                     last_updated_at: new Date(),
                     reassign_time: new Date(Date.now() + 60 * 60 * 1000),
                 });
+                
+                // Change Active State Button -> 
+                this.setState({
+                    activeBtn : this.state.tasks[this.state.tasks.length-1],
+                })
+                
+                // Change Location on Form Based on Active State Button ->
+                this.selectLocation(e, this.state.taskLocations.find(id => id.Task_Id === this.state.activeBtn));
+            } catch (err){
+                console.log(err);
+            }
             
-            // Change Active State Button -> 
+            // On Completion Show Congratulations ->
+            if (this.state.tasks.length === 0) {
+                this.setState({})
+                console.log('Congratulations!');
+            }
+            
             this.setState({
-                activeBtn : this.state.tasks[this.state.tasks.length-1],
+                loading : false
             })
 
-            // Change Location on Form Based on Active State Button ->
-            this.selectLocation(e, this.state.taskLocations.find(id => id.Task_Id === this.state.activeBtn));
-        } catch (err){
-            console.log(err);
-        }
-
-        // On Completion Show Congratulations ->
-        if (this.state.tasks.length === 0) {
-            this.setState({})
-            console.log('Congratulations!');
-        }
-
-        this.setState({
-            loading : false
-        })
+            // Display Task Completion Message
+            this.snackbar('Task Completed ..')
     }
-
+    
     // Set Location Function ->
     selectLocation(e, taskInfo) {
         this.clearInputs();
@@ -260,50 +295,50 @@ class Dashboard extends Component {
             taskInfo['Address']['City'],
             taskInfo['Address']['State'],
             taskInfo['Address']['Pincode']
-        );
-
-        const contact = this.stringifyContacts(taskInfo['Contact']);
-        this.setState({
-            locationName: taskInfo['Name'],
-            locationAddress: address,
-            locationContact: contact,
-            locationType: taskInfo['Type'],
-            activeBtn: taskInfo.Task_Id,
-        });
-    }
-
-    // Task Assignment Function ->
-    tasksAssignment = (Locations) => {
-        return Locations.reverse().map((tasks, index) => {
+            );
+            
+            const contact = this.stringifyContacts(taskInfo['Contact']);
+            this.setState({
+                locationName: taskInfo['Name'],
+                locationAddress: address,
+                locationContact: contact,
+                locationType: taskInfo['Type'],
+                activeBtn: taskInfo.Task_Id,
+            });
+        }
+        
+        // Task Assignment Function ->
+        tasksAssignment = (Locations) => {
+            return Locations.reverse().map((tasks, index) => {
                 return (
                     <button
-                        key={tasks.Task_Id + index}
-                        className={
-                            this.state.activeBtn === tasks.Task_Id
-                                ? 'locationActiveBtn'
-                                : 'locationBtn'
-                        }
-                        type='button'
-                        onClick={(e) => this.selectLocation(e, tasks)}
+                    key={tasks.Task_Id + index}
+                    className={
+                        this.state.activeBtn === tasks.Task_Id
+                        ? 'locationActiveBtn'
+                        : 'locationBtn'
+                    }
+                    type='button'
+                    onClick={(e) => this.selectLocation(e, tasks)}
                     >
                         <span>
                             {index + 1}. Call {tasks.Name}
                         </span>
                     </button>
                 );
-        });
-    };
-
-    // Questionarre Display Function ->
-    displayQuestionarre = (type) => {
-        return Object.entries(type).map((value, index) => {
-            const val = value[0].split(' ');
-            const name =
+            });
+        };
+        
+        // Questionarre Display Function ->
+        displayQuestionarre = (type) => {
+            return Object.entries(type).map((value, index) => {
+                const val = value[0].split(' ');
+                const name =
                 val.length === 2
                     ? val[0].toLowerCase() + val[1]
                     : val[0].toLowerCase();
-            return (
-                <div className='form-group' key={value[0] + index}>
+                    return (
+                        <div className='form-group' key={value[0] + index}>
                     <label>
                         {index + 1}. {value[1]}
                     </label>
@@ -314,9 +349,24 @@ class Dashboard extends Component {
                         value={this.state[name]}
                         placeholder={value[0]}
                         onChange={this.onChangeHandler}
-                    />
+                        />
                 </div>
             );
+        });
+    };
+
+    // Snackbar (Complete Task Status)
+    snackbar(msg) {
+        this.setState({
+            completeMsg : msg
+        })
+        toast();
+    }
+    
+    // On Change Handler
+    onChangeHandler = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value,
         });
     };
 
@@ -330,7 +380,7 @@ class Dashboard extends Component {
             console.log(err.message);
         }
     }
-
+    
     render() {
         return (
             <>
@@ -354,6 +404,10 @@ class Dashboard extends Component {
                         Logout
                     </button>
                 </div>
+                
+                {/* Snackbar */}
+                <div id='snackBar' style = {{left : '10px'}}>{this.state.completeMsg}</div>
+                
                 {/* Only Show Content on Page when there is a task Location Array -> */}
                 {this.state.taskLocations.length > 0 &&
                 <div id='dashboard' className='container-fluid'>
@@ -364,7 +418,7 @@ class Dashboard extends Component {
 
                             {/* Small Tasks */}
                             <p className='volunteerTasks pb-2'>
-                                Assigned Tasks
+                                Assigned Tasks ({this.state.taskTimerDisplay})
                             </p>
                             {this.tasksAssignment(this.state.taskLocations)}
                         </div>
