@@ -26,6 +26,8 @@ class Dashboard extends Component {
             newPatients: '',
             waitingPatients: '',
             remidisivir: '',
+            timerStart: false,
+            reassignTime: '',
             taskTimerDisplay: '', 
             expired: '',
             completeMsg: '',
@@ -50,6 +52,7 @@ class Dashboard extends Component {
         this.clearInputs = this.clearInputs.bind(this);
         this.fetchTasks = this.fetchTasks.bind(this);
         this.fetchLocationData = this.fetchLocationData.bind(this);
+        this.fetchTaskAssignTime = this.fetchTaskAssignTime.bind(this);
         this.taskTimer = this.taskTimer.bind(this);
         this.stringifyAddress = this.stringifyAddress.bind(this);
         this.stringifyContacts = this.stringifyContacts.bind(this);
@@ -82,9 +85,9 @@ class Dashboard extends Component {
                 tasks: doc.data().tasks_assigned,
             });
             Promise.all([
-                this.fetchTasks(),this.fetchLocationData()
+                this.fetchTasks(),this.fetchLocationData(), this.fetchTaskAssignTime()
             ]).then((res) => {
-                this.taskTimer()
+                this.interval = setInterval (this.taskTimer,60000)
                 this.setState({loading : false})
             })
         });
@@ -92,6 +95,9 @@ class Dashboard extends Component {
 
     componentWillUnmount(){
         this.setState({});
+        if (this.interval) {
+            clearInterval(this.interval);
+        }
     }
 
     // Task Assignment ->
@@ -175,34 +181,39 @@ class Dashboard extends Component {
         });
     }
 
-    // Reverse Timer ->
-    taskTimer(){
+    // Fetch Reassign Time ->
+    fetchTaskAssignTime(){
         if(this.state.tasks.length){
             firestore
             .collection('assigned_tasks')
             .doc(this.state.tasks[0])
             .get().then((res) => {
                 const assignTime = res.data().reassign_time.seconds
-                var duration = moment.duration(assignTime * 1000 - Date.now())
-                var interval = 60000;
-                setInterval(function(){
-                    duration = moment.duration(duration - interval);
-                    if(duration.minutes() <= 0){
-                        this.setState({
-                            taskTimerDisplay : 'Expired'
-                        })
-                    }
-                    else if(duration.hours() < 1){
-                        this.setState({
-                            taskTimerDisplay : 'Expires in ' + duration.minutes() + ' minutes'
-                        })
-                    } else {
-                        this.setState({
-                            taskTimerDisplay : 'Expires in ' + duration.hours() + ' hours ' + duration.minutes() + ' minutes'
-                        })
-                    }
-                },interval)
+                this.setState({
+                    reassignTime : assignTime,
+                    timerStart : true
+                })
+                
             });
+        }
+    }
+
+    // Reverse Task Timer ->
+    taskTimer(){
+        const duration = moment.duration(this.state.reassignTime * 1000 - Date.now())
+        if(duration.minutes() <= 0){
+            this.setState({
+                taskTimerDisplay : '(Expired)'
+            })
+        }
+        else if(duration.hours() < 1){
+            this.setState({
+                taskTimerDisplay : '(Expires in ' + duration.minutes() + ' minutes)'
+            })
+        } else {
+            this.setState({
+                taskTimerDisplay : '(Expires in ' + duration.hours() + ' hours ' + duration.minutes() + ' minutes)'
+            })
         }
     }
     
@@ -418,7 +429,7 @@ class Dashboard extends Component {
 
                             {/* Small Tasks */}
                             <p className='volunteerTasks pb-2'>
-                                Assigned Tasks ({this.state.taskTimerDisplay})
+                                Assigned Tasks {this.state.taskTimerDisplay}
                             </p>
                             {this.tasksAssignment(this.state.taskLocations)}
                         </div>
