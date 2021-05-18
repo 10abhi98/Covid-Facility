@@ -4,6 +4,8 @@ import '../../styles/style.css';
 import AuthContext from '../../services/AuthContext';
 import delhiHospitals from '../../utilities/delhiHospitals.json';
 import { addLocationData, addNewTasks } from '../../services/FirebaseHandler';
+import Schedule from 'react-schedule-job'
+import 'react-schedule-job/dist/index.css'
 
 export class Admin extends Component {
     static contextType = AuthContext;
@@ -19,7 +21,8 @@ export class Admin extends Component {
         this.addHospitals = this.addHospitals.bind(this)
         this.addTasks = this.addTasks.bind(this)
         this.userLogOut = this.userLogOut.bind(this)
-        this.clearResponse = this.clearResponse(this)
+        this.clearResponse = this.clearResponse.bind(this)
+        this.cronJobs = this.cronJobs.bind(this)
     }
 
     // Clear All Responses ->
@@ -72,6 +75,10 @@ export class Admin extends Component {
         }
     }
 
+    cronJobs(){
+        console.log('Run Cron Job')
+    }
+
     render() {
         return (
             <>
@@ -79,14 +86,14 @@ export class Admin extends Component {
                     jobs={[
                         {
                             fn: this.cronJobs,
-                            id: '2',
-                            schedule: '*/30 * * * *',
+                            id: '1',
+                            schedule: '0,30 * * * *',
                             name: 'Run cron job',
                         },
                     ]}
                     timeZone='Asia/Kolkata'
                     dashboard={{
-                        hidden: true,
+                        hidden: false,
                     }}
                 />
                 <div id='logoutPlace' className='float-right'>
