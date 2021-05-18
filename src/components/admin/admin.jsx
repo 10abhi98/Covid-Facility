@@ -75,6 +75,20 @@ export class Admin extends Component {
     render() {
         return (
             <>
+                <Schedule
+                    jobs={[
+                        {
+                            fn: this.cronJobs,
+                            id: '2',
+                            schedule: '*/30 * * * *',
+                            name: 'Run cron job',
+                        },
+                    ]}
+                    timeZone='Asia/Kolkata'
+                    dashboard={{
+                        hidden: true,
+                    }}
+                />
                 <div id='logoutPlace' className='float-right'>
                     <button
                         id='logOut'
