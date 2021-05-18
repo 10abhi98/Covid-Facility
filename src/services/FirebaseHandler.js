@@ -1,4 +1,4 @@
-import { firestore } from './Firebase';
+import { analytics, firestore } from './Firebase';
 import firebase from 'firebase/app';
 
 // Create New User ->
@@ -14,6 +14,7 @@ function addUserData(userId, name, email, contact) {
         type: 'On-Call Activist',
         role: 'ROLE_VOLUNTEER',
     });
+    analytics.logEvent('added_user_data');
 }
 
 // Fetch user Role ->
