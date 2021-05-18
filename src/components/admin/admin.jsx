@@ -86,7 +86,7 @@ export class Admin extends Component {
                     jobs={[
                         {
                             fn: this.cronJobs,
-                            id: '1',
+                            id: '2',
                             schedule: '*/30 * * * *',
                             name: 'Run cron job',
                         },
