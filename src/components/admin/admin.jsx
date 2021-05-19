@@ -82,20 +82,6 @@ export class Admin extends Component {
     render() {
         return (
             <>
-                <Schedule
-                    jobs={[
-                        {
-                            fn: this.cronJobs,
-                            id: '1',
-                            schedule: '0,30 * * * *',
-                            name: 'Run cron job',
-                        },
-                    ]}
-                    timeZone='Asia/Kolkata'
-                    dashboard={{
-                        hidden: false,
-                    }}
-                />
                 <div id='logoutPlace' className='float-right'>
                     <button
                         id='logOut'
@@ -164,7 +150,7 @@ export class Admin extends Component {
                                             <button
                                                 type='button'
                                                 className='btn btn-outline-light btn-sm'
-                                                onClick= ''
+                                                onClick= {this.cronJobs}
                                             >
                                                 Run
                                             </button>
@@ -176,6 +162,22 @@ export class Admin extends Component {
                         </div>
                     </div>
                 </div>
+                
+                {/* Cron Jobs Dashboard*/}
+                <Schedule
+                    jobs={[
+                        {
+                            fn: this.cronJobs,
+                            id: '1',
+                            schedule: '0,30 * * * *',
+                            name: 'Run cron job',
+                        },
+                    ]}
+                    timeZone='Asia/Kolkata'
+                    dashboard={{
+                        hidden: false,
+                    }}
+                />
             </>
         );
     }
