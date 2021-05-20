@@ -1,10 +1,11 @@
 // Libraries ->
 import React, { Component } from 'react';
-import '../../styles/style.css';
+import { firestore } from '../../services/Firebase';
+import { addLocationData, addNewTasks } from '../../services/FirebaseHandler';
 import AuthContext from '../../services/AuthContext';
 import delhiHospitals from '../../utilities/delhiHospitals.json';
-import { addLocationData, addNewTasks } from '../../services/FirebaseHandler';
 import Schedule from 'react-schedule-job'
+import '../../styles/style.css';
 import 'react-schedule-job/dist/index.css'
 
 export class Admin extends Component {
@@ -76,7 +77,36 @@ export class Admin extends Component {
     }
 
     cronJobs(){
-        console.log('Run Cron Job')
+        this.clearResponse();
+        const taskDocuments = firestore.collection('assigned_tasks');
+        taskDocuments
+            .get()
+            .then((res) => {
+                res.docs.forEach((task) => {
+                    const expiryTime = task.data().reassign_time.seconds;
+                    const diff = Date.now() - expiryTime * 1000;
+                    if (diff >= 0) {
+                        firestore
+                            .collection('unassigned_tasks')
+                            .doc(task.id)
+                            .set({
+                                ...task.data(),
+                            });
+                        firestore
+                            .collection('assigned_tasks')
+                            .doc(task.id)
+                            .delete();
+                    }
+                });
+                this.setState({
+                    response3: 'Cron Job Ran Successfully',
+                });
+            })
+            .catch((err) => {
+                this.setState({
+                    response3: err.message,
+                });
+            });
     }
 
     render() {

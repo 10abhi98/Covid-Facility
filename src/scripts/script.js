@@ -5,7 +5,7 @@ function toast(){
     $("#snackBar").addClass("show");
     setTimeout(function () {
         $("#snackBar").removeClass("show");
-    }, 3000);
+    }, 5000);
 }
 
 function showResetPasswordModal(){
