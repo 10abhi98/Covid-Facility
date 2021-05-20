@@ -1,23 +1,23 @@
-import $ from "jquery";
+import $ from 'jquery';
 
 // Snackbar ->
-function toast(){
-    $("#snackBar").addClass("show");
+function toast(time) {
+    $('#snackBar').addClass('show');
     setTimeout(function () {
-        $("#snackBar").removeClass("show");
-    }, 3000);
+        $('#snackBar').removeClass('show');
+    }, time);
 }
 
-function showResetPasswordModal(){
+function showResetPasswordModal() {
     $('#resetPasswordModal').modal({
-        backdrop : 'static',
-        keyboard : false
+        backdrop: 'static',
+        keyboard: false,
     });
     $('#resetPasswordModal').modal('show');
 }
 
-function hideResetPasswordModal(){
+function hideResetPasswordModal() {
     $('#resetPasswordModal').modal('hide');
 }
 
-export {toast, showResetPasswordModal, hideResetPasswordModal}
+export { toast, showResetPasswordModal, hideResetPasswordModal };
