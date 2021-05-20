@@ -129,7 +129,7 @@ class Login extends Component {
 
     // Snackbar Function ->
     snackbar() {
-        toast(3000);
+        toast();
     }
 
     // On Change Event Handler ->

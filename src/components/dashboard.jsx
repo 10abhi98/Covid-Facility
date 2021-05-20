@@ -115,7 +115,7 @@ class Dashboard extends Component {
             reassignTime : ''
         })
         try{
-            await this.timeout(2500);
+            await this.timeout(2000);
             await this.fetchTaskAssignTime(userId);
             await this.fetchTasks();
             Promise.all([
@@ -143,7 +143,7 @@ class Dashboard extends Component {
             firestore
                 .collection('unassigned_tasks')
                 .orderBy('last_updated_at')
-                .limit(1)
+                .limit(5)
                 .get()
                 .then((tasks) => {
                     tasks.docs.forEach((task) => {

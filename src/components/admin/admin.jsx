@@ -4,16 +4,9 @@ import { firestore } from '../../services/Firebase';
 import { addLocationData, addNewTasks } from '../../services/FirebaseHandler';
 import AuthContext from '../../services/AuthContext';
 import delhiHospitals from '../../utilities/delhiHospitals.json';
-<<<<<<< HEAD
 import Schedule from 'react-schedule-job'
 import '../../styles/style.css';
 import 'react-schedule-job/dist/index.css'
-=======
-import { addLocationData, addNewTasks } from '../../services/FirebaseHandler';
-import Schedule from 'react-schedule-job';
-import 'react-schedule-job/dist/index.css';
-import { firestore } from '../../services/Firebase';
->>>>>>> 8032fc9ef11831938c81d15534ea506b9be9d14c
 
 export class Admin extends Component {
     static contextType = AuthContext;
@@ -83,11 +76,7 @@ export class Admin extends Component {
         }
     }
 
-<<<<<<< HEAD
-    cronJobs(){
-=======
     cronJobs() {
->>>>>>> 8032fc9ef11831938c81d15534ea506b9be9d14c
         this.clearResponse();
         const taskDocuments = firestore.collection('assigned_tasks');
         taskDocuments
