@@ -74,31 +74,79 @@ function updateTaskInfo(
     newPatients,
     waitingPatients
 ) {
-    const taskDocument = firestore.collection('locations');
-    taskDocument.doc(taskId).update({
-        Tasks_Info: {
-            Beds: {
-                Count: beds,
-                Verified_At: new Date(),
-            },
-            Oxygen: {
-                Count: oxygen,
-                Verified_At: new Date(),
-            },
-            Remidisivir: {
-                Count: remidisivir,
-                Verified_At: new Date(),
-            },
-            New_Patients: {
-                Count: newPatients,
-                Verified_At: new Date(),
-            },
-            Waiting_Patients: {
-                Count: waitingPatients,
-                Verified_At: new Date(),
-            },
-        },
+    const taskDocument = firestore.collection('locations').doc(taskId);
+
+    firestore.runTransaction((transaction) => {
+        return transaction.get(taskDocument).then((doc) => {
+            transaction.update(taskDocument, {
+                Tasks_Info: {
+                    Beds: {
+                        Count: beds ? beds : doc.data().Tasks_Info.Beds.Count,
+                        Verified_At: beds
+                            ? new Date()
+                            : doc.data().Tasks_Info.Beds.Verified_At,
+                    },
+                    Oxygen: {
+                        Count: oxygen
+                            ? oxygen
+                            : doc.data().Tasks_Info.Oxygen.Count,
+                        Verified_At: oxygen
+                            ? new Date()
+                            : doc.data().Tasks_Info.Oxygen.Verified_At,
+                    },
+                    Remidisivir: {
+                        Count: remidisivir
+                            ? remidisivir
+                            : doc.data().Tasks_Info.Remidisivir.Count,
+                        Verified_At: remidisivir
+                            ? new Date()
+                            : doc.data().Tasks_Info.Remidisivir.Verified_At,
+                    },
+                    New_Patients: {
+                        Count: newPatients
+                            ? newPatients
+                            : doc.data().Tasks_Info.New_Patients.Count,
+                        Verified_At: newPatients
+                            ? new Date()
+                            : doc.data().Tasks_Info.New_Patients.Verified_At,
+                    },
+                    Waiting_Patients: {
+                        Count: waitingPatients
+                            ? waitingPatients
+                            : doc.data().Tasks_Info.Waiting_Patients.Count,
+                        Verified_At: waitingPatients
+                            ? new Date()
+                            : doc.data().Tasks_Info.Waiting_Patients
+                                  .Verified_At,
+                    },
+                },
+            });
+        });
     });
+    // taskDocument.doc(taskId).update({
+    // Tasks_Info: {
+    //     Beds: {
+    //         Count: beds ,
+    //         Verified_At: new Date(),
+    //     },
+    //     Oxygen: {
+    //         Count: oxygen,
+    //         Verified_At: new Date(),
+    //     },
+    //     Remidisivir: {
+    //         Count: remidisivir,
+    //         Verified_At: new Date(),
+    //     },
+    //     New_Patients: {
+    //         Count: newPatients,
+    //         Verified_At: new Date(),
+    //     },
+    //     Waiting_Patients: {
+    //         Count: waitingPatients,
+    //         Verified_At: new Date(),
+    //     },
+    // },
+    // });
 }
 
 export {

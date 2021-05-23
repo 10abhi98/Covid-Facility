@@ -1236,9 +1236,26 @@
     background: white;
     position: fixed;
     padding-right: 0.1%;
+    padding-left: 0px !important;
     height: 79vh;
     left: 0;
     top: 21%;
+}
+
+#searchBar{
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: #F9D4CB;
+    border-radius: 0%;
+    width: 100.5%;
+    padding: 6px 8px 6px 16px !important;
+    font-size: 12px;
+}
+
+.fa-search{
+    margin-top: -21px;
+    margin-right: 1.2em;
+    font-size: 12px;
 }
 
 #scr div {
@@ -1246,18 +1263,31 @@
     /* overflow-x: hidden; */
 }
 
+#scr > div:first-of-type{
+    padding-top: 15px !important;
+}
+
+#scr > div:last-child{
+    margin-bottom: 15px;
+}
+
 #scr .basicInfo {
     color: #64869e;
-    font-size: 0.98em;
-    margin-bottom: 12px !important;
+    font-size: 1em;
+    margin-bottom: 5px !important;
 }
 
 #scr .basicInfo div {
-    font-size: 0.72em;
+    font-size: 0.68em;
+    color: #606060;
+    overflow-wrap: break-word;
+    display: flex;
 }
 
 #scr .basicInfo div i {
     font-size: 0.9em;
+    color: #64869e;
+    line-height: 1.08rem;
 }
 
 #scr .row .col-sm-4 {
@@ -1268,6 +1298,7 @@
 #scr .row .col-sm-4 div {
     font-size: 1.8em;
     margin-top: -7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
 }
 
@@ -1284,29 +1315,36 @@
     margin-bottom: 4% !important;
 }
 
-#scr .dispBed hr {
+#scr .dispBed hr{
     display: none;
 }
 
-#scr .dispBed p span {
-    color: #000000;
+#scr .dispBed .basicInfo span {
+    color: #4D4D4D;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.1em;
+}
+
+#scr .dispBed .basicInfo{
+    padding-bottom: 3px;
 }
 
 .scrollbar {
     height: 74vh;
-    padding-bottom: 6px !important;
+    padding-bottom: 7px !important;
     overflow-y: auto;
-    padding-right: 2% !important;
+    /* padding-right: 2% !important; */
 }
 
-/* #scr::-webkit-scrollbar-track
+#scr::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    margin-top: 5px;
+    margin-bottom: 20px;
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-} */
+	background-color: #F5F5F5; */
+    /* overflow-y: hidden; */
+}
 
 #scr::-webkit-scrollbar {
     width: 5px;
@@ -1316,6 +1354,7 @@
 #scr::-webkit-scrollbar-thumb {
     background-color: rgba(128, 128, 128, 0.8);
     border-radius: 300px;
+    
 }
 
 #map {
@@ -1337,7 +1376,6 @@
     margin: 12px;
     border-radius: 4px;
 }
-
 .sidebar span:nth-of-type(1) {
     margin-right: 2px;
 }
@@ -1353,10 +1391,11 @@
 
 .p1 {
     margin-top: 10px;
+    margin-bottom: -5px;
 }
 
 .p1 span {
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-right: 1.2em;
     line-height: 1.8em;
     color: #64869e;
@@ -1373,10 +1412,18 @@
 
 /* ----------------------------------------------- */
 
-/*------------------Welcome Page----------------- */
-
 /* -------- Registration Page / Login Page -------- */
-
+#logIn,
+#signUp,
+#logOut {
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-color: white !important;
+    background-color: transparent;
+    padding: 3px 15px 3px 15px;
+}
 
 #logIn i,
 #signUp i {
@@ -1391,7 +1438,6 @@
     right: 10px;
     top: 15px;
 }
-
 #register,
 #dashboard,
 #voluntee {
@@ -1431,7 +1477,6 @@ small {
     left: 50%;
     z-index: 999;
 }
-
 
 
 #resetPasswordModal {
@@ -1597,8 +1642,8 @@ small {
 
 #snackBar.show {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+    animation: fadein 0.5s, fadeout 0.5s 4.5s;
 }
 
 @-webkit-keyframes fadein {
@@ -1606,7 +1651,6 @@ small {
         bottom: 0;
         opacity: 0;
     }
-
     to {
         bottom: 10px;
         opacity: 1;
@@ -1618,7 +1662,6 @@ small {
         bottom: 0;
         opacity: 0;
     }
-
     to {
         bottom: 10px;
         opacity: 1;
@@ -1630,7 +1673,6 @@ small {
         bottom: 10px;
         opacity: 1;
     }
-
     to {
         bottom: 0;
         opacity: 0;
@@ -1642,7 +1684,6 @@ small {
         bottom: 10px;
         opacity: 1;
     }
-
     to {
         bottom: 0;
         opacity: 0;
@@ -1669,7 +1710,7 @@ small {
     width: 70px;
 }
 
-._18XWA {
+._18XWA{
     background-color: whitesmoke !important;
 }
 

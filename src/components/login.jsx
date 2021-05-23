@@ -14,11 +14,11 @@ class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            userEmail: "",
-            userPassword: "",
-            emailError: "",
-            passError: "",
-            resetMsg: "",
+            userEmail: '',
+            userPassword: '',
+            emailError: '',
+            passError: '',
+            resetMsg: '',
             loading: false,
             modal: false,
         };
@@ -37,30 +37,30 @@ class Login extends Component {
     // Clear Errors ->
     clearError() {
         this.setState({
-            passError: "",
-            emailError: "",
+            passError: '',
+            emailError: '',
         });
     }
 
     // Clear Inputs ->
     clearInputs() {
         this.setState({
-            userEmail: "",
-            userPassword: "",
+            userEmail: '',
+            userPassword: '',
         });
     }
 
     // Error Handler ->
     errorHandler(err) {
         switch (err.code) {
-            case "auth/invalid-email":
-            case "auth/user-disabled":
-            case "auth/user-not-found":
+            case 'auth/invalid-email':
+            case 'auth/user-disabled':
+            case 'auth/user-not-found':
                 this.setState({
                     emailError: err.message,
                 });
                 break;
-            case "auth/wrong-password":
+            case 'auth/wrong-password':
                 this.setState({
                     passError: err.message,
                 });
@@ -89,8 +89,8 @@ class Login extends Component {
             );
             const role = await getUserRole(res.user.uid);
             this.clearInputs();
-            const path = role.includes("ADMIN") ? "admin" : "dashboard";
-            this.props.history.push("/volunteer/" + path);
+            const path = role.includes('ADMIN') ? 'admin' : 'dashboard';
+            this.props.history.push('/volunteer/' + path);
         } catch (err) {
             this.errorHandler(err);
         }
@@ -105,7 +105,7 @@ class Login extends Component {
             this.clearError();
             await signUpWithGoogle();
             this.clearInputs();
-            this.props.history.push("/volunteer/dashboard");
+            this.props.history.push('/volunteer/dashboard');
             this.setState({ loading: false });
         } catch (err) {
             this.errorHandler(err);
@@ -126,8 +126,7 @@ class Login extends Component {
             modal: stateVal,
             resetMsg: msg,
         });
-        if (msg)
-            this.snackbar();
+        if (msg) this.snackbar();
     };
 
     // Snackbar Function ->
@@ -150,7 +149,7 @@ class Login extends Component {
                         id='signUp'
                         className='button'
                         onClick={() =>
-                            this.props.history.push("/volunteer/register")
+                            this.props.history.push('/volunteer/register')
                         }
                     >
                         Sign Up
