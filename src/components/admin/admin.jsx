@@ -6,7 +6,9 @@ import AuthContext from '../../services/AuthContext';
 import delhiHospitals from '../../utilities/delhiHospitals.json';
 import Schedule from 'react-schedule-job'
 import '../../styles/style.css';
-import 'react-schedule-job/dist/index.css'
+
+// Stylesheet for Cron Job Table ->
+// import 'react-schedule-job/dist/index.css'
 
 export class Admin extends Component {
     static contextType = AuthContext;

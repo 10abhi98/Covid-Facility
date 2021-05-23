@@ -16,7 +16,7 @@ class Volunteer extends Component {
                         </p>
                         <div>
                             Helping is easy
-                            <ol style = {{marginLeft : '20px'}}>
+                            <ol style = {{marginLeft : '-1.3em'}}>
                                 <li>Log In</li>
                                 <li>Make a Quick Call</li>
                                 <li>Log Out</li>
