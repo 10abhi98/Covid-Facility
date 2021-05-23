@@ -211,19 +211,19 @@
 
     .h2,
     h2 {
-        font-size: 48px !important;
+        font-size: 36px !important;
         font-weight: 700 !important;
         margin-bottom: 0px !important;
     }
 
     p {
-        font-size: 24px !important;
+        font-size: 20px !important;
         font-weight: 200 !important;
         margin-bottom: 0px !important;
     }
 
     ol {
-        margin-left: 30px !important;
+        margin-left: -10px !important;
     }
 
     .imageMobile {
@@ -248,7 +248,7 @@
         border-color: #FFE2B9 !important;
         background-color: transparent;
         padding: 5px 20px 5px 20px;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
         margin-top: 10px;
     }
@@ -263,7 +263,7 @@
     }
 
     #gog {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
         border: 2px solid #FFE2B9;
         color: #FFE2B9;
@@ -1413,17 +1413,6 @@
 /* ----------------------------------------------- */
 
 /* -------- Registration Page / Login Page -------- */
-#logIn,
-#signUp,
-#logOut {
-    border-radius: 20px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    border-color: white !important;
-    background-color: transparent;
-    padding: 3px 15px 3px 15px;
-}
 
 #logIn i,
 #signUp i {
