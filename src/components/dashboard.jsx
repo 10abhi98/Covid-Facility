@@ -49,7 +49,7 @@ class Dashboard extends Component {
         // End of Questionarre ->
 
         // Preserve Initial State ->
-        this.baseState = this.state 
+        this.baseState = this.state;
 
         // Bind Functions ->
         this.clearInputs = this.clearInputs.bind(this);
@@ -68,6 +68,7 @@ class Dashboard extends Component {
         this.snackbar = this.snackbar.bind(this);
         this.onChangeHandler = this.onChangeHandler.bind(this);
         this.userLogOut = this.userLogOut.bind(this);
+        this.checkInputFields = this.checkInputFields.bind(this);
     }
 
     // Clear All Inputs ->
@@ -105,33 +106,35 @@ class Dashboard extends Component {
     }
 
     // Add Delay (before or after any operation)
-    timeout(ms){
-        return new Promise(resolve => setTimeout(resolve, ms));
+    timeout(ms) {
+        return new Promise((resolve) => setTimeout(resolve, ms));
     }
 
     // Fetch All Data Handler (Tasks, Locations, Assign Time) ->
-    async fectAllDataHandler(userId, delay = 2000){
+    async fectAllDataHandler(userId, delay = 2000) {
         this.setState({
-            reassignTime : ''
-        })
-        try{
+            reassignTime: '',
+        });
+        try {
             await this.timeout(2000);
             await this.fetchTaskAssignTime(userId);
             await this.fetchTasks();
             Promise.all([
                 setTimeout(() => {
-                    this.fetchLocationData() 
-                    this.fetchTaskAssignTime(userId)
-                },delay)
-                ]).then(() => {
+                    this.fetchLocationData();
+                    this.fetchTaskAssignTime(userId);
+                }, delay),
+            ])
+                .then(() => {
                     this.interval = setInterval(this.taskTimer, 60000);
                     setTimeout(() => {
                         this.setState({ loading: false });
-                    },delay);
-                }).catch((err) => {
-                    console.log(err.message);
+                    }, delay);
                 })
-        } catch (err){
+                .catch((err) => {
+                    console.log(err.message);
+                });
+        } catch (err) {
             console.log(err);
         }
     }
@@ -231,25 +234,24 @@ class Dashboard extends Component {
                     this.setState({
                         reassignTime: assignTime,
                     });
-                    if(Date.now() >= assignTime*1000){
+                    if (Date.now() >= assignTime * 1000) {
                         this.setState({
-                            loading : false,
-                            reassignTime : ''
-                        })
-                        this.snackbar('Tasks Expired!! Fetching new set of Tasks ..')
-                        firestore
-                            .collection('volunteers')
-                            .doc(userId)
-                            .update({
-                                tasks_assigned : []
-                            })
+                            loading: false,
+                            reassignTime: '',
+                        });
+                        this.snackbar(
+                            'Tasks Expired!! Fetching new set of Tasks ..'
+                        );
+                        firestore.collection('volunteers').doc(userId).update({
+                            tasks_assigned: [],
+                        });
                         setTimeout(() => {
-                            window.location.reload()
-                        },3000)
+                            window.location.reload();
+                        }, 3000);
                     }
                 });
         }
-        return 0
+        return 0;
     }
 
     // Reverse Task Timer ->
@@ -341,16 +343,20 @@ class Dashboard extends Component {
                     reassign_time: new Date(Date.now() + 60 * 60 * 1000),
                 });
 
-            
             // Change Active State ->
-            if(this.state.tasks.length){
+            if (this.state.tasks.length) {
                 // Change Active State Button ->
                 this.setState({
-                    activeBtn : this.state.tasks[this.state.tasks.length-1],
-                })
-    
+                    activeBtn: this.state.tasks[this.state.tasks.length - 1],
+                });
+
                 // Change Location on Form Based on Active State Button ->
-                this.selectLocation(e, this.state.taskLocations.find(id => id.Task_Id === this.state.activeBtn));
+                this.selectLocation(
+                    e,
+                    this.state.taskLocations.find(
+                        (id) => id.Task_Id === this.state.activeBtn
+                    )
+                );
             }
         } catch (err) {
             console.log(err);
@@ -359,26 +365,29 @@ class Dashboard extends Component {
         this.setState({
             loading: false,
         });
-        
+
         // On Completion Show Congratulations & Fetch New Sets of Tasks ->
         if (this.state.tasks.length === 0) {
-            this.snackbar('Congratulations !! You have completed all the Tasks ..')
+            this.snackbar(
+                'Congratulations !! You have completed all the Tasks ..'
+            );
             const p = new Promise((res, rej) => {
-                setTimeout(res,5000)
-            })
-            p.then(() =>{
+                setTimeout(res, 5000);
+            });
+            p.then(() => {
                 setTimeout(() => {
-                    this.snackbar('Fetching new set of Tasks ..')
-                },500)
-            }).then(() => {
-                this.fectAllDataHandler(currentUser.uid,3000)
+                    this.snackbar('Fetching new set of Tasks ..');
+                }, 500);
             })
-            .catch((err) => {
-                console.log(err.message);
-            })
+                .then(() => {
+                    this.fectAllDataHandler(currentUser.uid, 3000);
+                })
+                .catch((err) => {
+                    console.log(err.message);
+                });
         }
-        
-        if(this.state.tasks.length){
+
+        if (this.state.tasks.length) {
             // Display Task Completion Message
             this.snackbar('Task Completed ..');
         }
@@ -478,6 +487,21 @@ class Dashboard extends Component {
         }
     }
 
+    checkInputFields(e) {
+        e.preventDefault();
+        if (
+            this.state.beds ||
+            this.state.oxygen ||
+            this.state.remidisivir ||
+            this.state.waitingPatients ||
+            this.state.newPatients
+        ) {
+            this.submitInfoHandler(e, this.state.activeBtn);
+        } else {
+            this.snackbar('You cannot submit an empty form ..');
+        }
+    }
+
     render() {
         return (
             <>
@@ -573,11 +597,10 @@ class Dashboard extends Component {
                                                         id='submitBtn'
                                                         type='submit'
                                                         className='button float-right'
+                                                        form='taskList'
                                                         onClick={(event) => {
-                                                            this.submitInfoHandler(
-                                                                event,
-                                                                this.state
-                                                                    .activeBtn
+                                                            this.checkInputFields(
+                                                                event
                                                             );
                                                         }}
                                                     >
