@@ -205,13 +205,15 @@ class homepage extends Component {
                             paddingTop: "2px",
                         }}
                     >
-                        Verified{" "}
-                        {moment(
-                            new Date(
-                                loc["Tasks_Info"]["Beds"]["Verified_At"]
-                                    .seconds * 1000
-                            )
-                        ).fromNow()}
+                        <em>
+                            Verified{" "}
+                            {moment(
+                                new Date(
+                                    loc["Tasks_Info"]["Beds"]["Verified_At"]
+                                        .seconds * 1000
+                                )
+                            ).fromNow()}
+                        </em>
                     </div>
                     <hr />
                 </div>
@@ -245,7 +247,7 @@ class homepage extends Component {
                             <input
                                 type='text'
                                 id='searchBar'
-                                className='form-control form-control-sm mt-2'
+                                className='form-control mt-2'
                                 placeholder='Search'
                                 value={this.state.inputValue}
                                 onChange={this.locationSearchHandler}

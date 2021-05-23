@@ -280,7 +280,7 @@ class Dashboard extends Component {
         }
     }
 
-    // Combine address from street, city,
+    // Combine address from street, city, state & pincode ->
     stringifyAddress(street, city, state, pincode) {
         return (
             (street ? street + ', ' : '') +
@@ -290,12 +290,13 @@ class Dashboard extends Component {
         );
     }
 
+    // Combine contacts ->
     stringifyContacts(Contact) {
         return Contact[0] + (Contact[1] ? ', ' + Contact[1] : '');
     }
     s;
 
-    // Submit Event Handler
+    // Submit Event Handler ->
     async submitInfoHandler(e, taskId) {
         e.preventDefault();
         const { currentUser } = this.context;
@@ -461,7 +462,7 @@ class Dashboard extends Component {
         });
     };
 
-    // Snackbar (Complete Task Status)
+    // Snackbar (Complete Task Status) ->
     snackbar(msg) {
         this.setState({
             completeMsg: msg,
@@ -469,7 +470,7 @@ class Dashboard extends Component {
         toast();
     }
 
-    // On Change Handler
+    // On Change Handler ->
     onChangeHandler = (e) => {
         this.setState({
             [e.target.name]: e.target.value,
@@ -487,6 +488,7 @@ class Dashboard extends Component {
         }
     }
 
+    // Prevent Submission of Empty Form ->
     checkInputFields(e) {
         e.preventDefault();
         if (
