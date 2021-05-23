@@ -352,7 +352,6 @@
     .navbar-nav {
         font-size: 20px;
         font-weight: 200;
-        margin-top: 20px;
     }
 
     .volunteerMessage {
@@ -380,6 +379,7 @@
         order: 1;
         max-width: 500px;
         min-width: 500px;
+        margin-right:100px;
     }
 
     .imageDesktop {
