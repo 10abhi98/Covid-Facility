@@ -1,0 +1,7460 @@
+[
+    {
+        "Name": "Lok Nayak Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 1500,
+        "Contact": [
+            "8046820570"
+        ],
+        "Address": {
+            "Street": "Jawahar Lal Nehru Marg",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110002
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6731154,
+            "Long": 77.1870365
+        }
+    },
+    {
+        "Name": "GTB Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 750,
+        "Contact": [
+            "8595948014",
+            "8595948019",
+            "8595948020",
+            "8595948026",
+            "8595948027"
+        ],
+        "Address": {
+            "Street": "Shahdara",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110095
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6840049,
+            "Long": 77.307225
+        }
+    },
+    {
+        "Name": "AIIMS Jhajjar",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 593,
+        "Contact": [
+            "8929900156"
+        ],
+        "Address": {
+            "Street": "Tehsil Badli, Jhajjar District, Badsa",
+            "City": "",
+            "State": "Haryana ",
+            "Pincode": 124105
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.4987734,
+            "Long": 76.8720675
+        }
+    },
+    {
+        "Name": "Sardar Patel Covid Army Hospital",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 500,
+        "Contact": [
+            "7303885606"
+        ],
+        "Address": {
+            "Street": "",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": null
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": null,
+            "Long": null
+        }
+    },
+    {
+        "Name": "Base Hospital ",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 493,
+        "Contact": [
+            "011-25683581"
+        ],
+        "Address": {
+            "Street": "Delhi Cantt",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": null
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6076254,
+            "Long": 77.1363782
+        }
+    },
+    {
+        "Name": "Burari Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 370,
+        "Contact": [
+            "011-27611215",
+            "011-27611201"
+        ],
+        "Address": {
+            "Street": "Kaushik Enclave, Shankarpura, Burari",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110084
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7610742,
+            "Long": 77.187685
+        }
+    },
+    {
+        "Name": "Dr Baba Saheb Ambedkar Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 365,
+        "Contact": [
+            "011-27049963"
+        ],
+        "Address": {
+            "Street": "Sector 6, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110085
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7146116,
+            "Long": 77.1112703
+        }
+    },
+    {
+        "Name": "Rajeev Gandhi Super Speciality Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 350,
+        "Contact": [
+            "011-22890773",
+            "011-22890789",
+            "011-22890611",
+            "8595524745"
+        ],
+        "Address": {
+            "Street": "Taharpur Rd, Taharpur, Taharpur Village, Dilshad Garden",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110093
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6892332,
+            "Long": 77.3142794
+        }
+    },
+    {
+        "Name": "Deen Dayal Upadhyay Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 310,
+        "Contact": [
+            "011-25401075"
+        ],
+        "Address": {
+            "Street": "Shaheed Mangal Pandey Marg, Nanak Pura, Hari Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110064
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6280643,
+            "Long": 77.1122969
+        }
+    },
+    {
+        "Name": "Ambedkar Nagar Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 300,
+        "Contact": [
+            "011-26052016",
+            "9310586617"
+        ],
+        "Address": {
+            "Street": "",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": null
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5221431,
+            "Long": 77.2384606
+        }
+    },
+    {
+        "Name": "AIIMS",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 294,
+        "Contact": [
+            "011-26731109"
+        ],
+        "Address": {
+            "Street": "",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": null
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6010848,
+            "Long": 77.2005464
+        }
+    },
+    {
+        "Name": "Safdarjung Hospital",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 275,
+        "Contact": [
+            "011-26730000"
+        ],
+        "Address": {
+            "Street": "Ansari Nagar East",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110029
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5680452,
+            "Long": 77.2036268
+        }
+    },
+    {
+        "Name": "LHMC",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 271,
+        "Contact": [
+            "011-23498269"
+        ],
+        "Address": {
+            "Street": "Near, Panchkuian Marg,Shivaji Stadium",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110055
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6344213,
+            "Long": 77.2113456
+        }
+    },
+    {
+        "Name": "Ram Manohar Lohia Hospital",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 263,
+        "Contact": [
+            "011-23365525"
+        ],
+        "Address": {
+            "Street": "Baba Kharak Singh Rd, near Gurudwara Bangla Sahib",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110001
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6257258,
+            "Long": 77.2016269
+        }
+    },
+    {
+        "Name": "Bara Hindurao Hospital",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 250,
+        "Contact": [
+            "011-23905839",
+            "011-23905703"
+        ],
+        "Address": {
+            "Street": "Gandhi Square, Malka Ganj",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110007
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6755039,
+            "Long": 77.2020333
+        }
+    },
+    {
+        "Name": "Deep Chand Bandhu",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 230,
+        "Contact": [
+            "011-27305952",
+            "8929121749",
+            "7290025141"
+        ],
+        "Address": {
+            "Street": "Kokiwala Bagh,Ashok Vihar,Phase-IV",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": null
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6817859,
+            "Long": 77.177625
+        }
+    },
+    {
+        "Name": "ESIC hospital Okhla",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 230,
+        "Contact": [
+            "011-26814161"
+        ],
+        "Address": {
+            "Street": "Shree Maa Anandmayee Marg, Okhla Industrial Area, Phase-1",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110020
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.552341,
+            "Long": 77.2658992
+        }
+    },
+    {
+        "Name": "Northern Railway",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 200,
+        "Contact": [
+            "011-23747984"
+        ],
+        "Address": {
+            "Street": "Basant Lane, Aram Bagh, Connaught Place, Paharganj",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110055
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6365229,
+            "Long": 77.2152709
+        }
+    },
+    {
+        "Name": "Guru Nanak Eye Centre ( Annexed To Lok Nayak Hospital)",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 198,
+        "Contact": [
+            "011-23234622",
+            "011-23235145"
+        ],
+        "Address": {
+            "Street": "Maharaja Ranjit Singh Marg",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110002
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6379202,
+            "Long": 77.2323593
+        }
+    },
+    {
+        "Name": "Satyawati Harishchand Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 135,
+        "Contact": [
+            "011-27787008",
+            "011-27781044",
+            "011-27781045",
+            "011-27781046",
+            "011-27781047"
+        ],
+        "Address": {
+            "Street": "Narela",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110040
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.8411336,
+            "Long": 77.1004572
+        }
+    },
+    {
+        "Name": "Sanjay Gandhi Memorial Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 118,
+        "Contact": [
+            "011-27913220"
+        ],
+        "Address": {
+            "Street": "Block U, Mangolpuri S Block",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110083
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6173631,
+            "Long": 77.2420945
+        }
+    },
+    {
+        "Name": "Acharyashree Bhikshu Govt. Hospital",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 102,
+        "Contact": [
+            "011-25423514",
+            "9667136071"
+        ],
+        "Address": {
+            "Street": "",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": null
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6460444,
+            "Long": 77.1250141
+        }
+    },
+    {
+        "Name": "AIIMS Main Delhi",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 100,
+        "Contact": [
+            "011-26588500"
+        ],
+        "Address": {
+            "Street": "Sri Aurobindo Marg,Ansari Nagar East",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110029
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.567182,
+            "Long": 77.2078564
+        }
+    },
+    {
+        "Name": "Swami Dayanand",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 70,
+        "Contact": [
+            "011-22110065",
+            "011-22581031",
+            "011-22581036"
+        ],
+        "Address": {
+            "Street": "C-Block, Dilshad Garden",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110095
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6784236,
+            "Long": 77.3031364
+        }
+    },
+    {
+        "Name": "ESIC Hospital Jhilmil",
+        "Management": "Central Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 60,
+        "Contact": [
+            "011-22152197"
+        ],
+        "Address": {
+            "Street": "ESIC Hospital, Jhilmil, Shahdara",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110095
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6719151,
+            "Long": 77.3055483
+        }
+    },
+    {
+        "Name": "Rajan Babu Institute of Pulmonary Medicine & Tuberculosis",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 60,
+        "Contact": [
+            "7291984162"
+        ],
+        "Address": {
+            "Street": "Kingsway Camp",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110009
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6987442,
+            "Long": 77.2013867
+        }
+    },
+    {
+        "Name": "Janakpuri Super Speciality Hospital Society",
+        "Management": "Delhi Govt ",
+        "Type": "Hospital",
+        "Total_Beds": 15,
+        "Contact": [
+            "011-25552023",
+            "011-28504182"
+        ],
+        "Address": {
+            "Street": "C-2/B, Janakpuri",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110058
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6212513,
+            "Long": 77.0898123
+        }
+    },
+    {
+        "Name": "Sir Ganga Ram Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 565,
+        "Contact": [
+            "011-42253001",
+            "011-42253002",
+            "011-42253003",
+            "9311407393",
+            "9311407391"
+        ],
+        "Address": {
+            "Street": "Sarhadi Gandhi Marg, Old Rajinder Nagar, Rajinder Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110060
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6385337,
+            "Long": 77.1875548
+        }
+    },
+    {
+        "Name": "Indraprastha Apollo Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 460,
+        "Contact": [
+            "011-26925801",
+            "8929700875"
+        ],
+        "Address": {
+            "Street": "Indraprastha Apollo Hospitals, Sarita Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110076
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5405965,
+            "Long": 77.2812367
+        }
+    },
+    {
+        "Name": "Holy Family Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 385,
+        "Contact": [
+            "9716832400"
+        ],
+        "Address": {
+            "Street": "Okhla Rd, Okhla",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110025
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5618161,
+            "Long": 77.2729226
+        }
+    },
+    {
+        "Name": "HAHC Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 376,
+        "Contact": [
+            "8588890999",
+            "7291970608",
+            "011-29901111"
+        ],
+        "Address": {
+            "Street": "Guru Ravidas Marg, Block D, Hamdard Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110062
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5148645,
+            "Long": 77.249928
+        }
+    },
+    {
+        "Name": "St. Stephens Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 336,
+        "Contact": [
+            "011-23966021"
+        ],
+        "Address": {
+            "Street": "St. Stephen's Hospital Marg, Tis Hazari",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110054
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6668018,
+            "Long": 77.2124258
+        }
+    },
+    {
+        "Name": "BLK Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 322,
+        "Contact": [
+            "8448386700",
+            "9311365796",
+            "011-30653299",
+            "8130697446",
+            "011-30653040"
+        ],
+        "Address": {
+            "Street": "Pusa Road, BLK Super Specialty Hospital, Radha Soami Satsang, Rajendra Place",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110005
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6433262,
+            "Long": 77.1774484
+        }
+    },
+    {
+        "Name": "Batra Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 285,
+        "Contact": [
+            "011-29958747",
+            "011-29903001",
+            "011-29902001",
+            "011-29051280"
+        ],
+        "Address": {
+            "Street": "1, Mehrauli - Badarpur Rd, Tughlakabad Institutional Area, Vayusenabad",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110062
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5130972,
+            "Long": 77.243601
+        }
+    },
+    {
+        "Name": "Max East/West Block",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 255,
+        "Contact": [
+            "011-26515050"
+        ],
+        "Address": {
+            "Street": "1, 2, Press Enclave Marg, Saket Institutional Area, Saket",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110017
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.527638,
+            "Long": 77.2099062
+        }
+    },
+    {
+        "Name": "Sri Balaji Action Medical Inst.",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 254,
+        "Contact": [
+            "9999174129",
+            "011-42888888"
+        ],
+        "Address": {
+            "Street": "A 4 Block, A 6 Block, Paschim Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110063
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6737837,
+            "Long": 77.1080786
+        }
+    },
+    {
+        "Name": "Maharaja Agrasen Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 250,
+        "Contact": [
+            "9910489495",
+            "011-40777666",
+            "8130402916"
+        ],
+        "Address": {
+            "Street": "Near Metro Station Jain Muni Guru Ramkrishan Marg Block C, Shivaji Park, West Punjabi Bagh",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110026
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.673941,
+            "Long": 77.1318113
+        }
+    },
+    {
+        "Name": "Max Smart Gujarmal Modi Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 250,
+        "Contact": [
+            "011-71212121"
+        ],
+        "Address": {
+            "Street": "Press Enclave Marg, Saket District Centre, Saket",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110017
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5280968,
+            "Long": 77.2112827
+        }
+    },
+    {
+        "Name": "Max SS Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 250,
+        "Contact": [
+            "8800333777"
+        ],
+        "Address": {
+            "Street": "108A, I.P.Extension, Patparganj",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6329274,
+            "Long": 77.3068187
+        }
+    },
+    {
+        "Name": "Manipal Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 245,
+        "Contact": [
+            "7978031920",
+            "8448288367"
+        ],
+        "Address": {
+            "Street": "Sector 6 adjoining MTNL building, Main Rd, Dwarka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110075
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5952007,
+            "Long": 77.0673823
+        }
+    },
+    {
+        "Name": "Venkateshwar Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 245,
+        "Contact": [
+            "7290072997"
+        ],
+        "Address": {
+            "Street": "Sector 18, Sector 18A Dwarka, Dwarka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110075
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5888913,
+            "Long": 77.0353426
+        }
+    },
+    {
+        "Name": "Akash Healthcare",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 237,
+        "Contact": [
+            "8800015991",
+            "011-28088888"
+        ],
+        "Address": {
+            "Street": "Hospital Plot, Rd Number 201, Dwarka Sector-3",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110075
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6052594,
+            "Long": 77.0511982
+        }
+    },
+    {
+        "Name": "Fortis Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 230,
+        "Contact": [
+            "9821051424",
+            "7303431467"
+        ],
+        "Address": {
+            "Street": "AA-299, Shaheed Udham Singh Marg, AA Block, Poorbi Shalimar Bag, Shalimar Bagh",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110088
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7095568,
+            "Long": 77.1677243
+        }
+    },
+    {
+        "Name": "Rajiv Gandhi Cancer Institute & RC",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 230,
+        "Contact": [
+            "9717888473",
+            "011-4722666"
+        ],
+        "Address": {
+            "Street": "Sir Chotu Ram Marg, Rohini Institutional Area, Sector 5, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110085
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7166817,
+            "Long": 77.1092285
+        }
+    },
+    {
+        "Name": "Shree Agarsain International Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 225,
+        "Contact": [
+            "9625941440",
+            "011-66636600",
+            "011-45911911"
+        ],
+        "Address": {
+            "Street": "Aman Vihar, Police Station, PSP, CH Bhim Singh Nambardar Marg, Sector 22, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110086
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7185105,
+            "Long": 77.0627929
+        }
+    },
+    {
+        "Name": "Jaipur Golden Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 220,
+        "Contact": [
+            "8929730572",
+            "011-27907000"
+        ],
+        "Address": {
+            "Street": "2, Naharpur Village Rd, Institutional Area, Sector 3, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110085
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6976327,
+            "Long": 77.107374
+        }
+    },
+    {
+        "Name": "Mata Chanan Devi Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 200,
+        "Contact": [
+            "8920601050",
+            "011-45682018",
+            "011-45582019"
+        ],
+        "Address": {
+            "Street": "c1, Lal Sai Mandir Marg, Block C1, Janakpuri",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110058
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6187501,
+            "Long": 77.0761255
+        }
+    },
+    {
+        "Name": "Max SS Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 200,
+        "Contact": [
+            "7042500536",
+            "9818533117",
+            "011-66422112"
+        ],
+        "Address": {
+            "Street": "FC 50, C and D Block, Shalimar Place Site, Shalimar Bagh",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110088
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.727694,
+            "Long": 77.1504207
+        }
+    },
+    {
+        "Name": "Pushpawati Singhania Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 168,
+        "Contact": [
+            "9717159780"
+        ],
+        "Address": {
+            "Street": "Press Enclave Marg, J Pocket, Phase II, Sheikh Sarai",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110017
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5331357,
+            "Long": 77.2232518
+        }
+    },
+    {
+        "Name": "Indian spinal injury Centre",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 160,
+        "Contact": [
+            "011-42255384"
+        ],
+        "Address": {
+            "Street": "Vasant Kunj Marg, Opp Vasant Valley School, IAA Colony, Sector C, Vasant Kunj",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110070
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5331214,
+            "Long": 77.1399956
+        }
+    },
+    {
+        "Name": "Mool Chand Khairati Ram Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 157,
+        "Contact": [
+            "9818813891",
+            "011-42000000"
+        ],
+        "Address": {
+            "Street": "Lala Lajpat Rai Marg, Near Moolchand Metro Station, Block M, Lajpat Nagar III, Lajpat Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110024
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5664245,
+            "Long": 77.232954
+        }
+    },
+    {
+        "Name": "Kukreja Hospital and Heart Centre",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 146,
+        "Contact": [
+            "7982046610",
+            "011-45675000"
+        ],
+        "Address": {
+            "Street": "C-1, Block A, Vishal Enclave, Rajouri Garden",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110027
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6467718,
+            "Long": 77.1148717
+        }
+    },
+    {
+        "Name": "Saroj Super Speciality Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 140,
+        "Contact": [
+            "011-27903333",
+            "011-47903333"
+        ],
+        "Address": {
+            "Street": "Bhagawan Mahavir Marg, Near Madhuban Chowk, Block A, Sector 14, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110085
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.70613,
+            "Long": 77.1269043
+        }
+    },
+    {
+        "Name": "Tirath Ram Shah Charitable Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 136,
+        "Contact": [
+            "8375975629",
+            "011-23948484"
+        ],
+        "Address": {
+            "Street": "Civil Lines, 2A Isher Das Sawhney Marg Near Tis Hazari Metro Station R.B.L",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110054
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.670817,
+            "Long": 77.2141112
+        }
+    },
+    {
+        "Name": "Shanti Mukand Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 131,
+        "Contact": [
+            "011-47276600",
+            "011-47276632",
+            "011-47276627"
+        ],
+        "Address": {
+            "Street": "2, Institutional Area, Bhartendu Harish Chandra Marg, Vikas Marg Extension, Karkardooma",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6457155,
+            "Long": 77.299482
+        }
+    },
+    {
+        "Name": "Maha Durga Charitable Trust Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 130,
+        "Contact": [
+            "9811755635",
+            "8076344435",
+            "9212266606",
+            "9212266616"
+        ],
+        "Address": {
+            "Street": "Rishabh Park, Phase 3, Model Town",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110009
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7142592,
+            "Long": 77.1844131
+        }
+    },
+    {
+        "Name": "Ayushman Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 118,
+        "Contact": [
+            "011-47031100",
+            "011-49495555",
+            "011-49495566",
+            "011-49495500",
+            "9810564233"
+        ],
+        "Address": {
+            "Street": "Pocket 1, Sector 10 Dwarka, Elephenta Line",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110075
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6434781,
+            "Long": 77.1172739
+        }
+    },
+    {
+        "Name": "Fortis Escorts Heart Institute",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 112,
+        "Contact": [
+            "011-47135000"
+        ],
+        "Address": {
+            "Street": "Okhla road, Sukhdev Vihar Metro Station",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110025
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5606583,
+            "Long": 77.2717149
+        }
+    },
+    {
+        "Name": "Primus Super Specialty Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 111,
+        "Contact": [
+            "9910071222"
+        ],
+        "Address": {
+            "Street": "2, Chandragupta Marg, Chanakyapuri",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110021
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5929023,
+            "Long": 77.1790854
+        }
+    },
+    {
+        "Name": "Dharamshila Narayana Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 110,
+        "Contact": [
+            "8067506880",
+            "7370073700",
+            "7290074708"
+        ],
+        "Address": {
+            "Street": "Metro Station, Dharamshila marg, Vasundhara Enclave Near Ashok Nagar, Dallupura",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110096
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6025216,
+            "Long": 77.3119395
+        }
+    },
+    {
+        "Name": "Metro Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 110,
+        "Contact": [
+            "011-49286666"
+        ],
+        "Address": {
+            "Street": "Community Center, 21, Acharya Nagraj Marg, C Block, Preet Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6385409,
+            "Long": 77.2926434
+        }
+    },
+    {
+        "Name": "Park Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 110,
+        "Contact": [
+            "011-45323232",
+            "6262929271",
+            "7533033025"
+        ],
+        "Address": {
+            "Street": "Meera Bagh, Bus Depot, Meera Enclave Outer Ring Road Near Kashopur, New Chaukhandi, Vishnu Garden",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110018
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.651782,
+            "Long": 77.0909773
+        }
+    },
+    {
+        "Name": "Fortis SS Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 106,
+        "Contact": [
+            "011-42776222"
+        ],
+        "Address": {
+            "Street": "Fortis Flt. Lt. Rajan Dhall Hospital, Aruna Asaf Ali Marg, Pocket 1, Sector B, Vasant Kunj",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110070
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5192105,
+            "Long": 77.1581008
+        }
+    },
+    {
+        "Name": "Santom Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 105,
+        "Contact": [
+            "011-27562255",
+            "011-27561024"
+        ],
+        "Address": {
+            "Street": "D-5-6, Outer Ring Rd, Prashant Vihar, Sector 14, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110085
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.713987,
+            "Long": 77.1362141
+        }
+    },
+    {
+        "Name": "Sehgal Neo Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 105,
+        "Contact": [
+            "8527597171",
+            "011-45565656"
+        ],
+        "Address": {
+            "Street": "B-362, 363, 364, Outer Ring Rd, Near to ICICI Bank, Block B, Meera Bagh, Paschim Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110063
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6580564,
+            "Long": 77.0892399
+        }
+    },
+    {
+        "Name": "National Heart Institute",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 102,
+        "Contact": [
+            "011-46600700",
+            "18005726600"
+        ],
+        "Address": {
+            "Street": "Raja Dhirsain Marg, D Block, East of Kailash",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110048
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5574541,
+            "Long": 77.2434904
+        }
+    },
+    {
+        "Name": "Bhagwati Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 100,
+        "Contact": [
+            "011-43126000",
+            "011-43126100",
+            "011-27554179",
+            "011-27554182",
+            "011-27554135",
+            "9953711474"
+        ],
+        "Address": {
+            "Street": "CS/OCF, 6, Jain Mandir Marg, near Printer Apartment, Sector 13, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110085
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7191147,
+            "Long": 77.127401
+        }
+    },
+    {
+        "Name": "Vimhans",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 100,
+        "Contact": [
+            "011-66176617",
+            "9873422574",
+            "9643306023"
+        ],
+        "Address": {
+            "Street": "Institutional Area, 1, Nehru Nagar, Lajpat Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110065
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5695188,
+            "Long": 77.2487158
+        }
+    },
+    {
+        "Name": "Sir Ganga Ram City Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 96,
+        "Contact": [
+            "011-42255555"
+        ],
+        "Address": {
+            "Street": "B-2, Pusa Rd, North Extension Area, Rajinder Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110005
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6412732,
+            "Long": 77.1881421
+        }
+    },
+    {
+        "Name": "Gandhi Nursing Home",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 95,
+        "Contact": [
+            "011-25335099",
+            "011-25333179",
+            "9582134315"
+        ],
+        "Address": {
+            "Street": "C-50-51, Najafgarh Rd, Block E, Om Vihar, Uttam Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6199571,
+            "Long": 77.0513946
+        }
+    },
+    {
+        "Name": "Kalra Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 93,
+        "Contact": [
+            "011-25100000",
+            "011-45005600",
+            "011-45005700"
+        ],
+        "Address": {
+            "Street": "Tulsi Dass Kalra Marg, Kirti Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110015
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6552017,
+            "Long": 77.1363623
+        }
+    },
+    {
+        "Name": "Divya Prastha Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 90,
+        "Contact": [
+            "8751002222"
+        ],
+        "Address": {
+            "Street": "RZ-37, Opposite Bagh Wala School, Main Road, Palam Colony",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110045
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5862209,
+            "Long": 77.0853916
+        }
+    },
+    {
+        "Name": "MGS Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 82,
+        "Contact": [
+            "011-45111444"
+        ],
+        "Address": {
+            "Street": "Rohtak Road, Punjabi Bagh West, Punjabi Bagh West",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110026
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6737106,
+            "Long": 77.1324408
+        }
+    },
+    {
+        "Name": "Bhagat Chandra Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 81,
+        "Contact": [
+            "9354697563",
+            "8395994074",
+            "7827473433",
+            "011-45254550"
+        ],
+        "Address": {
+            "Street": "RZ-F-1/1 Mahavir Enclave Palam Dabri Marg Under Dwarka, Airport Flyover, Mahavir Enclave Part 2, Palam",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110045
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.593451,
+            "Long": 77.0790342
+        }
+    },
+    {
+        "Name": "Brahm Shakti Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 80,
+        "Contact": [
+            "7840089703",
+            "8882029306"
+        ],
+        "Address": {
+            "Street": "No.U, 1/78, Kanjhawala Rd, Pocket C, Budh Vihar Phase I, Budh Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110086
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7016781,
+            "Long": 77.0758333
+        }
+    },
+    {
+        "Name": "Mata Roop Rani Maggo Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 80,
+        "Contact": [
+            "011-61290000",
+            "9555059059"
+        ],
+        "Address": {
+            "Street": "C-9, Metro Pillar No. 709, Om Vihar, Uttam Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6209247,
+            "Long": 77.0468067
+        }
+    },
+    {
+        "Name": "Navjeevan Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 80,
+        "Contact": [
+            "8802693809",
+            "9999106295",
+            "011-46600700"
+        ],
+        "Address": {
+            "Street": "Pitampura, 655, Onkar Nagar B, Onkar Nagar, Tri Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110035
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7086088,
+            "Long": 77.0365017
+        }
+    },
+    {
+        "Name": "Rathi Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 80,
+        "Contact": [
+            "9871173355",
+            "9711991234",
+            "9582595428"
+        ],
+        "Address": {
+            "Street": "3, Nangloi - Najafgarh Rd, Pratap Vihar, Ranhola",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110041
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6317789,
+            "Long": 76.9823778
+        }
+    },
+    {
+        "Name": "Sant Parmanand Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 78,
+        "Contact": [
+            "011-23994401",
+            "011-23994402",
+            "011-23926465"
+        ],
+        "Address": {
+            "Street": "18, Sham Nath Marg, Civil Lines",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110054
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.677724,
+            "Long": 77.222005
+        }
+    },
+    {
+        "Name": "Delhi Heart & Lung Institute",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 73,
+        "Contact": [
+            "011-42999999",
+            "011-42999901"
+        ],
+        "Address": {
+            "Street": "3, Panchkuian Marg, Type 4, Block B, Aram Bagh, Rolex",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110055
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6416479,
+            "Long": 77.2030544
+        }
+    },
+    {
+        "Name": "Tarak Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 72,
+        "Contact": [
+            "8285882288",
+            "9643681681"
+        ],
+        "Address": {
+            "Street": "C-7,Jai Bharat Enclave , Dwarka More, Najafgarh Rd, Block C, Dwarka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6192561,
+            "Long": 77.027825
+        }
+    },
+    {
+        "Name": "Madhukar Rainbow Children Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 71,
+        "Contact": [
+            "9100065913",
+            "8448284610"
+        ],
+        "Address": {
+            "Street": "Geetanjali FC-29 5 Near Malviya Nagar Metro Station",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110017
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.529288,
+            "Long": 77.2024513
+        }
+    },
+    {
+        "Name": "B.M. Gupta Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 70,
+        "Contact": [
+            "011-47157777",
+            "8287229094",
+            "9968911910",
+            "8130397046"
+        ],
+        "Address": {
+            "Street": "H-9, 15, Arya Samaj Rd, SDM Market, Block O, Uttam Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6195437,
+            "Long": 77.0591811
+        }
+    },
+    {
+        "Name": "Goyal Hospital & Urology Centre",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 70,
+        "Contact": [
+            "9015142888",
+            "7011221183",
+            "011-22091851"
+        ],
+        "Address": {
+            "Street": "E-4/8, Krishna Nagar, near Lajpat Rai, Chandni Chowk",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110051
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6611623,
+            "Long": 77.2802346
+        }
+    },
+    {
+        "Name": "RLKC Metro Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 70,
+        "Contact": [
+            "011-61316666",
+            "9910488472"
+        ],
+        "Address": {
+            "Street": "Pandav Nagar, Naraina Road, Near Shadipur Metro Station",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110008
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6511745,
+            "Long": 77.152566
+        }
+    },
+    {
+        "Name": "Cygnus Sonia Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 68,
+        "Contact": [
+            "8750060177",
+            "8750060162"
+        ],
+        "Address": {
+            "Street": "1, Rohtak Rd, Gulshan Park, Nangloi",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110041
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6825377,
+            "Long": 77.0501703
+        }
+    },
+    {
+        "Name": "Jeevan Anmol Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 60,
+        "Contact": [
+            "011-22795237",
+            "011-22750380",
+            "8527677688"
+        ],
+        "Address": {
+            "Street": "JEEVAN ANMOL HOSPITAL, Mayur Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110091
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6060799,
+            "Long": 77.2932494
+        }
+    },
+    {
+        "Name": "Jeewan Mala Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 60,
+        "Contact": [
+            "011-47774151",
+            "011-47774132",
+            "9212167895"
+        ],
+        "Address": {
+            "Street": "67/1 New Rohtak Road, Guru Gobind Singh Marg, Karol Bagh",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110005
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6579666,
+            "Long": 77.1920975
+        }
+    },
+    {
+        "Name": "Medeor Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 55,
+        "Contact": [
+            "011-41222222",
+            "8130390341"
+        ],
+        "Address": {
+            "Street": "B-33, 34, Qutab Institutional Area",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110016
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5374571,
+            "Long": 77.1789159
+        }
+    },
+    {
+        "Name": "Shri Ram Singh Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 52,
+        "Contact": [
+            "9811100764"
+        ],
+        "Address": {
+            "Street": "B-25 26 26a, Swarn Cinema Road, East Krishna Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110051
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.660569,
+            "Long": 77.2854492
+        }
+    },
+    {
+        "Name": "Bh Salvas Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 50,
+        "Contact": [
+            "9990780442"
+        ],
+        "Address": {
+            "Street": "6 & B6, VILL. HAIBATPURA, CHANDAN PARK, NAJAFGARH",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110072
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6264712,
+            "Long": 76.9684701
+        }
+    },
+    {
+        "Name": "Gupta Multispecialty Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 50,
+        "Contact": [
+            "011-45652410",
+            "7011223809"
+        ],
+        "Address": {
+            "Street": "B-20,, Vivek Vihar Phase I, Vivek Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110095
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6681668,
+            "Long": 77.3182412
+        }
+    },
+    {
+        "Name": "Sushila Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 50,
+        "Contact": [
+            "9999390291",
+            "9811494085"
+        ],
+        "Address": {
+            "Street": "Plot No 109, Gali No. 9, Gautam Colony, Safiabad Road, Narela",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110040
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.8596426,
+            "Long": 77.0837514
+        }
+    },
+    {
+        "Name": "Malik Radix Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 47,
+        "Contact": [
+            "011-22011192",
+            "011-22011196",
+            "8800786277"
+        ],
+        "Address": {
+            "Street": "C/216 Metro Station, C/218, Vikas Marg,Nirman Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6356368,
+            "Long": 77.2858345
+        }
+    },
+    {
+        "Name": "Bhagwan Mahavir Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 46,
+        "Contact": [
+            "9582585676",
+            "011-27550441",
+            "011-27550442"
+        ],
+        "Address": {
+            "Street": "H-4,5, Pitampura, Delhi",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110034
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5332732,
+            "Long": 77.1554012
+        }
+    },
+    {
+        "Name": "World Brain Center Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 45,
+        "Contact": [
+            "011-25391266",
+            "011-25393347",
+            "9968788865"
+        ],
+        "Address": {
+            "Street": "Plot No-24, KH No.-15/4/1/4/2, Syndicate Enclave, Pankha Road, Janakpuri",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110045
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6751269,
+            "Long": 77.0415608
+        }
+    },
+    {
+        "Name": "Makkar Multispeciality Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 44,
+        "Contact": [
+            "011-22462221",
+            "011-224666992",
+            "011-43107929"
+        ],
+        "Address": {
+            "Street": "A-1,2, Priyadarshani Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6410931,
+            "Long": 77.2804048
+        }
+    },
+    {
+        "Name": "PGH Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 44,
+        "Contact": [
+            "9599198053",
+            "9599198054"
+        ],
+        "Address": {
+            "Street": "Plot No. 89A,Vikasnagar Ext, Phase-2 Block-B, Sukkhar, Shani Bazar Rd, Uttam Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6361486,
+            "Long": 77.0468208
+        }
+    },
+    {
+        "Name": "Satyabhama Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 44,
+        "Contact": [
+            "9311116607",
+            "8506008075",
+            "011-24943107",
+            "011-25942303"
+        ],
+        "Address": {
+            "Street": "RZ-10, Naresh Park, Najafgarh Road, Nangloi, Near Water Tank",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110041
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6769985,
+            "Long": 77.0612034
+        }
+    },
+    {
+        "Name": "Bansal Global Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 43,
+        "Contact": [
+            "9811062832",
+            "9560932519",
+            "9811162832"
+        ],
+        "Address": {
+            "Street": "C-10, near Jahangirpuri Metro Station, Ramgarh, Ramgarh Village, Jahangirpuri",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110033
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.727312,
+            "Long": 77.1602263
+        }
+    },
+    {
+        "Name": "Konark Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 43,
+        "Contact": [
+            "9625695449"
+        ],
+        "Address": {
+            "Street": "9A/1, Naresh Park Main Najafgarh Road, Nangloi",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110041
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.677424,
+            "Long": 77.0617013
+        }
+    },
+    {
+        "Name": "Bhatia Global Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 42,
+        "Contact": [
+            "011-49775977",
+            "011-45518230",
+            "011-45518231"
+        ],
+        "Address": {
+            "Street": "307-308 Opposite Central School, Ambica Vihar, Paschim Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110087
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6655068,
+            "Long": 77.0803172
+        }
+    },
+    {
+        "Name": "East Delhi Medical Centre Mansarover Park",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 42,
+        "Contact": [
+            "011-22583204",
+            "011-22596736",
+            "8800526644"
+        ],
+        "Address": {
+            "Street": "1/550, GT Road, East Ram Nagar, Mansarovar Park, Shahdara",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110032
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6761117,
+            "Long": 77.2944185
+        }
+    },
+    {
+        "Name": "Jain Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 42,
+        "Contact": [
+            "9015111222",
+            "8010907907"
+        ],
+        "Address": {
+            "Street": "177-178, Jagriti Enclave, Vikas Marg Ext",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6533076,
+            "Long": 77.3065634
+        }
+    },
+    {
+        "Name": "Mansaram Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 42,
+        "Contact": [
+            "8285853737"
+        ],
+        "Address": {
+            "Street": "Main Najafgarh Rd, Ram Nagar Colony, Ram Nagar, Nangloi",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110041
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.672278,
+            "Long": 77.0566713
+        }
+    },
+    {
+        "Name": "Ardent Ganpati",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 41,
+        "Contact": [
+            "9990902287"
+        ],
+        "Address": {
+            "Street": "NH 10, Swaran Park, Mundka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110041
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6820015,
+            "Long": 77.0326199
+        }
+    },
+    {
+        "Name": "Aastha Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "9250913363"
+        ],
+        "Address": {
+            "Street": "NEW MAHAVIR NAGAR",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110018
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6358837,
+            "Long": 77.0813903
+        }
+    },
+    {
+        "Name": "Alshifa Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "9599687441"
+        ],
+        "Address": {
+            "Street": "D-305, Abul Fazal Enclave Part 1, Abul Fazal Enclave, Jamia Nagar, Okhla",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110025
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5571183,
+            "Long": 77.2929675
+        }
+    },
+    {
+        "Name": "Ansari Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "8373904800"
+        ],
+        "Address": {
+            "Street": "RZ-20 F/B, Kailash Puri Road,Main SagarPur",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110046
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.602785,
+            "Long": 77.1023421
+        }
+    },
+    {
+        "Name": "Bansal Hospital & Research Centre",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "9650846789",
+            "011-46583333",
+            "9650795533"
+        ],
+        "Address": {
+            "Street": "Friends Colony, New Friends Colony",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110025
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5638237,
+            "Long": 77.2693463
+        }
+    },
+    {
+        "Name": "Bensups Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "9560816745",
+            "011-45550000"
+        ],
+        "Address": {
+            "Street": "Dwarka Sub-City, Sector 12 Dwarka, BENSUPS Avenue",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110075
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5928915,
+            "Long": 77.042263
+        }
+    },
+    {
+        "Name": "CD Global Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "9310171264",
+            "9354629558",
+            "9811410663"
+        ],
+        "Address": {
+            "Street": "Metro piller no. 492, Main Rohtak road, Swarn park, Mundka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": null
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6508198,
+            "Long": 76.9905269
+        }
+    },
+    {
+        "Name": "K K Surgical & Maternity Centre",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "9999577020",
+            "9810115673"
+        ],
+        "Address": {
+            "Street": "B-37, Loni Rd, Landmark: Near Axis Bank, Jyoti Nagar East, Jyoti Nagar, Shahdara",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110093
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6929854,
+            "Long": 77.2898214
+        }
+    },
+    {
+        "Name": "Lalita Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "8595075850",
+            "8076868086",
+            "7678669919"
+        ],
+        "Address": {
+            "Street": "Parnami Market Rd, Rajiv Nagar Extension, Sector 38, Begum Pur",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110081
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.730684,
+            "Long": 77.0613213
+        }
+    },
+    {
+        "Name": "Rescue Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "9711960667"
+        ],
+        "Address": {
+            "Street": "S-5, Vishvas Park, Behind Sector-3, Dwarka Petrol Pump",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6062094,
+            "Long": 77.0531633
+        }
+    },
+    {
+        "Name": "Surya Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "9810198845",
+            "7217607103"
+        ],
+        "Address": {
+            "Street": "383/11-C, East Azad Nagar,Block E, Krishna Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110051
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6629501,
+            "Long": 77.2836866
+        }
+    },
+    {
+        "Name": "Surya Kiran Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "011-25322335"
+        ],
+        "Address": {
+            "Street": "31, ROSHAN MANDI, NAJAFGARH",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110043
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6138323,
+            "Long": 76.9922525
+        }
+    },
+    {
+        "Name": "Tulsi Multispeciality Hospital & Critical Care Unit",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "8410445275",
+            "8368769040",
+            "9650203070"
+        ],
+        "Address": {
+            "Street": "B-1, Jyoti Nagar(West), Durgapuri Chowk, Loni Road, Shahdara",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110094
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6881602,
+            "Long": 77.2917109
+        }
+    },
+    {
+        "Name": "Universal Centre of Health services",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "8800800500",
+            "8800128128",
+            "7065040315",
+            "7065040308"
+        ],
+        "Address": {
+            "Street": "Bypass Rd, Block D, Molar band Extension, Badarpur",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110044
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5537759,
+            "Long": 77.0376068
+        }
+    },
+    {
+        "Name": "Vikas Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 40,
+        "Contact": [
+            "8744077882",
+            "9810674306"
+        ],
+        "Address": {
+            "Street": "1629\u00ef\u00bf\u00bdH, Thana Road, Najafgarh",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110043
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6107042,
+            "Long": 76.9787553
+        }
+    },
+    {
+        "Name": "IBS Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 39,
+        "Contact": [
+            "011-43210000"
+        ],
+        "Address": {
+            "Street": "Block L, Lajpat Nagar III, Lajpat Nagar 4",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110024
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5653915,
+            "Long": 77.2420285
+        }
+    },
+    {
+        "Name": "NKS Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 39,
+        "Contact": [
+            "8130894500",
+            "011-23666666"
+        ],
+        "Address": {
+            "Street": "219, 220, Sanjay Nagar, Gulabi Bagh",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110007
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6752667,
+            "Long": 77.1885456
+        }
+    },
+    {
+        "Name": "Jeewan Nursing Home",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 37,
+        "Contact": [
+            "011-42430246",
+            "011-42474849"
+        ],
+        "Address": {
+            "Street": "2-B, Pusa Road, Next to Karol Bagh Metro Station, Opp. Pillar No.-107, 108, Sadhu Vasvani Marg, Rajender Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110005
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6436856,
+            "Long": 77.1860844
+        }
+    },
+    {
+        "Name": "Garg Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 36,
+        "Contact": [
+            "011-43274444",
+            "011-45152556"
+        ],
+        "Address": {
+            "Street": "No. 8& 9, AGCR Enclave, Opposite Karkardooma Court",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6531735,
+            "Long": 77.2927372
+        }
+    },
+    {
+        "Name": "SMS Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 36,
+        "Contact": [
+            "011-22505116",
+            "8076956969"
+        ],
+        "Address": {
+            "Street": "15, Gagan Vihar Main Rd, Gagan Vihar, Krishna Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110051
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6456149,
+            "Long": 77.2948937
+        }
+    },
+    {
+        "Name": "Maharaja Agrasen Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 35,
+        "Contact": [
+            "8826824672",
+            "8447720118",
+            "9990495495"
+        ],
+        "Address": {
+            "Street": "Sector-1, Dwaraka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110075
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6291413,
+            "Long": 77.0312206
+        }
+    },
+    {
+        "Name": "Pushpanjali Medical Centre",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 35,
+        "Contact": [
+            "8851743778"
+        ],
+        "Address": {
+            "Street": "A-14/15, Vikas Marg Ext, Pushpanjali, Karkardooma, Anand Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6539854,
+            "Long": 77.3068857
+        }
+    },
+    {
+        "Name": "Irene Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 34,
+        "Contact": [
+            "9540948480",
+            "011-49922222"
+        ],
+        "Address": {
+            "Street": "Block DD, DD-23, Kalkaji",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110019
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5447294,
+            "Long": 77.2560515
+        }
+    },
+    {
+        "Name": "Metro Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 33,
+        "Contact": [
+            "011-42424343"
+        ],
+        "Address": {
+            "Street": "14, Ring Road Near Amar Kaloni Market, Lajpat Nagar IV",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110024
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5647402,
+            "Long": 77.2415924
+        }
+    },
+    {
+        "Name": "Cygnus MLS",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 32,
+        "Contact": [
+            "9999655155",
+            "9999655255"
+        ],
+        "Address": {
+            "Street": "Plot No. 4, Main Kanjhawala Road, Rama Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110081
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.703101,
+            "Long": 77.1190703
+        }
+    },
+    {
+        "Name": "Medstar Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 32,
+        "Contact": [
+            "011-49242424",
+            "9810006697"
+        ],
+        "Address": {
+            "Street": "Outer Ring Rd, Block A, Meera Bagh, Paschim Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110087
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6589043,
+            "Long": 77.0886455
+        }
+    },
+    {
+        "Name": "Panchsheel Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 32,
+        "Contact": [
+            "9717611842",
+            "9999434453",
+            "011-43541234",
+            "011-22914817",
+            "011-43540604"
+        ],
+        "Address": {
+            "Street": "police station, C-3/63A, 64A, Yamuna Vihar, Opp, Gokalpuri",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110053
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7016942,
+            "Long": 77.2774656
+        }
+    },
+    {
+        "Name": "Dr. Chaudhary Moral Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "9810110566",
+            "9810110366"
+        ],
+        "Address": {
+            "Street": "C - 1, Block C, Yamuna Vihar, Shalimar Garden",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110053
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.702343,
+            "Long": 77.2702439
+        }
+    },
+    {
+        "Name": "Jeewan Moti Khera Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "011-25945771"
+        ],
+        "Address": {
+            "Street": "Krishna Mandir, New Khera Hospital,Nangloi - Najafgarh Rd, Nangloi",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110041
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6802448,
+            "Long": 77.0646421
+        }
+    },
+    {
+        "Name": "Kalra Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "011-25355545",
+            "011-25355546",
+            "9315677206"
+        ],
+        "Address": {
+            "Street": "Rama Park Road, opp. to metro pillar no. 761, Block B, Bhagwati Garden, Nawada",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6376132,
+            "Long": 77.0703517
+        }
+    },
+    {
+        "Name": "Kapil Multispecialty Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "9990781810",
+            "8448375462"
+        ],
+        "Address": {
+            "Street": "A-1 shastri park mor, Nathupura, Burari",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110084
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7676385,
+            "Long": 77.1795237
+        }
+    },
+    {
+        "Name": "Khandelwal Hospital And Urology Center",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "9212745664",
+            "011-42408561",
+            "011-42408591"
+        ],
+        "Address": {
+            "Street": "B-16, Main Road, East Krishna Nagar, East Krishna Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110051
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6604074,
+            "Long": 77.2856158
+        }
+    },
+    {
+        "Name": "Maharaja Agarsain Multispecialty Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "9891654929",
+            "9667097114",
+            "9811117913"
+        ],
+        "Address": {
+            "Street": "Bawana Road, Swatantra Nagar, Narela",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110040
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.8368912,
+            "Long": 77.0769418
+        }
+    },
+    {
+        "Name": "Samar Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "9818096199",
+            "9213210218"
+        ],
+        "Address": {
+            "Street": "Opp. St. Thomas School, Goyla Vihar, Sector 19, Dwarka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110071
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5820135,
+            "Long": 77.0129409
+        }
+    },
+    {
+        "Name": "Sanjeevan Medical Res.",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "9810203358",
+            "011-45770000"
+        ],
+        "Address": {
+            "Street": "24, Ansari Rd, Daryaganj",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110002
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.9565706,
+            "Long": 76.8833549
+        }
+    },
+    {
+        "Name": "Shakuntala Nursing Home",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 30,
+        "Contact": [
+            "9211783762",
+            "9211783761"
+        ],
+        "Address": {
+            "Street": "RZ-I-81A, RZ Block Road, Sagar Pur",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110046
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6082497,
+            "Long": 77.0931981
+        }
+    },
+    {
+        "Name": "Apex City Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 28,
+        "Contact": [
+            "8826395149",
+            "8826395145",
+            "9810811678"
+        ],
+        "Address": {
+            "Street": "D-440, Hanuman Road, D-Block, West Vinod Nagar, IP Extension",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110091
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6266163,
+            "Long": 77.2998208
+        }
+    },
+    {
+        "Name": "Revive Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 28,
+        "Contact": [
+            "9891534100",
+            "9718932941"
+        ],
+        "Address": {
+            "Street": "5A/2, Tilak Nagar, Opp. Metro Pillar No.491, Tilak Nagar, near Police Station",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110018
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6393489,
+            "Long": 77.0993334
+        }
+    },
+    {
+        "Name": "Bimla Devi Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 27,
+        "Contact": [
+            "011-41887777"
+        ],
+        "Address": {
+            "Street": "Plot No. 5, Pocket B, Mayur Vihar Phase II, Patparganj",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110091
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6202782,
+            "Long": 77.3031306
+        }
+    },
+    {
+        "Name": "Sama Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 27,
+        "Contact": [
+            "011-43111888"
+        ],
+        "Address": {
+            "Street": "8, Siri Fort Road",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110049
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.554559,
+            "Long": 77.226929
+        }
+    },
+    {
+        "Name": "Sitaram Bhartia Institute of Science & Res.",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 27,
+        "Contact": [
+            "011-42111111",
+            "9717894727",
+            "9717490249"
+        ],
+        "Address": {
+            "Street": "B-16, NRPC Colony, Block B, Qutab Institutional Area",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110016
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5389403,
+            "Long": 77.1824545
+        }
+    },
+    {
+        "Name": "Kosmos Super Specialty Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 26,
+        "Contact": [
+            "8447696223",
+            "011-22160003"
+        ],
+        "Address": {
+            "Street": "Sikka, C-60, Vikas Marg, DDA Flats, Anand Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110092
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6439148,
+            "Long": 77.292202
+        }
+    },
+    {
+        "Name": "Kukreja Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 26,
+        "Contact": [
+            "9711499163",
+            "9560275021"
+        ],
+        "Address": {
+            "Street": "D 36, Block C, Acharya Niketan, Mayur Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110091
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6092876,
+            "Long": 77.2926775
+        }
+    },
+    {
+        "Name": "CBR Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 25,
+        "Contact": [
+            "8686860169"
+        ],
+        "Address": {
+            "Street": "22, KH. No. B-1, Phase -4, Main Sunday Market, Aya Nagar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110049
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.4745712,
+            "Long": 77.1279138
+        }
+    },
+    {
+        "Name": "Rosewood Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 25,
+        "Contact": [
+            "9990045967",
+            "9990046258"
+        ],
+        "Address": {
+            "Street": "5, JL BLOCK, ROSHAN GARDEN, NAJAFGARH",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110043
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6101574,
+            "Long": 76.9904342
+        }
+    },
+    {
+        "Name": "Sai Charitable Dispensary",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 25,
+        "Contact": [
+            "8287366488",
+            "8375915505"
+        ],
+        "Address": {
+            "Street": "A-86, Jagatpuri, 100 Foota Road, Durgapuri Chowk",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110093
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6893853,
+            "Long": 77.3002784
+        }
+    },
+    {
+        "Name": "Savitri Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 25,
+        "Contact": [
+            "9810777351",
+            "9818709813",
+            "9958375050",
+            "9810777357"
+        ],
+        "Address": {
+            "Street": "142/91, Extended Lal Dora, Kanjhawala",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110081
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.735325,
+            "Long": 77.0127185
+        }
+    },
+    {
+        "Name": "Singhal Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 25,
+        "Contact": [
+            "7834979991",
+            "7834979994"
+        ],
+        "Address": {
+            "Street": "C-40, St No. 9, Sadh Nagar, Palam Colony",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110045
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5882612,
+            "Long": 77.0888348
+        }
+    },
+    {
+        "Name": "Goyal Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 21,
+        "Contact": [
+            "011-41901414",
+            "8700001648",
+            "8709637942"
+        ],
+        "Address": {
+            "Street": "B 33, Block B, LIC Colony, Paschim Vihar",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110087
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6615771,
+            "Long": 77.0831315
+        }
+    },
+    {
+        "Name": "Jeewan Nursing Home",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 20,
+        "Contact": [
+            "011-26349821",
+            "011-26341903"
+        ],
+        "Address": {
+            "Street": "Jeewan Nagar, Near Ashram",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110014
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.57622,
+            "Long": 77.2616683
+        }
+    },
+    {
+        "Name": "Nestiva Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 20,
+        "Contact": [
+            "011-42422000"
+        ],
+        "Address": {
+            "Street": "384, J S Complex Bank Street Main Market, Munirka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110067
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.553187,
+            "Long": 77.1723612
+        }
+    },
+    {
+        "Name": "Nidaan Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 20,
+        "Contact": [
+            "7303980711"
+        ],
+        "Address": {
+            "Street": "507, Devli, Bandh Road",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110034
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.499627,
+            "Long": 77.230137
+        }
+    },
+    {
+        "Name": "Shree Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 20,
+        "Contact": [
+            "9953882204"
+        ],
+        "Address": {
+            "Street": "Plot no. 54, Sec-12/A, Opp. Bal Bharti School, Dwarka",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110075
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5981355,
+            "Long": 77.0411422
+        }
+    },
+    {
+        "Name": "Nirmala Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 19,
+        "Contact": [
+            "9315514021",
+            "9953992177",
+            "7303523177"
+        ],
+        "Address": {
+            "Street": "RZ- E-20, Jai Vihar, Near D.K. Depot, Najafgarh",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110043
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6312589,
+            "Long": 77.0014944
+        }
+    },
+    {
+        "Name": "Dharamvir Solanki Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 16,
+        "Contact": [
+            "9311483147",
+            "9811188128"
+        ],
+        "Address": {
+            "Street": "100 Feet Rd, opp. Sector 22, Lakhi Ram Park, Sector 22, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110086
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7149575,
+            "Long": 77.0558508
+        }
+    },
+    {
+        "Name": "Ishan Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 16,
+        "Contact": [
+            "9212517399",
+            "9811417399",
+            "011-27892799"
+        ],
+        "Address": {
+            "Street": "Plot No.1, Pocket-8B, Dr MC Davar Marg, Sector 19, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110089
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7335347,
+            "Long": 77.1374815
+        }
+    },
+    {
+        "Name": "Satya Multispeciality Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 16,
+        "Contact": [
+            "8585938406"
+        ],
+        "Address": {
+            "Street": "F-1/9, PIPALWALA ROAD, MOHAN GARDEN, UTTAM NAGAR",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6267911,
+            "Long": 77.0393601
+        }
+    },
+    {
+        "Name": "Dr Rakesh Multispeciality Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 15,
+        "Contact": [
+            "8053426307"
+        ],
+        "Address": {
+            "Street": "2001, street no. 31-32 B, main road, Swatanter Nagar, Narela",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110040
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.840194,
+            "Long": 77.082404
+        }
+    },
+    {
+        "Name": "Pt.RRM Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 15,
+        "Contact": [
+            "9891761679",
+            "8287595266"
+        ],
+        "Address": {
+            "Street": "Ground Floor, Plot No.3, Kh.No. 27/1, Near Vats Market, Village Bakkarwala",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110041
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6651374,
+            "Long": 77.0155362
+        }
+    },
+    {
+        "Name": "Sant Soham Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 15,
+        "Contact": [
+            "011-41718460",
+            "9667248485"
+        ],
+        "Address": {
+            "Street": "H-2/31 Sector 11, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110085
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7316572,
+            "Long": 77.1101984
+        }
+    },
+    {
+        "Name": "Delhi Global Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 14,
+        "Contact": [
+            "9810483346"
+        ],
+        "Address": {
+            "Street": "A-10 teacher colony samaypur near badli metro station",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110042
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7448625,
+            "Long": 77.1409349
+        }
+    },
+    {
+        "Name": "SCI International Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 12,
+        "Contact": [
+            "9999446622"
+        ],
+        "Address": {
+            "Street": "4, Greater Kailash-1, M Block, Greater Kailash I, Greater Kailash",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110048
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5497333,
+            "Long": 77.2338762
+        }
+    },
+    {
+        "Name": "Delhi Multi Speciality Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 11,
+        "Contact": [
+            "8447444321"
+        ],
+        "Address": {
+            "Street": "I-21, Vijay Vihar Phase II, Vijay Vihar, Sector 4, Rohini",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110085
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7118178,
+            "Long": 77.0947941
+        }
+    },
+    {
+        "Name": "C M Patel Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 10,
+        "Contact": [
+            "9311836031"
+        ],
+        "Address": {
+            "Street": "E-7, Main 100 Feet Rd, West Jyoti Nagar, Jyoti Nagar West, Block A, Jyoti Nagar, Shahdara, Extension",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110094
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.689412,
+            "Long": 77.28912
+        }
+    },
+    {
+        "Name": "Cronus Multi Speciality Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 10,
+        "Contact": [
+            "011-71366388",
+            "011-71366389"
+        ],
+        "Address": {
+            "Street": "100 Feet Rd, Phase 1, Phase 2, Chattarpur Enclave, Chhatarpur",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110074
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.5016141,
+            "Long": 77.1858963
+        }
+    },
+    {
+        "Name": "Hardik Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 10,
+        "Contact": [
+            "9266728292",
+            "9250728292"
+        ],
+        "Address": {
+            "Street": "29-C, Bhagwan Parshuram Marg, Rajan Enclave, Vikas Nagar, Uttam Nagar, Hastsal",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110059
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.6366687,
+            "Long": 77.0532425
+        }
+    },
+    {
+        "Name": "Ekansh Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 8,
+        "Contact": [
+            "9999617080"
+        ],
+        "Address": {
+            "Street": "22-23, Shahbad Daulatpur",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110042
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.7449406,
+            "Long": 77.1118322
+        }
+    },
+    {
+        "Name": "Sunrise Hospital",
+        "Management": "Pvt",
+        "Type": "Hospital",
+        "Total_Beds": 8,
+        "Contact": [
+            "011-27894781",
+            "7982264816"
+        ],
+        "Address": {
+            "Street": "F-1, Gate, No 2, Garden Ln, Kalindi Colony",
+            "City": "New Delhi ",
+            "State": "Delhi",
+            "Pincode": 110065
+        },
+        "Response_Rate": "none",
+        "Tasks_Info": {
+            "Beds": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Remidisivir": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Oxygen": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "New_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            },
+            "Waiting_Patients": {
+                "Count": 0,
+                "Verified_At": 0
+            }
+        },
+        "Coordinates": {
+            "Lat": 28.577077,
+            "Long": 77.265937
+        }
+    }
+]
