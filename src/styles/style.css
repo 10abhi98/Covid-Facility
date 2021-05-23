@@ -42,7 +42,6 @@
         padding: 5px 20px 5px 20px;
         font-size: 24px;
         font-weight: 400;
-        margin-top: 10px;
     }
     .resetPass {
         color: #FFE2B9;
@@ -147,7 +146,6 @@
         background-clip: padding-box;
         border: 1px solid #FFE2B9 !important;
         border-radius: 6px !important;
-        margin: 10px 0;
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
@@ -198,7 +196,7 @@
 
     /*-------------- Commons--------------*/
     .padb20 {
-        padding-bottom: 20px
+        padding-bottom: 10px
     }
 
     .mobileOnly {
@@ -206,7 +204,7 @@
     }
 
     .padt20 {
-        padding-top: 20px
+        padding-top: 10px
     }
 
     .h2,
@@ -238,6 +236,7 @@
         background-color: transparent;
         border: none;
     }
+
     #logIn,
     #signUp,
     #logOut {
@@ -250,7 +249,6 @@
         padding: 5px 20px 5px 20px;
         font-size: 20px;
         font-weight: 400;
-        margin-top: 10px;
     }
 
     .loginAndForgot {
@@ -270,13 +268,13 @@
         text-decoration: none;
         border-color: #FFE2B9 !important;
         border-radius: 30px;
-        height: 50px;
+        height: 44px;
         padding: 0;
     }
 
     #gog img {
-        height: 48px;
-        width: 48px;
+        height: 42px;
+        width: 42px;
         float: left;
         border: 8px solid #FFF;
         border-radius: 30px;
@@ -289,7 +287,7 @@
     #gog span {
         float: right;
         padding-right: 15px;
-        line-height: 45px;
+        line-height: 42px;
         color: #FFE2B9;
         padding-left: 10px;
         white-space: nowrap;
@@ -305,7 +303,7 @@
         text-decoration: none;
         border-color: #FFE2B9 !important;
         border-radius: 30px;
-        height: 60px;
+        height: 44px;
         padding: 0;
 
     }
@@ -333,9 +331,9 @@
     }
 
     .form-control {
-        height: 62px !important;
+        height: 44px !important;
         padding: .375rem .75rem;
-        font-size: 20px !important;
+        font-size: 18px !important;
         font-weight: 200 !important;
         font-style: italic !important;
         line-height: 1.5;
@@ -344,7 +342,6 @@
         background-clip: padding-box;
         border: 1px solid #FFE2B9 !important;
         border-radius: 6px !important;
-        margin: 10px 0;
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
@@ -451,7 +448,6 @@
         padding: 5px 20px 5px 20px;
         font-size: 20px;
         font-weight: 400;
-        margin-top: 10px;
     }
 
     .loginAndForgot {
@@ -545,7 +541,6 @@
         background-clip: padding-box;
         border: 1px solid #FFE2B9 !important;
         border-radius: 6px !important;
-        margin: 10px 0;
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
@@ -656,7 +651,6 @@
         padding: 5px 20px 5px 20px;
         font-size: 20px;
         font-weight: 400;
-        margin-top: 10px;
     }
 
     #gog {
@@ -741,7 +735,6 @@
         background-clip: padding-box;
         border: 1px solid #FFE2B9 !important;
         border-radius: 6px !important;
-        margin: 10px 0;
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
@@ -937,7 +930,6 @@
         background-clip: padding-box;
         border: 1px solid #FFE2B9 !important;
         border-radius: 6px !important;
-        margin: 10px 0;
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
@@ -1141,7 +1133,6 @@
         background-clip: padding-box;
         border: 1px solid #FFE2B9 !important;
         border-radius: 6px !important;
-        margin: 10px 0;
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     }
 
@@ -1434,7 +1425,7 @@
 }
 
 #register .form-group {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 80%;
 }
 
