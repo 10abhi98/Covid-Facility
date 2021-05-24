@@ -9,26 +9,26 @@ class Volunteer extends Component {
         return (
             <div id='voluntee' className='container-fluid'>
                 <div className='volunteerMessage'>
-                    <div className='imageMobile'>
+                    <div className='order1 volunteerImage mobileOnly'>
                         <img src={volunteerDesktop} alt='Google' />
                     </div>
                     <div className='messageDesktop'>
                         <div className='message'>
-                            <h2 className='padb20'>Hi,</h2>
-                            <p className='padb20'>
+                            <h2 className='padbL'>Hi,</h2>
+                            <p className='padbL'>
                                 We are volunteering to provide near-real time
                                 information about the availability of Covid-supplies
                                 to patients in Delhi, India.
                         </p>
                             <div>
-                                <p className='padb20'>Helping is easy
+                                <p className='padbL'>Helping is easy
                             <ol>
                                         <li>Login</li>
                                         <li>Make a Quick Call</li>
                                         <li>Log Out</li>
                                     </ol></p>
                             </div>
-                            <p className='padb20'>
+                            <p className='padbL'>
                                 Help anytime, anywhere.
                             <br />
                             Join our team!
@@ -36,7 +36,7 @@ class Volunteer extends Component {
                             <span>
                                 {/* Login Button */}
                                 <button
-                                    id='logIn'
+                                    id='primaryButton'
                                     className='button mr-2'
                                     onClick={() =>
                                         this.props.history.push("/volunteer/login")
@@ -46,7 +46,7 @@ class Volunteer extends Component {
                             </button>
                                 {/* Signup Button */}
                                 <button
-                                    id='signUp'
+                                    id='primaryButton'
                                     type='submit'
                                     className='button ml-2'
                                     onClick={() =>
@@ -59,7 +59,7 @@ class Volunteer extends Component {
                             </button>
                             </span>
                         </div>
-                        <div className='imageDesktop'>
+                        <div className='order2 desktopOnly volunteerImage'>
                             <img src={volunteerDesktop} alt='Google' />
                         </div>
                     </div>

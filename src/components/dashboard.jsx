@@ -420,17 +420,17 @@ class Dashboard extends Component {
             return (
                 <button
                     key={tasks.Task_Id + index}
-                    className={
+                    id={
                         this.state.activeBtn === tasks.Task_Id
-                            ? 'locationActiveBtn'
-                            : 'locationBtn'
+                            ? 'textButtonActive'
+                            : 'textButton'
                     }
                     type='button'
                     onClick={(e) => this.selectLocation(e, tasks)}
                 >
-                    <span>
+                    <p className='readability'>
                         {index + 1}. Call {tasks.Name}
-                    </span>
+                    </p>
                 </button>
             );
         });
@@ -446,9 +446,9 @@ class Dashboard extends Component {
                     : val[0].toLowerCase();
             return (
                 <div className='form-group' key={value[0] + index}>
-                    <label>
+                    <p className='readability'>
                         {index + 1}. {value[1]}
-                    </label>
+                    </p>
                     <input
                         type='number'
                         name={name}
@@ -526,7 +526,7 @@ class Dashboard extends Component {
                         {/* Logout Button */}
                         <div id='logoutPlace' className='float-right'>
                             <button
-                                id='logOut'
+                                id='primaryButton'
                                 className='button'
                                 onClick={this.userLogOut}
                             >
@@ -542,37 +542,37 @@ class Dashboard extends Component {
                         {/* Only Show Content on Page when there is a task Location Array -> */}
                         {this.state.taskLocations.length > 0 && (
                             <div id='dashboard' className='container-fluid'>
-                                <div className='row ml-md-5'>
-                                    <div className='col-md-5 pl-md-5'>
+                                <div className='taskDashboard'>
+                                    <div className='volunteerTasks'>
                                         <h2>Welcome {this.state.userName}!</h2>
                                         {this.state.activeBtn && (
-                                            <p>Pick a task.</p>
+                                            <h6>Pick a task.{' '}
+                                            {this.state.taskTimerDisplay}</h6>
                                         )}
 
-                                        {/* Small Tasks */}
-                                        <p className='volunteerTasks pb-2'>
-                                            Assigned Tasks{' '}
-                                            {this.state.taskTimerDisplay}
-                                        </p>
+                                        {/* Small Tasks
+                                        <p className='taskList'>
+                                            My Tasks
+                                        </p> */}
                                         {this.tasksAssignment(
                                             this.state.taskLocations
                                         )}
                                     </div>
 
-                                    <div id='locationForm' className='col-md-7'>
+                                    <div id='locationForm' className='taskDetails'>
                                         <div className='p-1'>
                                             <div className='row'>
                                                 <div className='col-md-9'>
                                                     {/* Hospital Details */}
                                                     <div id='hospDetails'>
-                                                        <span>
+                                                        <h2 className='padbL'>
                                                             {
                                                                 this.state
                                                                     .locationName
                                                             }
-                                                            !
-                                                        </span>
-                                                        <p>
+                                                            
+                                                        </h2>
+                                                        <p id='address' className='readability'>
                                                             <i className='fas fa-map-marker-alt pr-2'></i>
                                                             {
                                                                 this.state
@@ -589,14 +589,12 @@ class Dashboard extends Component {
                                                 </div>
 
                                                 <div
-                                                    className='col-md-3 pt-2'
-                                                    style={{
-                                                        paddingRight: '5px',
-                                                    }}
+                                                    className='col-md-3'
+                                                    
                                                 >
                                                     {/* Submit Button */}
                                                     <button
-                                                        id='submitBtn'
+                                                        id='primaryButton'
                                                         type='submit'
                                                         className='button float-right'
                                                         form='taskList'
@@ -612,7 +610,7 @@ class Dashboard extends Component {
                                             </div>
 
                                             <form id='taskList'>
-                                                <p>Questions to ask</p>
+                                                <h6>Questions to ask</h6>
                                                 {/* Questionarre (Hospital/Pharmacy) */}
                                                 {this.state.locationType.toLowerCase() ===
                                                 'hospital'

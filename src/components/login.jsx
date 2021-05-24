@@ -146,7 +146,7 @@ class Login extends Component {
             <>
                 <div id='signUpPlace' className='float-right'>
                     <button
-                        id='signUp'
+                        id='primaryButton'
                         className='button'
                         onClick={() =>
                             this.props.history.push('/volunteer/register')
@@ -159,13 +159,13 @@ class Login extends Component {
                 <div id='snackBar' style={{ right: '10px', marginLeft: '-125px' }}>{this.state.resetMsg}</div>
                 <div id='register' className='container-fluid'>
                     <div className='volunteerMessage'>
-                        <div className='imageMobile'>
+                        <div className='order1 volunteerImage mobileOnly'>
                             <img src={volunteerMobile} alt='Google' />
                         </div>
                         <div className='messageDesktop'>
                             <div className='message'>
                                 <h2>Welcome Back</h2>
-                                <p className='padb20'>Just a moment</p>
+                                <p className='padbL'>Just a moment</p>
                                 <form>
                                     {/* Email ID */}
                                     <div className='form-group'>
@@ -196,10 +196,10 @@ class Login extends Component {
                                         {this.state.passError}
                                     </small>
                                     {/* Regular Login Button */}
-                                    <div className='loginAndForgot padt20'>
+                                    <div className='loginAndForgot padtL'>
                                         <div>
                                             <button
-                                                id='logIn'
+                                                id='primaryButton'
                                                 type='submit'
                                                 className='button'
                                                 disabled={this.state.loading}
@@ -214,7 +214,7 @@ class Login extends Component {
                                         {/* Google Login Button In Mobile View */}
                                         <div>
                                             <button
-                                                id='gog-mob'
+                                                id='imageButton'
                                                 type='button'
                                                 className='mobileOnly btn'
                                                 disabled={this.state.loading}
@@ -229,7 +229,7 @@ class Login extends Component {
                                         <div className='desktopOnly'>
                                             {/* Reset Password Button */}
                                             <button
-                                                className='resetPass'
+                                                id='textButton'
                                                 onClick={this.resetPasswordModal}
                                             >
                                                 Forgot Password?
@@ -245,7 +245,7 @@ class Login extends Component {
                                 <div className='mobileOnly'>
                                     {/* Reset Password Button */}
                                     <button
-                                        className='resetPass'
+                                        id='textButton'
                                         onClick={this.resetPasswordModal}
                                     >
                                         Forgot Password?
@@ -257,12 +257,12 @@ class Login extends Component {
                                     )}
                                 </div>
                                 <div className='desktopOnly'>
-                                    <p className='padb20 padt20'>
+                                    <p className='padbL padtL'>
                                         Or you can Login with your Google account
                                 </p>
                                     {/* Google Login Button (Desktop View) */}
                                     <button
-                                        id='gog'
+                                        id='imageButton'
                                         type='button'
                                         className='btn'
                                         onClick={this.logInWithGoogleHandler}
@@ -272,7 +272,7 @@ class Login extends Component {
                                     </button>
                                 </div>
                             </div>
-                            <div className='imageDesktop'>
+                            <div className='order2 desktopOnly volunteerImage'>
                                 <img src={volunteerDesktop} alt='Google' />
                             </div>
                         </div>

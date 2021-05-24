@@ -1,0 +1,1518 @@
+/*-------------- SPACINGS-&-DISPLAY--------------*/
+@media (min-width: 1600px) {
+    .padbL {
+        padding-bottom: 20px;
+    }
+
+    .padbM {
+        padding-bottom: 10px;
+    }
+
+    .padtL {
+        padding-top: 20px
+    }
+
+    .mobileOnly {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .padbL {
+        padding-bottom: 10px
+    }
+
+    .mobileOnly {
+        display: none !important;
+    }
+
+    .padtL {
+        padding-top: 10px
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+
+    .padbL {
+        padding-bottom: 20px
+    }
+
+    .mobileOnly {
+        display: none !important;
+    }
+
+
+    .padtL {
+        padding-top: 20px
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+
+    .padbL {
+        padding-bottom: 20px
+    }
+
+    .mobileOnly {
+        display: none !important;
+    }
+
+    .padtL {
+        padding-top: 20px
+    }
+
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+
+    .desktopOnly {
+        display: none !important;
+    }
+
+
+    .padbL {
+        padding-bottom: 10px
+    }
+
+    .padtL {
+        padding-top: 10px
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .desktopOnly {
+        display: none !important;
+    }
+
+
+    .padbL {
+        padding-bottom: 10px
+    }
+
+    .padtL {
+        padding-top: 10px
+    }
+}
+
+/*-------------- COMPONENTS--------------*/
+/*-------------- Headings--------------*/
+@media (min-width: 1600px) {
+    h6 {
+        line-height: 1 !important;
+        margin-bottom: 10px !important;
+        margin-top: 30px !important
+    }
+
+    .h2,
+    h2 {
+        font-size: 48px !important;
+        font-weight: 700 !important;
+        margin-bottom: 0px !important;
+    }
+
+    p {
+        font-size: 24px !important;
+        font-weight: 200 !important;
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    .h2,
+    h2 {
+        font-size: 36px !important;
+        font-weight: 700 !important;
+        margin-bottom: 0px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        margin-bottom: 0px !important;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+
+
+    .h2,
+    h2 {
+        font-size: 36px !important;
+        font-weight: 700 !important;
+        margin-bottom: 0px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        margin-bottom: 0px !important;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+
+
+
+    .h2,
+    h2 {
+        font-size: 32px !important;
+        font-weight: 700 !important;
+        margin-bottom: 0px !important;
+    }
+
+    p {
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        margin-bottom: 0px !important;
+    }
+
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+    .h2,
+    h2 {
+        font-size: 32px !important;
+        font-weight: 700 !important;
+        margin-bottom: 0px !important;
+    }
+
+
+
+    p {
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        margin-bottom: 0px !important;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    .h2,
+    h2 {
+        font-size: 32px !important;
+        font-weight: 700 !important;
+        margin-bottom: 0px !important;
+    }
+
+
+    p {
+        font-size: 16px !important;
+        font-weight: 300 !important;
+        margin-bottom: 0px !important;
+    }
+
+}
+
+/*-------------- Navigation--------------*/
+@media (min-width: 1600px) {
+    .navbar-nav {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 10px;
+    }
+
+    li .active {
+        font-weight: 400;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    li .active {
+        font-weight: 400;
+    }
+
+    .navbar-nav {
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+
+
+    li .active {
+        font-weight: 400;
+    }
+
+    .navbar-nav {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 15px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+
+
+    li .active {
+        font-weight: 400;
+    }
+
+    .navbar-nav {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 15px;
+    }
+
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+
+
+
+    li .active {
+        font-weight: 400;
+    }
+
+    .navbar-nav {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 15px;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+
+    li .active {
+        font-weight: 400;
+    }
+
+    .navbar-nav {
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 15px;
+    }
+
+
+}
+
+/*-------------- Buttons--------------*/
+@media (min-width: 1600px) {
+
+    #logIn,
+    #signUp,
+    #logOut,
+    #submitBtn {
+        border-radius: 30px;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        background-color: transparent;
+        padding: 5px 20px 5px 20px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .locationActiveBtn {
+        padding: 0px 10px 0px 10px;
+        text-align: start;
+        /* width: 60%; */
+        color: #eb8861 !important;
+        background: white;
+        margin-bottom: 3px;
+        /* font-size: 14px; */
+        border: none;
+        border-radius: 4px;
+        margin-left: -10px;
+        height: 40px;
+    }
+
+    .locationBtn {
+        padding: 0px 0px 0px 10px;
+        /* text-align: start; */
+        /* width: 65%; */
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        /* font-size: 14px; */
+        margin-left: -10px;
+        height: 40px;
+    }
+
+    #gog {
+        font-size: 24px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 50px;
+        padding: 0;
+    }
+
+    #gog img {
+        height: 48px;
+        width: 48px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog span {
+        float: right;
+        padding-right: 15px;
+        line-height: 45px;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+    #gog-mob {
+        font-size: 24px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 60px;
+        padding: 0;
+
+    }
+
+    #gog-mob img {
+        height: 58px;
+        width: 58px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog-mob span {
+        float: right;
+        padding-right: 15px;
+        line-height: 50px;
+        color: #eb8861;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+
+    .resetPass {
+        color: #FFE2B9;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0 20px 0;
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    #logIn,
+    #signUp,
+    #logOut {
+        border-radius: 30px;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        background-color: transparent;
+        padding: 5px 20px 5px 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #gog {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 44px;
+        padding: 0;
+    }
+
+    #gog img {
+        height: 42px;
+        width: 42px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog span {
+        float: right;
+        padding-right: 15px;
+        line-height: 42px;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+
+    #gog-mob {
+        font-size: 24px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 44px;
+        padding: 0;
+
+    }
+
+    #gog-mob img {
+        height: 58px;
+        width: 58px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog-mob span {
+        float: right;
+        padding-right: 15px;
+        line-height: 50px;
+        color: #eb8861;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+    .resetPass {
+        color: #FFE2B9;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0 20px 0;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+
+    .resetPass {
+        color: #FFE2B9;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0 20px 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    #logIn,
+    #signUp,
+    #logOut {
+        border-radius: 30px;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        background-color: transparent;
+        padding: 5px 20px 5px 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+
+
+    #gog {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 44px;
+        padding: 0;
+    }
+
+    #gog img {
+        height: 42px;
+        width: 42px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog span {
+        float: right;
+        padding-right: 15px;
+        line-height: 40px;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+
+    #gog-mob {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 60px;
+        padding: 0;
+
+    }
+
+    #gog-mob img {
+        height: 58px;
+        width: 58px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog-mob span {
+        float: right;
+        padding-right: 15px;
+        line-height: 50px;
+        color: #eb8861;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+
+
+    .resetPass {
+        color: #FFE2B9;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0 20px 0;
+        background-color: transparent;
+        border: none;
+    }
+
+
+
+    #logIn,
+    #signUp,
+    #logOut {
+        border-radius: 30px;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        background-color: transparent;
+        padding: 5px 20px 5px 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #gog {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 44px;
+        padding: 0;
+    }
+
+    #gog img {
+        height: 42px;
+        width: 42px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog span {
+        float: right;
+        padding-right: 15px;
+        line-height: 40px;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+
+    #gog-mob {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 60px;
+        padding: 0;
+
+    }
+
+    #gog-mob img {
+        height: 58px;
+        width: 58px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog-mob span {
+        float: right;
+        padding-right: 15px;
+        line-height: 50px;
+        color: #eb8861;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+
+    .resetPass {
+        color: #FFE2B9;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0 20px 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    #logIn,
+    #signUp,
+    #logOut {
+        border-radius: 30px;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        background-color: transparent;
+        padding: 5px 20px 5px 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+
+
+    #gog {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 44px;
+        padding: 0;
+    }
+
+    #gog img {
+        height: 58px;
+        width: 58px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog span {
+        float: right;
+        padding-right: 15px;
+        line-height: 50px;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+
+    #gog-mob {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 44px;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    #gog-mob img {
+        height: 42px;
+        width: 42px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+        display: none;
+    }
+
+    #gog-mob span {
+        float: right;
+        padding-right: 10px;
+        line-height: 40px;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+
+    .resetPass {
+        color: #FFE2B9;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 5px 0 20px 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    #logIn,
+    #signUp,
+    #logOut {
+        border-radius: 30px;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        background-color: transparent;
+        padding: 5px 20px 5px 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+
+
+    #gog {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 44px;
+        padding: 0;
+    }
+
+    #gog img {
+        height: 58px;
+        width: 58px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
+    #gog span {
+        float: right;
+        padding-right: 15px;
+        line-height: 50px;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+
+    #gog-mob {
+        font-size: 20px;
+        font-weight: 400;
+        border: 2px solid #FFE2B9;
+        color: #FFE2B9;
+        text-decoration: none;
+        border-color: #FFE2B9 !important;
+        border-radius: 30px;
+        height: 44px;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    #gog-mob img {
+        height: 42px;
+        width: 42px;
+        float: left;
+        border: 8px solid #FFF;
+        border-radius: 30px;
+        background-color: #FFF;
+        /* padding: 15px; */
+        margin-left: -1px;
+        margin-top: -1px;
+        display: none;
+    }
+
+    #gog-mob span {
+        float: right;
+        padding-right: 10px;
+        line-height: 40px;
+        color: #FFE2B9;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
+
+
+}
+
+/*-------------- Form--------------*/
+@media (min-width: 1600px) {
+    .form-control {
+        height: 62px !important;
+        padding: .375rem .75rem;
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        font-style: italic !important;
+        line-height: 1.5;
+        color: #5f74e5 !important;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #FFE2B9 !important;
+        border-radius: 6px !important;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .form-control {
+        height: 44px !important;
+        padding: .375rem .75rem;
+        font-size: 18px !important;
+        font-weight: 200 !important;
+        font-style: italic !important;
+        line-height: 1.5;
+        color: #5f74e5 !important;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #FFE2B9 !important;
+        border-radius: 6px !important;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+
+
+    .form-control {
+        height: 40px !important;
+        padding: .375rem .75rem;
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        font-style: italic !important;
+        line-height: 1.5;
+        color: #5f74e5 !important;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #FFE2B9 !important;
+        border-radius: 6px !important;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+
+
+    .form-control {
+        height: 40px !important;
+        padding: .375rem .75rem;
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        font-style: italic !important;
+        line-height: 1.5;
+        color: #5f74e5 !important;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #FFE2B9 !important;
+        border-radius: 6px !important;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+
+    .form-control {
+        height: 40px !important;
+        padding: .375rem .75rem;
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        font-style: italic !important;
+        line-height: 1.5;
+        color: #5f74e5 !important;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #FFE2B9 !important;
+        border-radius: 6px !important;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+
+    .form-control {
+        height: 40px !important;
+        padding: .375rem .75rem;
+        font-size: 20px !important;
+        font-weight: 200 !important;
+        font-style: italic !important;
+        line-height: 1.5;
+        color: #5f74e5 !important;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #FFE2B9 !important;
+        border-radius: 6px !important;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+
+}
+
+/*--------------VolunteerMessageLayout--------------*/
+@media (min-width: 1600px) {
+    .imageMobile {
+        order: 1;
+        display: none;
+    }
+
+    .volunteerMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 90vh;
+        padding: 10%;
+    }
+
+    .messageDesktop {
+        display: flex;
+        order: 2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .message {
+        order: 1;
+        max-width: 700px;
+        margin-right: 200px;
+        min-width: 600px;
+
+    }
+
+    .imageDesktop {
+        order: 2;
+    }
+
+    .imageDesktop img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .volunteerMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 90vh;
+    }
+
+    .messageDesktop {
+        display: flex;
+        order: 2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        padding: 5%;
+    }
+
+    .message {
+        order: 1;
+        max-width: 500px;
+        min-width: 500px;
+        margin-right: 100px;
+    }
+
+    .imageDesktop {
+        order: 2;
+    }
+
+    .imageDesktop img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imageMobile {
+        order: 1;
+        display: none;
+    }
+
+    ol {
+        margin-left: -10px !important;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+
+    ol {
+        margin-left: 20px !important;
+    }
+
+    .imageMobile {
+        order: 1;
+        display: none;
+    }
+
+    .volunteerMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 90vh;
+    }
+
+    .messageDesktop {
+        display: flex;
+        order: 2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .message {
+        order: 1;
+        max-width: 400px;
+        min-width: 400px;
+    }
+
+    .imageDesktop {
+        order: 2;
+    }
+
+    .imageDesktop img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+
+
+    ol {
+        margin-left: 18px !important;
+    }
+
+
+    .volunteerMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 90vh;
+    }
+
+    .messageDesktop {
+        display: flex;
+        order: 2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .message {
+        order: 1;
+        max-width: 400px;
+        min-width: 400px;
+    }
+
+    .imageDesktop {
+        order: 2;
+        display: none;
+    }
+
+    .imageDesktop img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imageMobile {
+        order: 1;
+        padding: 0 120px;
+    }
+
+    .imageMobile img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+
+    ol {
+        margin-left: 16px !important;
+    }
+
+
+    .volunteerMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 90vh;
+    }
+
+    .messageDesktop {
+        display: flex;
+        order: 2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        width: 100%;
+    }
+
+    .message {
+        order: 1;
+        max-width: 100%;
+        min-width: 80%;
+    }
+
+    .imageDesktop {
+        order: 2;
+        display: none;
+    }
+
+    .imageDesktop img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imageMobile {
+        order: 1;
+        padding: 0 40px;
+    }
+
+    .imageMobile img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+
+    .volunteerMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 90vh;
+    }
+
+    .messageDesktop {
+        display: flex;
+        order: 2;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: center;
+        width: 100%;
+    }
+
+    .message {
+        order: 1;
+        max-width: 100%;
+        min-width: 80%;
+    }
+
+    .imageDesktop {
+        order: 2;
+        display: none;
+    }
+
+    .imageDesktop img {
+        width: 100%;
+        height: auto;
+    }
+
+    .imageMobile {
+        order: 1;
+        padding: 0 40px;
+    }
+
+    .imageMobile img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/*-------------- PAGE-SPECIFIC--------------*/
+
+/*-------------- Login -----------------*/
+@media (min-width: 1600px) {
+    .loginAndForgot {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        width: 80%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .loginAndForgot {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        width: 80%;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+
+
+    .loginAndForgot {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+
+
+
+    .loginAndForgot {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+
+    .loginAndForgot {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+
+    .loginAndForgot {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+}
+
+/*-------------- Dashboard--------------*/
+
+@media (min-width: 1600px) {
+    #address {
+        max-width: 700px;
+    }
+
+    .readability {
+        font-weight: 300 !important;
+    }
+
+    .taskDashboard {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 90vh;
+    }
+
+    #taskList .form-group {
+        margin-bottom: 15px;
+        max-width: 700px;
+    }
+
+    .taskDetails {
+        /* display: flex; */
+        order: 2;
+        /* flex-direction: row; */
+        /* align-items: center; */
+        /* justify-content: space-around; */
+        flex-wrap: nowrap;
+        /* align-content: center; */
+        padding: 1%;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        width: 50%;
+    }
+
+    .taskDetails span {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .volunteerTasks {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 30%;
+    }
+
+
+}

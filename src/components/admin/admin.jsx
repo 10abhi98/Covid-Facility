@@ -116,7 +116,7 @@ export class Admin extends Component {
             <>
                 <div id='logoutPlace' className='float-right'>
                     <button
-                        id='logOut'
+                        id='primaryButton'
                         className='button'
                         onClick={this.userLogOut}
                     >

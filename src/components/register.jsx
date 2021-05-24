@@ -122,7 +122,7 @@ class Register extends Component {
             <>
                 <div id='loginPlace' className='float-right'>
                     <button
-                        id='logIn'
+                        id='primaryButton'
                         className='button'
                         onClick={() =>
                             this.props.history.push("/volunteer/login")
@@ -133,7 +133,7 @@ class Register extends Component {
                 </div>
                 <div id='register' className='container-fluid'>
                     <div className='volunteerMessage'>
-                        <div className='imageMobile'>
+                        <div className='order1 volunteerImage mobileOnly'>
                             <img src={volunteerMobile} alt='Google' />
                         </div>
                         <div className='messageDesktop'>
@@ -141,7 +141,7 @@ class Register extends Component {
 
 
                                 <h2>Welcome to the team</h2>
-                                <p className='padb20'>
+                                <p className='padbL'>
                                     Signing up...We just need a bit of information
                                     about you
                             </p>
@@ -199,11 +199,11 @@ class Register extends Component {
                                             onChange={this.onChangeHandler}
                                         />
                                     </div>
-                                    <div className='loginAndForgot padt20'>
+                                    <div className='loginAndForgot padtL'>
                                         <div>
                                             {/* Regular Sign up Button */}
                                             <button
-                                                id='signUp'
+                                                id='primaryButton'
                                                 type='submit'
                                                 className='button'
                                                 disabled={this.state.loading}
@@ -217,7 +217,7 @@ class Register extends Component {
                                         {/* Google Button Display on mobile View */}
                                         <div>
                                             <button
-                                                id='gog-mob'
+                                                id='imageButton'
                                                 type='button'
                                                 className='mobileOnly btn shadow-sm'
                                                 disabled={this.state.loading}
@@ -233,13 +233,13 @@ class Register extends Component {
                                     </div>
                                 </form>
                                 <div id='deskView' className='desktopOnly'>
-                                    <p className='padb20 padt20'>
+                                    <p className='padbL padtL'>
                                         Or you can simply Sign Up with your Google
                                         account
                                 </p>
                                     {/* Google Button (Desktop View) */}
                                     <button
-                                        id='gog'
+                                        id='imageButton'
                                         type='button'
                                         className='btn'
                                         disabled={this.state.loading}
@@ -250,7 +250,7 @@ class Register extends Component {
                                     </button>
                                 </div>
                             </div>
-                            <div className='imageDesktop'>
+                            <div className='volunteerImage order2 desktopOnly'>
                                 <img src={volunteerDesktop} alt='Google' />
                             </div>
                         </div>
