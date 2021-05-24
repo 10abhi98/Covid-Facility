@@ -675,6 +675,55 @@ ol {
         width: 30%;
     }
 }
+@media (min-width: 1200px) and (max-width: 1599px) {
+    #address {
+        max-width: 700px;
+    }
+    .readability {
+        font-weight: 300 !important;
+    }
+    .taskDashboard {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        height: 90vh;
+    }
+    #taskList .form-group {
+        margin-bottom: 15px;
+        max-width: 700px;
+    }
+    .taskDetails {
+        /* display: flex; */
+        order: 2;
+        /* flex-direction: row; */
+        /* align-items: center; */
+        /* justify-content: space-around; */
+        flex-wrap: nowrap;
+        /* align-content: center; */
+        padding: 1%;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        width: 50%;
+    }
+    .taskDetails span {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .volunteerTasks {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 30%;
+    }
+}
+
+
+
+
+
 #navbarNav>ul>li:nth-child(1) {
     margin-right: 20px;
 }
