@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import "../styles/style.css";
 import volunteerDesktop from "../images/volunteer_desktop.png";
-import volunteerMobile from "../images/volunteer_mobile.png";
+// import volunteerMobile from "../images/volunteer_mobile.png";
 
 class Volunteer extends Component {
     render() {
@@ -33,7 +33,7 @@ class Volunteer extends Component {
                             <br />
                             Join our team!
                         </p>
-                            <span>
+                            <div className='padtL'>
                                 {/* Login Button */}
                                 <button
                                     id='primaryButton'
@@ -57,7 +57,7 @@ class Volunteer extends Component {
                                 >
                                     Sign Up
                             </button>
-                            </span>
+                            </div>
                         </div>
                         <div className='order2 desktopOnly volunteerImage'>
                             <img src={volunteerDesktop} alt='Google' />

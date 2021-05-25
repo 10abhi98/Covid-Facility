@@ -256,7 +256,7 @@ class Login extends Component {
                                         />
                                     )}
                                 </div>
-                                <div className='desktopOnly'>
+                                <div className='desktopOnly padtL'>
                                     <p className='padbL padtL'>
                                         Or you can Login with your Google account
                                 </p>

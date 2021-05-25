@@ -428,7 +428,7 @@ class Dashboard extends Component {
                     type='button'
                     onClick={(e) => this.selectLocation(e, tasks)}
                 >
-                    <p className='readability'>
+                    <p>
                         {index + 1}. Call {tasks.Name}
                     </p>
                 </button>
@@ -446,7 +446,7 @@ class Dashboard extends Component {
                     : val[0].toLowerCase();
             return (
                 <div className='form-group' key={value[0] + index}>
-                    <p className='readability'>
+                    <p className='questions'>
                         {index + 1}. {value[1]}
                     </p>
                     <input
@@ -547,7 +547,7 @@ class Dashboard extends Component {
                                         <h2>Welcome {this.state.userName}!</h2>
                                         {this.state.activeBtn && (
                                             <h6>Pick a task.{' '}
-                                            {this.state.taskTimerDisplay}</h6>
+                                                {this.state.taskTimerDisplay}</h6>
                                         )}
 
                                         {/* Small Tasks
@@ -560,73 +560,69 @@ class Dashboard extends Component {
                                     </div>
 
                                     <div id='locationForm' className='taskDetails'>
-                                        <div className='p-1'>
-                                            <div className='row'>
-                                                <div className='col-md-9'>
-                                                    {/* Hospital Details */}
-                                                    <div id='hospDetails'>
-                                                        <h2 className='padbL'>
-                                                            {
-                                                                this.state
-                                                                    .locationName
-                                                            }
-                                                            
-                                                        </h2>
-                                                        <p id='address' className='readability'>
-                                                            <i className='fas fa-map-marker-alt pr-2'></i>
-                                                            {
-                                                                this.state
-                                                                    .locationAddress
-                                                            }
-                                                            <br />
-                                                            <i className='fas fa-phone-alt pr-1'></i>
-                                                            {
-                                                                this.state
-                                                                    .locationContact
-                                                            }
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                        <div id='hospDetails'>
+                                            {/* Hospital Details */}
+                                            <div>
+                                                <h2 className='padbL'>
+                                                    {
+                                                        this.state
+                                                            .locationName
+                                                    }
 
-                                                <div
-                                                    className='col-md-3'
-                                                    
-                                                >
-                                                    {/* Submit Button */}
-                                                    <button
-                                                        id='primaryButton'
-                                                        type='submit'
-                                                        className='button float-right'
-                                                        form='taskList'
-                                                        onClick={(event) => {
-                                                            this.checkInputFields(
-                                                                event
-                                                            );
-                                                        }}
-                                                    >
-                                                        Submit Info
-                                                    </button>
-                                                </div>
+                                                </h2>
+                                                <p id='address'>
+                                                    <i className='fas fa-map-marker-alt pr-2'></i>
+                                                    {
+                                                        this.state
+                                                            .locationAddress
+                                                    }
+                                                </p>
+                                                <p id='phone'>
+                                                    <i className='fas fa-phone-alt pr-1'></i>
+                                                    {
+                                                        this.state
+                                                            .locationContact
+                                                    }
+                                                </p>
                                             </div>
 
-                                            <form id='taskList'>
-                                                <h6>Questions to ask</h6>
-                                                {/* Questionarre (Hospital/Pharmacy) */}
-                                                {this.state.locationType.toLowerCase() ===
-                                                'hospital'
-                                                    ? this.displayQuestionarre(
-                                                          this
-                                                              .hospitalQuestionarre
-                                                      )
-                                                    : this.displayQuestionarre(
-                                                          this
-                                                              .pharmacyQuestionarre
-                                                      )}
-                                            </form>
+
+                                            <div>
+                                                {/* Submit Button */}
+                                                <button
+                                                    id='primaryButton'
+                                                    type='submit'
+                                                    className='button float-right'
+                                                    form='taskList'
+                                                    onClick={(event) => {
+                                                        this.checkInputFields(
+                                                            event
+                                                        );
+                                                    }}
+                                                >
+                                                    Submit
+                                                    </button>
+                                            </div>
                                         </div>
+
+                                        <form id='taskList'>
+                                            <h6>Questions to ask</h6>
+                                            {/* Questionarre (Hospital/Pharmacy) */}
+                                            {this.state.locationType.toLowerCase() ===
+                                                'hospital'
+                                                ? this.displayQuestionarre(
+                                                    this
+                                                        .hospitalQuestionarre
+                                                )
+                                                : this.displayQuestionarre(
+                                                    this
+                                                        .pharmacyQuestionarre
+                                                )}
+                                        </form>
                                     </div>
                                 </div>
                             </div>
+
                         )}
                     </>
                 )}

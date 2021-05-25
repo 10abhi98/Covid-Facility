@@ -26,10 +26,10 @@
 }
 @media (min-width: 900px) and (max-width: 1199px) {
     .padbL {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .padtL {
-        padding-top: 20px;
+        padding-top: 10px;
     }
     .mobileOnly {
         display: none !important;
@@ -37,10 +37,10 @@
 }
 @media (min-width: 768px) and (max-width: 899px) {
     .padbL {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .padtL {
-        padding-top: 20px;
+        padding-top: 10px;
     }
     .mobileOnly {
         display: none !important;
@@ -78,11 +78,11 @@ h2 {
 h6 {
     line-height: 1 !important;
     margin-bottom: 10px !important;
-    margin-top: 30px !important
+    margin-top: 30px !important;
 }
 p {
-    font-size: 24px !important;
-    font-weight: 200 !important;
+    font-size: 24px;
+    font-weight: 200;
     margin-bottom: 0px !important;
 }
 @media (min-width: 1600px) {
@@ -95,7 +95,8 @@ p {
         margin-top: 30px !important
     }
     p {
-        font-size: 24px !important;
+        font-size: 24px;
+        font-weight: 300;
     }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -103,15 +104,17 @@ p {
         font-size: 36px !important;
     }
     p {
-        font-size: 20px !important;
+        font-size: 20px;
+        font-weight: 200;
     }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
     h2 {
-        font-size: 36px !important;
+        font-size: 32px !important;
     }
     p {
-        font-size: 20px !important;
+        font-size: 16px;
+        font-weight: 300;
     }
 }
 @media (min-width: 768px) and (max-width: 899px) {
@@ -119,7 +122,8 @@ p {
         font-size: 32px !important;
     }
     p {
-        font-size: 20px !important;
+        font-size: 16px;
+        font-weight: 200;
     }
 }
 @media (min-width: 577px) and (max-width: 767px) {
@@ -127,7 +131,8 @@ p {
         font-size: 32px !important;
     }
     p {
-        font-size: 16px !important;
+        font-size: 16px;
+        font-weight: 200;
     }
 }
 @media (max-width: 576px) {
@@ -135,28 +140,26 @@ p {
         font-size: 32px !important;
     }
     p {
-        font-size: 16px !important;
+        font-size: 16px;
+        font-weight: 200;
     }
 }
 /*-------------- Navigation--------------*/
 .navbar-nav {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 200;
-    margin-top: 10px;
 }
 li .active {
     font-weight: 400;
 }
 @media (min-width: 1600px) {
     .navbar-nav {
-        font-size: 20px;
-        margin-top: 10px;
+        font-size: 24px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
     .navbar-nav {
         font-size: 20px;
-        margin-top: 10px;
     }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
@@ -200,12 +203,15 @@ li .active {
     padding: 0px 10px 0px 10px;
     text-align: start;
     color: #eb8861 !important;
-    background: white;
-    margin-bottom: 3px;
+    background: white !important;
     border: none;
     border-radius: 4px;
     margin-left: -10px;
     height: 40px;
+}
+#textButtonActive p{
+    font-weight: 400;
+    font-size: 20px;
 }
 #textButton {
     padding: 0px 0px 0px 10px;
@@ -214,6 +220,8 @@ li .active {
     border: none;
     margin-left: -10px;
     height: 40px;
+}
+#textButton p{
     font-weight: 400;
     font-size: 20px;
 }
@@ -253,7 +261,17 @@ li .active {
         height: 50px;
     }
     #textButtonActive {}
-    #textButton {}
+    #textButton {
+        font-size: 24px;
+    }
+    #textButton p{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    #textButtonActive p{
+        font-weight: 400;
+        font-size: 24px;
+    }
     #imageButton {
         font-size: 24px;
         height: 50px;
@@ -284,12 +302,22 @@ li .active {
     #imageButton span {
         line-height: 42px;
     }
-    #textButton {}
+    #textButton {
+        font-size:20px;
+    }
+    #textButton p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #textButtonActive p{
+        font-weight: 400;
+        font-size: 20px;
+    }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
     #primaryButton {
-        font-size: 20px;
-        height: 44px;
+        font-size: 16px;
+        height: 36px;
     }
     #imageButton {
         font-size: 20px;
@@ -304,6 +332,14 @@ li .active {
         line-height: 40px;
     }
     #textButton {}
+    #textButton p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #textButtonActive p{
+        font-weight: 400;
+        font-size: 20px;
+    }
 }
 @media (min-width: 768px) and (max-width: 899px) {
     #primaryButton {
@@ -323,6 +359,14 @@ li .active {
         line-height: 40px;
     }
     #textButton {}
+    #textButton p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #textButtonActive p{
+        font-weight: 400;
+        font-size: 20px;
+    }
 }
 @media (min-width: 577px) and (max-width: 767px) {
     #primaryButton {
@@ -343,6 +387,14 @@ li .active {
         line-height: 40px;
     }
     #textButton {}
+    #textButton p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #textButtonActive p{
+        font-weight: 400;
+        font-size: 20px;
+    }
 }
 @media (max-width: 576px) {
     #primaryButton {
@@ -363,6 +415,14 @@ li .active {
         line-height: 40px;
     }
     #textButton {}
+    #textButton p{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    #textButtonActive p{
+        font-weight: 400;
+        font-size: 20px;
+    }
 }
 /*-------------- Form--------------*/
 .form-control {
@@ -376,17 +436,20 @@ li .active {
     border-radius: 6px !important;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     padding: 0 15px;
+    max-width: 500px;
 }
 @media (min-width: 1600px) {
     .form-control {
         height: 62px !important;
         font-size: 20px !important;
+        max-width: 500px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
     .form-control {
         height: 44px !important;
         font-size: 18px !important;
+        max-width: 400px;
     }
 }
 @media (min-width: 900px) and (max-width: 1199px) {
@@ -424,7 +487,7 @@ li .active {
     justify-content: space-around;
     flex-wrap: nowrap;
     align-content: center;
-    height: 90vh;
+    height: calc(100vh - 80px);
     padding: 10%;
 }
 .messageDesktop {
@@ -451,6 +514,7 @@ li .active {
 }
 ol {
     margin-left: -10px !important;
+    margin-bottom:0px !important;
 }
 @media (min-width: 1600px) {
     .volunteerMessage {
@@ -497,16 +561,16 @@ ol {
 }
 @media (min-width: 900px) and (max-width: 1199px) {
     ol {
-        margin-left: 20px !important;
+        margin-left: -15px !important;
     }
     .volunteerMessage {
         padding: 0;
     }
     .messageDesktop {
-        padding: 20px;
+        padding: 50px;
     }
     .message {
-        max-width: 400px;
+        max-width: 500px;
         min-width: 400px;
         margin-right: 0px;
     }
@@ -634,21 +698,29 @@ ol {
 @media (min-width: 1600px) {
     #address {
         max-width: 700px;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
     }
-    .readability {
-        font-weight: 300 !important;
+    .questions{
+        font-style:italic;
+        margin-bottom:5px !important;
+    }
+    #hospDetails{
+        display:flex;
     }
     .taskDashboard {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
         flex-wrap: nowrap;
         align-content: center;
-        height: 90vh;
+        height: calc(100vh - 80px);
+        margin-top: 40px;
     }
     #taskList .form-group {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         max-width: 700px;
     }
     .taskDetails {
@@ -659,9 +731,8 @@ ol {
         /* justify-content: space-around; */
         flex-wrap: nowrap;
         /* align-content: center; */
-        padding: 1%;
-        border: 1px solid #fff;
-        border-radius: 5px;
+        padding: 50px;
+        border-left: 2px solid #fff;
         width: 50%;
     }
     .taskDetails span {
@@ -673,40 +744,44 @@ ol {
         flex-direction: column;
         align-items: baseline;
         width: 30%;
+    }
+    .fa, .fas{
+        margin-right:10px;
     }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
     #address {
         max-width: 700px;
     }
-    .readability {
-        font-weight: 300 !important;
+    #hospDetails{
+        display:flex;
+        justify-content: space-between;
     }
     .taskDashboard {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         justify-content: center;
         flex-wrap: nowrap;
         align-content: center;
-        height: 90vh;
+        height: calc(100vh - 80px);
+        margin-top: 40px;
     }
     #taskList .form-group {
         margin-bottom: 15px;
         max-width: 700px;
     }
     .taskDetails {
-        /* display: flex; */
-        order: 2;
-        /* flex-direction: row; */
-        /* align-items: center; */
-        /* justify-content: space-around; */
-        flex-wrap: nowrap;
-        /* align-content: center; */
-        padding: 1%;
-        border: 1px solid #fff;
-        border-radius: 5px;
-        width: 50%;
+            /* display: flex; */
+    order: 2;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    flex-wrap: nowrap;
+    /* align-content: center; */
+    padding-left: 50px;
+    border-left: 2px solid #fff;
+    width: 70%;
     }
     .taskDetails span {
         font-size: 30px;
@@ -717,6 +792,7 @@ ol {
         flex-direction: column;
         align-items: baseline;
         width: 30%;
+        margin-left:35px;
     }
 }
 
@@ -900,7 +976,7 @@ ol {
 #signUpPlace,
 #logoutPlace {
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 15px;
 }
 #register,
@@ -947,29 +1023,7 @@ small {
     }
 
 }
-/* --------------------------------------------- */
-/* -------------- Volunteer Page -------------- */
-#hospDetails p:nth-of-type(1) {
-    font-size: 15px;
-    margin-top: -6px;
-}
-#hospDetails p:nth-of-type(2) {
-    font-size: 14px;
-}
-#taskList {
-    padding: 5px 120px 20px 0px;
-}
-#taskList p:nth-of-type(1) {
-    margin-bottom: 6px;
-}
-#taskList .form-group label {
-    font-size: 14px;
-    margin-bottom: 0px;
-}
-#taskList .form-group input {
-    font-size: 14px;
-    margin-bottom: 0px;
-}
+
 /* -------------------------------------------- */
 /* ----------- Reset Password Modal ----------- */
 #resetPasswordModal .modal-dialog {
