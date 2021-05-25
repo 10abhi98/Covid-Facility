@@ -570,13 +570,6 @@ class Dashboard extends Component {
                                                     }
 
                                                 </h2>
-                                                <p id='address'>
-                                                    <i className='fas fa-map-marker-alt pr-2'></i>
-                                                    {
-                                                        this.state
-                                                            .locationAddress
-                                                    }
-                                                </p>
                                                 <p id='phone'>
                                                     <i className='fas fa-phone-alt pr-1'></i>
                                                     {
@@ -584,6 +577,14 @@ class Dashboard extends Component {
                                                             .locationContact
                                                     }
                                                 </p>
+                                                <p id='address'>
+                                                    <i className='fas fa-map-marker-alt pr-2'></i>
+                                                    {
+                                                        this.state
+                                                            .locationAddress
+                                                    }
+                                                </p>
+                                                
                                             </div>
 
 
