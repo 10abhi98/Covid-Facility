@@ -563,7 +563,7 @@ class Dashboard extends Component {
                                         <div id='hospDetails'>
                                             {/* Hospital Details */}
                                             <div>
-                                                <h2 className='padbL'>
+                                                <h2>
                                                     {
                                                         this.state
                                                             .locationName
