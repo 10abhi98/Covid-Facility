@@ -27,7 +27,7 @@ class Volunteer extends Component {
                                         <li>Log Out</li>
                                     </ol></h5>
                             </div>
-                            <h5 className='padbL'>
+                            <h5 className=''>
                                 Help anytime, anywhere.
                             <br />
                             <span style={{fontWeight:700}}>Join us!</span>

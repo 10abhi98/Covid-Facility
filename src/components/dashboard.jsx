@@ -554,9 +554,12 @@ class Dashboard extends Component {
                                         <p className='taskList'>
                                             My Tasks
                                         </p> */}
+                                        <div className='taskButtons'>
+
                                         {this.tasksAssignment(
                                             this.state.taskLocations
                                         )}
+                                        </div>
                                     </div>
 
                                     <div id='locationForm' className='taskDetails'>
@@ -570,20 +573,20 @@ class Dashboard extends Component {
                                                     }
 
                                                 </h2>
-                                                <p id='phone'>
-                                                    <i className='fas fa-phone-alt pr-1'></i>
+                                                <h6 id='phone'>
+                                                    {/* <i className='fas fa-phone-alt pr-1'></i> */}
                                                     {
                                                         this.state
                                                             .locationContact
                                                     }
-                                                </p>
-                                                <p id='address'>
-                                                    <i className='fas fa-map-marker-alt pr-2'></i>
+                                                </h6>
+                                                <h6 id='address'>
+                                                    {/* <i className='fas fa-map-marker-alt pr-2'></i> */}
                                                     {
                                                         this.state
                                                             .locationAddress
                                                     }
-                                                </p>
+                                                </h6>
                                                 
                                             </div>
 

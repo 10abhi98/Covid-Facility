@@ -53,16 +53,23 @@
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
-    .padbL {
-        padding-bottom: 10px;
-    }
-
-    .padtL {
-        padding-top: 10px;
-    }
-
-    .mobileOnly {
+    .desktopOnly {
         display: none !important;
+    }
+    .padbL {
+        padding-bottom: 25px;
+    }
+    
+    .padbM {
+        padding-bottom: 15px;
+    }
+    
+    .padtL {
+        padding-top: 25px;
+    }
+    
+    .padtM {
+        padding-top: 15px;
     }
 }
 
@@ -175,10 +182,12 @@ h8 {
     h2 {
         font-size: 32px !important;
     }
-
+    h5 {
+        font-size: 18px !important;
+    }
     p {
         font-size: 16px;
-        font-weight: 200;
+        font-weight: 300;
     }
 }
 
@@ -222,12 +231,7 @@ li .active {
     font-weight: 400;
 }
 
-@media (min-width: 768px) and (max-width: 899px) {
-    .navbar-nav {
-        font-size: 16px;
-        margin-top: 0px;
-    }
-}
+
 
 @media (min-width: 577px) and (max-width: 767px) {
     .navbar-nav {
@@ -405,43 +409,46 @@ li .active {
 
 @media (min-width: 768px) and (max-width: 899px) {
     #primaryButton {
-        font-size: 16px;
-        height: 44px;
+        font-size: 18px;
+        height: 40px;
     }
 
     #imageButton {
-        font-size: 16px;
-        height: 44px;
+        font-size: 18px;
+        height: 40px;
         padding: 0;
     }
 
     #imageButton img {
-        height: 42px;
-        width: 42px;
+        height: 38px;
+        width: 38px;
     }
 
     #imageButton span {
-        line-height: 40px;
+        line-height: 38px;
     }
 
     #textButton {
-        font-size: 16px;
-        height: 30px;
+        font-size: 18px;
+        height: 40px;
+        text-align: left;
+        min-width: 120px;
+    }
+
+    #textButtonActive {
+        font-size: 18px;
+        height: 60px;
+        padding: 5px 0px 5px 10px;
     }
 
     #textButton p {
         font-weight: 400;
-        font-size: 16px;
-    }
-
-    #textButtonActive {
-        font-size: 16px;
-        height: 30px;
+        font-size: 18px;
     }
 
     #textButtonActive p {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -558,6 +565,11 @@ li .active {
     .form-control {
         height: 40px !important;
         font-size: 16px !important;
+        max-width: 400px;
+    }
+    #register .form-group{
+        width:100% !important;
+        margin-bottom:15px !important;
     }
 }
 
@@ -709,27 +721,35 @@ ol {
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
-    ol {
-        margin-left: 18px !important;
-    }
-
     .volunteerMessage {
         padding: 0;
+        justify-content: center;;
+        
     }
 
     .messageDesktop {
-        padding: 20px;
+        padding: 0;
     }
 
     .message {
-        max-width: 400px;
-        min-width: 400px;
-        margin-right: 0px;
+        max-width: 450px;
+    min-width: 450px;
+    margin: auto;
+    width: 100%;
     }
-
+.volunteerImage{
+    margin: auto;
+    width: 100%;
+}
     .volunteerImage img {
         width: 100%;
         height: auto;
+        max-width: 450px;
+        
+    }
+
+    ol {
+        margin-left: -10px !important;
     }
 }
 
@@ -797,18 +817,11 @@ ol {
     padding-top:5px;
 }
 
-@media (min-width: 900px) and (max-width: 1199px) {
-    
-}
 
 @media (min-width: 768px) and (max-width: 899px) {
-    .loginAndForgot {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: baseline;
-        width: 80%;
-        justify-content: space-between;
+    #forgotPassword{
+        padding-top:10px;
+        font-size:18px;
     }
 }
 
@@ -857,7 +870,11 @@ justify-content: space-between;
     height: calc(100vh - 80px);
 
 }
-
+.taskButtons{
+    display:flex;
+    flex-direction: column;
+    align-items:baseline;
+}
 #taskList .form-group {
     margin-bottom: 20px;
     max-width: 700px;
@@ -902,76 +919,38 @@ justify-content: space-between;
         margin-top:20px;
     }
     .volunteerTasks{
-        width: 40%;
-        margin-left: 0;
+        width: 35%;
+        margin-left: 5%;
     }
     .taskDetails{
-        width: 60%;
-        margin-right: 0;
+        width: 55%;
+        margin-right: 5%;
         padding: 20px 5px 20px 30px;  
     }
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
-    #address {
-        max-width: 500px;
-    }
+    .taskDashboard{
+        align-items: baseline;
+        margin-top:20px;
+        flex-direction: column;
+        justify-content: end;
 
-    #hospDetails {
-        display: flex;
-        justify-content: space-between;
     }
-
-    .taskDashboard {
+    .volunteerTasks{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom:20px;
+    }
+    .taskDetails{
+        width: 100%;
+        margin-right: 0;
+        padding: 20px 5px 20px 30px;  
+    }
+    .taskButtons{
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-content: center;
-        height: calc(100vh - 80px);
-        margin-top: 40px;
-    }
-
-    #taskList .form-group {
-        margin-bottom: 15px;
-        max-width: 700px;
-    }
-
-    .questions {
-        font-style: italic;
-        margin-bottom: 5px !important;
-    }
-
-    .taskDetails {
-        /* display: flex; */
-        order: 2;
-        /* flex-direction: row; */
-        /* align-items: center; */
-        /* justify-content: space-around; */
-        flex-wrap: nowrap;
-        /* align-content: center; */
-        padding-left: 30px;
-        border-left: 1px solid #ffffff3d;
-        width: 70%;
-    }
-
-    .taskDetails span {
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    .volunteerTasks {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        width: 30%;
-    }
-
-    .fa,
-    .fas {
-        margin-right: 5px;
-        font-size: 14px;
     }
 }
 

@@ -218,7 +218,7 @@ class Register extends Component {
                                             <button
                                                 id='imageButton'
                                                 type='button'
-                                                className='desktopOnly btn shadow-sm'
+                                                className='btn shadow-sm'
                                                 disabled={this.state.loading}
                                                 onClick={
                                                     this.signUpWithGoogleHandler
