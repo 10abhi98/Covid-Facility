@@ -141,10 +141,9 @@ class Register extends Component {
 
 
                                 <h2>Welcome to the team</h2>
-                                <p className='padbL'>
-                                    Signing up...We just need a bit of information
-                                    about you
-                            </p>
+                                <h5 className='padbM'>
+                                    Signing up...
+                            </h5>
                                 <form onSubmit={this.signUpWithEmailHandler}>
                                     {/* Name */}
                                     <div className='form-group'>
@@ -219,7 +218,7 @@ class Register extends Component {
                                             <button
                                                 id='imageButton'
                                                 type='button'
-                                                className='mobileOnly btn shadow-sm'
+                                                className='desktopOnly btn shadow-sm'
                                                 disabled={this.state.loading}
                                                 onClick={
                                                     this.signUpWithGoogleHandler
@@ -232,7 +231,7 @@ class Register extends Component {
                                         {/* End Display of Google Button on mobile View */}
                                     </div>
                                 </form>
-                                <div id='deskView' className='desktopOnly'>
+                                <div id='deskView' className='neverDisplay'>
                                     <p className='padbL padtL'>
                                         Or you can simply Sign Up with your Google
                                         account

@@ -148,74 +148,62 @@ class homepage extends Component {
                     ? loc["Tasks_Info"]["Waiting_Patients"]["Count"]
                     : "-";
             return (
-                <div
-                    key={index}
-                    onClick={() =>
-                        this.handleClick(
-                            divName,
-                            hospitalName,
-                            loc["Coordinates"]["_long"],
-                            loc["Coordinates"]["_lat"]
-                        )
-                    }
-                    className={
-                        this.state.activeDiv === divName
-                            ? "dispBed pb-2 pl-3"
-                            : "pb-2 pl-3"
-                    }
-                >
-                    <div className='basicInfo'>
-                        <span>
-                            {hospitalName}
-                            <br />
-                        </span>
-                        {this.state.activeDiv === divName ? (
-                            <>
-                                <div>
-                                    <i className='fas fa-map-marker-alt pr-2'></i>
-                                    {address}
-                                </div>
-                                <div>
-                                    <i className='fas fa-phone-alt pr-1'></i>
-                                    {contact}
-                                </div>
-                            </>
-                        ) : null}
-                    </div>
-                    <div className='row'>
-                        <div className='col-sm-4'>
-                            Available Beds
-                            <div>
-                                {availableBeds}/{totalBeds}
+                <div className={
+                    this.state.activeDiv === divName
+                        ? "dispBed"
+                        : "notdispBed"
+                }>
+                    <div
+                        key={index}
+                        onClick={() =>
+                            this.handleClick(
+                                divName,
+                                hospitalName,
+                                loc["Coordinates"]["_long"],
+                                loc["Coordinates"]["_lat"]
+                            )
+                        }
+                        class='availabilityInfo'
+                    >
+                        <div className='hospitalTile'>
+                            <p>
+                                {hospitalName}
+                            </p>
+
+                            <div className='verification'>
+                                <h8>
+                                    Verified by call{" "}
+                                    {moment(
+                                        new Date(
+                                            loc["Tasks_Info"]["Beds"]["Verified_At"]
+                                                .seconds * 1000
+                                        )
+                                    ).fromNow()}
+                                </h8>
                             </div>
                         </div>
-                        <div className='col-sm-4'>
-                            New Admits
-                            <div>{newPatients}/hr</div>
-                        </div>
-                        <div className='col-sm-4'>
-                            Patients Waiting
-                            <div>{waitingPatients}</div>
+                        <div className='figures'>
+                            <p className='figure'>
+                                {availableBeds}/{totalBeds}
+                            </p>
+                            <p className='figure'>
+                                {newPatients}/hr
+                        </p>
+                            <p className='figure'>
+                                {waitingPatients}
+                            </p>
                         </div>
                     </div>
-                    <div
-                        style={{
-                            color: "#48B3BC",
-                            fontSize: "0.7em",
-                            paddingTop: "2px",
-                        }}
-                    >
-                        <em>
-                            Verified{" "}
-                            {moment(
-                                new Date(
-                                    loc["Tasks_Info"]["Beds"]["Verified_At"]
-                                        .seconds * 1000
-                                )
-                            ).fromNow()}
-                        </em>
-                    </div>
-                    <hr />
+                        {this.state.activeDiv === divName ? (
+                            <>
+                                <p className='infoPhone'>
+                                    {contact}
+                                </p>
+                                <p className='infoAddress'>
+                                    {address}
+                                </p>
+                            </>
+                        ) : null}
                 </div>
             );
         });
@@ -225,45 +213,55 @@ class homepage extends Component {
         const { lng, lat, zoom } = this.state;
         return (
             <>
-                <p className='sub-head'>Select to view availability</p>
+                {/* <h6 className='sub-head'>Select to view availability</h6>
                 <button
                     id='bedBtn'
                     type='button'
                     className='btn btn-light btn-sm'
                 >
                     Beds
-                </button>
+                </button> */}
+                {/* Search Bar */}
+                <input
+                    type='text'
+                    id='searchBar'
+                    className='form-control mt-2'
+                    placeholder='Search'
+                    value={this.state.inputValue}
+                    onChange={this.locationSearchHandler}
+                />
+                {/* <i className="fal fa-search float-right"></i> */}
                 <div className='container-fluid'>
                     <div className='row'>
                         {/* Hospitals with Details */}
-                        <div id='beds' className='col-sm-3'>
-                            <p className='p1 pl-3'>
-                                Results
-                                <span className='float-right'>
-                                    Sort by: Available Beds
-                                </span>
-                            </p>
-                            {/* Search Bar */}
-                            <input
-                                type='text'
-                                id='searchBar'
-                                className='form-control mt-2'
-                                placeholder='Search'
-                                value={this.state.inputValue}
-                                onChange={this.locationSearchHandler}
-                            />
-                            <i className="fal fa-search float-right"></i>
+                        <div id='beds' className='sidebar'>
+                            <div className='results'>
+                                <h7 style={{ width: 200 + 'px', display: 'inline-block' }}>
+                                    Hospitals
+                                </h7>
+                                <h7 style={{ width: 16.66 + '%', display: 'inline-block' }}>
+                                    Available
+                                </h7>
+                                <h7 style={{ width: 16.66 + '%', display: 'inline-block' }}>
+                                    Admits
+                                </h7>
+                                <h7>
+                                    Waiting
+                                </h7>
+
+                            </div>
+
                             {/* Hospital List */}
                             <div>
                                 <div id='scr' className='scrollbar'>
                                     <>
-                                    {this.renderData(
-                                        this.state.locationData.filter((loc) =>
-                                        loc['Name']
-                                            .toLowerCase()
-                                            .includes(this.state.inputValue.toLowerCase())
-                                        )
-                                    )}
+                                        {this.renderData(
+                                            this.state.locationData.filter((loc) =>
+                                                loc['Name']
+                                                    .toLowerCase()
+                                                    .includes(this.state.inputValue.toLowerCase())
+                                            )
+                                        )}
                                     </>
                                 </div>
                             </div>
@@ -272,7 +270,7 @@ class homepage extends Component {
                         <div
                             id='map'
                             ref={this.mapContainer}
-                            className='col-sm-9'
+                            className='maps'
                         >
                             {/* Display Latitude and Longitude */}
                             <div className='sidebar'>

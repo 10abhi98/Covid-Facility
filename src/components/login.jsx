@@ -165,7 +165,7 @@ class Login extends Component {
                         <div className='messageDesktop'>
                             <div className='message'>
                                 <h2>Welcome Back</h2>
-                                <p className='padbL'>Just a moment</p>
+                                <h5 className='padbM'>Just a moment...</h5>
                                 <form>
                                     {/* Email ID */}
                                     <div className='form-group'>
@@ -196,7 +196,7 @@ class Login extends Component {
                                         {this.state.passError}
                                     </small>
                                     {/* Regular Login Button */}
-                                    <div className='loginAndForgot padtL'>
+                                    <div className='loginAndForgot'>
                                         <div>
                                             <button
                                                 id='primaryButton'
@@ -216,7 +216,7 @@ class Login extends Component {
                                             <button
                                                 id='imageButton'
                                                 type='button'
-                                                className='mobileOnly btn'
+                                                className='btn'
                                                 disabled={this.state.loading}
                                                 onClick={
                                                     this.logInWithGoogleHandler
@@ -226,26 +226,12 @@ class Login extends Component {
                                                 <span>Login with Google</span>
                                             </button>
                                         </div>
-                                        <div className='desktopOnly'>
-                                            {/* Reset Password Button */}
-                                            <button
-                                                id='textButton'
-                                                onClick={this.resetPasswordModal}
-                                            >
-                                                Forgot Password?
-                                </button>
-                                            {this.state.modal && (
-                                                <ResetPassword
-                                                    modalState={this.onModalClose}
-                                                />
-                                            )}
-                                        </div>
                                     </div>
                                 </form>
-                                <div className='mobileOnly'>
+                                <div>
                                     {/* Reset Password Button */}
                                     <button
-                                        id='textButton'
+                                        id='forgotPassword'
                                         onClick={this.resetPasswordModal}
                                     >
                                         Forgot Password?
@@ -256,10 +242,10 @@ class Login extends Component {
                                         />
                                     )}
                                 </div>
-                                <div className='desktopOnly padtL'>
-                                    <p className='padbL padtL'>
+                                <div className='neverDisplay padtL'>
+                                    <h5 className='padbM padtM'>
                                         Or you can Login with your Google account
-                                </p>
+                                </h5>
                                     {/* Google Login Button (Desktop View) */}
                                     <button
                                         id='imageButton'

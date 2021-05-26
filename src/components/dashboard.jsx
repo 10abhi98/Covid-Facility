@@ -546,8 +546,8 @@ class Dashboard extends Component {
                                     <div className='volunteerTasks'>
                                         <h2>Welcome {this.state.userName}!</h2>
                                         {this.state.activeBtn && (
-                                            <h6>Pick a task.{' '}
-                                                {this.state.taskTimerDisplay}</h6>
+                                            <h7 className='padbL'>Pick a task.{' '}
+                                                {this.state.taskTimerDisplay}</h7>
                                         )}
 
                                         {/* Small Tasks
@@ -560,7 +560,7 @@ class Dashboard extends Component {
                                     </div>
 
                                     <div id='locationForm' className='taskDetails'>
-                                        <div id='hospDetails'>
+                                        <div id='hospDetails' className='padbL'>
                                             {/* Hospital Details */}
                                             <div>
                                                 <h2>
@@ -607,7 +607,7 @@ class Dashboard extends Component {
                                         </div>
 
                                         <form id='taskList'>
-                                            <h6>Questions to ask</h6>
+                                            <h7 className='padtL'>Questions to ask</h7>
                                             {/* Questionarre (Hospital/Pharmacy) */}
                                             {this.state.locationType.toLowerCase() ===
                                                 'hospital'
