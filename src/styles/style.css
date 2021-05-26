@@ -35,8 +35,16 @@
         padding-bottom: 10px;
     }
 
+    .padbM {
+        padding-bottom: 5px;
+    }
+    
     .padtL {
         padding-top: 10px;
+    }
+    
+    .padtM {
+        padding-top: 5px;
     }
 
     .mobileOnly {
@@ -137,8 +145,6 @@ h8 {
     margin-bottom: 0px !important;
 }
 
-@media (min-width: 1600px) {}
-
 @media (min-width: 1200px) and (max-width: 1599px) {
     h2 {
         font-size: 36px !important;
@@ -156,7 +162,9 @@ h8 {
     h2 {
         font-size: 32px !important;
     }
-
+    h5 {
+        font-size: 18px !important;
+    }
     p {
         font-size: 16px;
         font-weight: 300;
@@ -212,18 +220,6 @@ h8 {
 
 li .active {
     font-weight: 400;
-}
-
-@media (min-width: 1600px) {
-    .navbar-nav {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-}
-
-@media (min-width: 900px) and (max-width: 1199px) {
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
@@ -323,31 +319,6 @@ li .active {
     white-space: nowrap;
 }
 
-@media (min-width: 1600px) {
-    #primaryButton {
-    }
-
-    #textButtonActive {}
-
-    #textButton {
-    }
-
-    #textButton p {
-    }
-
-    #textButtonActive p {
-    }
-
-    #imageButton {
-    }
-
-    #imageButton img {
-    }
-
-    #imageButton span {
-    }
-}
-
 @media (min-width: 1200px) and (max-width: 1599px) {
     #primaryButton {
         font-size: 20px;
@@ -392,42 +363,43 @@ li .active {
 
 @media (min-width: 900px) and (max-width: 1199px) {
     #primaryButton {
-        font-size: 16px;
-        height: 36px;
+        font-size: 18px;
+        height: 40px;
     }
 
     #imageButton {
-        font-size: 16px;
-        height: 44px;
+        font-size: 18px;
+        height: 40px;
         padding: 0;
     }
 
     #imageButton img {
-        height: 42px;
-        width: 42px;
+        height: 38px;
+        width: 38px;
     }
 
     #imageButton span {
-        line-height: 40px;
+        line-height: 38px;
     }
 
     #textButton {
-        font-size: 16px;
-        height: 30px;
+        font-size: 18px;
+        height: 40px;
     }
 
     #textButtonActive {
-        height: 30px;
+        font-size: 18px;
+        height: 40px;
     }
 
     #textButton p {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #textButtonActive p {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -650,7 +622,7 @@ li .active {
 }
 
 .volunteerImage img {
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -705,27 +677,34 @@ ol {
 }
 
 @media (min-width: 900px) and (max-width: 1199px) {
-    ol {
-        margin-left: -15px !important;
-    }
-
     .volunteerMessage {
         padding: 0;
+        
     }
 
     .messageDesktop {
-        padding: 50px;
+        padding: 0;
     }
 
     .message {
-        max-width: 500px;
+        max-width: 400px;
         min-width: 400px;
-        margin-right: 0px;
+        margin-left: 5%;
+        width: 45%;
     }
-
+.volunteerImage{
+    margin-right: 5%;
+    width: 45%;
+}
     .volunteerImage img {
         width: 100%;
         height: auto;
+        max-width: 400px;
+        
+    }
+
+    ol {
+        margin-left: -10px !important;
     }
 }
 
@@ -817,24 +796,9 @@ ol {
     font-size:16px;
     padding-top:5px;
 }
-@media (min-width: 1600px) {
-}
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-    .loginAndForgot {
-        
-    }
-}
 
 @media (min-width: 900px) and (max-width: 1199px) {
-    .loginAndForgot {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: baseline;
-        width: 80%;
-        justify-content: space-between;
-    }
+    
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
@@ -931,133 +895,20 @@ justify-content: space-between;
 .fas {
     margin-right: 10px;
 }
-@media (min-width: 1600px) {
-    /* #address {
-        max-width: 700px;
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-    } */
-
-    
-}
-
-@media (min-width: 1200px) and (max-width: 1599px) {
-
-    /* #hospDetails {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .taskDashboard {
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        align-content: center;
-        height: calc(100vh - 100px);
-        margin-top: 40px;
-    }
-
-    .questions {
-        font-style: italic;
-        margin-bottom: 5px !important;
-    }
-
-    #taskList .form-group {
-        margin-bottom: 15px;
-        max-width: 700px;
-    }
-
-    .taskDetails {
-        order: 2;
-        flex-wrap: nowrap;
-        padding-left: 50px;
-        border-left: 1px solid #ffffff3d;
-        width: 70%;
-    }
-
-    .taskDetails span {
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    .volunteerTasks {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        width: 30%;
-        margin-left: 35px;
-    }
-
-    .fa,
-    .fas {
-        margin-right: 5px;
-        font-size: 18px;
-    } */
-}
 
 @media (min-width: 900px) and (max-width: 1199px) {
-    #address {
-        max-width: 500px;
-    }
-
-    #hospDetails {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .taskDashboard {
-        display: flex;
-        flex-direction: row;
+    .taskDashboard{
         align-items: baseline;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-content: center;
-        height: calc(100vh - 80px);
-        margin-top: 40px;
+        margin-top:20px;
     }
-
-    #taskList .form-group {
-        margin-bottom: 15px;
-        max-width: 700px;
+    .volunteerTasks{
+        width: 40%;
+        margin-left: 0;
     }
-
-    .questions {
-        font-style: italic;
-        margin-bottom: 5px !important;
-    }
-
-    .taskDetails {
-        /* display: flex; */
-        order: 2;
-        /* flex-direction: row; */
-        /* align-items: center; */
-        /* justify-content: space-around; */
-        flex-wrap: nowrap;
-        /* align-content: center; */
-        padding-left: 30px;
-        border-left: 1px solid #ffffff3d;
-        width: 70%;
-    }
-
-    .taskDetails span {
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    .volunteerTasks {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-        width: 30%;
-    }
-
-    .fa,
-    .fas {
-        margin-right: 5px;
-        font-size: 14px;
+    .taskDetails{
+        width: 60%;
+        margin-right: 0;
+        padding: 20px 5px 20px 30px;  
     }
 }
 
