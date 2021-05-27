@@ -236,7 +236,7 @@ class homepage extends Component {
                         {/* Hospitals with Details */}
                         <div id='beds' className='sidebar'>
                             <div className='results'>
-                                <h7 style={{ width: 200 + 'px', display: 'inline-block' }}>
+                                <h7 style={{ width: 50 + '%', display: 'inline-block' }}>
                                     Hospitals
                                 </h7>
                                 <h7 style={{ width: 16.66 + '%', display: 'inline-block' }}>
