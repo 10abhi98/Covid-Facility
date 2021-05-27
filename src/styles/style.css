@@ -321,107 +321,107 @@ li .active {
 
 @media (min-width: 1200px) and (max-width: 1599px) {
     #primaryButton {
-        font-size: 20px;
-        height: 42px;
+        font-size: 16px;
+        height: 36px;
     }
 
     #imageButton {
-        font-size: 20px;
-        height: 42px;
+        font-size: 16px;
+        height: 36px;
         padding: 0;
     }
 
     #imageButton img {
-        height: 40px;
-        width: 40px;
+        height: 34px;
+        width: 34px;
     }
 
     #imageButton span {
-        line-height: 40px;
+        line-height: 34px;
     }
 
     #textButton {
-        font-size: 20px;
-        min-height: 40px;
+        font-size: 16px;
+        min-height: 36px;
     }
 
     #textButtonActive {
-        font-size: 20px;
-        min-height: 40px;
+        font-size: 16px;
+        min-height: 36px;
     }
 
     #textButton p {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #textButtonActive p {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
 @media (min-width: 900px) and (max-width: 1199px) {
     #primaryButton {
-        font-size: 18px;
-        height: 40px;
+        font-size: 16px;
+        height: 36px;
     }
 
     #imageButton {
-        font-size: 18px;
-        height: 40px;
+        font-size: 16px;
+        height: 36px;
         padding: 0;
     }
 
     #imageButton img {
-        height: 38px;
-        width: 38px;
+        height: 36px;
+        width: 36px;
     }
 
     #imageButton span {
-        line-height: 38px;
+        line-height: 36px;
     }
 
     #textButton {
-        font-size: 18px;
-        height: 40px;
+        font-size: 16px;
+        height: 36px;
     }
 
     #textButtonActive {
-        font-size: 18px;
-        height: 40px;
+        font-size: 16px;
+        height: 36px;
     }
 
     #textButton p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #textButtonActive p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 899px) {
     #primaryButton {
-        font-size: 18px;
-        height: 40px;
+        font-size: 16px;
+        height: 36px;
     }
 
     #imageButton {
-        font-size: 18px;
-        height: 40px;
+        font-size: 16px;
+        height: 36px;
         padding: 0;
     }
 
     #imageButton img {
-        height: 38px;
-        width: 38px;
+        height: 34px;
+        width: 34px;
     }
 
     #imageButton span {
-        line-height: 38px;
+        line-height: 34px;
     }
 
     #textButton {
@@ -451,14 +451,14 @@ li .active {
     }
     #textButton p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         
         white-space: unset;
     }
 
     #textButtonActive p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         white-space: unset;
     }
 
@@ -466,23 +466,23 @@ li .active {
 
 @media (max-width: 767px) {
     #primaryButton {
-        font-size: 18px;
-        height: 40px;
+        font-size: 16px;
+        height: 36px;
     }
 
     #imageButton {
-        font-size: 18px;
-        height: 40px;
+        font-size: 16px;
+        height: 36px;
         padding: 0;
     }
 
     #imageButton img {
-        height: 38px;
-        width: 38px;
+        height: 34px;
+        width: 34px;
     }
 
     #imageButton span {
-        line-height: 38px;
+        line-height: 34px;
     }
 
     #textButton {
@@ -512,14 +512,14 @@ li .active {
     }
     #textButton p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         
         white-space: unset;
     }
 
     #textButtonActive p {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         white-space: unset;
     }
 }

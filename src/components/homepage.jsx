@@ -273,7 +273,7 @@ class homepage extends Component {
                             className='maps'
                         >
                             {/* Display Latitude and Longitude */}
-                            <div className='sidebar'>
+                            <div>
                                 <span>Longitude: {lng}</span> |{" "}
                                 <span>Latitude: {lat}</span> |{" "}
                                 <span>Zoom: {zoom}</span>

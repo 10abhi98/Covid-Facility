@@ -429,7 +429,8 @@ class Dashboard extends Component {
                     onClick={(e) => this.selectLocation(e, tasks)}
                 >
                     
-                        <div><p>{index + 1}.</p> </div><div><p>Call {tasks.Name}</p></div>
+                        <div><p>{index + 1}.</p> </div>
+                        <div><p>Call {tasks.Name}</p></div>
                     
                 </button>
             );
@@ -566,13 +567,13 @@ class Dashboard extends Component {
                                         <div id='hospDetails' className='padbL'>
                                             {/* Hospital Details */}
                                             <div>
-                                                <h2>
+                                                <h4>
                                                     {
                                                         this.state
                                                             .locationName
                                                     }
 
-                                                </h2>
+                                                </h4>
                                                 <h6 id='phone'>
                                                     {/* <i className='fas fa-phone-alt pr-1'></i> */}
                                                     {
