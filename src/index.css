@@ -2,7 +2,7 @@ html,body{
     height: 100%;
 }
 body {
-    background-color: #5F74E5 !important;
+    background-color: #EADCC9 !important;
     margin: 0;
     font-family: 'Mulish', sans-serif !important;
     -webkit-font-smoothing: antialiased;
@@ -16,6 +16,6 @@ code {
 /* Media Query */
 @media (max-width: 575.98px){
     body{
-        background: #5F74E5 !important;
+        background: #EADCC9 !important;
     }
 }

@@ -131,9 +131,10 @@ h6 {
 
 p {
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
     margin-bottom: 0px !important;
     line-height:1.2 !important;
+    color:#000;
 }
 h7 {
     font-size: 12px !important;
@@ -212,14 +213,21 @@ h8 {
 
 .navbar-nav {
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 400;
+    color:#333333;
 }
 
 li .active {
-    font-weight: 400;
+    font-weight: 700;
+    color:#333333;
+    border-bottom: 2px solid #333333;
 }
 
-
+@media (max-width: 575px) {
+    .navbar-nav {
+        line-height: 40px;
+    }
+}
 
 
 
@@ -227,11 +235,11 @@ li .active {
 /*-------------- Buttons--------------*/
 #primaryButton {
     border-radius: 30px;
-    border: 2px solid #FFE2B9;
-    color: #FFE2B9;
+    border: 2px solid #E2C49B;
+    color: #333333;
     text-decoration: none;
-    border-color: #FFE2B9 !important;
-    background-color: transparent;
+    border-color: #E2C49B !important;
+    background-color: #E2C49B;
     padding: 0 20px;
     font-size: 20px;
     font-weight: 400;
@@ -265,7 +273,7 @@ li .active {
 
 #textButton {
     padding: 0px 0px 0px 10px;
-    color: #FFE2B9;
+    color: #333333;
     background-color: transparent;
     border: none;
     min-height: 40px;
@@ -289,11 +297,12 @@ li .active {
 #imageButton {
     font-size: 20px;
     font-weight: 400;
-    border: 2px solid #FFE2B9;
-    color: #FFE2B9;
+    border: 2px solid #E2C49B;
+    color: #333333;
     text-decoration: none;
-    border-color: #FFE2B9 !important;
+    border-color: #E2C49B !important;
     border-radius: 30px;
+    background-color:#E2C49B;
     height: 40px;
     padding: 0;
 }
@@ -302,9 +311,9 @@ li .active {
     height: 38px;
     width: 38px;
     float: left;
-    border: 8px solid #FFF;
+    border: 8px solid #E2C49B;
     border-radius: 30px;
-    background-color: #FFF;
+    background-color: #E2C49B;
     /* padding: 15px; */
     margin-left: -1px;
     margin-top: -1px;
@@ -314,7 +323,7 @@ li .active {
     float: right;
     padding-right: 15px;
     line-height: 35px;
-    color: #FFE2B9;
+    color: #333333;
     padding-left: 10px;
     white-space: nowrap;
 }
@@ -337,7 +346,7 @@ li .active {
     }
 
     #imageButton span {
-        line-height: 34px;
+        line-height: 32px;
     }
 
     #textButton {
@@ -421,7 +430,7 @@ li .active {
     }
 
     #imageButton span {
-        line-height: 34px;
+        line-height: 32px;
     }
 
     #textButton {
@@ -482,7 +491,7 @@ li .active {
     }
 
     #imageButton span {
-        line-height: 34px;
+        line-height: 32px;
     }
 
     #textButton {
@@ -530,7 +539,7 @@ li .active {
     font-weight: 200 !important;
     font-style: italic !important;
     line-height: 1.5;
-    color: #5f74e5 !important;
+    color: #E2C49B !important;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #FFE2B9 !important;
@@ -735,8 +744,9 @@ ol {
     width: 100%;
     }
 .volunteerImage{
-    margin: auto;
+    margin: unset;
     width: 100%;
+    margin-bottom: 10%;
 }
     .volunteerImage img {
         width: 100%;
@@ -768,8 +778,9 @@ ol {
     width: 100%;
     }
 .volunteerImage{
-    margin: auto;
+    margin: unset;
     width: 100%;
+    margin-bottom: 10%;
 }
     .volunteerImage img {
         width: 100%;
@@ -798,7 +809,7 @@ ol {
 }
 #forgotPassword {
     padding: 0px 0px 0px 0px;
-    color: #FFE2B9;
+    color: #333333;
     background-color: transparent;
     border: none;
     font-size:16px;
@@ -984,13 +995,12 @@ justify-content: space-between;
         display:none;
     }
     #searchBar{
-        border-color: #5f74e5 !important;
+        border-color: #E2C49B !important;
         width: calc(100% - 30px) !important;
         padding: 6px 8px 6px 16px !important;
         margin-left: 15px;
         height: 36px !important;
         border-radius: 18px !important;
-        background-color: #a0aae2;
         font-size: 16px !important;
         color: #fff !important;
         font-weight: 400 !important;
@@ -1029,13 +1039,12 @@ justify-content: space-between;
 }
 
 #searchBar {
-    border-color: #5f74e5 !important;
-    width: 470px;
+    border-color: #E2C49B !important;
+    width: 400px;
     padding: 6px 8px 6px 16px !important;
     margin-left: 15px;
     height: 36px !important;
     border-radius: 18px !important;
-    background-color: #a0aae2;
     font-size: 16px !important;
     color: #fff !important;
     font-weight: 400 !important;
@@ -1250,7 +1259,7 @@ justify-content: space-between;
 #register,
 #dashboard,
 #voluntee {
-    color: white;
+    color: #333333;
 }
 
 #register .form-group {
@@ -1276,7 +1285,7 @@ justify-content: space-between;
 }
 
 small {
-    color: pink;
+    color: #dc3545;
 }
 
 #loader {

@@ -1,7 +1,7 @@
 // Libraries ->
 import React, { Component } from "react";
 import "../styles/style.css";
-import volunteerDesktop from "../images/volunteer_desktop.png";
+import volunteerDesktop from "../images/volunteer_desktop_2.png";
 // import volunteerMobile from "../images/volunteer_mobile.png";
 
 class Volunteer extends Component {

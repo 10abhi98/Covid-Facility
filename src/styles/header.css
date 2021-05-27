@@ -5,7 +5,7 @@
 }
 
 .navbar-toggler i {
-   color: white;
+   color: #333333;
 }
 
 ul {
@@ -15,17 +15,17 @@ ul {
 }
 
 li .item {
-    color: white;
+    color: #333333;
 }
 
 
 .item:hover {
-    color: white;
+    color: #333333;
     text-decoration: none;
 }
 
 li .active {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #333333;
     padding-bottom: 6px;
 }
 

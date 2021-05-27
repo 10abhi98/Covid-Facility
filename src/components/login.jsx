@@ -6,8 +6,8 @@ import ResetPassword from "./resetpassword";
 import { getUserRole } from "../services/FirebaseHandler";
 import { toast } from '../scripts/script';
 import google from "../images/Google.png";
-import volunteerDesktop from "../images/volunteer_desktop.png";
-import volunteerMobile from "../images/volunteer_mobile.png";
+import volunteerDesktop from "../images/volunteer_desktop_2.png";
+import volunteerMobile from "../images/volunteer_mobile_2.png";
 
 class Login extends Component {
     static contextType = AuthContext;
