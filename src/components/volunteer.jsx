@@ -16,8 +16,8 @@ class Volunteer extends Component {
                         <div className='message'>
                             <h2 className='padbL'>Hi,</h2>
                             <h5 className='padbL'>
-                                Come volunteer with us to provide real-time
-                                information about Covid supplies in Delhi, India.
+                                Come volunteer to provide real-time
+                                information about Covid medical-supplies.
                         </h5>
                             <div>
                                 <h5 className='padbL'>Helping is easy
@@ -30,7 +30,7 @@ class Volunteer extends Component {
                             <h5 className=''>
                                 Help anytime, anywhere.
                             <br />
-                            <span style={{fontWeight:700}}>Join us!</span>
+                            <span style={{fontWeight:700}}>Lets help!</span>
                         </h5>
                             <div className='padtL'>
                                 {/* Login Button */}

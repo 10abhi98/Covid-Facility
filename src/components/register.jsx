@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import "../styles/style.css";
 import google from "../images/Google.png";
 import AuthContext from "../services/AuthContext";
-import volunteerDesktop from "../images/volunteer_desktop.png";
-import volunteerMobile from "../images/volunteer_mobile.png";
+import volunteerDesktop from "../images/volunteer_desktop_2.png";
+import volunteerMobile from "../images/volunteer_mobile_2.png";
 
 class Register extends Component {
     // Access Context Values
