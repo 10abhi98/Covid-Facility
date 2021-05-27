@@ -428,9 +428,9 @@ class Dashboard extends Component {
                     type='button'
                     onClick={(e) => this.selectLocation(e, tasks)}
                 >
-                    <p>
-                        {index + 1}. Call {tasks.Name}
-                    </p>
+                    
+                        <div><p>{index + 1}.</p> </div><div><p>Call {tasks.Name}</p></div>
+                    
                 </button>
             );
         });
