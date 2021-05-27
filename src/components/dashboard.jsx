@@ -114,6 +114,7 @@ class Dashboard extends Component {
     async fectAllDataHandler(userId, delay = 2000) {
         this.setState({
             reassignTime: '',
+            taskTimerDisplay: '',
         });
         try {
             await this.timeout(2000);
@@ -230,17 +231,19 @@ class Dashboard extends Component {
                 .doc(this.state.tasks[0])
                 .get()
                 .then((res) => {
-                    assignTime = res.data().reassign_time.seconds;
-                    this.setState({
-                        reassignTime: assignTime,
-                    });
+                    if(res.exists){
+                        assignTime = res.data().reassign_time.seconds;
+                        this.setState({
+                            reassignTime: assignTime,
+                        });
+                    }
                     if (Date.now() >= assignTime * 1000) {
                         this.setState({
                             loading: false,
                             reassignTime: '',
                         });
                         this.snackbar(
-                            'Tasks Expired!! Fetching new set of Tasks ..'
+                            'Please wait, fetching critical Tasks ..'
                         );
                         firestore.collection('volunteers').doc(userId).update({
                             tasks_assigned: [],
@@ -266,12 +269,12 @@ class Dashboard extends Component {
         } else if (duration.hours() < 1) {
             this.setState({
                 taskTimerDisplay:
-                    '(Expires in ' + duration.minutes() + ' minutes)',
+                    '(New Tasks in ' + duration.minutes() + ' minutes)',
             });
         } else {
             this.setState({
                 taskTimerDisplay:
-                    '(Expires in ' +
+                    '(New Tasks in ' +
                     duration.hours() +
                     ' hours ' +
                     duration.minutes() +
@@ -292,9 +295,14 @@ class Dashboard extends Component {
 
     // Combine contacts ->
     stringifyContacts(Contact) {
-        return Contact[0] + (Contact[1] ? ', ' + Contact[1] : '');
-    }
-    s;
+        // return Contact[0] + (Contact[1] ? ', ' + Contact[1] : '');
+        return (
+            <>
+                <a href={`tel:${Contact[0]}`}>{Contact[0]}</a>
+                {Contact[1] && <>, <a href={`tel:${Contact[1]}`}>{Contact[1]}</a></>}
+            </>
+        )
+    };
 
     // Submit Event Handler ->
     async submitInfoHandler(e, taskId) {
@@ -373,7 +381,7 @@ class Dashboard extends Component {
                 'Congratulations !! You have completed all the Tasks ..'
             );
             const p = new Promise((res, rej) => {
-                setTimeout(res, 5000);
+                setTimeout(res, 4800);
             });
             p.then(() => {
                 setTimeout(() => {
@@ -390,7 +398,7 @@ class Dashboard extends Component {
 
         if (this.state.tasks.length) {
             // Display Task Completion Message
-            this.snackbar('Task Completed ..');
+            this.snackbar('Thank you for your help ..');
         }
     }
 
@@ -428,10 +436,8 @@ class Dashboard extends Component {
                     type='button'
                     onClick={(e) => this.selectLocation(e, tasks)}
                 >
-                    
-                        <div><p>{index + 1}.</p> </div>
-                        <div><p>Call {tasks.Name}</p></div>
-                    
+                    <div><p>{index + 1}.</p> </div>
+                    <div><p>Call {tasks.Name}</p></div>
                 </button>
             );
         });
@@ -456,6 +462,7 @@ class Dashboard extends Component {
                         className='form-control'
                         value={this.state[name]}
                         placeholder={value[0]}
+                        min='0'
                         onChange={this.onChangeHandler}
                     />
                 </div>
@@ -501,7 +508,7 @@ class Dashboard extends Component {
         ) {
             this.submitInfoHandler(e, this.state.activeBtn);
         } else {
-            this.snackbar('You cannot submit an empty form ..');
+            this.snackbar('Please fill out the info ..');
         }
     }
 
@@ -547,8 +554,8 @@ class Dashboard extends Component {
                                     <div className='volunteerTasks'>
                                         <h2>Welcome {this.state.userName}!</h2>
                                         {this.state.activeBtn && (
-                                            <h7 className='padbL'>Pick a task.{' '}
-                                                {this.state.taskTimerDisplay}</h7>
+                                            <p className='padbL'>Pick a task.{' '}
+                                                {this.state.taskTimerDisplay}</p>
                                         )}
 
                                         {/* Small Tasks
@@ -611,7 +618,7 @@ class Dashboard extends Component {
                                         </div>
 
                                         <form id='taskList'>
-                                            <h7 className='padtL'>Questions to ask</h7>
+                                            <p className='padtL'>Questions to ask</p>
                                             {/* Questionarre (Hospital/Pharmacy) */}
                                             {this.state.locationType.toLowerCase() ===
                                                 'hospital'

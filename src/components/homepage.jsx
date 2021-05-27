@@ -26,8 +26,8 @@ class homepage extends Component {
             activeDiv: null,
             locationData: [],
             wait: false,
-            map: '',
-            inputValue: ''
+            map: "",
+            inputValue: "",
         };
 
         // Create Reference ->
@@ -132,8 +132,12 @@ class homepage extends Component {
                     ? "-" + loc["Address"]["Pincode"]
                     : "");
             const contact =
-                loc["Contact"][0] +
-                (loc["Contact"][1] ? ", " + loc["Contact"][1] : "");
+                <>
+                    <a href={`tel:${loc["Contact"][0]}`}>{loc["Contact"][0]}</a>
+                    {
+                        loc["Contact"][1] && (<>, <a href={`tel:${loc["Contact"][1]}`}>{loc["Contact"][1]}</a></>)
+                    }
+                </>
             const availableBeds =
                 loc["Tasks_Info"]["Beds"]["Count"] !== 0
                     ? loc["Tasks_Info"]["Beds"]["Count"]
@@ -148,38 +152,39 @@ class homepage extends Component {
                     ? loc["Tasks_Info"]["Waiting_Patients"]["Count"]
                     : "-";
             return (
-                <div className={
-                    this.state.activeDiv === divName
-                        ? "dispBed"
-                        : "notdispBed"
-                }>
+                <div
+                    key={index}
+                    className={
+                        this.state.activeDiv === divName
+                            ? "dispBed"
+                            : "notdispBed"
+                    }
+                    onClick={() =>
+                        this.handleClick(
+                            divName,
+                            hospitalName,
+                            loc["Coordinates"]["_long"],
+                            loc["Coordinates"]["_lat"]
+                        )
+                    }
+                >
                     <div
-                        key={index}
-                        onClick={() =>
-                            this.handleClick(
-                                divName,
-                                hospitalName,
-                                loc["Coordinates"]["_long"],
-                                loc["Coordinates"]["_lat"]
-                            )
-                        }
-                        class='availabilityInfo'
+                        className='availabilityInfo'
                     >
                         <div className='hospitalTile'>
-                            <p>
-                                {hospitalName}
-                            </p>
+                            <p>{hospitalName}</p>
 
                             <div className='verification'>
-                                <h8>
+                                <p>
                                     Verified by call{" "}
                                     {moment(
                                         new Date(
-                                            loc["Tasks_Info"]["Beds"]["Verified_At"]
-                                                .seconds * 1000
+                                            loc["Tasks_Info"]["Beds"][
+                                                "Verified_At"
+                                            ].seconds * 1000
                                         )
                                     ).fromNow()}
-                                </h8>
+                                </p>
                             </div>
                         </div>
                         <div className='figures'>
@@ -188,22 +193,18 @@ class homepage extends Component {
                             </p>
                             <p className='figure'>
                                 {newPatients}/hr
-                        </p>
+                            </p>
                             <p className='figure'>
                                 {waitingPatients}
                             </p>
                         </div>
                     </div>
-                        {this.state.activeDiv === divName ? (
-                            <>
-                                <p className='infoPhone'>
-                                    {contact}
-                                </p>
-                                <p className='infoAddress'>
-                                    {address}
-                                </p>
-                            </>
-                        ) : null}
+                    {this.state.activeDiv === divName ? (
+                        <>
+                            <p className='infoPhone'>{contact}</p>
+                            <p className='infoAddress'>{address}</p>
+                        </>
+                    ) : null}
                 </div>
             );
         });
@@ -213,6 +214,7 @@ class homepage extends Component {
         const { lng, lat, zoom } = this.state;
         return (
             <>
+                {/* Categoraization */}
                 {/* <h6 className='sub-head'>Select to view availability</h6>
                 <button
                     id='bedBtn'
@@ -221,6 +223,7 @@ class homepage extends Component {
                 >
                     Beds
                 </button> */}
+
                 {/* Search Bar */}
                 <input
                     type='text'
@@ -231,24 +234,45 @@ class homepage extends Component {
                     onChange={this.locationSearchHandler}
                 />
                 {/* <i className="fal fa-search float-right"></i> */}
+
                 <div className='container-fluid'>
                     <div className='row'>
                         {/* Hospitals with Details */}
                         <div id='beds' className='sidebar'>
+                            {/* Columns */}
                             <div className='results'>
-                                <h7 style={{ width: 50 + '%', display: 'inline-block' }}>
+                                <p
+                                    style={{
+                                        width: 50 + "%",
+                                        display: "inline-block",
+                                    }}
+                                >
                                     Hospitals
-                                </h7>
-                                <h7 style={{ width: 16.66 + '%', display: 'inline-block' }}>
-                                    Available
-                                </h7>
-                                <h7 style={{ width: 16.66 + '%', display: 'inline-block' }}>
+                                </p>
+                                <p
+                                    style={{
+                                        width: 16.66 + "%",
+                                        display: "inline-block",
+                                    }}
+                                >
+                                    Beds
+                                </p>
+                                <p
+                                    style={{
+                                        width: 16.66 + "%",
+                                        display: "inline-block",
+                                    }}
+                                >
                                     Admits
-                                </h7>
-                                <h7>
+                                </p>
+                                <p
+                                    style={{
+                                        width: 16.66 + "%",
+                                        display: "inline-block",
+                                    }}
+                                >
                                     Waiting
-                                </h7>
-
+                                </p>
                             </div>
 
                             {/* Hospital List */}
@@ -256,24 +280,24 @@ class homepage extends Component {
                                 <div id='scr' className='scrollbar'>
                                     <>
                                         {this.renderData(
-                                            this.state.locationData.filter((loc) =>
-                                                loc['Name']
-                                                    .toLowerCase()
-                                                    .includes(this.state.inputValue.toLowerCase())
+                                            this.state.locationData.filter(
+                                                (loc) =>
+                                                    loc["Name"]
+                                                        .toLowerCase()
+                                                        .includes(
+                                                            this.state.inputValue.toLowerCase()
+                                                        )
                                             )
                                         )}
                                     </>
                                 </div>
                             </div>
                         </div>
+
                         {/* MapBox */}
-                        <div
-                            id='map'
-                            ref={this.mapContainer}
-                            className='maps'
-                        >
+                        <div id='map' ref={this.mapContainer} className='maps'>
                             {/* Display Latitude and Longitude */}
-                            <div>
+                            <div className='mapDetails'>
                                 <span>Longitude: {lng}</span> |{" "}
                                 <span>Latitude: {lat}</span> |{" "}
                                 <span>Zoom: {zoom}</span>

@@ -4,8 +4,8 @@ import $ from 'jquery';
 function toast() {
     $('#snackBar').addClass('show');
     setTimeout(function () {
-        $("#snackBar").removeClass("show");
-    }, 5000);
+        $('#snackBar').removeClass('show');
+    }, 4800);
 }
 
 function showResetPasswordModal() {

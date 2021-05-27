@@ -143,7 +143,7 @@ export class Admin extends Component {
                                         <td>
                                             <button
                                                 type='button'
-                                                className='btn btn-outline-light btn-sm'
+                                                className='btn btn-outline-secondary btn-sm'
                                                 onClick={this.addHospitals}
                                             >
                                                 Add
@@ -159,7 +159,7 @@ export class Admin extends Component {
                                         <td>
                                             <button
                                                 type='button'
-                                                className='btn btn-outline-light btn-sm'
+                                                className='btn btn-outline-secondary btn-sm'
                                                 onClick={this.addTasks}
                                             >
                                                 Add
@@ -175,7 +175,7 @@ export class Admin extends Component {
                                         <td>
                                             <button
                                                 type='button'
-                                                className='btn btn-outline-light btn-sm'
+                                                className='btn btn-outline-secondary btn-sm'
                                                 onClick={this.cronJobs}
                                             >
                                                 Run

@@ -10,12 +10,25 @@ for i in data:
 
     # Restructuring tasks
     tasks_info = {}
-    tasks = ['Beds', 'Remidisivir', 'Oxygen',
-             'New_Patients', 'Waiting_Patients']
+    tasks = ['Remidisivir', 'New_Patients', 'Waiting_Patients']
     tasks_stat = {
         'Count': 0,
         'Verified_At': 0
     }
+
+    # Beds
+    tasks_info['Beds'] = {
+        'Count' : i['Beds'],
+        'Verified_At' : i['Last_Updated']
+    }
+
+    # Oxygen
+    tasks_info['Oxygen'] = {
+        'Count' : i['Oxygen'],
+        'Verified_At' : i['Last_Updated']
+    }
+
+    # Remaining three
     for j in tasks:
         tasks_info[j] = tasks_stat
 
