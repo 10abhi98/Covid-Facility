@@ -189,7 +189,7 @@ class homepage extends Component {
                         </div>
                         <div className='figures'>
                             <p className='figure'>
-                                {availableBeds}/{totalBeds}
+                                {availableBeds}/<wbr/>{totalBeds}
                             </p>
                             <p className='figure'>
                                 {newPatients}/hr
