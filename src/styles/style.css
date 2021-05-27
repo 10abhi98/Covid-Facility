@@ -299,8 +299,8 @@ li .active {
 }
 
 #imageButton img {
-    height: 48px;
-    width: 48px;
+    height: 38px;
+    width: 38px;
     float: left;
     border: 8px solid #FFF;
     border-radius: 30px;
@@ -313,7 +313,7 @@ li .active {
 #imageButton span {
     float: right;
     padding-right: 15px;
-    line-height: 40px;
+    line-height: 35px;
     color: #FFE2B9;
     padding-left: 10px;
     white-space: nowrap;
