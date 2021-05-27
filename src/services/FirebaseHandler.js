@@ -30,9 +30,12 @@ function getUserRole(userId) {
 function addLocationData(locations) {
     const locationDocument = firestore.collection('locations');
     locations.forEach((loc) => {
+        const time = new Date(loc['Tasks_Info']['Beds']['Verified_At'] * 1000);
         console.log(loc['Coordinates']['Lat']);
         locationDocument.add(loc).then((res) => {
             locationDocument.doc(res.id).update({
+                'Tasks_Info.Beds.Verified_At': time,
+                'Tasks_Info.Oxygen.Verified_At': time,
                 Coordinates: new firebase.firestore.GeoPoint(
                     loc['Coordinates']['Lat']
                         ? loc['Coordinates']['Lat']

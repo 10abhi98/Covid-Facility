@@ -1,5 +1,6 @@
 import json
-with open('C:/Users/Abhishek/Downloads/delhi_hospitals_cleanup.json') as f:
+import datetime
+with open('C:/Users/nitik/Downloads/delhi_hospitals_cleanup.json') as f:
     data = json.load(f)
 
 for i in data:
@@ -18,14 +19,14 @@ for i in data:
 
     # Beds
     tasks_info['Beds'] = {
-        'Count' : i['Beds'],
-        'Verified_At' : i['Last_Updated']
+        'Count': i['Beds'],
+        'Verified_At':  datetime.datetime.now().timestamp(),
     }
 
     # Oxygen
     tasks_info['Oxygen'] = {
-        'Count' : i['Oxygen'],
-        'Verified_At' : i['Last_Updated']
+        'Count': i['Oxygen'],
+        'Verified_At': datetime.datetime.now().timestamp(),
     }
 
     # Remaining three
@@ -60,7 +61,7 @@ for i in data:
     # Delete unnecessary keys
     remove_keys = [
         'Street_Address', 'City', 'State', 'Pincode', 'Lat', 'Long',
-        'Contact 1', 'Contact 2', 'Contact 3', 'Contact 4', 'Contact 5', 'Contact 6']
+        'Contact 1', 'Contact 2', 'Contact 3', 'Contact 4', 'Contact 5', 'Contact 6', 'Last_Updated', 'Beds', 'Oxygen']
     for key in remove_keys:
         del i[key]
 
@@ -70,5 +71,5 @@ for i in data:
     # for key in trim_keys:
     #     i[key] = i[key].trim()
 
-with open('C:/Users/Abhishek/Desktop/delhiHospitals.json', 'w') as json_file:
+with open('C:/Users/nitik/Desktop/delhiHospitals.json', 'w') as json_file:
     json.dump(data, json_file, indent=4)
