@@ -99,7 +99,7 @@
 /*-------------- COMPONENTS--------------*/
 /*-------------- Headings--------------*/
 h2 {
-    font-size: 48px !important;
+    font-size: 42px !important;
     font-weight: 700 !important;
     margin-bottom: 0px !important;
 }
@@ -233,9 +233,9 @@ li .active {
     border-color: #FFE2B9 !important;
     background-color: transparent;
     padding: 0 20px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    height: 50px;
+    height: 40px;
     margin-right: 20px;
 }
 
@@ -246,7 +246,7 @@ li .active {
     background: white !important;
     border: none;
     border-radius: 4px;
-    min-height: 50px;
+    min-height: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -258,7 +258,7 @@ li .active {
 
 #textButtonActive p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     white-space:nowrap;
     padding-right: 5px;
 }
@@ -268,7 +268,7 @@ li .active {
     color: #FFE2B9;
     background-color: transparent;
     border: none;
-    min-height: 50px;
+    min-height: 40px;
     text-align:left;
     display: flex;
     flex-direction: row;
@@ -281,20 +281,20 @@ li .active {
 
 #textButton p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     white-space:nowrap;
     padding-right: 5px;
 }
 
 #imageButton {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     border: 2px solid #FFE2B9;
     color: #FFE2B9;
     text-decoration: none;
     border-color: #FFE2B9 !important;
     border-radius: 30px;
-    height: 50px;
+    height: 40px;
     padding: 0;
 }
 
@@ -313,7 +313,7 @@ li .active {
 #imageButton span {
     float: right;
     padding-right: 15px;
-    line-height: 45px;
+    line-height: 40px;
     color: #FFE2B9;
     padding-left: 10px;
     white-space: nowrap;
@@ -537,14 +537,13 @@ li .active {
     border-radius: 6px !important;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     padding: 0 15px;
-    max-width: 400px;
+    max-width: 425px;
 }
 
 @media (min-width: 1600px) {
     .form-control {
         height: 44px !important;
         font-size: 20px !important;
-        max-width: 400px;
     }
 }
 
@@ -552,7 +551,6 @@ li .active {
     .form-control {
         height: 40px !important;
         font-size: 16px !important;
-        max-width: 400px;
     }
 }
 
@@ -560,7 +558,6 @@ li .active {
     .form-control {
         height: 40px !important;
         font-size: 16px !important;
-        max-width: 400px;
     }
 }
 
@@ -568,7 +565,6 @@ li .active {
     .form-control {
         height: 40px !important;
         font-size: 16px !important;
-        max-width: 400px;
     }
     #register .form-group{
         width:100% !important;
@@ -580,7 +576,6 @@ li .active {
     .form-control {
         height: 40px !important;
         font-size: 16px !important;
-        max-width: 400px;
     }
     #register .form-group{
         width:100% !important;
@@ -846,7 +841,7 @@ justify-content: space-between;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap;
     align-content: center;
     height: calc(100vh - 80px);
@@ -875,7 +870,6 @@ justify-content: space-between;
     border: 2px solid #ffffff3d;
     width: 50%;
     border-radius: 6px;
-    margin-right: 10%;
 
 }
 
@@ -889,7 +883,6 @@ justify-content: space-between;
     flex-direction: column;
     align-items: baseline;
     width: 30%;
-    margin-left: 10%;
 }
 
 .fa,
