@@ -137,6 +137,10 @@ p {
     color: #000;
 }
 
+a {
+    color: black !important;
+}
+
 .results p {
     font-size: 12px !important;
     font-weight: 700 !important;
@@ -205,14 +209,15 @@ p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+    justify-content: flex-start !important;
+    /* padding: 10px 20px !important; */
 }
 
 .navbar-nav {
     font-size: 16px;
     font-weight: 400;
     color: #333333;
+    flex-direction: row !important;
 }
 
 li .active {
@@ -221,10 +226,24 @@ li .active {
     border-bottom: 2px solid #333333;
 }
 
+.mobileLogo {
+ margin-top: 4px;
+    display: none;
+}
+
 @media (max-width: 575px) {
     .navbar-nav {
         line-height: 40px;
+        margin-bottom: 10px !important;
     }
+    #navbarNav > ul > li:nth-child(1)  {
+        display: none;
+    }
+    .mobileLogo {
+        margin-top: 4px;
+        display: unset;
+    }
+
 }
 /*-------------- Buttons--------------*/
 #primaryButton {
@@ -283,7 +302,7 @@ li .active {
 }
 
 #textButton div:nth-of-type(2),
-#textButtonActive div:nth-last-of-type(2) {
+#textButtonActive div:nth-of-type(2) {
     overflow: hidden;
 }
 
@@ -1073,7 +1092,7 @@ ol {
     font-style: italic;
 }
 
-#navbarNav > ul > li:nth-child(1) {
+#navbarNav > ul > li {
     margin-right: 20px;
 }
 

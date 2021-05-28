@@ -1,8 +1,8 @@
 // Libraries ->
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import "../styles/header.css";
-
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import '../styles/header.css';
+import logo from '../images/ck_logo_small.png';
 class HeaderComponent extends Component {
     render() {
         return (
@@ -19,8 +19,21 @@ class HeaderComponent extends Component {
                     >
                         <i className='far fa-bars'></i>
                     </button>
+                    <div className='mobileLogo'>
+                        <img src={logo} />
+                    </div>
                     <div className='collapse navbar-collapse' id='navbarNav'>
                         <ul className='navbar-nav'>
+                            <li className='nav-item'>
+                                <NavLink
+                                    exact
+                                    to='/'
+                                    className='item'
+                                    style={{ border: 'none' }}
+                                >
+                                    <img src={logo} />
+                                </NavLink>
+                            </li>
                             <li className='nav-item'>
                                 <NavLink
                                     exact

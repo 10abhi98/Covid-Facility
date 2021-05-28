@@ -41,6 +41,7 @@ class homepage extends Component {
 
     componentDidMount() {
         this._isMounted = true;
+        analytics.logEvent('visited_homepage');
         const { lng, lat, zoom } = this.state;
         const map = new mapboxgl.Map({
             container: this.mapContainer.current,
@@ -68,21 +69,20 @@ class homepage extends Component {
         });
 
         // Fetch Data from Firestore Database ->
-        const locationDocument = firestore
-            .collection('locations')
-            .orderBy('Tasks_Info.Beds.Count', 'desc');
-        locationDocument.onSnapshot((snapshot) => {
-            analytics.logEvent('visited_homepage');
-            let locData = [];
-            snapshot.forEach((doc) => {
-                locData.push(doc.data());
-            });
-            if (this._isMounted) {
-                this.setState({
-                    locationData: locData,
+        const locationDocument = firestore.collection('locations');
+        locationDocument
+            .orderBy('Tasks_Info.Beds.Count', 'desc')
+            .onSnapshot((snapshot) => {
+                let locData = [];
+                snapshot.forEach((doc) => {
+                    locData.push(doc.data());
                 });
-            }
-        });
+                if (this._isMounted) {
+                    this.setState({
+                        locationData: locData,
+                    });
+                }
+            });
     }
 
     // Prevent Memeory Leak ->
@@ -122,7 +122,7 @@ class homepage extends Component {
             const hospitalName = loc['Name'];
             //  loc['Coordinates']['Lat']
             const address = (
-                <a href={`${loc['Map_Link']}`} target='_blank'>
+                <a href={`${loc['Map_Link']}`} target='_blank' rel='noreferrer'>
                     {(loc['Address']['Street']
                         ? loc['Address']['Street'] + ', '
                         : '') +

@@ -289,7 +289,7 @@ class Dashboard extends Component {
             (street ? street + ', ' : '') +
             (city ? city + ', ' : '') +
             (state ? state : 'New Delhi') +
-            (pincode.toString() ? '-' + pincode.toString() : '')
+            (pincode ? '-' + pincode : '')
         );
     }
 

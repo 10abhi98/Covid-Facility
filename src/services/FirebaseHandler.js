@@ -14,7 +14,6 @@ function addUserData(userId, name, email, contact) {
         type: 'On-Call Activist',
         role: 'ROLE_VOLUNTEER',
     });
-    analytics.logEvent('added_user_data');
 }
 
 // Fetch user Role ->
@@ -84,14 +83,16 @@ function updateTaskInfo(
             transaction.update(taskDocument, {
                 Tasks_Info: {
                     Beds: {
-                        Count: beds ? beds : doc.data().Tasks_Info.Beds.Count,
+                        Count: beds
+                            ? parseInt(beds)
+                            : doc.data().Tasks_Info.Beds.Count,
                         Verified_At: beds
                             ? new Date()
                             : doc.data().Tasks_Info.Beds.Verified_At,
                     },
                     Oxygen: {
                         Count: oxygen
-                            ? oxygen
+                            ? parseInt(oxygen)
                             : doc.data().Tasks_Info.Oxygen.Count,
                         Verified_At: oxygen
                             ? new Date()
@@ -99,7 +100,7 @@ function updateTaskInfo(
                     },
                     Remidisivir: {
                         Count: remidisivir
-                            ? remidisivir
+                            ? parseInt(remidisivir)
                             : doc.data().Tasks_Info.Remidisivir.Count,
                         Verified_At: remidisivir
                             ? new Date()
@@ -107,7 +108,7 @@ function updateTaskInfo(
                     },
                     New_Patients: {
                         Count: newPatients
-                            ? newPatients
+                            ? parseInt(newPatients)
                             : doc.data().Tasks_Info.New_Patients.Count,
                         Verified_At: newPatients
                             ? new Date()
@@ -115,7 +116,7 @@ function updateTaskInfo(
                     },
                     Waiting_Patients: {
                         Count: waitingPatients
-                            ? waitingPatients
+                            ? parseInt(waitingPatients)
                             : doc.data().Tasks_Info.Waiting_Patients.Count,
                         Verified_At: waitingPatients
                             ? new Date()
