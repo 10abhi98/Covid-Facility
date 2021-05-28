@@ -20,7 +20,7 @@ class HeaderComponent extends Component {
                         <i className='far fa-bars'></i>
                     </button>
                     <div className='mobileLogo'>
-                        <img src={logo} />
+                        <img src={logo} alt='*CK'/>
                     </div>
                     <div className='collapse navbar-collapse' id='navbarNav'>
                         <ul className='navbar-nav'>
@@ -31,7 +31,7 @@ class HeaderComponent extends Component {
                                     className='item'
                                     style={{ border: 'none' }}
                                 >
-                                    <img src={logo} />
+                                    <img src={logo} alt='*CK'/>
                                 </NavLink>
                             </li>
                             <li className='nav-item'>
