@@ -36,7 +36,7 @@ class Dashboard extends Component {
         // Questionarre ->
         this.hospitalQuestionarre = {
             Beds: 'How many beds are available?',
-            Oxygen: 'How much Oxygen is available?',
+            'Oxygen (in hours)': 'How much Oxygen is available?',
             'New Patients':
                 'How many New Patients were admitted in the last hour?',
             'Waiting Patients': 'How many patients are waiting outside?',
@@ -231,7 +231,7 @@ class Dashboard extends Component {
                 .doc(this.state.tasks[0])
                 .get()
                 .then((res) => {
-                    if(res.exists){
+                    if (res.exists) {
                         assignTime = res.data().reassign_time.seconds;
                         this.setState({
                             reassignTime: assignTime,
@@ -289,7 +289,7 @@ class Dashboard extends Component {
             (street ? street + ', ' : '') +
             (city ? city + ', ' : '') +
             (state ? state : 'New Delhi') +
-            (pincode ? '-' + pincode : '')
+            (pincode.toString() ? '-' + pincode.toString() : '')
         );
     }
 
@@ -299,10 +299,14 @@ class Dashboard extends Component {
         return (
             <>
                 <a href={`tel:${Contact[0]}`}>{Contact[0]}</a>
-                {Contact[1] && <>, <a href={`tel:${Contact[1]}`}>{Contact[1]}</a></>}
+                {Contact[1] && (
+                    <>
+                        , <a href={`tel:${Contact[1]}`}>{Contact[1]}</a>
+                    </>
+                )}
             </>
-        )
-    };
+        );
+    }
 
     // Submit Event Handler ->
     async submitInfoHandler(e, taskId) {
@@ -341,6 +345,7 @@ class Dashboard extends Component {
                 .update({
                     tasks_assigned:
                         firebase.firestore.FieldValue.arrayRemove(taskId),
+                    tasks_completed: firebase.firestore.FieldValue.increment(1),
                 });
 
             // Update reassign_time inside 'assigned' collections ->
@@ -405,6 +410,7 @@ class Dashboard extends Component {
     // Set Location Function ->
     selectLocation(e, taskInfo) {
         this.clearInputs();
+        console.log(taskInfo);
         const address = this.stringifyAddress(
             taskInfo['Address']['Street'],
             taskInfo['Address']['City'],
@@ -436,8 +442,12 @@ class Dashboard extends Component {
                     type='button'
                     onClick={(e) => this.selectLocation(e, tasks)}
                 >
-                    <div><p>{index + 1}.</p> </div>
-                    <div><p>Call {tasks.Name}</p></div>
+                    <div>
+                        <p>{index + 1}.</p>{' '}
+                    </div>
+                    <div>
+                        <p>Call {tasks.Name}</p>
+                    </div>
                 </button>
             );
         });
@@ -554,8 +564,10 @@ class Dashboard extends Component {
                                     <div className='volunteerTasks'>
                                         <h2>Welcome {this.state.userName}!</h2>
                                         {this.state.activeBtn && (
-                                            <p className='padbL'>Pick a task.{' '}
-                                                {this.state.taskTimerDisplay}</p>
+                                            <p className='padbL'>
+                                                Pick a task.{' '}
+                                                {this.state.taskTimerDisplay}
+                                            </p>
                                         )}
 
                                         {/* Small Tasks
@@ -563,41 +575,31 @@ class Dashboard extends Component {
                                             My Tasks
                                         </p> */}
                                         <div className='taskButtons'>
-
-                                        {this.tasksAssignment(
-                                            this.state.taskLocations
-                                        )}
+                                            {this.tasksAssignment(
+                                                this.state.taskLocations
+                                            )}
                                         </div>
                                     </div>
 
-                                    <div id='locationForm' className='taskDetails'>
+                                    <div
+                                        id='locationForm'
+                                        className='taskDetails'
+                                    >
                                         <div id='hospDetails' className='padbL'>
                                             {/* Hospital Details */}
                                             <div>
                                                 <h4>
-                                                    {
-                                                        this.state
-                                                            .locationName
-                                                    }
-
+                                                    {this.state.locationName}
                                                 </h4>
                                                 <h6 id='phone'>
                                                     {/* <i className='fas fa-phone-alt pr-1'></i> */}
-                                                    {
-                                                        this.state
-                                                            .locationContact
-                                                    }
+                                                    {this.state.locationContact}
                                                 </h6>
                                                 <h6 id='address'>
                                                     {/* <i className='fas fa-map-marker-alt pr-2'></i> */}
-                                                    {
-                                                        this.state
-                                                            .locationAddress
-                                                    }
+                                                    {this.state.locationAddress}
                                                 </h6>
-                                                
                                             </div>
-
 
                                             <div>
                                                 {/* Submit Button */}
@@ -613,28 +615,27 @@ class Dashboard extends Component {
                                                     }}
                                                 >
                                                     Submit
-                                                    </button>
+                                                </button>
                                             </div>
                                         </div>
 
                                         <form id='taskList'>
-                                            <p className='padtL'>Questions to ask</p>
+                                            <p className='padtL'>
+                                                Questions to ask
+                                            </p>
                                             {/* Questionarre (Hospital/Pharmacy) */}
                                             {this.state.locationType.toLowerCase() ===
-                                                'hospital'
+                                            'hospital'
                                                 ? this.displayQuestionarre(
-                                                    this
-                                                        .hospitalQuestionarre
-                                                )
+                                                      this.hospitalQuestionarre
+                                                  )
                                                 : this.displayQuestionarre(
-                                                    this
-                                                        .pharmacyQuestionarre
-                                                )}
+                                                      this.pharmacyQuestionarre
+                                                  )}
                                         </form>
                                     </div>
                                 </div>
                             </div>
-
                         )}
                     </>
                 )}

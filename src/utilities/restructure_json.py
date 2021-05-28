@@ -1,7 +1,11 @@
 import json
-import datetime
-with open('C:/Users/nitik/Downloads/delhi_hospitals_cleanup.json') as f:
+import time
+with open('C:/Users/nitik/Desktop/delhi_hospitals_cleanup.json') as f:
     data = json.load(f)
+
+# Field Names in Excel
+# Name, Management, Type, Street_Address, City, State, Pincode, Lat, Long, Contact1-6,
+# Beds_Last_Updated, Total_Beds, Beds, Oxygen, Oxygen_Last_Updated, Map_Link
 
 for i in data:
     # Changing key structure
@@ -18,15 +22,21 @@ for i in data:
     }
 
     # Beds
+    bed_time = i['Beds_Last_Updated']
+    pattern = '%m/%d/%Y %H:%M'
+    bed_epoch = int(time.mktime(time.strptime(bed_time, pattern)))
     tasks_info['Beds'] = {
         'Count': i['Beds'],
-        'Verified_At':  datetime.datetime.now().timestamp(),
+        'Verified_At': bed_epoch,
     }
 
     # Oxygen
+    oxygen_time = i['Oxygen_Last_Updated']
+    pattern = '%m/%d/%Y %H:%M'
+    oxygen_epoch = int(time.mktime(time.strptime(oxygen_time, pattern)))
     tasks_info['Oxygen'] = {
         'Count': i['Oxygen'],
-        'Verified_At': datetime.datetime.now().timestamp(),
+        'Verified_At': oxygen_epoch,
     }
 
     # Remaining three
@@ -61,7 +71,7 @@ for i in data:
     # Delete unnecessary keys
     remove_keys = [
         'Street_Address', 'City', 'State', 'Pincode', 'Lat', 'Long',
-        'Contact 1', 'Contact 2', 'Contact 3', 'Contact 4', 'Contact 5', 'Contact 6', 'Last_Updated', 'Beds', 'Oxygen']
+        'Contact 1', 'Contact 2', 'Contact 3', 'Contact 4', 'Contact 5', 'Contact 6', 'Beds_Last_Updated', 'Oxygen_Last_Updated', 'Beds', 'Oxygen']
     for key in remove_keys:
         del i[key]
 

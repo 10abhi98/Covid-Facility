@@ -1,6 +1,6 @@
 // Libraries ->
 import React, { Component } from 'react';
-import { auth } from './Firebase';
+import { analytics, auth } from './Firebase';
 import { addUserData, getUserRole } from './FirebaseHandler';
 import { provider } from './Firebase';
 
@@ -28,6 +28,7 @@ export class AuthProvider extends Component {
 
     // User signUp With Email & Password->
     signUpWithEmail(name, email, password, contact = null) {
+        analytics.logEvent('user_signed_up');
         return auth
             .createUserWithEmailAndPassword(email, password)
             .then((res) => {
@@ -41,18 +42,22 @@ export class AuthProvider extends Component {
         return auth.signInWithPopup(provider).then((res) => {
             const user = res.user;
             if (res.additionalUserInfo.isNewUser) {
+                analytics.logEvent('user_signed_up');
                 addUserData(
                     user.uid,
                     user.displayName,
                     user.email,
                     user.phoneNumber
                 );
+            } else {
+                analytics.logEvent('user_logged_in');
             }
         });
     }
 
     // User login with Email & Password ->
     logInWithEmail(email, password) {
+        analytics.logEvent('user_logged_in');
         return auth.signInWithEmailAndPassword(email, password);
     }
 
