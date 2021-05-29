@@ -23,7 +23,7 @@ class Volunteer extends Component {
                                 <h5 className='padbL'>Helping is easy
                             <ol>
                                         <li>Login</li>
-                                        <li>Make a Quick Call</li>
+                                        <li>Make a Quick Call to find updated info</li>
                                         <li>Log Out</li>
                                     </ol></h5>
                             </div>

@@ -410,7 +410,6 @@ class Dashboard extends Component {
     // Set Location Function ->
     selectLocation(e, taskInfo) {
         this.clearInputs();
-        console.log(taskInfo);
         const address = this.stringifyAddress(
             taskInfo['Address']['Street'],
             taskInfo['Address']['City'],
@@ -430,7 +429,7 @@ class Dashboard extends Component {
 
     // Task Assignment Function ->
     tasksAssignment = (Locations) => {
-        return Locations.reverse().map((tasks, index) => {
+        return [...Locations].reverse().map((tasks, index) => {
             return (
                 <button
                     key={tasks.Task_Id + index}
@@ -565,7 +564,8 @@ class Dashboard extends Component {
                                         <h2>Welcome {this.state.userName}!</h2>
                                         {this.state.activeBtn && (
                                             <p className='padbL'>
-                                                Pick a task.{' '}
+                                                Step 1. Pick a hospital to call.
+                                                <br />
                                                 {this.state.taskTimerDisplay}
                                             </p>
                                         )}
@@ -621,7 +621,7 @@ class Dashboard extends Component {
 
                                         <form id='taskList'>
                                             <p className='padtL'>
-                                                Questions to ask
+                                                Step 2. Please ask these questions when you call
                                             </p>
                                             {/* Questionarre (Hospital/Pharmacy) */}
                                             {this.state.locationType.toLowerCase() ===
