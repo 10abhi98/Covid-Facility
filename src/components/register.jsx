@@ -138,12 +138,10 @@ class Register extends Component {
                         </div>
                         <div className='messageDesktop'>
                             <div className='message'>
-
-
                                 <h2>Welcome to the team</h2>
                                 <h5 className='padbM'>
                                     Signing up...
-                            </h5>
+                                </h5>
                                 <form onSubmit={this.signUpWithEmailHandler}>
                                     {/* Name */}
                                     <div className='form-group'>
@@ -151,7 +149,6 @@ class Register extends Component {
                                             type='text'
                                             name='userName'
                                             className='form-control'
-                                            pattern='[a-zA-Z]+'
                                             title='Invalid Name'
                                             placeholder='Name'
                                             required

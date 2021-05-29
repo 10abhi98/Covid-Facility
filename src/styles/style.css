@@ -790,6 +790,12 @@ ol {
     }
 }
 
+@media (max-width: 400px){
+    .volunteerMessage{
+        height: calc(100vh - 20px);
+    }
+}
+
 /*-------------- PAGE-SPECIFIC--------------*/
 /*-------------- Login -----------------*/
 .loginAndForgot {
@@ -820,7 +826,7 @@ ol {
 @media (max-width: 767px) {
     #forgotPassword {
         padding-top: 10px;
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -1319,6 +1325,17 @@ small {
 
 #resetPasswordModal .modal-body .form-group {
     margin: 7px auto;
+}
+
+@media (max-width: 575.98px){
+    #resetPasswordModal .modal-dialog {
+        max-width: 95%;
+        margin: auto;
+    }
+    #resetPasswordModal .modal-body h3{
+        font-size: 25px !important;
+    }
+
 }
 
 /* snackbar */

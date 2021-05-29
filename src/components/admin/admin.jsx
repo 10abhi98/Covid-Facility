@@ -1,6 +1,6 @@
 // Libraries ->
 import React, { Component } from 'react';
-import { firestore } from '../../services/Firebase';
+import { analytics, firestore } from '../../services/Firebase';
 import { addLocationData, addNewTasks } from '../../services/FirebaseHandler';
 import AuthContext from '../../services/AuthContext';
 import delhiHospitals from '../../utilities/delhiHospitals.json';
@@ -100,6 +100,7 @@ export class Admin extends Component {
                             .delete();
                     }
                 });
+                analytics.logEvent('run_cron_job');
                 this.setState({
                     response3: 'Cron Job Ran Successfully',
                 });
@@ -189,7 +190,7 @@ export class Admin extends Component {
                     </div>
                 </div>
                 {/* Cron Jobs Dashboard*/}
-                <Schedule
+                {/* <Schedule
                     jobs={[
                         {
                             fn: this.cronJobs,
@@ -202,7 +203,7 @@ export class Admin extends Component {
                     dashboard={{
                         hidden: true,
                     }}
-                />
+                /> */}
             </>
         );
     }
