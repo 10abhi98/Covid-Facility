@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Covid Khabar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+A volunteer driven website, with an aim to provide hourly updates for availability of different kind of hospital beds (General, ICU, Ventilator) during Covid in India.
 
-## Available Scripts
+## Technology Stack
+- **React** (Frontend)
+- **Bootstrap** (CSS)
+- **MapBox-GL** (Map)
+- **Firebase** (BaaS)
+- **Cloud Firestore** (Database)
+- **Google Cloud Platform(GCP)** (Hosting & Analytics)
 
-In the project directory, you can run:
+## Features
+- display a list of hospitals in a city along with a map having locations pinned on it.
+- each hospital displays the following information:
+    - no. of beds available
+    - no. of patients waiting in queue
+    - no. patients admitted in last hour
+- login/signup functionality for users via 
+    - Google
+    - Standard Method
+- user/volunteer can add/update information(second bullet point) for individual hospitals
+- on successfully providing information for a hospital, a certificate of appreciation is generated for the user.
 
-### `npm start`
+## Installation
+- clone project: $ git clone "https://github.com/abhishekk1098/Covid-Facility.git"
+- cd covid-facility
+- npm clean install (this will install dependencies from package-lock.json)
+- npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Configuration
+- To access the Firestore DB, few configurations are required.
+- Firstly create an account on Google Firebase.
+- Create a new project and initialize a Firestore DB.
+- Now, under project setting fetch the app configurations and store them into a `.env` file.
+- The KEYS for this .env file can be referred from `services/Firebase.js` file.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Test
+- No tests have been added to this project.
